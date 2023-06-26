@@ -11,6 +11,8 @@ import TopMiddle3 from "../components/topMiddle3";
 import TopMiddle4 from "../components/topMiddle4";
 import TopMiddle5 from "../components/topMiddle5";
 import TopMiddle6 from "../components/topMiddle6";
+import TopMiddle7 from "../components/topMiddle7";
+import TopMiddle8 from "../components/topMiddle8";
 
 const TopMainContainer = styled.div`
   height: 11520px;
@@ -39,6 +41,8 @@ export default function Top() {
         <TopMiddle4 />
         <TopMiddle5 />
         <TopMiddle6 />
+        <TopMiddle7 />
+        <TopMiddle8 />
       </TopMainContainer>
     </div>
   );
