@@ -6,7 +6,6 @@ export default function TopMiddle3() {
     margin: 10px;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
     align-items: center;
     height: 768px;
   `;

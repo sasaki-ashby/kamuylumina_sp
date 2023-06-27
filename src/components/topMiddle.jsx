@@ -30,7 +30,7 @@ const Title = styled.p`
 
 const Text1 = styled.span`
   font-size: 14px;
-  line-height: 30px;
+  line-height: 36px;
   color: #002c4b;
   margin-top: 60px;
 `;
@@ -38,10 +38,12 @@ const Text1 = styled.span`
 const MobileBtn = styled.div`
   writing-mode: vertical-rl;
   background-color: #002c4b;
+  display: flex;
+  justify-content: center;
   color: #ffffff;
   font-size: 10px;
   font-weight: 600;
-  padding: 34px 12px;
+  padding: 5px 12px;
   border-radius: 5px;
   margin-right: 20px;
   cursor: pointer;
@@ -50,11 +52,7 @@ const MobileBtn = styled.div`
 const LowrRowContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 80%;
-`;
-
-const RowContainer = styled.div`
-  padding: 10px;
+  width: 70%;
 `;
 
 const Text2 = styled.p`
@@ -62,7 +60,7 @@ const Text2 = styled.p`
   text-align: left;
   font-size: 14px;
   color: #002c4b;
-  line-height: 25px;
+  line-height: 36px;
 `;
 
 const Text3 = styled.span`
@@ -103,19 +101,16 @@ export default function TopMiddle() {
       </UpperRow>
       <LowrRowContainer>
         <MobileBtn>MOBILE　APPS</MobileBtn>
-
-        <RowContainer>
-          <div>
-            <Text2>
-              各ゾーンでどのように物語が展開しているのかをより楽しんでいただくために、
-              <br />
-              英語、中国語に対応したモバイルアプリをご用意しております。
-              <br />
-              是非、入口でアプリをダウンロードしてからカムイルミナの世界へ進んでください。
-            </Text2>
-            <Text3>※スマホケースのレンタルをご用意しています。</Text3>
-          </div>
-        </RowContainer>
+        <div>
+          <Text2>
+            各ゾーンでどのように物語が展開しているのかをより楽しんでいただくために、
+            <br />
+            英語、中国語に対応したモバイルアプリをご用意しております。
+            <br />
+            是非、入口でアプリをダウンロードしてからカムイルミナの世界へ進んでください。
+          </Text2>
+          <Text3>※スマホケースのレンタルをご用意しています。</Text3>
+        </div>
       </LowrRowContainer>
     </TopMiddleContainer>
   );

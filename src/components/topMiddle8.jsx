@@ -17,6 +17,7 @@ export default function TopMiddle8() {
     justify-content: space-evenly;
     align-items: center;
     background-image: url("/assets/img/top9.png");
+    background-size: 70%;
     height: 588px;
   `;
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { animateScroll as scroll } from "react-scroll";
 
 export default function TopUnder() {
   const TopMiddleMainContainer = styled.div`
@@ -56,26 +57,37 @@ export default function TopUnder() {
     margin-left: 5px;
   `;
 
-  const UnderText = styled.p`
-    font-size: 10px;
-    color: #ffffff;
-  `;
-
   const PageTopBtn = styled.div`
     position: absolute;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #002c4b;
     font-size: 10px;
     color: #ffffff;
-    padding: 8px;
+    padding: 5px 8px;
     border-radius: 8px 0 0 0;
     right: 0;
     bottom: 0;
     cursor: pointer;
   `;
+
+  const UnderText = styled.p`
+    font-size: 10px;
+    color: #ffffff;
+  `;
+
+  const ArrowTopIcon = styled.img`
+    width: 7px;
+  `;
+
+  const scrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 1000,
+      smooth: "easeInOutQuart",
+    });
+  };
 
   return (
     <TopMiddleMainContainer>
@@ -95,8 +107,9 @@ export default function TopUnder() {
         </TicketBtn>
       </BtnContainer>
       <UnderText>COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT</UnderText>
-      <PageTopBtn>
-        ↑<br /> PAGE
+      <PageTopBtn className="scroll-to-top-button" onClick={scrollToTop}>
+        <ArrowTopIcon src="/assets/img/arrow_top.png" />
+        PAGE
         <br />
         TOP
       </PageTopBtn>

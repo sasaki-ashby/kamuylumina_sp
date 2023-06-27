@@ -81,25 +81,23 @@ const OfficialBtn = styled.div`
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
-
-  &:hover {
-    color: #006360;
-    background: white;
-  }
 `;
 
 const TicketBtn = styled.div`
-  color: white;
-  font-size: small;
-  margin-right: 20px;
+  background-color: #ffffff;
+  font-size: 11px;
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
+  color: #002c4b;
+  display: flex;
+  align-items: center;
+`;
 
-  &:hover {
-    color: #006360;
-    background: white;
-  }
+const ArrowImage = styled.img`
+  width: 25px;
+  height: 5.87px;
+  margin-left: 5px;
 `;
 
 export default function Header() {
@@ -154,8 +152,17 @@ export default function Header() {
           </LangBtn3>
         </LangBtnsContainer>
 
-        <OfficialBtn>オフィシャルサイト　→</OfficialBtn>
-        <TicketBtn>チケット購入はコチラ　→</TicketBtn>
+        <OfficialBtn>
+          オフィシャルサイト
+          <ArrowImage
+            src="/assets/img/arrow_right_wihte.png"
+            alt="arrow_right_white"
+          />
+        </OfficialBtn>
+        <TicketBtn>
+          チケット購入はコチラ
+          <ArrowImage src="/assets/img/arrow_right.png" alt="arrow_right" />
+        </TicketBtn>
       </RightSideBtn>
     </HeaderContainer>
   );
