@@ -19,16 +19,16 @@ export default function TopMiddle6() {
   const TopMiddleText = styled.p`
     position: absolute;
     font-size: 16px;
-    line-height: 35px;
+    line-height: 46px;
     color: #ffffff;
-    text-align: center;
-    bottom: 50px;
-    left: 50px;
+    text-align: left;
+    top: 50px;
+    left: 100px;
   `;
 
   const TopMiddleText2 = styled.p`
     font-size: 16px;
-    line-height: 35px;
+    line-height: 46px;
     color: #002c4b;
     text-align: center;
   `;
@@ -37,13 +37,9 @@ export default function TopMiddle6() {
     <TopMiddleMainContainer>
       <TopMiddleContainer>
         <TopMiddleText>
-          大自然と融合した光と音の
+          大自然と融合した光と音の デジタルアートが織りなす幻想的な世界で
           <br />
-          デジタルアートが織りなす幻想的な世界で
-          <br />
-          およそ50分にわたる壮大な旅に身を委ね、
-          <br />
-          心躍る時間をお楽しみください。
+          およそ50分にわたる壮大な旅に身を委ね、 心躍る時間をお楽しみください。
         </TopMiddleText>
       </TopMiddleContainer>
       <TopMiddleText2>

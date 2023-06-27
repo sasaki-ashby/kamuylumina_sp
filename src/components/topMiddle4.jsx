@@ -18,7 +18,7 @@ export default function TopMiddle4() {
   const TopMiddleText = styled.p`
     display: flex;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 46px;
     color: #ffffff;
     text-align: center;
   `;

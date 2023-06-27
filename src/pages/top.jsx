@@ -28,7 +28,7 @@ const TopMainContainer = styled.div`
 
 const HeadlineContainer = styled.div`
   height: 768px;
-  background-image: url("/assets/img/top1.jpeg");
+  background-image: url("/assets/img/top1.png");
   background-size: cover;
   background-position: center;
 `;
