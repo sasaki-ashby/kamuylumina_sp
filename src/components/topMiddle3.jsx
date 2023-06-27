@@ -8,6 +8,7 @@ export default function TopMiddle3() {
     justify-content: flex-end;
     width: 100%;
     align-items: center;
+    height: 768px;
   `;
   const MiddleTextImage = styled.img`
     width: 508px;

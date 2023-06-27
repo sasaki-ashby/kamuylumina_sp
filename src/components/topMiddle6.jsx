@@ -4,7 +4,6 @@ import styled from "styled-components";
 export default function TopMiddle6() {
   const TopMiddleMainContainer = styled.div`
     height: 768px;
-    margin: 10px;
   `;
   const TopMiddleContainer = styled.div`
     position: relative;
