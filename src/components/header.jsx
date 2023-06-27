@@ -42,6 +42,7 @@ const RightSideBtn = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
+
 const LangBtnsContainer = styled.div`
   display: flex;
   border-radius: 8px;
