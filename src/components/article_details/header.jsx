@@ -108,6 +108,7 @@ export default function Header() {
   const handleDetailClick = (detail) => {
     setSelectedDetail(detail);
   };
+
   return (
     <HeaderContainer>
       <HeaderTitle>KAMUY LUMINA SPECIAL SITE</HeaderTitle>
