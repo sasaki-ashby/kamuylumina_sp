@@ -10,8 +10,8 @@ const HeaderContainer = styled.div`
 `;
 
 const HeaderTitle = styled.p`
-  font-size: large;
-  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
   color: white;
 `;
 
@@ -22,6 +22,7 @@ const DetailContainer = styled.div`
 
 const Details = styled.p`
   position: relative;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
   margin-right: 20px;
   color: white;
@@ -47,37 +48,42 @@ const RightSideBtn = styled.div`
 const LangBtnsContainer = styled.div`
   display: flex;
   border-radius: 8px;
-  border: 2px solid white;
   height: 40px;
   margin-right: 30px;
 `;
 
 const LangBtn1 = styled.button`
+  font-family: "Noto Sans CJK JP", sans-serif;
   background: ${({ active }) => (active ? "white" : "transparent")};
-  border: none;
+  border: 1px solid white;
+  border-radius: 8px 0 0 8px;
   color: ${({ active }) => (active ? "teal" : "white")};
   cursor: pointer;
 `;
 
 const LangBtn2 = styled.button`
+  font-family: "Noto Sans CJK JP", sans-serif;
   background: ${({ active }) => (active ? "white" : "transparent")};
   border: 1px solid white;
-  border-top: none;
-  border-bottom: none;
+  border-right: none;
+  border-left: none;
   color: ${({ active }) => (active ? "teal" : "white")};
   cursor: pointer;
 `;
 
 const LangBtn3 = styled.button`
+  font-family: "Noto Sans CJK JP", sans-serif;
   background: ${({ active }) => (active ? "white" : "transparent")};
-  border: none;
+  border: 1px solid white;
+  border-radius: 0 8px 8px 0;
   color: ${({ active }) => (active ? "teal" : "white")};
   cursor: pointer;
 `;
 
 const OfficialBtn = styled.div`
+  font-family: "Noto Sans CJK JP", sans-serif;
   color: white;
-  font-size: small;
+  font-size: 10px;
   margin-right: 20px;
   padding: 10px 15px;
   border-radius: 8px;
@@ -85,8 +91,9 @@ const OfficialBtn = styled.div`
 `;
 
 const TicketBtn = styled.div`
+  font-family: "Noto Sans CJK JP", sans-serif;
   background-color: #ffffff;
-  font-size: 11px;
+  font-size: 10px;
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
@@ -110,7 +117,7 @@ export default function Header() {
   };
   return (
     <HeaderContainer>
-      <HeaderTitle>KAMUY LUMINA SPECIAL SITE</HeaderTitle>
+      <HeaderTitle>KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE</HeaderTitle>
       <DetailContainer>
         <Details
           selected={selectedDetail === "REVIEW"}

@@ -25,6 +25,7 @@ export default function ArticleFotter() {
   const Text = styled.p`
     font-size: 14px;
     color: #ffffff;
+    font-family: "Poppins", sans-serif;
   `;
 
   const BtnContainer = styled.div`
@@ -34,22 +35,24 @@ export default function ArticleFotter() {
 
   const OfficialBtn = styled.div`
     color: white;
-    font-size: small;
+    font-size: 11px;
     margin-right: 20px;
     padding: 10px 15px;
-    border-radius: 8px;
+    font-family: "Noto Serif JP", serif;
+    border-bottom: 1px solid #a4b1ba;
     cursor: pointer;
   `;
 
   const TicketBtn = styled.div`
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
+    color: #002c4b;
+    font-family: "Noto Serif JP", serif;
     font-size: 11px;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
-    color: #002c4b;
-    display: flex;
-    align-items: center;
   `;
 
   const ArrowImage = styled.img`
@@ -77,6 +80,7 @@ export default function ArticleFotter() {
   const UnderText = styled.p`
     font-size: 10px;
     color: #ffffff;
+    font-family: "Poppins", sans-serif;
   `;
 
   const ArrowTopIcon = styled.img`

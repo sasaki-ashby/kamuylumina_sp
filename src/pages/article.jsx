@@ -16,10 +16,12 @@ const ArticleTitle = styled.p`
   color: #002c4b;
   margin-bottom: 15px;
   font-weight: 600;
+  font-family: "Noto Serif JP", serif;
 `;
-const SubText = styled.span`
+const SubText = styled.p`
   font-size: 11px;
   color: #002c4b;
+  font-family: "Poppins", sans-serif;
 `;
 
 export default function Article() {
