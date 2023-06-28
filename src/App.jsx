@@ -1,10 +1,12 @@
 import React from "react";
-import Top from "./pages/top";
+import Article from "./pages/article";
+// import Top from "./pages/top";
 
 function App() {
   return (
     <div className="App">
-      <Top />
+      {/* <Top /> */}
+      <Article />
     </div>
   );
 }
