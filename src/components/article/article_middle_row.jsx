@@ -147,13 +147,24 @@ const SpotText = styled.p`
 `;
 
 const MoreBtn = styled.div`
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
   margin-bottom: 50px;
+  cursor: pointer;
 `;
 
-const IconImg = styled.img`
-  width: 116px;
-  cursor: pointer;
+const BtnText = styled.p`
+  font-size: 11px;
+  font-family: "Noto Serif JP", serif;
+  border-bottom: 1px solid #a4b1ba;
+  padding-bottom: 5px;
+`;
+
+const Plus = styled.span`
+  font-size: 15px;
+  margin-left: 4px;
+  color: #a4b1ba;
 `;
 
 export default function ArticleMiddleRow() {
@@ -239,7 +250,9 @@ export default function ArticleMiddleRow() {
         </SpotContainer>
       </Container>
       <MoreBtn>
-        <IconImg src="/assets/article/article_btn_icon.png" alt="" />
+        <BtnText>
+          VIEW MORE <Plus>+</Plus>
+        </BtnText>
       </MoreBtn>
     </MiddleMainContainer>
   );
