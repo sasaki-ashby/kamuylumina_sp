@@ -7,6 +7,11 @@ const HeaderContainer = styled.div`
   align-items: center;
   padding: 30px;
   background-color: #002c4b;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
 `;
 
 const HeaderTitle = styled.p`
@@ -18,6 +23,10 @@ const HeaderTitle = styled.p`
 const DetailContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
+
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const Details = styled.p`
@@ -43,6 +52,10 @@ const RightSideBtn = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const LangBtnsContainer = styled.div`
@@ -108,6 +121,24 @@ const ArrowImage = styled.img`
   margin-left: 5px;
 `;
 
+const HamburgerIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+`;
+
+const Line = styled.div`
+  width: 30px;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 4px 0;
+`;
+
 export default function Header() {
   const [selectedDetail, setSelectedDetail] = useState("REVIEW");
   const [activeBtn, setActiveBtn] = useState("langBtn1");
@@ -115,6 +146,7 @@ export default function Header() {
   const handleDetailClick = (detail) => {
     setSelectedDetail(detail);
   };
+
   return (
     <HeaderContainer>
       <HeaderTitle>KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE</HeaderTitle>
@@ -172,6 +204,14 @@ export default function Header() {
           <ArrowImage src="/assets/img/arrow_right.png" alt="arrow_right" />
         </TicketBtn>
       </RightSideBtn>
+
+      <div className="navbar">
+        <HamburgerIcon>
+          <Line />
+          <Line />
+          <Line />
+        </HamburgerIcon>
+      </div>
     </HeaderContainer>
   );
 }
