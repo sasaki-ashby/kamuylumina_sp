@@ -31,6 +31,11 @@ export default function ArticleFotter() {
   const BtnContainer = styled.div`
     display: flex;
     margin: 40px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   `;
 
   const OfficialBtn = styled.div`
@@ -41,6 +46,11 @@ export default function ArticleFotter() {
     font-family: "Noto Serif JP", serif;
     border-bottom: 1px solid #a4b1ba;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
   `;
 
   const TicketBtn = styled.div`
