@@ -4,10 +4,296 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>article</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/article.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/article_middle.css" />
+
+    <script>
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const details = document.querySelectorAll(".detail");
+
+        // 初期状態でREVIEWを選択状態にする
+        details[0].classList.add("selected");
+
+        // detailをクリックしたときの処理
+        details.forEach((detail) => {
+          detail.addEventListener("click", function () {
+            // すべてのdetailからselectedクラスを削除
+            details.forEach((d) => d.classList.remove("selected"));
+            // クリックされたdetailにselectedクラスを追加
+            this.classList.add("selected");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const langButtons = document.querySelectorAll(
+          ".lang-btns-container button"
+        );
+
+        // 初期状態で日本語を選択状態にする
+        langButtons[0].classList.add("selected");
+
+        // lang-btnをクリックしたときの処理
+        langButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // すべてのlang-btnからselectedクラスを削除
+            langButtons.forEach((btn) => btn.classList.remove("selected"));
+            // クリックされたlang-btnにselectedクラスを追加
+            this.classList.add("selected");
+          });
+        });
+      });
+      s;
+    </script>
   </head>
+
   <body>
-    <!-- HTML -->
+    <header>
+      <div class="header-container">
+        <p class="header-title">KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE</p>
+        <div class="detail-container">
+          <p class="detail" data-detail="REVIEW">REVIEW</p>
+          <p class="detail" data-detail="ACCESS">ACCESS</p>
+          <p class="detail" data-detail="GALLERY">GALLERY</p>
+        </div>
+        <div class="right-side-btn">
+          <div class="lang-btns-container">
+            <button class="lang-btn1" data-btn="langBtn1">日本語</button>
+            <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
+            <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+          </div>
+          <div class="official-btn">
+            オフィシャルサイト
+            <img
+              src="assets/other/arrow_right_wihte.png"
+              alt="arrow_right_white"
+              class="arrow-image"
+            />
+          </div>
+          <div class="ticket-btn">
+            チケット購入はコチラ
+            <img
+              src="assets/other/arrow_right.png"
+              alt="arrow_right"
+              class="arrow-image"
+            />
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="hamburger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="ArticleMainContainer">
+      <p class="ArticleTitle">記事一覧</p>
+      <p class="SubText">ARTICLE LIST</p>
+    </div>
+    <div class="MiddleMainContainer">
+      <div class="Container">
+        <div class="MiddleContainer">
+          <div class="TextContainer">
+            <p class="TextAll">すべて</p>
+          </div>
+          <div class="TextContainer">
+            <p class="Text">おすすめスポット</p>
+            <p class="Text">まちの自然</p>
+            <p class="Text">まちの歴史</p>
+          </div>
+          <div class="TextContainer">
+            <p class="Text">まちの食文化</p>
+            <p class="Text">アクティビティ</p>
+            <p class="Text">季節別の楽しみ</p>
+          </div>
+          <div class="TextContainer">
+            <p class="Text">まちの恒例行事</p>
+            <p class="Text">人の暮らし紹介</p>
+            <p class="Text">ルミナスタッフのススメ</p>
+          </div>
+        </div>
+
+        <div class="MiddleContainerSP">
+          <div class="TextContainer">
+            <p class="TextAll">すべて</p>
+            <p class="Text">まちの食文化</p>
+            <p class="Text">まちの自然</p>
+            <p class="Text">人の暮らし紹介</p>
+            <p class="Text">季節別の楽しみ</p>
+          </div>
+          <div class="TextContainer">
+            <p class="Text">おすすめスポット</p>
+            <p class="Text">まちの恒例行事</p>
+            <p class="Text">アクティビティ</p>
+            <p class="Text">まちの歴史</p>
+            <p class="Text">ルミナスタッフのススメ</p>
+          </div>
+        </div>
+
+        <div class="SpotContainer">
+          <div class="Line">
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card1.png"
+                alt="Spot 1"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card2.png"
+                alt="Spot 2"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card3.png"
+                alt="Spot 3"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+          </div>
+          <div class="Line">
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card4.png"
+                alt="Spot 4"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card5.png"
+                alt="Spot 5"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card6.png"
+                alt="Spot 6"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+          </div>
+          <div class="Line">
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card7.png"
+                alt="Spot 4"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card8.png"
+                alt="Spot 5"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card9.png"
+                alt="Spot 6"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+          </div>
+          <div class="Line">
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card10.png"
+                alt="Spot 4"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card11.png"
+                alt="Spot 5"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+            <div class="SpotCard">
+              <div class="Tag">おすすめスポット</div>
+              <img
+                class="SpotImage"
+                src="assets/article/article_card12.png"
+                alt="Spot 6"
+              />
+              <p class="SpotText">
+                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="MoreBtn">
+        <p class="BtnText">VIEW MORE <span class="Plus">+</span></p>
+      </div>
+    </div>
+
     <div class="container">
       <p class="title">関連記事</p>
       <p class="sub-title">RELATED ARTICLES</p>
@@ -44,5 +330,40 @@
         </div>
       </div>
     </div>
+    <footer class="top-middle-main-container">
+      <img
+        class="title-image"
+        src="assets/other/site_name.png"
+        alt="Site Name"
+      />
+      <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
+      <div class="btn-container">
+        <div class="official-btn_footer">
+          オフィシャルサイト
+          <img
+            class="arrow-image"
+            src="assets/other/arrow_right_wihte.png"
+            alt="Arrow Right White"
+          />
+        </div>
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            class="arrow-image"
+            src="assets/other/arrow_right.png"
+            alt="Arrow Right"
+          />
+        </div>
+      </div>
+      <p class="under-text">COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT</p>
+      <div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()">
+        <img
+          class="arrow-top-icon"
+          src="assets/other/arrow_top.png"
+          alt="Arrow Top"
+        />
+        PAGE<br />TOP
+      </div>
+    </footer>
   </body>
 </html>
