@@ -1,12 +1,14 @@
 import React from "react";
-import Article from "./pages/article";
+import ArticleDetails from "./pages/article_details";
+// import Article from "./pages/article";
 // import Top from "./pages/top";
 
 function App() {
   return (
     <div className="App">
       {/* <Top /> */}
-      <Article />
+      {/* <Article /> */}
+      <ArticleDetails />
     </div>
   );
 }
