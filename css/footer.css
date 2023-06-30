@@ -1,0 +1,78 @@
+.top-middle-main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 768px;
+  background-image: url("../assets/other/fotter_img.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.title-image {
+  width: 156.69px;
+  height: 121.22px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.btn-container {
+  display: flex;
+  margin: 40px;
+}
+
+.official-btn {
+  color: white;
+  font-size: small;
+  margin-right: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ticket-btn {
+  background-color: #ffffff;
+  font-size: 11px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #002c4b;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-image {
+  width: 25px;
+  height: 5.87px;
+  margin-left: 5px;
+}
+
+.page-top-btn {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #002c4b;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 8px 0 0 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.under-text {
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.arrow-top-icon {
+  width: 7px;
+}
