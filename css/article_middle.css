@@ -62,6 +62,14 @@
   }
 }
 
+.article_a {
+  text-decoration: none;
+}
+
+.article_a:hover {
+  opacity: 0.5;
+}
+
 .TextAll {
   color: #002c4b;
   font-family: "Noto Serif JP", serif;
@@ -91,7 +99,7 @@
   }
 }
 
-.Line {
+.spot_line {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +107,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Line {
+  .spot_line {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,6 +117,10 @@
 .SpotCard {
   flex-direction: column;
   margin: 0 25px;
+}
+
+.card_a {
+  text-decoration: none;
 }
 
 .Tag {
@@ -130,7 +142,7 @@
   }
 }
 
-.SpotImage {
+.spot_image {
   width: 270px;
   height: 162px;
   object-fit: cover;
@@ -140,34 +152,49 @@
 }
 
 @media screen and (max-width: 768px) {
-  .SpotImage {
+  .spot_image {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 340px;
     height: 204px;
+    transition: transform 0.3s ease;
   }
 }
 
-.SpotText {
+.spot_image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.spot_text {
   font-family: "Noto Serif JP", serif;
   color: #002c4b;
   font-size: 13px;
   padding: 8px;
 }
 
+.spot_text:hover {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 768px) {
-  .SpotText {
+  .spot_text {
     padding: 8px;
   }
 }
 
-.MoreBtn {
+.more_btn {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 50px;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.more_btn:hover {
+  opacity: 0.4;
 }
 
 .BtnText {
@@ -177,8 +204,23 @@
   padding-bottom: 5px;
 }
 
+.page-top-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: opacity 0.3s ease;
+}
+
+.page-top-btn:hover {
+  opacity: 0.4;
+}
+
 .Plus {
   font-size: 15px;
   margin-left: 4px;
   color: #a4b1ba;
+}
+
+.spot_line_hidden {
+  display: none;
 }
