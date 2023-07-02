@@ -1,5 +1,4 @@
-.top-middle-main-container {
-  position: relative;
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
