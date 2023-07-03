@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>article detail</title>
+    <link rel="stylesheet" href="assets/common/css/style.css" />
+    <link rel="stylesheet" href="assets/common/css/header.css" />
+    <link rel="stylesheet" href="assets/article_detail/css/middle.css" />
+    <link
+      rel="stylesheet"
+      href="assets/article_detail/css/related_article.css"
+    />
+    <link rel="stylesheet" href="assets/common/css/footer.css" />
+
+    <script>
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const details = document.querySelectorAll(".detail");
+        details[0].classList.add("selected");
+        details.forEach((detail) => {
+          detail.addEventListener("click", function () {
+            details.forEach((d) => d.classList.remove("selected"));
+
+            this.classList.add("selected");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const langButtons = document.querySelectorAll(
+          ".lang-btns-container button"
+        );
+        langButtons[0].classList.add("selected");
+        langButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            langButtons.forEach((btn) => btn.classList.remove("selected"));
+
+            this.classList.add("selected");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 0) {
+          header.classList.add("fixed-header");
+        } else {
+          header.classList.remove("fixed-header");
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="fixed-header">
+      <div class="header-container">
+        <p class="header-title" onclick="window.location.href = 'index.html';">
+          KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE
+        </p>
+        <div class="right-side-btn">
+          <div class="lang-btns-container">
+            <button
+              class="lang-btn1"
+              data-btn="langBtn1"
+              onclick="selectButton(this)"
+            >
+              日本語
+            </button>
+            <button
+              class="lang-btn2"
+              data-btn="langBtn2"
+              onclick="selectButton(this)"
+            >
+              ENGLISH
+            </button>
+            <button
+              class="lang-btn3"
+              data-btn="langBtn3"
+              onclick="selectButton(this)"
+            >
+              繁体字
+            </button>
+          </div>
+          <div class="official-btn">
+            オフィシャルサイト
+            <img
+              src="assets/common/img/icons/arrow_right_wihte.png"
+              alt="arrow right white"
+              class="arrow-image"
+            />
+          </div>
+          <div class="ticket-btn">
+            チケット購入はコチラ
+            <img
+              src="assets/common/img/icons/arrow_right.png"
+              alt="arrow right"
+              class="arrow-image"
+            />
+          </div>
+        </div>
+        <div class="hamburger">
+          <!-- ハンバーガーメニューの線 -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- /ハンバーガーメニューの線 -->
+        </div>
+      </div>
+      <div class="slide-menu">
+        <div class="lang-btns-container">
+          <button class="lang-btn1" data-btn="langBtn1">日本語</button>
+          <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
+          <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+        </div>
+        <div class="official-btn">
+          オフィシャルサイト
+          <img
+            src="assets/common/img/icons/arrow_right_wihte.png"
+            class="arrow-image"
+          />
+        </div>
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            src="assets/common/img/icons/arrow_right.png"
+            alt="arrow right"
+            class="arrow-image"
+          />
+        </div>
+      </div>
+
+      <script src="assets/common/js/hamburger_header.js"></script>
+    </header>
+
+    <div class="main-container">
+      <div class="upper-container">
+        <img class="upper-image" src="" />
+        <div class="piece-container"></div>
+      </div>
+
+      <div class="middle-main-container">
+        <div class="middle-container">
+          <p class="middle-title">
+            カムイルミナへ行く前に！
+            <br />
+            アトラクションを100倍楽しくする直前情報
+          </p>
+          <div class="tag-lang-container">
+            <div class="date-tag-container">
+              <p class="date">2023.07.20</p>
+              <div class="tag-container">
+                <div class="tag-detail">おすすめスポット</div>
+                <div class="tag-detail">まちの自然</div>
+              </div>
+            </div>
+            <div class="lang-container">
+              <p class="lang-text-1">日本語</p>
+              <p class="lang-text-2">ENGLISH</p>
+              <p class="lang-text-3">繁体字</p>
+            </div>
+          </div>
+          <div class="line-detail"></div>
+          <div>
+            <p class="detail-title">阿寒湖の森ナイトウォーク</p>
+            <p class="detail-text">
+              光と映像でインタラクティブな体験が楽しめる、ナイトアトラクション阿寒湖の森ナイトウォーク｢KAMUYLUMINA(カムイルミナ)｣！雄大な阿寒の自然の中を歩きながら、幻想的な世界を冒険するアトラクションです。開発を手がけたのはマドンナのスーパーボウル演出を担当するなど、カナダを拠点に世界で活躍するマルチメディア・エンターテイメント・カンパニー｢MomentFactory(モーメントファクトリー)｣。｢KAMUYLUMINA(カムイルミナ)｣は10作目にして、世界初となる国立公園開催のアトラクションです。アトラクションには、アイヌのエッセンスが盛りだくさん！
+            </p>
+            <img
+              class="image-1"
+              src="assets/article_detail/img/detail-img-1.jpg"
+              alt="article_details"
+            />
+            <p class="detail-title">
+              リズムスティックで地面を打つ場面が多々登場
+            </p>
+            <p class="detail-text">
+              森の中ではカケスやマリモのリズムに合わせて、リズムスティックで地面を打つ場面が多々登場します。｢あ、見て、リズムスティックが光ってる！｣｢わ、ほんとだ｣音を聞いてリズムに合わせて打ち、リズムを外しやすいカケスの助けになるためです。ちなみにこの各リズムは後々重要になるので、よく覚えておきましょう！
+            </p>
+            <img
+              class="image-2"
+              src="assets/article_detail/img/detail-img-3.jpg"
+              alt="article_details"
+            />
+          </div>
+        </div>
+        <div class="detail-img-container">
+          <p class="detail-title">
+            阿寒の森ナイトウォーク｢KAMUY LUMINA（カムイルミナ）｣
+          </p>
+          <p class="detail-text">
+            北海道釧路市阿寒町阿寒湖温泉１丁目５−２０
+            <br />
+            阿寒アドベンチャーツーリズム TEL:0154-65-7121
+          </p>
+
+          <img
+            class="image-3"
+            src="assets/article_detail/img/detail-img-4.jpg"
+            alt="article_details"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 関連記事------------------------------- -->
+    <div class="related-main-container">
+      <p class="related-title">関連記事</p>
+      <p class="related-sub-title">RELATED ARTICLES</p>
+      <div class="related-container">
+        <div class="related-img-container">
+          <img class="related-image" src="assets/article/img/spot_1.jpg" />
+          <p class="reated-text">
+            今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+          </p>
+        </div>
+        <div class="related-img-container">
+          <img class="related-image" src="assets/article/img/spot_2.jpg" />
+          <p class="reated-text">
+            今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+          </p>
+        </div>
+        <div class="related-img-container">
+          <img class="related-image" src="assets/article/img/spot_4.jpg" />
+          <p class="reated-text">
+            今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 関連記事------------------------------- -->
+
+    <footer class="footer-container">
+      <img
+        class="title-image"
+        src="assets/common/img/icons/site_name.png"
+        alt="Site Name"
+      />
+      <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
+      <div class="btn-container">
+        <div class="official-btn">
+          オフィシャルサイト
+          <img
+            class="arrow-image"
+            src="assets/common/img/icons/arrow_right_wihte.png"
+            alt="Arrow Right White"
+          />
+        </div>
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            class="arrow-image"
+            src="assets/common/img/icons/arrow_right.png"
+            alt="Arrow Right"
+          />
+        </div>
+      </div>
+      <p class="under-text">COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT</p>
+      <div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()">
+        <img
+          class="arrow-top-icon"
+          src="assets/common/img/icons/arrow_top.png"
+          alt="Arrow Top"
+        />
+        PAGE<br />TOP
+      </div>
+    </footer>
+  </body>
+</html>

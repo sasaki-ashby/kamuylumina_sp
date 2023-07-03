@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.ArticleTitle {
+.article-title {
   flex-direction: column;
   font-size: 30px;
   color: #002c4b;
@@ -217,17 +217,6 @@
   font-family: "Noto Serif JP", serif;
   border-bottom: 1px solid #a4b1ba;
   padding-bottom: 5px;
-}
-
-.page-top-btn {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  transition: opacity 0.3s ease;
-}
-
-.page-top-btn:hover {
-  opacity: 0.4;
 }
 
 .Plus {
