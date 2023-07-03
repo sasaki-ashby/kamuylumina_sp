@@ -13,16 +13,15 @@
 }
 
 .upper-container {
-  /* position: relative; */
-  display: flex;
+  position: relative;
+  display: flex !important;
   justify-content: center;
-  width: 100%;
+  margin: auto;
 }
 
 .upper-image {
   height: 300px;
   object-fit: cover;
-  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -31,7 +30,7 @@
   }
 }
 
-/* .piece-container {
+.piece-container {
   position: absolute;
   border-radius: 8px 8px 0 0;
   height: 40px;
@@ -46,4 +45,4 @@
     width: 339px;
     top: 110px;
   }
-} */
+}

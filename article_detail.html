@@ -75,9 +75,27 @@
         </p>
         <div class="right-side-btn">
           <div class="lang-btns-container">
-            <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-            <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-            <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+            <button
+              class="lang-btn1"
+              data-btn="langBtn1"
+              onclick="selectButton(this)"
+            >
+              日本語
+            </button>
+            <button
+              class="lang-btn2"
+              data-btn="langBtn2"
+              onclick="selectButton(this)"
+            >
+              ENGLISH
+            </button>
+            <button
+              class="lang-btn3"
+              data-btn="langBtn3"
+              onclick="selectButton(this)"
+            >
+              繁体字
+            </button>
           </div>
           <div class="official-btn">
             オフィシャルサイト
@@ -132,11 +150,8 @@
 
     <div class="main-container">
       <div class="upper-container">
-        <img
-          class="upper-image"
-          src="assets/article_detail/img/detail-img-2.jpg"
-        />
-        <!-- <div class="piece-container"></div> -->
+        <img class="upper-image" src="" />
+        <div class="piece-container"></div>
       </div>
 
       <div class="middle-main-container">
@@ -147,21 +162,21 @@
             アトラクションを100倍楽しくする直前情報
           </p>
           <div class="tag-lang-container">
-            <div class="lang-contaner">
+            <div class="date-tag-container">
               <p class="date">2023.07.20</p>
               <div class="tag-container">
-                <div class="tag">おすすめスポット</div>
-                <div class="tag">まちの自然</div>
+                <div class="tag-detail">おすすめスポット</div>
+                <div class="tag-detail">まちの自然</div>
               </div>
             </div>
-            <div class="lang-contaner">
+            <div class="lang-container">
               <p class="lang-text-1">日本語</p>
               <p class="lang-text-2">ENGLISH</p>
               <p class="lang-text-3">繁体字</p>
             </div>
           </div>
-          <div class="line-detail" />
-          <!-- <div>
+          <div class="line-detail"></div>
+          <div>
             <p class="detail-title">阿寒湖の森ナイトウォーク</p>
             <p class="detail-text">
               光と映像でインタラクティブな体験が楽しめる、ナイトアトラクション阿寒湖の森ナイトウォーク｢KAMUYLUMINA(カムイルミナ)｣！雄大な阿寒の自然の中を歩きながら、幻想的な世界を冒険するアトラクションです。開発を手がけたのはマドンナのスーパーボウル演出を担当するなど、カナダを拠点に世界で活躍するマルチメディア・エンターテイメント・カンパニー｢MomentFactory(モーメントファクトリー)｣。｢KAMUYLUMINA(カムイルミナ)｣は10作目にして、世界初となる国立公園開催のアトラクションです。アトラクションには、アイヌのエッセンスが盛りだくさん！
@@ -182,10 +197,9 @@
               src="assets/article_detail/img/detail-img-3.jpg"
               alt="article_details"
             />
-          </div> -->
+          </div>
         </div>
-
-        <!-- <div class="detail-img-containe">
+        <div class="detail-img-container">
           <p class="detail-title">
             阿寒の森ナイトウォーク｢KAMUY LUMINA（カムイルミナ）｣
           </p>
@@ -200,12 +214,12 @@
             src="assets/article_detail/img/detail-img-4.jpg"
             alt="article_details"
           />
-        </div> -->
+        </div>
       </div>
     </div>
 
     <!-- 関連記事------------------------------- -->
-    <div class="related_main_container">
+    <div class="related-main-container">
       <p class="related-title">関連記事</p>
       <p class="related-sub-title">RELATED ARTICLES</p>
       <div class="related-container">
