@@ -19,6 +19,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* 関連記事 */
 .container {
   display: flex;
   flex-direction: column;
@@ -28,14 +29,14 @@
   width: 100%;
 }
 
-.article-container {
+.related-container {
   display: flex;
   align-items: center;
   padding: 60px 233px;
 }
 
 @media screen and (max-width: 768px) {
-  .article-container {
+  .related-container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -43,49 +44,48 @@
   }
 }
 
-.img-container {
+.related-img-container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
-  .img-container {
+  .related-img-container {
     display: flex;
     align-items: center;
     flex-direction: unset;
     padding: 0px;
     margin: 10px 0;
-    width: 350px;
   }
 }
 
-.title {
+.related-title {
   font-family: "Noto Sans CJK JP", sans-serif;
   color: #ffffff;
   font-size: 30px;
   margin-bottom: 15px;
 }
 
-.sub-title {
+.related-sub-title {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   font-size: 11px;
 }
 
-.article-image {
+.related-image {
   height: 162px;
   margin: 0 25px;
 }
 
 @media screen and (max-width: 768px) {
-  .article-image {
+  .related-image {
     width: 150px;
     height: 90px;
   }
 }
 
-.text {
+.reated-text {
   font-family: "Noto Sans CJK JP", sans-serif;
   color: #ffffff;
   font-size: 13px;
@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .text {
+  .reated-text {
     display: flex;
     align-items: center;
     flex-direction: unset;
