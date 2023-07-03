@@ -3,19 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>記事詳細</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link
-      rel="stylesheet"
-      href="assets/article_detail/css/article_detail.css"
-    />
+    <title>article detail</title>
+    <link rel="stylesheet" href="assets/common/css/style.css" />
+    <link rel="stylesheet" href="assets/common/css/header.css" />
     <link rel="stylesheet" href="assets/article_detail/css/middle.css" />
     <link
       rel="stylesheet"
       href="assets/article_detail/css/related_article.css"
     />
-    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/common/css/footer.css" />
 
     <script>
       const scrollToTop = () => {
@@ -27,16 +23,16 @@
     </script>
 
     <script>
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        var scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+      document.addEventListener("DOMContentLoaded", function () {
+        const details = document.querySelectorAll(".detail");
+        details[0].classList.add("selected");
+        details.forEach((detail) => {
+          detail.addEventListener("click", function () {
+            details.forEach((d) => d.classList.remove("selected"));
 
-        if (scrollTop > 0) {
-          header.classList.add("fixed-header");
-        } else {
-          header.classList.remove("fixed-header");
-        }
+            this.classList.add("selected");
+          });
+        });
       });
     </script>
 
@@ -55,7 +51,22 @@
         });
       });
     </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 0) {
+          header.classList.add("fixed-header");
+        } else {
+          header.classList.remove("fixed-header");
+        }
+      });
+    </script>
   </head>
+
   <body>
     <header class="fixed-header">
       <div class="header-container">
@@ -71,7 +82,7 @@
           <div class="official-btn">
             オフィシャルサイト
             <img
-              src="assets/img/icons/arrow_right_wihte.png"
+              src="assets/common/img/icons/arrow_right_wihte.png"
               alt="arrow right white"
               class="arrow-image"
             />
@@ -79,7 +90,7 @@
           <div class="ticket-btn">
             チケット購入はコチラ
             <img
-              src="assets/img/icons/arrow_right.png"
+              src="assets/common/img/icons/arrow_right.png"
               alt="arrow right"
               class="arrow-image"
             />
@@ -102,133 +113,128 @@
         <div class="official-btn">
           オフィシャルサイト
           <img
-            src="assets/img/icons/arrow_right_wihte.png"
+            src="assets/common/img/icons/arrow_right_wihte.png"
             class="arrow-image"
           />
         </div>
         <div class="ticket-btn">
           チケット購入はコチラ
           <img
-            src="assets/img/icons/arrow_right.png"
+            src="assets/common/img/icons/arrow_right.png"
             alt="arrow right"
             class="arrow-image"
           />
         </div>
       </div>
 
-      <script src="assets/js/hamburger_header.js"></script>
+      <script src="assets/common/js/hamburger_header.js"></script>
     </header>
+
     <div class="main-container">
       <div class="upper-container">
         <img
           class="upper-image"
-          src="/assets/article_details/article_details2.png"
+          src="assets/article_detail/img/detail-img-2.jpg"
         />
-        <div class="piece-container"></div>
-        <!-- <middle /> -->
-        <div class="middle-main-container">
-          <div class="middle-container">
-            <p class="middle-title">
-              カムイルミナへ行く前に！
-              <br />
-              アトラクションを100倍楽しくする直前情報
+        <!-- <div class="piece-container"></div> -->
+      </div>
+
+      <div class="middle-main-container">
+        <div class="middle-container">
+          <p class="middle-title">
+            カムイルミナへ行く前に！
+            <br />
+            アトラクションを100倍楽しくする直前情報
+          </p>
+          <div class="tag-lang-container">
+            <div class="lang-contaner">
+              <p class="date">2023.07.20</p>
+              <div class="tag-container">
+                <div class="tag">おすすめスポット</div>
+                <div class="tag">まちの自然</div>
+              </div>
+            </div>
+            <div class="lang-contaner">
+              <p class="lang-text-1">日本語</p>
+              <p class="lang-text-2">ENGLISH</p>
+              <p class="lang-text-3">繁体字</p>
+            </div>
+          </div>
+          <div class="line-detail" />
+          <!-- <div>
+            <p class="detail-title">阿寒湖の森ナイトウォーク</p>
+            <p class="detail-text">
+              光と映像でインタラクティブな体験が楽しめる、ナイトアトラクション阿寒湖の森ナイトウォーク｢KAMUYLUMINA(カムイルミナ)｣！雄大な阿寒の自然の中を歩きながら、幻想的な世界を冒険するアトラクションです。開発を手がけたのはマドンナのスーパーボウル演出を担当するなど、カナダを拠点に世界で活躍するマルチメディア・エンターテイメント・カンパニー｢MomentFactory(モーメントファクトリー)｣。｢KAMUYLUMINA(カムイルミナ)｣は10作目にして、世界初となる国立公園開催のアトラクションです。アトラクションには、アイヌのエッセンスが盛りだくさん！
             </p>
-            <div class="tag-lang-container">
-              <div class="">
-                <p class="date">2023.07.20</p>
-                <div class="tag-container">
-                  <div class="tag">おすすめスポット</div>
-                  <div class="tag">まちの自然</div>
-                </div>
-              </div>
-              <div class="left-title-container">
-                <p class="lang-text1">日本語</p>
-                <p class="lang-text2">ENGLISH</p>
-                <p class="lang-text3">繁体字</p>
-              </div>
-            </div>
-            <line />
-            <div>
-              <title>阿寒湖の森ナイトウォーク</title>
-              <text>
-                光と映像でインタラクティブな体験が楽しめる、ナイトアトラクション阿寒湖の森ナイトウォーク｢KAMUYLUMINA(カムイルミナ)｣！雄大な阿寒の自然の中を歩きながら、幻想的な世界を冒険するアトラクションです。開発を手がけたのはマドンナのスーパーボウル演出を担当するなど、カナダを拠点に世界で活躍するマルチメディア・エンターテイメント・カンパニー｢MomentFactory(モーメントファクトリー)｣。｢KAMUYLUMINA(カムイルミナ)｣は10作目にして、世界初となる国立公園開催のアトラクションです。アトラクションには、アイヌのエッセンスが盛りだくさん！
-              </text>
-              <img
-                class="image1"
-                src="/assets/article_details/article_details.png"
-                alt="article details"
-              />
-              <title>リズムスティックで地面を打つ場面が多々登場</title>
-              <text>
-                森の中ではカケスやマリモのリズムに合わせて、リズムスティックで地面を打つ場面が多々登場します。｢あ、見て、リズムスティックが光ってる！｣｢わ、ほんとだ｣音を聞いてリズムに合わせて打ち、リズムを外しやすいカケスの助けになるためです。ちなみにこの各リズムは後々重要になるので、よく覚えておきましょう！
-              </text>
-              <Image2
-                src="/assets/article_details/article_details3.png"
-                alt="article details"
-              />
-            </div>
-          </div>
-
-          <ImgContainer>
-            <title>阿寒の森ナイトウォーク｢KAMUY LUMINA（カムイルミナ）｣</title>
-            <Text>
-              北海道釧路市阿寒町阿寒湖温泉１丁目５−２０
-              <br />
-              阿寒アドベンチャーツーリズム TEL:0154-65-7121
-            </Text>
-
-            <Image3
-              src="/assets/article_details/article_details4.png"
-              alt="article details"
+            <img
+              class="image-1"
+              src="assets/article_detail/img/detail-img-1.jpg"
+              alt="article_details"
             />
-          </ImgContainer>
+            <p class="detail-title">
+              リズムスティックで地面を打つ場面が多々登場
+            </p>
+            <p class="detail-text">
+              森の中ではカケスやマリモのリズムに合わせて、リズムスティックで地面を打つ場面が多々登場します。｢あ、見て、リズムスティックが光ってる！｣｢わ、ほんとだ｣音を聞いてリズムに合わせて打ち、リズムを外しやすいカケスの助けになるためです。ちなみにこの各リズムは後々重要になるので、よく覚えておきましょう！
+            </p>
+            <img
+              class="image-2"
+              src="assets/article_detail/img/detail-img-3.jpg"
+              alt="article_details"
+            />
+          </div> -->
         </div>
-        <!-- <middle /> -->
 
-        <!-- <関連記事 /> -->
-        <div class="container">
-          <p class="title">関連記事</p>
-          <p class="sub-title">RELATED ARTICLES</p>
-          <div class="article-container">
-            <div class="img-container">
-              <img
-                class="article-image"
-                src="assets/article/img/spot_1.jpg"
-                alt="Article Image 1"
-              />
-              <p class="text">
-                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-              </p>
-            </div>
-            <div class="img-container">
-              <img
-                class="article-image"
-                src="assets/article/img/spot_2.jpg"
-                alt="Article Image 2"
-              />
-              <p class="text">
-                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-              </p>
-            </div>
-            <div class="img-container">
-              <img
-                class="article-image"
-                src="assets/article/img/spot_3.jpg"
-                alt="Article Image 3"
-              />
-              <p class="text">
-                今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- <関連記事 /> -->
+        <!-- <div class="detail-img-containe">
+          <p class="detail-title">
+            阿寒の森ナイトウォーク｢KAMUY LUMINA（カムイルミナ）｣
+          </p>
+          <p class="detail-text">
+            北海道釧路市阿寒町阿寒湖温泉１丁目５−２０
+            <br />
+            阿寒アドベンチャーツーリズム TEL:0154-65-7121
+          </p>
+
+          <img
+            class="image-3"
+            src="assets/article_detail/img/detail-img-4.jpg"
+            alt="article_details"
+          />
+        </div> -->
       </div>
     </div>
+
+    <!-- 関連記事------------------------------- -->
+    <div class="related_main_container">
+      <p class="related-title">関連記事</p>
+      <p class="related-sub-title">RELATED ARTICLES</p>
+      <div class="related-container">
+        <div class="related-img-container">
+          <img class="related-image" src="assets/article/img/spot_1.jpg" />
+          <p class="reated-text">
+            今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+          </p>
+        </div>
+        <div class="related-img-container">
+          <img class="related-image" src="assets/article/img/spot_2.jpg" />
+          <p class="reated-text">
+            今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+          </p>
+        </div>
+        <div class="related-img-container">
+          <img class="related-image" src="assets/article/img/spot_4.jpg" />
+          <p class="reated-text">
+            今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 関連記事------------------------------- -->
+
     <footer class="footer-container">
       <img
         class="title-image"
-        src="assets/img/icons/site_name.png"
+        src="assets/common/img/icons/site_name.png"
         alt="Site Name"
       />
       <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
@@ -237,7 +243,7 @@
           オフィシャルサイト
           <img
             class="arrow-image"
-            src="assets/img/icons/arrow_right_wihte.png"
+            src="assets/common/img/icons/arrow_right_wihte.png"
             alt="Arrow Right White"
           />
         </div>
@@ -245,7 +251,7 @@
           チケット購入はコチラ
           <img
             class="arrow-image"
-            src="assets/img/icons/arrow_right.png"
+            src="assets/common/img/icons/arrow_right.png"
             alt="Arrow Right"
           />
         </div>
@@ -254,7 +260,7 @@
       <div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()">
         <img
           class="arrow-top-icon"
-          src="assets/img/icons/arrow_top.png"
+          src="assets/common/img/icons/arrow_top.png"
           alt="Arrow Top"
         />
         PAGE<br />TOP

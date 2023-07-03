@@ -13,7 +13,7 @@
 }
 
 .upper-container {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -31,7 +31,7 @@
   }
 }
 
-.piece-container {
+/* .piece-container {
   position: absolute;
   border-radius: 8px 8px 0 0;
   height: 40px;
@@ -46,4 +46,4 @@
     width: 339px;
     top: 110px;
   }
-}
+} */

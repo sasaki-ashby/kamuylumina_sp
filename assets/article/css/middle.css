@@ -219,17 +219,6 @@
   padding-bottom: 5px;
 }
 
-.page-top-btn {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  transition: opacity 0.3s ease;
-}
-
-.page-top-btn:hover {
-  opacity: 0.4;
-}
-
 .Plus {
   font-size: 15px;
   margin-left: 4px;
