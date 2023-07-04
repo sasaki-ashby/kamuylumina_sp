@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top</title>
+    <link rel="stylesheet" href="assets/common/css/style.css" />
+    <link rel="stylesheet" href="assets/top/css/top_header.css" />
+    <link rel="stylesheet" href="assets/top/css/top-middle-1.css" />
+    <link rel="stylesheet" href="assets/common/css/footer.css" />
+
+    <script>
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const details = document.querySelectorAll(".detail");
+        details[0].classList.add("selected");
+        details.forEach((detail) => {
+          detail.addEventListener("click", function () {
+            details.forEach((d) => d.classList.remove("selected"));
+
+            this.classList.add("selected");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const langButtons = document.querySelectorAll(
+          ".lang-btns-container button"
+        );
+        langButtons[0].classList.add("selected");
+        langButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            langButtons.forEach((btn) => btn.classList.remove("selected"));
+
+            this.classList.add("selected");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 0) {
+          header.classList.add("fixed-header");
+        } else {
+          header.classList.remove("fixed-header");
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="fixed-header">
+      <div class="header-container">
+        <p class="header-title" onclick="window.location.href = 'index.html';">
+          KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE
+        </p>
+        <div class="detail-container">
+          <p class="detail" data-detail="REVIEW">REVIEW</p>
+          <p class="detail" data-detail="ACCESS">ACCESS</p>
+          <p class="detail" data-detail="GALLERY">GALLERY</p>
+        </div>
+        <div class="right-side-btn">
+          <div class="lang-btns-container">
+            <button class="lang-btn1" data-btn="langBtn1">日本語</button>
+            <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
+            <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+          </div>
+          <div class="official-btn">
+            オフィシャルサイト
+            <img
+              src="assets/common/img/icons/arrow_right_wihte.png"
+              alt="arrow right white"
+              class="arrow-image"
+            />
+          </div>
+          <div class="ticket-btn">
+            チケット購入はコチラ
+            <img
+              src="assets/common/img/icons/arrow_right.png"
+              alt="arrow right"
+              class="arrow-image"
+            />
+          </div>
+        </div>
+        <div class="hamburger">
+          <!-- ハンバーガーメニューの線 -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- /ハンバーガーメニューの線 -->
+        </div>
+      </div>
+      <div class="slide-menu">
+        <div class="lang-btns-container">
+          <button class="lang-btn1" data-btn="langBtn1">日本語</button>
+          <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
+          <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+        </div>
+        <div class="official-btn">
+          オフィシャルサイト
+          <img
+            src="assets/common/img/icons/arrow_right_wihte.png"
+            class="arrow-image"
+          />
+        </div>
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            src="assets/common/img/icons/arrow_right.png"
+            alt="arrow right"
+            class="arrow-image"
+          />
+        </div>
+      </div>
+
+      <script src="assets/common/js/hamburger_header.js"></script>
+    </header>
+
+    <!-- スライド1枚目 -->
+    <!-- スライド1枚目 -->
+    <div class="top1-main-container">
+      <div class="top1-title-img">
+        <img src="assets/common/img/icons/site_name.png" alt="site name" />
+      </div>
+      <p class="top1-sub-title">SPECIAL　SITE</p>
+      <p class="top1-date-text">2023.07.15　UPGRADE</p>
+      <p class="top1-text">
+        今年は特別な演出を追加したアップグレードバージョンをお楽しみいただけます！
+      </p>
+      <div class="top1-under-container">
+        <img src="assets/top/img/top2.jpg" alt="top3" />
+        <div class="top1-text-container">
+          <p class="under-p-1">KAMUY LUMINA</p>
+          <p class="under-p-2">阿寒の森ナイトウォークオフィシャルサイト</p>
+        </div>
+        <img src="assets/common/img/icons/arrow_right.png" alt="arrow right" />
+      </div>
+    </div>
+    <!-- スライド1枚目 -->
+    <!-- スライド1枚目 -->
+
+    <footer class="footer-container">
+      <img
+        class="title-image"
+        src="assets/common/img/icons/site_name.png"
+        alt="Site Name"
+      />
+      <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
+      <div class="btn-container">
+        <div class="official-btn">
+          オフィシャルサイト
+          <img
+            class="arrow-image"
+            src="assets/common/img/icons/arrow_right_wihte.png"
+            alt="Arrow Right White"
+          />
+        </div>
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            class="arrow-image"
+            src="assets/common/img/icons/arrow_right.png"
+            alt="Arrow Right"
+          />
+        </div>
+      </div>
+      <p class="under-text">COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT</p>
+      <div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()">
+        <img
+          class="arrow-top-icon"
+          src="assets/common/img/icons/arrow_top.png"
+          alt="Arrow Top"
+        />
+        PAGE<br />TOP
+      </div>
+    </footer>
+  </body>
+</html>
