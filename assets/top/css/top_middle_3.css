@@ -1,0 +1,40 @@
+.top3-main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../../top/img/top4.jpg");
+  height: 768px;
+}
+
+.top3-left-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.top3-title {
+  font-family: "Noto Serif CJK JP";
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.top3-sub-title {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.top3-right-container {
+  position: relative;
+}
+
+.top3-right-icon {
+  position: absolute;
+  width: 40.9px;
+  height: 46.4px;
+  top: 240px;
+  right: 150px;
+}
