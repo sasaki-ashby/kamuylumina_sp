@@ -31,6 +31,13 @@
   font-weight: 200;
 }
 
+@media screen and (max-width: 768px) {
+  .top1-sub-title {
+    font-size: 32px;
+    width: 400px;
+  }
+}
+
 .top1-date-text {
   display: flex;
   justify-content: center;
@@ -45,6 +52,14 @@
   justify-content: center;
   color: #ffffff;
   font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .top1-text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .top1-under-container {
