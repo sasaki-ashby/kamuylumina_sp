@@ -77,11 +77,11 @@
   }
 }
 
-.article_a {
+.article-a {
   text-decoration: none;
 }
 
-.article_a:hover {
+.article-a:hover {
   opacity: 0.5;
 }
 
@@ -101,12 +101,12 @@
   cursor: pointer;
 }
 
-.SpotContainer {
+.spot-main-container {
   width: 806px;
 }
 
 @media screen and (max-width: 768px) {
-  .SpotContainer {
+  .spot-main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +114,7 @@
   }
 }
 
-.spot_line {
+.spot-line {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,23 +122,25 @@
 }
 
 @media screen and (max-width: 768px) {
-  .spot_line {
+  .spot-line {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
-.SpotCard {
+.spot-container {
+  display: inline-block;
   flex-direction: column;
+  border-radius: 8px;
   margin: 0 25px;
 }
 
-.card_a {
+.spot-a {
   text-decoration: none;
 }
 
-.Tag {
+.spot-tag {
   display: flex;
   justify-content: center;
   padding: 3px 6px;
@@ -152,51 +154,62 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Tag {
+  .spot-tag {
     display: flex;
   }
 }
 
-.spot_image {
+.hover-area {
+  overflow: hidden;
+  transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+.spot-image {
   width: 270px;
   height: 162px;
-  object-fit: cover;
+  margin-bottom: 0;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
   cursor: pointer;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
-  .spot_image {
+  .spot-image {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 340px;
     height: 204px;
-    transition: transform 0.3s ease;
   }
 }
 
-.spot_image:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+.hover-area:hover .spot-image {
+  transform: scale(1.1);
 }
 
-.spot_text {
+.hover-area:hover::before {
+  opacity: 1;
+}
+
+.spot-text {
   font-family: "Noto Serif JP", serif;
+  transition: opacity 0.3s ease;
   color: #002c4b;
   font-size: 13px;
   padding: 8px;
-}
-
-.spot_text:hover {
-  opacity: 0.5;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .spot_text {
+  .spot-text {
     padding: 8px;
   }
+}
+
+.hover-area:hover .spot-text {
+  opacity: 0.5;
 }
 
 .more_btn {
@@ -212,19 +225,19 @@
   opacity: 0.4;
 }
 
-.BtnText {
+.btn-text {
   font-size: 11px;
   font-family: "Noto Serif JP", serif;
   border-bottom: 1px solid #a4b1ba;
   padding-bottom: 5px;
 }
 
-.Plus {
+.plus-icon {
   font-size: 15px;
   margin-left: 4px;
   color: #a4b1ba;
 }
 
-.spot_line_hidden {
+.spot-line-hidden {
   display: none;
 }
