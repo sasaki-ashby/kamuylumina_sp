@@ -1,0 +1,44 @@
+.top9-main-container {
+  height: 768px;
+}
+
+.top9-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../top/img/top9_img.jpg");
+  background-size: 70%;
+  height: 588px;
+}
+
+.top9-card-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: -100px;
+}
+
+.top9-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 340px;
+  height: 211.56px;
+  border-radius: 8px;
+  margin: 0 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.top9-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
