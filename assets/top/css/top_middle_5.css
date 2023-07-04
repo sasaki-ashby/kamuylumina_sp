@@ -1,0 +1,20 @@
+.top5-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 768px;
+}
+
+.top5-left-img {
+  width: 768px;
+  height: 768px;
+}
+
+.top5-text {
+  display: flex;
+  font-size: 16px;
+  line-height: 46px;
+  color: #ffffff;
+  text-align: center;
+}
