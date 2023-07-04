@@ -1,0 +1,21 @@
+.top4-main-container {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 768px;
+}
+
+.top4-left-img {
+  width: 508px;
+  height: 485px;
+  margin-right: 100px;
+  max-width: 100%;
+}
+
+.top4-right-img {
+  width: 650px;
+  height: 650px;
+  max-width: 100%;
+  margin-left: 100px;
+}

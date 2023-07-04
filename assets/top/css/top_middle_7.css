@@ -1,0 +1,31 @@
+.top7-main-container {
+  height: 768px;
+}
+
+.top7-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  background-image: url("../../top/img/top7_img.jpg");
+}
+
+.top7-upper-text {
+  position: absolute;
+  font-size: 16px;
+  line-height: 46px;
+  color: #ffffff;
+  text-align: left;
+  top: 50px;
+  left: 100px;
+}
+
+.top7-under-text {
+  font-size: 16px;
+  line-height: 46px;
+  color: #002c4b;
+  text-align: center;
+}

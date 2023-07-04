@@ -6,6 +6,11 @@
     <title>Document</title>
 
     <script>
+      function redirectToTop() {
+        window.location.href = "top.html";
+      }
+    </script>
+    <script>
       function redirectToArticle() {
         window.location.href = "article.html";
       }
@@ -19,6 +24,7 @@
   </head>
   <body>
     <div>
+      <button onclick="redirectToTop()">トップ画面</button>
       <button onclick="redirectToArticle()">記事一覧画面</button>
       <button onclick="redirectToArticleDetail()">記事詳細画面</button>
     </div>
