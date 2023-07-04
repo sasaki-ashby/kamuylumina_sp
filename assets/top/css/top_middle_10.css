@@ -1,0 +1,6 @@
+.top10-main-container {
+  height: 768px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../top/img/top10_img.jpg");
+}
