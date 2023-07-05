@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   background-image: url("../../top/img/top10_img.jpg");
+  /* background-image: url("/assets/top/img/top10_img.jpg"); */
 }
 @media screen and (max-width: 768px) {
   .top10-main-container {
