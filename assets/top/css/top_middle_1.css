@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: #ffffff;
   background-image: url("../../top/img/top1.jpg");
   background-size: cover;
@@ -11,6 +11,11 @@
   height: 768px;
   padding: 50px;
   line-height: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .top1-sub-title {
+    max-width: 100%;
+  }
 }
 
 .top1-title-img {
@@ -72,15 +77,47 @@
   padding: 10px 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .top1-under-container {
+    width: 340px;
+    height: 93px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top1-under-left-img {
+    width: 112px;
+    height: 63px;
+    margin: 0;
+  }
+}
+
 .top1-text-container {
-  margin: 20px 20px 0 20px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .top1-text-container {
+    margin: 5px;
+  }
 }
 
 .under-p-1 {
+  font-family: "Noto Serif CJK JP", serif;
   color: #002c4b;
   font-size: 17px;
   margin: 1px;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .under-p-1 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
 }
 
 .under-p-2 {
@@ -89,4 +126,13 @@
   font-weight: 500;
   font-size: 17px;
   margin: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .under-p-2 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0;
+  }
 }

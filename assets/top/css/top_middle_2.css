@@ -1,6 +1,6 @@
 .top2-main-container {
   height: 768px;
-  max-width: 1366px;
+
   margin: auto;
 }
 
@@ -9,11 +9,36 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .top2-upper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top2-upper-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+}
 
 .top2-upper-img {
   height: 447.73px;
   width: 730px;
   margin: 40px;
+}
+@media screen and (max-width: 768px) {
+  .top2-upper-img {
+    width: 340px;
+    height: 208.53px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .top2-upper-title {
@@ -21,12 +46,53 @@
   font-size: 18px;
   color: #002c4b;
 }
+@media screen and (max-width: 768px) {
+  .top2-upper-title {
+    font-size: 16px;
+  }
+}
 
 .top2-upper-text {
+  color: #002c4b;
   font-size: 14px;
   line-height: 36px;
-  color: #002c4b;
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .top2-upper-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.top2-under-container {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+}
+@media screen and (max-width: 768px) {
+  .top2-under-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+}
+
+.top2-under-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .top2-under-left {
+    position: unset;
+    margin: 2px 4px;
+  }
 }
 
 .top2-under-btn {
@@ -42,18 +108,10 @@
   margin-right: 20px;
   cursor: pointer;
 }
-
-.top2-under-left {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.top2-under-container {
-  display: flex;
-  justify-content: center;
-  width: 1000px;
+@media screen and (max-width: 768px) {
+  .top2-under-btn {
+    padding: 15px;
+  }
 }
 
 .top2-under-text1 {
@@ -63,6 +121,13 @@
   font-size: 14px;
   color: #002c4b;
   line-height: 36px;
+}
+@media screen and (max-width: 768px) {
+  .top2-under-text1 {
+    line-height: 20px;
+    margin-left: 10px;
+    margin: auto;
+  }
 }
 
 .top2-under-text2 {
@@ -79,4 +144,11 @@
   height: 400px;
   top: 1240px;
   right: 150px;
+}
+@media screen and (max-width: 768px) {
+  .top2-under-img {
+    position: unset;
+    width: 206.84px;
+    height: 165.9px;
+  }
 }
