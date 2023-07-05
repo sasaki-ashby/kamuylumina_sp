@@ -1,18 +1,64 @@
 .top8-main-container {
   height: 768px;
 }
+@media screen and (max-width: 768px) {
+  .top8-main-container {
+    height: 812px;
+    margin-top: 50px;
+  }
+}
 
 .top8-upper-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  width: 70%;
+}
+@media screen and (max-width: 1700px) {
+  .top8-upper-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top8-upper-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .top8-left-container {
   position: relative;
   height: 460px;
   width: 929px;
-  background-image: url("../../top/img/top8_img.jpg");
+}
+@media screen and (max-width: 768px) {
+  .top8-left-container {
+    position: unset;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 177px;
+    width: 357px;
+    margin: 50px 0;
+  }
+}
+
+.top8-left-img {
+  height: 460px;
+  width: 929px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .top8-left-img {
+    position: unset;
+    height: 177px;
+    width: 357px;
+    border-radius: 8px;
+  }
 }
 
 .top8-text-container {
@@ -28,12 +74,33 @@
   bottom: 0;
   text-align: end;
 }
+@media screen and (max-width: 768px) {
+  .top8-text-container {
+    display: none;
+    position: unset;
+  }
+}
 
 .top8-text1 {
   font-size: 14px;
   color: #002c4b;
 }
+@media screen and (max-width: 768px) {
+  .top8-text1 {
+    display: none;
+  }
+}
 
+.top8-sp-text1 {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .top8-sp-text1 {
+    display: block;
+    font-size: 14px;
+    color: #002c4b;
+  }
+}
 .top8-right-container {
   flex-direction: column;
   align-items: center;
@@ -64,6 +131,25 @@
 }
 
 .top8-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.top8-img1 {
+  width: 200px;
+  height: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .top8-img1 {
+    display: none;
+  }
+}
+
+.top8-img1:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
