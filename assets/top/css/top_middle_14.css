@@ -85,6 +85,10 @@
   margin: 5px;
 }
 
+.top14-facebook-btn:hover {
+  opacity: 0.5;
+}
+
 .top14-instagram-btn {
   cursor: pointer;
   border: 1px solid #000;
@@ -94,6 +98,10 @@
   display: flex;
   align-items: center;
   margin: 5px;
+}
+
+.top14-instagram-btn:hover {
+  opacity: 0.5;
 }
 
 .top14-facebook-icon {

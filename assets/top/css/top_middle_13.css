@@ -78,6 +78,10 @@
   color: #002c4b;
 }
 
+.top13-sub-title:hover {
+  opacity: 0.5;
+}
+
 .top13-text {
   font-size: 13px;
   object-fit: cover;

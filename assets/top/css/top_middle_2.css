@@ -95,6 +95,9 @@
   }
 }
 
+.top2-a {
+  text-decoration: none;
+}
 .top2-under-btn {
   writing-mode: vertical-rl;
   background-color: #002c4b;
@@ -106,7 +109,6 @@
   padding: 25px 12px;
   border-radius: 5px;
   margin-right: 20px;
-  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .top2-under-btn {
