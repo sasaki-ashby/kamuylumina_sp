@@ -1,4 +1,5 @@
 .top8-main-container {
+  padding: 73px 0 74px 0;
   height: 768px;
 }
 @media screen and (max-width: 768px) {
@@ -49,7 +50,7 @@
 
 .top8-left-img {
   height: 460px;
-  width: 929px;
+  width: 100%;
   object-fit: cover;
 }
 @media screen and (max-width: 768px) {
@@ -108,17 +109,40 @@
   margin-left: 50px;
 }
 
-.top8-text2 {
+.top8-right-inner{
+  display: flex;
+  justify-content: center;
+}
+
+.top8-title, .top8-text2 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.top8-title{
+ font-size: 2rem;
+ font-weight: bold;
+ letter-spacing: 0.15em;
+ margin-right: 15px
+}
+
+.top8-text2{
+  font-size: 1rem;
+  font-family: Poppins;
+}
+
+.top8-text3 {
   font-size: 16px;
   line-height: 35px;
   color: #002c4b;
   text-align: center;
+  margin-top: 50px;
 }
 
 .top8-under-container {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-top: 40px;
 }
 
 .top8-img-list {
@@ -200,6 +224,9 @@
   align-items: center;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  border-bottom: 1px solid #a4b1ba;
+  width: 126px;
+  margin: 50px auto 0;
 }
 
 .top8-more-btn:hover {
@@ -211,7 +238,6 @@
   padding: 5px;
   margin-right: 10px;
   color: #002c4b;
-  border-bottom: 1px solid #a4b1ba;
 }
 
 .top8-arrow-icon {
@@ -219,3 +245,4 @@
   height: 3px;
   color: #a4b1ba;
 }
+

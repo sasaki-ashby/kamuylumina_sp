@@ -1,14 +1,19 @@
 .top2-main-container {
+  max-width: 1150px;
   height: 768px;
-
-  margin: auto;
+  margin : 49px auto 58px;
 }
 
 .top2-upper-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
+
+.top2-upper-text-container{
+  width: 32.608%;
+  margin-top: 72px;
+}
+
 @media screen and (max-width: 768px) {
   .top2-upper-container {
     display: flex;
@@ -29,9 +34,9 @@
 
 .top2-upper-img {
   height: 447.73px;
-  width: 730px;
-  margin: 40px;
+  width: 63.478%;
 }
+
 @media screen and (max-width: 768px) {
   .top2-upper-img {
     width: 340px;
@@ -70,9 +75,10 @@
 
 .top2-under-container {
   display: flex;
-  justify-content: center;
-  width: 1000px;
+  position: relative;
+  margin: 48px 0 0 50px;
 }
+
 @media screen and (max-width: 768px) {
   .top2-under-container {
     display: flex;
@@ -123,6 +129,7 @@
   font-size: 14px;
   color: #002c4b;
   line-height: 36px;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .top2-under-text1 {
@@ -143,10 +150,11 @@
   display: flex;
   color: #002c4b;
   font-size: 12px;
-  height: 400px;
-  top: 1240px;
-  right: 150px;
+  height: 403px;
+  bottom: -49px;
+  right: 10px;
 }
+
 @media screen and (max-width: 768px) {
   .top2-under-img {
     position: unset;
