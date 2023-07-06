@@ -1,6 +1,7 @@
-body {
+html {
   color:#002c4b;
   font-family: "Noto Serif JP", serif;
+  font-size: 10px;
 }
 
 a {
@@ -249,4 +250,20 @@ a {
   font-size: 15px;
   margin-left: 4px;
   color: #a4b1ba;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }

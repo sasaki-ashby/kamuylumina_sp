@@ -7,69 +7,8 @@
     <link rel="stylesheet" href="assets/common/css/style.css" />
     <link rel="stylesheet" href="assets/common/css/header.css" />
     <link rel="stylesheet" href="assets/common/css/footer.css" />
-    <link rel="stylesheet" href="assets/article/css/middle.css" />
-    <link rel="stylesheet" href="assets/article/css/view_more.css" />
+    <link rel="stylesheet" href="assets/article/css/style.css" />
 
-    <script>
-      const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      };
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const details = document.querySelectorAll(".detail");
-        details[0].classList.add("selected");
-        details.forEach((detail) => {
-          detail.addEventListener("click", function () {
-            details.forEach((d) => d.classList.remove("selected"));
-
-            this.classList.add("selected");
-          });
-        });
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const langButtons = document.querySelectorAll(
-          ".lang-btns-container button"
-        );
-        langButtons[0].classList.add("selected");
-        langButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            langButtons.forEach((btn) => btn.classList.remove("selected"));
-
-            this.classList.add("selected");
-          });
-        });
-      });
-    </script>
-
-    <script>
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        var scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > 0) {
-          header.classList.add("fixed-header");
-        } else {
-          header.classList.remove("fixed-header");
-        }
-      });
-    </script>
-
-    <script>
-      document
-        .querySelector(".hover-area")
-        .addEventListener("mouseover", function (event) {
-          event.stopPropagation();
-        });
-    </script>
   </head>
 
   <body>
@@ -292,7 +231,37 @@
         PAGE<br/>TOP
       </div>
     </footer>
+    <script>
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 0) {
+          header.classList.add("fixed-header");
+        } else {
+          header.classList.remove("fixed-header");
+        }
+      });
+    </script>
+
+    <script>
+      document
+        .querySelector(".hover-area")
+        .addEventListener("mouseover", function (event) {
+          event.stopPropagation();
+        });
+    </script>
     <script src="assets/common/js/hamburger_header.js"></script>
-    <script src="assets/article/js/spot_more.js"></script>
+    <!-- <script src="assets/article/js/spot_more.js"></script> -->
   </body>
 </html>
