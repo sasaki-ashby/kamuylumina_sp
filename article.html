@@ -1,75 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>article</title>
-    <link rel="stylesheet" href="/assets/common/css/style.css" />
-    <link rel="stylesheet" href="/assets/common/css/header.css" />
-    <link rel="stylesheet" href="/assets/common/css/footer.css" />
-    <link rel="stylesheet" href="/assets/article/css/middle.css" />
-    <link rel="stylesheet" href="/assets/article/css/view_more.css" />
+    <link rel="stylesheet" href="assets/common/css/style.css" />
+    <link rel="stylesheet" href="assets/common/css/header.css" />
+    <link rel="stylesheet" href="assets/common/css/footer.css" />
+    <link rel="stylesheet" href="assets/article/css/style.css" />
 
-    <script>
-      const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      };
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const details = document.querySelectorAll(".detail");
-        details[0].classList.add("selected");
-        details.forEach((detail) => {
-          detail.addEventListener("click", function () {
-            details.forEach((d) => d.classList.remove("selected"));
-
-            this.classList.add("selected");
-          });
-        });
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const langButtons = document.querySelectorAll(
-          ".lang-btns-container button"
-        );
-        langButtons[0].classList.add("selected");
-        langButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            langButtons.forEach((btn) => btn.classList.remove("selected"));
-
-            this.classList.add("selected");
-          });
-        });
-      });
-    </script>
-
-    <script>
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        var scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > 0) {
-          header.classList.add("fixed-header");
-        } else {
-          header.classList.remove("fixed-header");
-        }
-      });
-    </script>
-
-    <script>
-      document
-        .querySelector(".hover-area")
-        .addEventListener("mouseover", function (event) {
-          event.stopPropagation();
-        });
-    </script>
   </head>
 
   <body>
@@ -88,7 +27,7 @@
             <div class="official-btn">
               オフィシャルサイト
               <img
-                src="/assets/common/img/icons/arrow_right_wihte.png"
+                src="assets/common/img/icons/arrow_right_wihte.png"
                 alt="arrow right white"
                 class="arrow-image"
               />
@@ -98,7 +37,7 @@
             <div class="ticket-btn">
               チケット購入はコチラ
               <img
-                src="/assets/common/img/icons/arrow_right.png"
+                src="assets/common/img/icons/arrow_right.png"
                 alt="arrow right"
                 class="arrow-image"
               />
@@ -123,7 +62,7 @@
           <div class="official-btn">
             オフィシャルサイト
             <img
-              src="/assets/common/img/icons/arrow_right_wihte.png"
+              src="assets/common/img/icons/arrow_right_wihte.png"
               alt="arrow right white"
               class="arrow-image"
             />
@@ -133,448 +72,130 @@
           <div class="ticket-btn">
             チケット購入はコチラ
             <img
-              src="/assets/common/img/icons/arrow_right.png"
+              src="assets/common/img/icons/arrow_right.png"
               alt="arrow right"
               class="arrow-image"
             />
           </div>
         </a>
       </div>
-
-      <script src="/assets/common/js/hamburger_header.js"></script>
     </header>
-    <div class="article_main_container">
-      <p class="article-title">記事一覧</p>
-      <p class="SubText">ARTICLE LIST</p>
-    </div>
-    <div class="middle-main-container">
-      <div class="Container">
-        <div class="top-middle-container">
-          <div class="TextContainer">
-            <a class="article-a" href="#">
-              <p class="TextAll">すべて</p>
-            </a>
-          </div>
-          <div class="TextContainer">
-            <a class="article-a" href="#">
-              <p class="Text">おすすめスポット</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">まちの自然</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">まちの歴史</p>
-            </a>
-          </div>
-          <div class="TextContainer">
-            <a class="article-a" href="#">
-              <p class="Text">まちの食文化</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">アクティビティ</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">季節別の楽しみ</p>
-            </a>
-          </div>
-          <div class="TextContainer">
-            <a class="article-a" href="#">
-              <p class="Text">まちの恒例行事</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">人の暮らし紹介</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">ルミナスタッフのススメ</p>
-            </a>
+
+    <main class="article-main">
+      <article>
+        <h1 class="article-title article_main_container">記事一覧<span class="SubText">ARTICLE LIST</span></h1>
+        <div class="middle-main-container">
+          <div class="Container">
+            <nav class="top-middle-container">
+              <p class="TextAll TextContainer"><a href="">すべて</a></p>
+              <ul class="articleNav-list">
+                <li><a href="#">おすすめスポット</a></li>
+                <li><a href="#">まちの食文化</a></li>
+                <li><a href="#">まちの恒例行事</a></li>
+                <li><a href="#">まちの自然</a></li>
+                <li><a href="#">アクティビティ</a></li>
+                <li><a href="#">人の暮らし紹介</a></li>
+                <li><a href="#">まちの歴史</a></li>
+                <li><a href="#">季節別の楽しみ</a></li>
+                <li><a href="#">ルミナスタッフのススメ</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
 
-        <div class="MiddleContainerSP">
-          <div class="TextContainer">
-            <a class="article-a" href="#">
-              <p class="TextAll">すべて</p>
+        <ul class="spot-list">
+          <li class="spot-container">
+            <ul class="category-tag">
+              <li><a href="">おすすめスポット</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+            </ul>
+            <a class="spot-a" href="article_detailes.html">
+              <div class="hover-area">
+                <p class="hover-area_img"><img class="spot-image" src="assets/article/img/spot_1.jpg" alt=""/></p>
+                <p class="spot-text">
+                  今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+                </p>
+              </div>
             </a>
-            <a class="article-a" href="#">
-              <p class="Text">まちの食文化</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">まちの自然</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">人の暮らし紹介</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">季節別の楽しみ</p>
-            </a>
-          </div>
-          <div class="TextContainer">
-            <a class="article-a" href="#">
-              <p class="Text">おすすめスポット</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">まちの恒例行事</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">アクティビティ</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">まちの歴史</p>
-            </a>
-            <a class="article-a" href="#">
-              <p class="Text">ルミナスタッフのススメ</p>
-            </a>
-          </div>
-        </div>
+          </li>
 
-        <div class="spot-main-container">
-          <div class="spot-line">
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_1.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_2.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_3.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="spot-line">
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_4.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_5.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_6.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="spot-line">
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_7.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_8.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_9.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="spot-line">
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_10.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_12.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="spot-container">
-              <div class="spot-tag">おすすめスポット</div>
-              <a class="spot-a" href="article_detailes.html">
-                <div class="hover-area">
-                  <img
-                    class="spot-image"
-                    src="/assets/article/img/spot_11.jpg"
-                    alt="Spot"
-                  />
-                  <p class="spot-text">
-                    今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- ここまで元々表示 -->
+          <li class="spot-container">
+            <ul class="category-tag">
+              <li><a href="">おすすめスポット</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+            </ul>
+            <a class="spot-a" href="article_detailes.html">
+              <div class="hover-area">
+                <p class="hover-area_img"><img class="spot-image" src="assets/article/img/spot_1.jpg" alt=""/></p>
+                <p class="spot-text">
+                  今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+                </p>
+              </div>
+            </a>
+          </li>
 
-          <!-- ここからもっと見る -->
-          <div class="spot_line_more hidden" id="moreContainer">
-            <div class="spot_line_more">
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
+          <li class="spot-container">
+            <ul class="category-tag">
+              <li><a href="">おすすめスポット</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+            </ul>
+            <a class="spot-a" href="article_detailes.html">
+              <div class="hover-area">
+                <p class="hover-area_img"><img class="spot-image" src="assets/article/img/spot_1.jpg" alt=""/></p>
+                <p class="spot-text">
+                  今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+                </p>
               </div>
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
+            </a>
+          </li>
+          <li class="spot-container">
+            <ul class="category-tag">
+              <li><a href="">おすすめスポット</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+            </ul>
+            <a class="spot-a" href="article_detailes.html">
+              <div class="hover-area">
+                <p class="hover-area_img"><img class="spot-image" src="assets/article/img/spot_1.jpg" alt=""/></p>
+                <p class="spot-text">
+                  今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+                </p>
               </div>
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="spot_line_more" id="moreContainer">
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="spot_line_more">
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="spot-container">
-                <div class="spot-tag">おすすめスポット</div>
-                <a class="spot-a" href="article_detailes.html">
-                  <div class="hover-area">
-                    <img
-                      class="spot-image"
-                      src="/assets/article/img/spot_1.jpg"
-                      alt="Spot"
-                    />
-                    <p class="spot-text">
-                      今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <!-- ここまでもっと見る -->
-        </div>
-      </div>
-      <div class="more_btn" id="moreButton">
-        <p class="btn-text">VIEW MORE<span class="plus-icon">+</span></p>
-      </div>
-      <script src="/assets/article/js/spot_more.js"></script>
-    </div>
+          <li class="spot-container">
+            <ul class="category-tag">
+              <li><a href="">おすすめスポット</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+              <li><a href="">まちの食文化</a></li>
+            </ul>
+            <a class="spot-a" href="article_detailes.html">
+              <div class="hover-area">
+                <p class="hover-area_img"><img class="spot-image" src="assets/article/img/spot_1.jpg" alt=""/></p>
+                <p class="spot-text">
+                  今回の舞台は、北海道、阿寒摩周国立公園にある阿寒湖。
+                </p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </article>
+      <p id="moreButton" class="btn-text more_btn">VIEW MORE<span class="plus-icon">+</span></p>
+    </main>
     <footer class="footer-container">
       <img
         class="title-image"
-        src="/assets/common/img/icons/site_name.png"
+        src="assets/common/img/icons/site_name.png"
         alt="Site Name"
       />
       <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
@@ -584,7 +205,7 @@
             オフィシャルサイト
             <img
               class="arrow-image"
-              src="/assets/common/img/icons/arrow_right_wihte.png"
+              src="assets/common/img/icons/arrow_right_wihte.png"
               alt="Arrow Right White"
             />
           </div>
@@ -594,7 +215,7 @@
             チケット購入はコチラ
             <img
               class="arrow-image"
-              src="/assets/common/img/icons/arrow_right.png"
+              src="assets/common/img/icons/arrow_right.png"
               alt="Arrow Right"
             />
           </div>
@@ -604,11 +225,43 @@
       <div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()">
         <img
           class="arrow-top-icon"
-          src="/assets/common/img/icons/arrow_top.png"
+          src="assets/common/img/icons/arrow_top.png"
           alt="Arrow Top"
         />
-        PAGE<br />TOP
+        PAGE<br/>TOP
       </div>
     </footer>
+    <script>
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 0) {
+          header.classList.add("fixed-header");
+        } else {
+          header.classList.remove("fixed-header");
+        }
+      });
+    </script>
+
+    <script>
+      document
+        .querySelector(".hover-area")
+        .addEventListener("mouseover", function (event) {
+          event.stopPropagation();
+        });
+    </script>
+    <script src="assets/common/js/hamburger_header.js"></script>
+    <!-- <script src="assets/article/js/spot_more.js"></script> -->
   </body>
 </html>
