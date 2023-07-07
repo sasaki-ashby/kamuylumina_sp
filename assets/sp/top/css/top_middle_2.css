@@ -3,6 +3,13 @@
   margin : 49px auto 58px;
 }
 
+@media screen and (max-width: 768px) {
+  .top2-main-container {
+    padding: 0 16px;
+    margin : 30px auto 13px;
+ }
+}
+
 .top2-upper-container {
   display: flex;
   justify-content: space-between;
@@ -22,8 +29,6 @@
   .top2-upper-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -40,13 +45,13 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .top2-upper-text-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 0;
+    width: 100%;
+    text-align: left;
+    margin-top: 19px;
   }
 }
 
@@ -64,10 +69,8 @@
 
 @media screen and (max-width: 768px) {
   .top2-upper-img {
-    width: 91.33%;
+    width: 100%;
     height: 208.53px;
-    margin-top: 40px;
-    margin-bottom: 0;
   }
 }
 
@@ -84,19 +87,25 @@
 
 .top2-upper-text {
   color: #002c4b;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 36px;
   margin-top: 20px;
+  letter-spacing: 0.03em;
 }
+
 @media screen and (max-width: 768px) {
   .top2-upper-text {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0 0 0 10px;
-    display: flex;
-    justify-content: center;
+    line-height: 28px;
+    margin-top: 11px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .pc-br {
+    display: none;
+  }
+}
+
 
 .top2-under-container {
   display: flex;
@@ -119,6 +128,7 @@
     flex-direction: column;
     align-items: center;
     width: auto;
+    margin: 10px 0 0 0;
   }
 }
 
@@ -138,20 +148,21 @@
 @media screen and (max-width: 768px) {
   .top2-under-left {
     position: unset;
-    margin: 2px 4px;
+    align-items: stretch;
   }
 }
 
 .top2-a {
   text-decoration: none;
 }
+
 .top2-under-btn {
   writing-mode: vertical-rl;
   background-color: #002c4b;
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
   padding: 25px 12px;
   border-radius: 5px;
@@ -159,7 +170,9 @@
 }
 @media screen and (max-width: 768px) {
   .top2-under-btn {
-    padding: 15px;
+    padding: 22px 12px;
+    letter-spacing: 0.25em;
+    height: 132px;
   }
 }
 
@@ -171,10 +184,11 @@
   color: #002c4b;
   line-height: 36px;
   margin: 0;
+  letter-spacing: 0.03em;
 }
 @media screen and (max-width: 768px) {
   .top2-under-text1 {
-    line-height: 20px;
+    line-height: 28px;
     margin-left: 10px;
     margin: auto;
   }
@@ -210,7 +224,7 @@
 @media screen and (max-width: 768px) {
   .top2-under-img {
     position: unset;
-    width: 206.84px;
-    height: 165.9px;
+    width: 59.8%;
+    height: auto;
   }
 }
