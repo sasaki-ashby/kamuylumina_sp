@@ -1,0 +1,368 @@
+/* =============================================
+main部分
+============================================= */
+
+.main-container {
+  background-image: url('../img/detail-img-0.jpg');
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: auto 300px;
+  padding-top: 240px;
+  box-sizing: border-box;
+}
+
+.middle-main-container {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 35px;
+  max-width: 1100px;
+}
+
+.middle-container {
+  max-width: 700px;
+}
+
+.middle-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.tag-lang-container {
+  border-bottom: 2px solid #e1e5e8;
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.date-tag-container {
+  display: flex;
+}
+
+.date {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin:2px 15px 0 0;
+}
+
+.lang-container {
+  align-items: center;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.lang-container >li{
+  border-right: 1px solid #a4b1ba;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+.lang-text-1 {
+}
+
+.lang-text-2 {
+  letter-spacing: 3px;
+}
+
+.lang-text-3 {
+  border: none;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.lang-container >li a{
+  color: #a4b1ba;
+  padding-bottom: 5px;
+}
+
+.lang-container >li:hover a,
+.lang-container >li.__current a{
+  border-bottom: 1px solid #002c4b;
+  color: #002c4b;
+}
+
+.left-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.tag-container {
+  display: flex;
+}
+
+.tag-container >li a{
+  background-color: #f5f8fc;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  padding: 6px 10px;
+}
+
+.tag-container >li a:hover{
+  opacity: .6;
+}
+
+.detail-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.detail-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.detail-img {
+  margin-bottom: 50px;
+}
+
+.detail-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.googlemap iframe{
+  border-radius: 8px;
+}
+
+.detail-img-container {
+  background-color:#f5f8fc;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.reference {
+  margin: 0 18px;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    background-size: auto 150px;
+    padding-top: 150px;
+  }
+  .middle-container {
+    margin:0 18px;
+  }
+  .middle-main-container {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .middle-main-container_mobile{
+    background-color: #fff;
+    border-radius: 8px;
+    margin: -50px 18px 0;
+    padding-top: 25px;
+  }
+  .middle-title {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .date {
+    margin-bottom: 15px;
+  }
+  .tag-container {
+    margin-bottom: 15px;
+  }
+  .tag-container >li a {
+    font-size: 1.3rem;
+  }
+  .tag-lang-container {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+  }
+  .date-tag-container {
+    flex-direction: column;
+  }
+  .left-title-container {
+    display: flex;
+    justify-content: unset;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lang-container {
+    font-size: 1.3rem;
+  }
+  .lang-container >li:first-child{
+    padding-left: 0;
+  }
+  .tag-detail {
+    margin: 0;
+  }
+  .detail-title {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .detail-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .detail-img {
+    margin-bottom: 30px;
+  }
+  .detail-img-container {
+    margin: 0 ;
+    padding: 50px 0 0;
+  }
+  .googlemap {
+    margin-bottom: 30px;
+  }
+}
+
+.article_main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-title {
+  flex-direction: column;
+  font-size: 30px;
+  color: #002c4b;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: "Noto Serif JP", serif;
+}
+
+.SubText {
+  font-size: 11px;
+  color: #002c4b;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =============================================
+関連記事
+============================================= */
+
+.related-main-container {
+  align-items: center;
+  background-color: #002c4b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+.related-main-container a{
+  color: #fff;
+}
+
+.related-container {
+  display: flex;
+  align-items: center;
+  padding: 30px 0 50px;
+  max-width: 900px;
+}
+
+.related-container >li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  width : calc(100% / 3) ;
+}
+
+
+
+
+.related-container figure {
+  margin-bottom: 15px;
+}
+
+.related-container figure img{
+  border-radius: 8px;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .related-main-container {
+    padding-top: 60px;
+  }
+  .related-container {
+    flex-flow: column;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 18px;
+  }
+  .related-container >li {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .related-container >li a{
+    display: flex;
+  }
+  .related-container figure {
+    margin: 0 18px 0 0;
+  }
+
+
+}
+
+.related-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.related-sub-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+
+/*.related-image {
+  height: 162px;
+  margin: 0 25px;
+}
+*/
+@media screen and (max-width: 768px) {
+  .related-image {
+    width: 150px;
+    height: 90px;
+  }
+}
+
+.reated-text {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+  .reated-text {
+    display: flex;
+    align-items: center;
+    flex-direction: unset;
+    padding: 0px;
+    margin: 20px 0;
+    width: auto;
+  }
+}
+
+.googlemap iframe{
+  width: 100%;
+  aspect-ratio: 16/9;
+
+}
