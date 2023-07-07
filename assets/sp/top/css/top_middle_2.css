@@ -1,6 +1,5 @@
 .top2-main-container {
   max-width: 1150px;
-  height: 768px;
   margin : 49px auto 58px;
 }
 
@@ -9,9 +8,14 @@
   justify-content: space-between;
 }
 
-.top2-upper-text-container{
-  width: 32.608%;
-  margin-top: 72px;
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .top2-upper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -22,6 +26,20 @@
     justify-content: center;
   }
 }
+
+.top2-upper-text-container{
+  width: 32.608%;
+  margin-top: 72px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .top2-upper-text-container {
+    width: 63.478%;
+    margin-top: 30px;
+    text-align: left;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .top2-upper-text-container {
@@ -37,9 +55,16 @@
   width: 63.478%;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .top2-upper-img {
+    max-height: 447px;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top2-upper-img {
-    width: 340px;
+    width: 91.33%;
     height: 208.53px;
     margin-top: 40px;
     margin-bottom: 0;
@@ -79,6 +104,15 @@
   margin: 48px 0 0 50px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .top2-under-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top2-under-container {
     display: flex;
@@ -94,6 +128,13 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .top2-under-left {
+    position: unset;
+    margin: 2px 4px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top2-under-left {
     position: unset;
@@ -153,6 +194,17 @@
   height: 403px;
   bottom: -49px;
   right: 10px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .top2-under-img {
+    position: unset;
+    bottom: unset;
+    right: unset;
+    weight:100%;
+    max-height: 403px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
