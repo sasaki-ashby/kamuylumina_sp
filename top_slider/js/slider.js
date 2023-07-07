@@ -17,6 +17,7 @@ const verticalSlider = new Swiper(".vertical-slider", {
     type: "bullets", // ページネーションの形を指定
     clickable: true, // ページネーションをクリック可能にする
   },
+
   on: {
     slideChange: function () {
       var header = document.querySelector(".header-container");
