@@ -10,11 +10,11 @@ a {
 
 .main-container {
   background-image: url('../img/detail-img-0.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: auto 300px;
   padding-top: 240px;
   box-sizing: border-box;
-  height: 300px;
 }
 
 @media screen and (max-width: 768px) {
@@ -22,41 +22,11 @@ a {
   }
 }
 
-/*.upper-container {
-  position: relative;
-  display: flex !important;
-  justify-content: center;
-  margin: auto;
-}
-
-.upper-image {
-  height: 300px;
-  object-fit: cover;
-}*/
-
 @media screen and (max-width: 768px) {
   .upper-image {
     height: 150px;
   }
 }
-
-.piece-container {
-  position: absolute;
-  border-radius: 8px 8px 0 0;
-  height: 40px;
-  width: 1100px;
-  top: 260px;
-  left: 20px;
-  background-color: #ffffff;
-}
-
-@media screen and (max-width: 768px) {
-  .piece-container {
-    width: 339px;
-    top: 110px;
-  }
-}
-
 
 .middle-main-container {
   background-color: #fff;
@@ -96,8 +66,7 @@ a {
 }
 
 .date {
-  color: #002c4b;
-  font-size: 13px;
+  font-size: 1.3rem;
   margin-right: 10px;
 }
 
@@ -129,35 +98,29 @@ a {
 }
 
 .lang-container {
-  display: flex;
   align-items: center;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.lang-container >li{
+  border-right: 1px solid #a4b1ba;
+  margin-right: 10px;
+  padding: 0 10px;
 }
 
 .lang-text-1 {
-  font-size: 10px;
-  padding: 3px;
-  margin: 0 2px;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
 }
 
 .lang-text-2 {
-  font-size: 10px;
-  margin: 0 10px;
-  border-left: 1px solid #a4b1ba;
-  border-right: 1px solid #a4b1ba;
-  padding: 3px;
-  font-family: "Poppins", sans-serif;
   letter-spacing: 3px;
-  cursor: pointer;
 }
 
 .lang-text-3 {
-  font-size: 10px;
-  padding: 3px;
-  margin: 0 2px;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding-right: 10px;
 }
 
 .left-title-container {
