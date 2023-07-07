@@ -1,6 +1,5 @@
 .top6-main-cotainer {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 768px;
 }
@@ -16,9 +15,9 @@
 }
 
 .top6-img {
-  width: 880px;
-  height: 544px;
-  margin-right: 50px;
+  width: 66.421%;
+  max-width: 880px;
+  max-height: 544px;
 }
 @media screen and (max-width: 768px) {
   .top6-img {
@@ -34,7 +33,7 @@
   line-height: 40px;
   color: #002c4b;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 @media screen and (max-width: 768px) {

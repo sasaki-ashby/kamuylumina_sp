@@ -7,3 +7,9 @@ body {
 a {
   text-decoration: none;
 }
+
+html {
+  color: #002c4b;
+  font-family: "Noto Serif JP" , serif;
+  font-size: 10px;
+}

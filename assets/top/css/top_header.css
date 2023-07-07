@@ -94,6 +94,7 @@
   border-radius: 8px 0 0 8px;
   color: #ffffff;
   cursor: pointer;
+  padding: 10px;
 }
 
 .lang-btn2 {
@@ -104,6 +105,7 @@
   border-left: none;
   color: #ffffff;
   cursor: pointer;
+  padding: 10px;
 }
 
 .lang-btn3 {
@@ -113,6 +115,7 @@
   border-radius: 0 8px 8px 0;
   color: #ffffff;
   cursor: pointer;
+  padding: 10px;
 }
 
 .lang-btn1.selected,

@@ -20,6 +20,7 @@
   line-height: 46px;
   top: 50px;
   left: 100px;
+  letter-spacing: 0.03em;
   color: #ffffff;
   text-align: left;
   font-family: "Noto Serif CJK JP";
@@ -36,9 +37,11 @@
 .top7-under-text {
   font-size: 16px;
   line-height: 46px;
+  letter-spacing: 0.03em;
   color: #002c4b;
   text-align: center;
   font-family: "Noto Serif CJK JP";
+  margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
   .top7-under-text {

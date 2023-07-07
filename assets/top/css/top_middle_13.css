@@ -62,9 +62,12 @@
 }
 
 .top13-title {
-  font-size: 16px;
+  font-size: 1.6em;
   object-fit: cover;
   color: #002c4b;
+  margin-top: 36px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .top13-title {
@@ -88,6 +91,7 @@
   color: #002c4b;
   line-height: 35px;
   text-align: center;
+  margin-top: 31px;
 }
 @media screen and (max-width: 768px) {
   .top13-text {
@@ -102,6 +106,9 @@
   align-items: center;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  margin-top: 15px;
+  border-bottom: 1px solid #002c4b;
+  weight: 126px;
 }
 
 .top13-more-btn:hover {
@@ -113,7 +120,6 @@
   padding: 5px;
   margin-right: 10px;
   color: #002c4b;
-  border-bottom: 1px solid #002c4b;
 }
 
 .top13-arrow-icon {
