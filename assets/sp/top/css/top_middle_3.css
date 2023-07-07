@@ -1,16 +1,28 @@
 .top3-main-container {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   background-image: url("../../top/img/top3_1.jpg");
   /* background-image: url("/assets/sp/top/img/top3_1.jpg"); */
   height: 100vh;
 }
+
+@media screen and (min-width: 769px) {
+  .top3-main-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .top3-main-container {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top3-main-container {
-    display: flex;
-    justify-self: center;
     flex-direction: column;
+    height: 812px;
+    padding: 186px 0 177px 0;
   }
 }
 
@@ -19,24 +31,43 @@
   align-items: center;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .top3-left-container {
+    margin-top: 50px;
+  }
+}
+
 .top3-title {
   font-family: "Noto Serif CJK JP";
-  font-size: 70px;
-  margin-bottom: 10px;
+  font-size: 7rem;
+  margin-bottom: 35px;
   font-weight: bold;
   color: #ffffff;
+  letter-spacing: 0.15em;
+  line-height: 84px;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .top3-title {
+    font-size: 5rem;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top3-title {
-    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 43px;
+    margin-bottom: 20px;
   }
 }
 
 .top3-sub-title {
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: Regular;
   color: #ffffff;
 }
 
@@ -46,11 +77,21 @@
 
 .top3-right-img {
   position: relative;
+  width: 100%;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .top3-right-img {
+    width: 79.2%;
+    margin-top: 40px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top3-right-img {
     width: 297.92px;
     height: 277.44px;
+    margin-top: 40px;
   }
 }
 
@@ -61,12 +102,23 @@
   top: 240px;
   right: 150px;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .top3-right-icon {
+    position: absolute;
+    width: 40.9px;
+    height: 46.4px;
+    top: 228px;
+    right: 250px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top3-right-icon {
     position: absolute;
     width: 25px;
     height: 25px;
-    top: 120px;
+    top: 172px;
     right: 100px;
   }
 }
