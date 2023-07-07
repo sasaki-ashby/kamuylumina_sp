@@ -11,17 +11,6 @@ main部分
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
-  .main-container {
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .upper-image {
-    height: 150px;
-  }
-}
-
 .middle-main-container {
   background-color: #fff;
   border-radius: 8px;
@@ -35,14 +24,7 @@ main部分
 }
 
 .middle-container {
-  width: 700px;
-}
-
-@media screen and (max-width: 768px) {
-  .middle-container {
-    max-width: 290px;
-    overflow: hidden;
-  }
+  max-width: 700px;
 }
 
 .middle-title {
@@ -50,12 +32,6 @@ main部分
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .middle-title {
-    font-size: 18px;
-  }
 }
 
 .tag-lang-container {
@@ -66,23 +42,8 @@ main部分
   justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-  .tag-lang-container {
-    display: flex;
-    justify-content: unset;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 .date-tag-container {
   display: flex;
-}
-
-@media screen and (max-width: 768px) {
-  .date-tag-container {
-    flex-direction: column;
-  }
 }
 
 .date {
@@ -134,15 +95,6 @@ main部分
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .left-title-container {
-    display: flex;
-    justify-content: unset;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .tag-container {
   display: flex;
 }
@@ -160,22 +112,10 @@ main部分
   opacity: .6;
 }
 
-@media screen and (max-width: 768px) {
-  .tag-detail {
-    margin: 0;
-  }
-}
-
 .detail-title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .detail-title {
-    font-size: 1.6rem;
-  }
 }
 
 .detail-text {
@@ -183,12 +123,6 @@ main部分
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: left;
-}
-
-@media screen and (max-width: 768px) {
-  .detail-text {
-    font-size: 1.4rem;
-  }
 }
 
 .detail-img {
@@ -206,23 +140,94 @@ main部分
 
 .detail-img-container {
   background-color:#f5f8fc;
-  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 80px;
+  padding: 50px 0;
   width: 100%;
 }
 
 .reference {
-  margin: auto;
-  width: 700px;
+  margin: 0 18px;
+  max-width: 700px;
 }
 
 @media screen and (max-width: 768px) {
-  .detail-img-container {
+  .main-container {
+    background-size: auto 150px;
+    padding-top: 150px;
+  }
+  .middle-container {
+    margin:0 18px;
+  }
+  .middle-main-container {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .middle-main-container_mobile{
+    background-color: #fff;
+    border-radius: 8px;
+    margin: -50px 18px 0;
+    padding-top: 25px;
+  }
+  .middle-title {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .date {
+    margin-bottom: 15px;
+  }
+  .tag-container {
+    margin-bottom: 15px;
+  }
+  .tag-container >li a {
+    font-size: 1.3rem;
+  }
+  .tag-lang-container {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+  }
+  .date-tag-container {
+    flex-direction: column;
+  }
+  .left-title-container {
     display: flex;
+    justify-content: unset;
     flex-direction: column;
     align-items: center;
-    margin: 25px 0 80px 0;
-    padding: 20px 10px;
+  }
+  .lang-container {
+    font-size: 1.3rem;
+  }
+  .lang-container >li:first-child{
+    padding-left: 0;
+  }
+  .tag-detail {
+    margin: 0;
+  }
+  .detail-title {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .detail-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .detail-img {
+    margin-bottom: 30px;
+  }
+  .detail-img-container {
+    margin: 0 ;
+    padding: 50px 0 0;
+  }
+  .googlemap {
+    margin-bottom: 30px;
   }
 }
 
@@ -272,15 +277,6 @@ main部分
   max-width: 900px;
 }
 
-@media screen and (max-width: 768px) {
-  .related-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-  }
-}
-
 .related-container >li {
   align-items: center;
   display: flex;
@@ -289,18 +285,41 @@ main部分
   width : calc(100% / 3) ;
 }
 
-@media screen and (max-width: 768px) {
-  .related-container >li {
-    display: flex;
-    align-items: center;
-    flex-direction: unset;
-    padding: 0px;
-    margin: 10px 0;
-  }
-}
+
+
 
 .related-container figure {
   margin-bottom: 15px;
+}
+
+.related-container figure img{
+  border-radius: 8px;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .related-main-container {
+    padding-top: 60px;
+  }
+  .related-container {
+    flex-flow: column;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 18px;
+  }
+  .related-container >li {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .related-container >li a{
+    display: flex;
+  }
+  .related-container figure {
+    margin: 0 18px 0 0;
+  }
+
+
 }
 
 .related-title {
