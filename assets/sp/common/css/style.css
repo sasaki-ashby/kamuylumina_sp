@@ -1,15 +1,10 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 html {
   color: #002c4b;
   font-family: "Noto Serif JP" , serif;
   font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #002c4b;
 }
