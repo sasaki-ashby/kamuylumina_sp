@@ -8,7 +8,7 @@
   .top11-main-container {
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: unset;
   }
 }
 
@@ -70,13 +70,27 @@
 }
 
 .top11-img {
-  width: 429px !important;
-  height: 271px !important;
   background-size: cover;
   background-position: center;
+  width: 510px;
+  height: 315px;
 }
 @media screen and (max-width: 768px) {
   .top11-img {
-    /* width: 338px; */
+    width: 300px !important;
+    height: 200px !important;
+  }
+}
+
+.top11-img {
+  background-size: cover;
+  background-position: center;
+  width: 510px;
+  height: 315px;
+}
+@media screen and (max-width: 768px) {
+  .top11-map {
+    width: 300px !important;
+    height: 200px !important;
   }
 }

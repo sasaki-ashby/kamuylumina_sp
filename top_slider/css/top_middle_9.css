@@ -14,12 +14,22 @@
   background-image: url("../../assets/top/img/top9_img.jpg");
   /* background-image: url("/asets/top/img/top9_img.jpg"); */
 }
+@media screen and (max-width: 768px) {
+  .top9-container {
+    height: 100vh;
+  }
+}
 
 .top9-card-container {
   position: absolute;
   display: flex;
   justify-content: space-evenly;
   bottom: -100px;
+}
+@media screen and (max-width: 768px) {
+  .top9-card-container {
+    bottom: -70px;
+  }
 }
 
 .top9-card {

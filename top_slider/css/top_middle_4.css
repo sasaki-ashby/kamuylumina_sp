@@ -1,5 +1,4 @@
 .top4-main-container {
-  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,16 +8,68 @@
   .top4-main-container {
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: flex-start;
     flex-direction: column;
-    padding: 40px;
+  }
+}
+
+.top4-left-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 7.829%;
+  margin-top: 83px;
+}
+
+.top4-left-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.top4-title,
+.top4-text1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+@media screen and (max-width: 768px) {
+  .top4-title,
+  .top4-text1 {
+    text-orientation: unset;
+  }
+}
+
+.top4-title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  .top4-title {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin-right: 15px;
+  }
+}
+
+.top4-text1 {
+  font-size: 1rem;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .top4-text1 {
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-right: 15px;
+    letter-spacing: 2px;
+    text-orientation: none;
   }
 }
 
 .top4-left-img {
-  width: 508px;
-  height: 485px;
-  margin-right: 100px;
+  width: 51px;
+  height: 312px;
   max-width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -30,17 +81,38 @@
   }
 }
 
-.top4-right-img {
-  width: 650px;
-  height: 650px;
-  max-width: 100%;
-  margin-left: 100px;
+.top4-text2 {
+  font-size: 1.6rem;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 40px;
+  color: #002c4b;
 }
 @media screen and (max-width: 768px) {
+  .top4-text2 {
+    font-size: 0.2rem;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .line-break {
+    display: block;
+    margin-top: 0.5em;
+  }
+}
+
+.top4-right-img {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 768px) {
   .top4-right-img {
-    width: 357px;
-    height: 357px;
-    margin-right: 0;
+    width: 250px;
+    height: 250px;
+    margin-left: 0;
     margin-top: 5px;
   }
 }

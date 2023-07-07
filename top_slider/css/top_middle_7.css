@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
   .top7-main-container {
     height: 100vh;
+    flex-direction: column;
   }
 }
 
@@ -12,12 +13,10 @@
   object-fit: cover;
   background-image: url("../../assets/top/img/top7_img.jpg");
   /* background-image: url("/assets/top/img/top7_img.jpg"); */
-  height: 600px;
-  width: 100vw;
+  height: 60vh;
 }
 @media screen and (max-width: 768px) {
   .top7-container {
-    height: 500px;
   }
 }
 

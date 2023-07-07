@@ -29,14 +29,15 @@
 }
 @media screen and (max-width: 768px) {
   .top12-left-img2 {
+    flex: 7;
     display: block;
     flex-direction: row-reverse;
     background-size: cover;
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
-    height: 727px;
     width: auto;
+    height: 100vh;
   }
 }
 
