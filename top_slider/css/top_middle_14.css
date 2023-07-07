@@ -39,8 +39,8 @@
 }
 @media screen and (max-width: 768px) {
   .top14-right-container {
-    height: 338px;
-    width: 338px;
+    width: 300px;
+    height: auto;
   }
 }
 

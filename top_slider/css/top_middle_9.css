@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   height: 70vh;
-  background-image: url("../../assets/top/img/top9_img.jpg");
+  background-image: url("../../assets/sp/top/img/top9_img.jpg");
   /* background-image: url("/asets/top/img/top9_img.jpg"); */
 }
 @media screen and (max-width: 768px) {
@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: 768px) {
   .top9-card-container {
-    bottom: -70px;
+    bottom: 180px;
   }
 }
 

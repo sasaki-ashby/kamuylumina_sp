@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   object-fit: cover;
-  background-image: url("../../assets/top/img/top7_img.jpg");
+  background-image: url("../../assets/sp/top/img/top7_img.jpg");
   /* background-image: url("/assets/top/img/top7_img.jpg"); */
   height: 60vh;
 }
