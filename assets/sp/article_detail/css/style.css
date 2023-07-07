@@ -1,12 +1,6 @@
-html {
-  color:#002c4b;
-  font-family: "Noto Serif JP", serif;
-  font-size: 10px;
-}
-
-a {
-  color:#002c4b;
-}
+/* =============================================
+main部分
+============================================= */
 
 .main-container {
   background-image: url('../img/detail-img-0.jpg');
@@ -41,7 +35,6 @@ a {
 }
 
 .middle-container {
-  margin-bottom: 60px;
   width: 700px;
 }
 
@@ -54,20 +47,15 @@ a {
 
 .middle-title {
   font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2px;
-  margin-top: 0;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
   .middle-title {
     font-size: 18px;
   }
-}
-
-.date {
-  font-size: 1.3rem;
-  margin-right: 10px;
 }
 
 .tag-lang-container {
@@ -97,6 +85,13 @@ a {
   }
 }
 
+.date {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin:2px 15px 0 0;
+}
+
 .lang-container {
   align-items: center;
   display: flex;
@@ -123,6 +118,17 @@ a {
   padding-right: 10px;
 }
 
+.lang-container >li a{
+  color: #a4b1ba;
+  padding-bottom: 5px;
+}
+
+.lang-container >li:hover a,
+.lang-container >li.__current a{
+  border-bottom: 1px solid #002c4b;
+  color: #002c4b;
+}
+
 .left-title-container {
   display: flex;
   align-items: center;
@@ -141,14 +147,17 @@ a {
   display: flex;
 }
 
-.tag-detail {
-  display: flex;
-  padding: 8px;
-  font-size: 11px;
-  align-items: center;
+.tag-container >li a{
   background-color: #f5f8fc;
-  margin: 6px;
   border-radius: 8px;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  padding: 6px 10px;
+}
+
+.tag-container >li a:hover{
+  opacity: .6;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,7 +168,8 @@ a {
 
 .detail-title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -169,10 +179,10 @@ a {
 }
 
 .detail-text {
-  text-align: left;
   font-size: 1.4rem;
-  margin: 25px 0;
-  line-height: 25px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -181,9 +191,17 @@ a {
   }
 }
 
+.detail-img {
+  margin-bottom: 50px;
+}
+
 .detail-img img {
   max-width: 100%;
   height: auto;
+}
+
+.googlemap iframe{
+  border-radius: 8px;
 }
 
 .detail-img-container {
@@ -229,19 +247,29 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-/* 関連記事 */
+/* =============================================
+関連記事
+============================================= */
+
 .related-main-container {
+  align-items: center;
+  background-color: #002c4b;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-top: 70px;
   justify-content: center;
-  background-color: #002c4b;
+}
+
+.related-main-container a{
+  color: #fff;
 }
 
 .related-container {
   display: flex;
   align-items: center;
-  padding: 50px 0;
+  padding: 30px 0 50px;
+  max-width: 900px;
 }
 
 @media screen and (max-width: 768px) {
@@ -253,14 +281,16 @@ a {
   }
 }
 
-.related-img-container {
-  display: flex;
+.related-container >li {
   align-items: center;
+  display: flex;
   flex-direction: column;
+  margin: 0 20px;
+  width : calc(100% / 3) ;
 }
 
 @media screen and (max-width: 768px) {
-  .related-img-container {
+  .related-container >li {
     display: flex;
     align-items: center;
     flex-direction: unset;
@@ -269,24 +299,25 @@ a {
   }
 }
 
+.related-container figure {
+  margin-bottom: 15px;
+}
+
 .related-title {
-  font-family: "Noto Sans CJK JP", sans-serif;
-  color: #ffffff;
-  font-size: 30px;
+  font-size: 3rem;
   margin-bottom: 15px;
 }
 
 .related-sub-title {
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  font-size: 11px;
+  font-size: 1.1rem;
 }
 
-.related-image {
+/*.related-image {
   height: 162px;
   margin: 0 25px;
 }
-
+*/
 @media screen and (max-width: 768px) {
   .related-image {
     width: 150px;
@@ -295,10 +326,9 @@ a {
 }
 
 .reated-text {
-  color: #ffffff;
+  font-family: 'Noto Sans SC', sans-serif;
   font-size: 1.3rem;
-  text-align: left;
-  width: 260px;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 768px) {
