@@ -5,7 +5,7 @@
   justify-content: flex-end;
   color: #ffffff;
   /* background-image: url("../../top/img/top1.jpg"); */
-  background-image: url("/assets//top/img/top1.jpg");
+  background-image: url("/assets/sp/top/img/top1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@
 @media screen and (max-width: 768px) {
   .top1-sub-title {
     font-size: 32px;
-    width: 400px;
+    width: 311px;
   }
 }
 
