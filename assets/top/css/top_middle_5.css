@@ -1,9 +1,6 @@
 .top5-main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
-  height: 768px;
+  max-height: 768px;
 }
 @media screen and (max-width: 768px) {
   .top5-main-container {
@@ -12,9 +9,14 @@
   }
 }
 
+.top5-main-inner{
+  display: flex;
+  align-items: center;
+}
+
 .top5-left-img {
-  width: 768px;
-  height: 768px;
+  width: 57.49%;
+  max-height: 768px;
 }
 @media screen and (max-width: 768px) {
   .top5-left-img {

@@ -92,6 +92,7 @@
   font-family: "Noto Sans CJK JP", sans-serif;
   background: transparent;
   border: 1px solid white;
+  padding: 10px;
   border-radius: 8px 0 0 8px;
   background: #002c4b;
   color: #ffffff;
@@ -99,6 +100,7 @@
 }
 
 .lang-btn2 {
+  padding: 10px;
   font-family: "Noto Sans CJK JP", sans-serif;
   background: transparent;
   border: 1px solid white;
@@ -110,6 +112,7 @@
 }
 
 .lang-btn3 {
+  padding: 10px;
   font-family: "Noto Sans CJK JP", sans-serif;
   background: transparent;
   border: 1px solid white;

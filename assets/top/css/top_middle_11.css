@@ -1,8 +1,8 @@
 .top11-main-container {
-  height: 768px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  padding: 62px 0 61px 0;
+  height: 768px;
 }
 @media screen and (max-width: 768px) {
   .top11-main-container {
@@ -17,7 +17,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .top11-left-container {
@@ -27,8 +26,31 @@
   }
 }
 
+.top11-left-inner{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.top11-title, .top11-text1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.top11-title{
+ font-size: 2rem;
+ font-weight: bold;
+ letter-spacing: 0.15em;
+ margin-right: 15px
+}
+
+.top11-text1{
+  font-size: 1rem;
+  font-family: Poppins;
+}
+
 .top11-line {
-  margin: 20px;
+  margin: 25px 0;
   border: 1px solid #e1e5e8;
   width: 400px;
 }
@@ -38,24 +60,12 @@
   }
 }
 
-.top11-text-img {
-  width: 60px;
-  height: 95px;
-  background-size: cover;
-  background-position: center;
-  object-fit: fill;
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 768px) {
-  .top11-text-img {
-    width: 50px;
-  }
-}
 
 .top11-left-text {
   color: #002c4b;
   font-size: 14px;
   line-height: 25px;
+  text-align: left
 }
 @media screen and (max-width: 768px) {
   .top11-left-text {
@@ -75,6 +85,7 @@
   height: 271px;
   background-size: cover;
   background-position: center;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 768px) {
   .top11-img {

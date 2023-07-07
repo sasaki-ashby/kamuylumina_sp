@@ -14,9 +14,10 @@
 
 .top12-left-img {
   flex: 8;
-  width: 1024px;
+  width: 76.646%;
   height: 768px;
   object-fit: fill;
+
 }
 @media screen and (max-width: 768px) {
   .top12-left-img {
