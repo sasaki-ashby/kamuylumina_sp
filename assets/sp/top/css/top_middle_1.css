@@ -45,13 +45,19 @@
 }
 
 .top1-date-text {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   display: flex;
   justify-content: center;
   color: #ffffff;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 1.4rem;
   margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .top1-date-text {
+    margin: 37px 0 22px 0;
+  }
 }
 
 .top1-text {
@@ -64,9 +70,10 @@
 
 @media screen and (max-width: 768px) {
   .top1-text {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 30px;
     text-align: center;
+    width: 65.6%;
   }
 }
 
