@@ -1,0 +1,121 @@
+.top13-main-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .top13-main-container {
+    flex-direction: column;
+    align-items: center;
+    height: 812px;
+    margin: 50px auto;
+  }
+}
+
+.top13-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .top13-left-container {
+    padding: 10px;
+  }
+}
+
+.top13-left-img {
+  width: 570px;
+  height: 290px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .top13-left-img {
+    width: 260px;
+    height: 132.28px;
+  }
+}
+
+.top13-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .top13-right-container {
+    padding: 10px;
+  }
+}
+
+.top13-right-img {
+  width: 570px;
+  height: 290px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .top13-right-img {
+    width: 260px;
+    height: 132.28px;
+  }
+}
+
+.top13-title {
+  font-size: 16px;
+  object-fit: cover;
+  color: #002c4b;
+}
+@media screen and (max-width: 768px) {
+  .top13-title {
+    margin: 10px 0 2px 0;
+  }
+}
+
+.top13-sub-title {
+  font-size: 10px;
+  object-fit: cover;
+  color: #002c4b;
+}
+
+.top13-sub-title:hover {
+  opacity: 0.5;
+}
+
+.top13-text {
+  font-size: 13px;
+  object-fit: cover;
+  color: #002c4b;
+  line-height: 35px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .top13-text {
+    text-align: left;
+    line-height: 26px;
+  }
+}
+
+.top13-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.top13-more-btn:hover {
+  opacity: 0.4;
+}
+
+.top13-text-btn {
+  font-size: 11px;
+  padding: 5px;
+  margin-right: 10px;
+  color: #002c4b;
+  border-bottom: 1px solid #002c4b;
+}
+
+.top13-arrow-icon {
+  width: 25px;
+  height: 3px;
+}

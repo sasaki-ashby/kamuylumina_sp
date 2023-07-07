@@ -1,0 +1,79 @@
+.top3-main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../assets/top/img/top3_1.jpg");
+  /* background-image: url("assets//top/img/top3_1.jpg"); */
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .top3-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.top3-left-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.top3-title {
+  font-family: "Noto Serif CJK JP";
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .top3-title {
+    font-size: 36px;
+  }
+}
+
+.top3-sub-title {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.top3-right-container {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .top3-right-container {
+    margin-top: 30px;
+  }
+}
+
+.top3-right-img {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .top3-right-img {
+    height: 277.44px;
+  }
+}
+
+.top3-right-icon {
+  position: absolute;
+  width: 40.9px;
+  height: 46.4px;
+  top: 240px;
+  right: 150px;
+}
+@media screen and (max-width: 768px) {
+  .top3-right-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 120px;
+    right: 100px;
+  }
+}
