@@ -1,5 +1,5 @@
 .top9-main-container {
-  height: 768px;
+  height: 100vh;
 }
 
 .top9-container {
@@ -34,22 +34,22 @@
   background: rgba(0, 44, 75, 0.5);
 } */
 
-.top9-left-inner{
+.top9-left-inner {
   display: flex;
   justify-content: center;
   color: #ffffff;
 }
 
-.top9-title{
- text-align: center;
- font-size: 2.6rem;
- font-weight: bold;
- letter-spacing: 0.15em;
- margin-right: 15px;
- color: #ffffff;
+.top9-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin-right: 15px;
+  color: #ffffff;
 }
 
-.top9-text1{
+.top9-text1 {
   text-align: center;
   margin-top: 6px;
   font-size: 1.7rem;

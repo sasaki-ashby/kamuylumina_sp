@@ -1,6 +1,6 @@
 .top8-main-container {
   padding: 73px 0 74px 0;
-  height: 768px;
+  height: 100vh;
 }
 @media screen and (max-width: 768px) {
   .top8-main-container {
@@ -109,24 +109,25 @@
   margin-left: 50px;
 }
 
-.top8-right-inner{
+.top8-right-inner {
   display: flex;
   justify-content: center;
 }
 
-.top8-title, .top8-text2 {
+.top8-title,
+.top8-text2 {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
-.top8-title{
- font-size: 2rem;
- font-weight: bold;
- letter-spacing: 0.15em;
- margin-right: 15px
+.top8-title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin-right: 15px;
 }
 
-.top8-text2{
+.top8-text2 {
   font-size: 1rem;
   font-family: Poppins;
 }
@@ -245,4 +246,3 @@
   height: 3px;
   color: #a4b1ba;
 }
-

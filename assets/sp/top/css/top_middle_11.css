@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 62px 0 61px 0;
-  height: 768px;
+  height: 100vh;
 }
 @media screen and (max-width: 768px) {
   .top11-main-container {
@@ -26,25 +26,26 @@
   }
 }
 
-.top11-left-inner{
+.top11-left-inner {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
 }
 
-.top11-title, .top11-text1 {
+.top11-title,
+.top11-text1 {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
-.top11-title{
- font-size: 2rem;
- font-weight: bold;
- letter-spacing: 0.15em;
- margin-right: 15px
+.top11-title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin-right: 15px;
 }
 
-.top11-text1{
+.top11-text1 {
   font-size: 1rem;
   font-family: Poppins;
 }
@@ -60,12 +61,11 @@
   }
 }
 
-
 .top11-left-text {
   color: #002c4b;
   font-size: 14px;
   line-height: 25px;
-  text-align: left
+  text-align: left;
 }
 @media screen and (max-width: 768px) {
   .top11-left-text {

@@ -1,4 +1,4 @@
-.fixed-header {
+/* .fixed-header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -10,6 +10,28 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+} */
+
+.header-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* ヘッダーの高さ */
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 5px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    justify-content: space-between;
+    padding: 10px;
+    width: 100vw;
+  }
 }
 
 @media screen and (max-width: 768px) {

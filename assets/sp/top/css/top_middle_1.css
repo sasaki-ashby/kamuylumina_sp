@@ -4,12 +4,12 @@
   align-items: center;
   justify-content: flex-end;
   color: #ffffff;
-  /* background-image: url("../../top/img/top1.jpg"); */
-  background-image: url("/assets/sp/top/img/top1.jpg");
+  background-image: url("../../top/img/top1.jpg");
+  /* background-image: url("/assets/sp/top/img/top1.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 768px;
+  height: 100vh;
   padding: 30px 0;
 }
 @media screen and (max-width: 768px) {
@@ -25,7 +25,6 @@
   font-size: 35px;
   line-height: 1;
   margin: 0;
-
 }
 
 .top1-sub-title {

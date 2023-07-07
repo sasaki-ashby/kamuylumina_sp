@@ -1,7 +1,7 @@
 .top12-main-container {
   display: flex;
   align-items: center;
-  height: 768px;
+  height: 100vh;
 }
 @media screen and (max-width: 768px) {
   .top12-main-container {
@@ -17,7 +17,6 @@
   width: 76.646%;
   height: 768px;
   object-fit: fill;
-
 }
 @media screen and (max-width: 768px) {
   .top12-left-img {

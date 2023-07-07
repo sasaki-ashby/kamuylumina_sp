@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 768px;
+  height: 100vh;
   padding: 64px 0;
   background-color: #f5f8fc;
 }
@@ -82,7 +82,7 @@
 
 .top14-facebook-btn {
   cursor: pointer;
-  border: 1px solid #A4B1BA;
+  border: 1px solid #a4b1ba;
   padding: 30px 80px;
   font-size: 12px;
   color: #002c4b;
@@ -99,7 +99,7 @@
 
 .top14-instagram-btn {
   cursor: pointer;
-  border: 1px solid #A4B1BA;
+  border: 1px solid #a4b1ba;
   padding: 30px 80px;
   font-size: 12px;
   color: #002c4b;

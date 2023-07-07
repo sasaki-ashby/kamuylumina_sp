@@ -1,6 +1,6 @@
 .top5-main-container {
   background-color: black;
-  max-height: 768px;
+  max-height: 100vh;
 }
 @media screen and (max-width: 768px) {
   .top5-main-container {
@@ -9,7 +9,7 @@
   }
 }
 
-.top5-main-inner{
+.top5-main-inner {
   display: flex;
   align-items: center;
 }
