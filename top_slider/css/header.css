@@ -20,6 +20,10 @@
   }
 }
 
+.scrolled {
+  background-color: #002c4b; /* スクロール時の背景色 */
+}
+
 .header-title {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
