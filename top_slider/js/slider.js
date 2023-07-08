@@ -17,16 +17,16 @@ const verticalSlider = new Swiper(".vertical-slider", {
     type: "bullets", // ページネーションの形を指定
     clickable: true, // ページネーションをクリック可能にする
   },
-
   on: {
     slideChange: function () {
       var header = document.querySelector(".header-container");
       var activeSlideIndex = this.activeIndex;
-
       if (activeSlideIndex > 0) {
         header.classList.add("scrolled");
+        header.style.height = "53px";
       } else {
         header.classList.remove("scrolled");
+        header.style.height = "88px";
       }
     },
   },
