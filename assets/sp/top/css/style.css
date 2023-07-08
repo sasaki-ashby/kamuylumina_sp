@@ -457,7 +457,7 @@
 }
 
 .top3-title {
-  font-family: "Noto Serif CJK JP";
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 7rem;
   margin-bottom: 35px;
   font-weight: bold;
@@ -602,6 +602,7 @@
 }
 
 .top4-title{
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -953,6 +954,7 @@
 }
 
 .top8-title{
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -1154,6 +1156,7 @@
 }
 
 .top9-title{
+  font-family: "Noto Serif CJK JP", serif;
   text-align: center;
   font-size: 2.6rem;
   font-weight: bold;
@@ -1294,8 +1297,9 @@
   .top11-main-container {
     flex-direction: column;
     align-items: center;
-    height: 812px;
+    height: auto;
     margin-bottom: 100px;
+    padding: 0;
   }
 }
 
@@ -1304,30 +1308,35 @@
   justify-content: center;
   flex-direction: column;
 }
-@media screen and (max-width: 768px) {
-  .top11-left-container {
-    width: 340px;
-    margin-top: 80px;
-    align-items: center;
-  }
-}
 
 .top11-left-inner{
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
 }
+@media screen and (max-width: 768px) {
+  .top11-left-container {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .top11-left-inner{
+    margin-bottom: 40px;
+  }
+}
+
 
 .top11-title, .top11-text1 {
   writing-mode: vertical-rl;
-  text-orientation: upright;
+  letter-spacing: .2rem;
 }
 
 .top11-title{
- font-size: 2rem;
- font-weight: bold;
- letter-spacing: 0.15em;
- margin-right: 15px
+  font-family: "Noto Serif CJK JP", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin-right: 15px
 }
 
 .top11-text1{
@@ -1342,7 +1351,8 @@
 }
 @media screen and (max-width: 768px) {
   .top11-line {
-    margin: 5px;
+    margin: 20px 0;
+    width: 90%;
   }
 }
 
@@ -1355,7 +1365,8 @@
 }
 @media screen and (max-width: 768px) {
   .top11-left-text {
-    width: 340px;
+    width: 100%;
+    font-size: 14px;
     line-height: 25px;
     text-align: center;
   }
@@ -1367,15 +1378,26 @@
 }
 
 .top11-img {
-  width: 429px;
-  height: 271px;
+  width: 510px;
+  height: 315px;
   background-size: cover;
   background-position: center;
   margin-bottom: 15px;
 }
+
+.top11-right-container iframe{
+  width: 510px;
+  height: 315px;
+}
 @media screen and (max-width: 768px) {
   .top11-img {
-    width: 338px;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .top11-right-container iframe{
+    width: 100%;
+    padding: 0 16px;
+    height: 315px;
   }
 }
 
@@ -1416,8 +1438,8 @@
   .top12-left-img2 {
     display: block;
     flex-direction: row-reverse;
-    height: 500px;
-    width: 410px;
+    height: auto;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1436,7 +1458,7 @@
 @media screen and (max-width: 768px) {
   .top12-right-container {
     height: 312px;
-
+    width: 100%;
     padding: 35px;
   }
 }
@@ -1648,6 +1670,7 @@
 }
 
 .top14-title {
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 1.8em;
   color: #002c4b;
   font-weight: 600;
@@ -1667,7 +1690,7 @@
   line-height: 35px;
   text-align: left;
   line-height: 32px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -1680,6 +1703,7 @@
 @media screen and (max-width: 768px) {
   .top14-sns-container {
     display: flex;
+    margin: 24px 0;
   }
 }
 
@@ -1695,11 +1719,9 @@
   margin-top: 35px;
   border-radius: 2px;
 }
-
 .top14-facebook-btn:hover {
   opacity: 0.5;
 }
-
 .top14-instagram-btn {
   cursor: pointer;
   border: 1px solid #A4B1BA;
@@ -1712,10 +1734,22 @@
   margin-top: 15px;
   border-radius: 2px;
 }
-
 .top14-instagram-btn:hover {
   opacity: 0.5;
 }
+@media screen and (max-width: 768px) {
+  .top14-facebook-btn{
+    padding: 16px 24px;
+    margin-top: 0;
+  }
+  .top14-instagram-btn {
+    padding: 16px 24px;
+    margin-top: 0;
+  }
+}
+
+
+
 
 .top14-facebook-icon {
   cursor: pointer;
