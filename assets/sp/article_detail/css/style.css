@@ -288,10 +288,15 @@ main部分
   width : calc(100% / 3) ;
 }
 .related-container a figure{
+  overflow: hidden;
+  border-radius: 8px;
+
+}
+.related-container a img{
   transition: transform 0.3s ease;
 }
-.related-container a:hover figure{
-  transform: scale(1.07);
+.related-container a:hover img{
+  transform: scale(1.1);
 }
 .reated-text{
   transition: .3s ease;
