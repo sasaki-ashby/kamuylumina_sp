@@ -94,6 +94,7 @@ function my_custom_post_type_permalinks_rule() {
 	//add_rewrite_rule( 'career_([^/]+)/?$', 'index.php?pagename=career/$matches[1]', 'top' );
 	add_rewrite_rule( '^sp/enjoy/([^/]*)/?$', 'index.php?post_type=enjoy&name=$matches[1]', 'top' );
 	add_rewrite_rule( '^([^/]*)/sp/enjoy/([^/]*)/?$', 'index.php?post_type=enjoy&name=$matches[2]', 'top' );
+	add_rewrite_rule( '^([^/]*)/sp/?$', 'index.php?pagename=sp', 'top' );
 }
 add_action( 'init', 'my_custom_post_type_permalinks_rule' );
 

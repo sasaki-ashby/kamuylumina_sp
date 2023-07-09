@@ -4,49 +4,44 @@ Template Name: スペシャルページトップ
 */
 ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/header.php');?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/top_lang_$sp_lang.php");?>
 <div class="top"> 
 	<!-- スライド1枚目 --> 
 	<!-- スライド1枚目 -->
 	<div class="top1-main-container">
-		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="site name" /> </div>
+		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="site name" /></div>
 		<p class="top1-sub-title">SPECIAL SITE</p>
 		<p class="top1-date-text">2023.07.15　UPGRADE</p>
-		<p class="top1-text"> 今年は特別な演出を追加したアップグレードバージョンをお楽しみいただけます！ </p>
+		<?php
+		require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
+		?>
+		<p class="top1-text"><?php echo $top_copy['top1'][0]?></p>
 		<a href="https://www.kamuylumina.jp">
-		<div class="top1-under-container"> <img
-              class="top1-under-left-img"
-              src="/assets/sp/top/img/top1_2.jpg"
-              alt="top3"
-            />
+		<div class="top1-under-container"><img class="top1-under-left-img" src="/assets/sp/top/img/top1_2.jpg" alt="top3" />
 			<div class="top1-text-container">
 				<p class="under-p-1">KAMUY LUMINA</p>
-				<p class="under-p-2">阿寒の森ナイトウォークオフィシャルサイト</p>
+				<p class="under-p-2">
+					<?php  echo $top_copy['top1'][1]?>
+				</p>
 			</div>
-			<img
-              src="/assets/sp/common/img/icons/arrow_right.png"
-              alt="arrow right"
-            /> </div>
-		</a> </div>
+			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="arrow right" /></div>
+		</a></div>
 	<!-- スライド1枚目 --> 
 	<!-- スライド1枚目 --> 
 	
 	<!-- スライド2枚目 --> 
 	<!-- スライド2枚目 -->
 	<div class="top2-main-container">
-		<div class="top2-upper-container"> <img class="top2-upper-img" src="/assets/sp/top/img/top2.jpg" />
+		<div class="top2-upper-container"><img class="top2-upper-img" src="/assets/sp/top/img/top2.jpg" />
 			<div class="top2-upper-text-container">
-				<p class="top2-upper-title"> 世界中のゲストに楽しんでいただくために… </p>
-				<p class="top2-upper-text"> 冒険への入り口となるウェルカムエリアでは <br class="pc-br"> 日本語、英語、中国語の3言語で <br class="pc-br"> カムイルミナの世界への案内動画をご用意しております。 <br class="pc-br"> カムイの世界へ旅立つ前に是非しっかりとご覧ください。 </p>
+				<p class="top2-upper-title"><?php echo $top_copy['top2'][0];?></p>
+				<p class="top2-upper-text"><?php echo $top_copy['top2'][1];?></p>
 			</div>
 		</div>
-		<div class="top2-under-container"> <img
-            class="top2-under-img"
-            src="/assets/sp/top/img/top2_smartfon.png"
-            alt="smartfons"
-          />
+		<div class="top2-under-container"><img class="top2-under-img" src="/assets/sp/top/img/top2_smartfon.png" alt="smartfons" />
 			<div class="top2-under-left">
 				<div class="top2-under-btn">MOBILE　APPS</div>
-				<p class="top2-under-text1"> 各ゾーンでどのように物語が展開しているのかをより楽しんでいただくために、 <br> 英語、中国語に対応したモバイルアプリをご用意しております。 <br> 是非、入口でアプリをダウンロードしてからカムイルミナの世界へ進んでください。 <span class="top2-under-text2"> ※スマホケースのレンタルをご用意しています。 </span> </p>
+				<p class="top2-under-text1"><?php echo $top_copy['top2'][2];?></p>
 			</div>
 		</div>
 	</div>
@@ -57,17 +52,9 @@ Template Name: スペシャルページトップ
 	<!-- スライド3枚目 -->
 	<div class="top3-main-container">
 		<div class="top3-left-container">
-			<p class="top3-title">阿寒湖の森 <br>ナイトウォーク</p>
-			<span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span> </div>
-		<div class="top3-right-container"> <img
-            class="top3-right-img"
-            src="/assets/sp/top/img/top3-icon1.png"
-            alt="top3 image"
-          /> <img
-            class="top3-right-icon"
-            src="/assets/sp/top/img/top3-icon2.png"
-            alt="top3 image"
-          /> </div>
+			<p class="top3-title"><?php echo $top_copy['top3'][0];?></p>
+			<span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span></div>
+		<div class="top3-right-container"><img class="top3-right-img" src="/assets/sp/top/img/top3-icon1.png" alt="top3 image" /><img class="top3-right-icon" src="/assets/sp/top/img/top3-icon2.png" alt="top3 image" /> </div>
 	</div>
 	<!-- スライド3枚目 --> 
 	<!-- スライド3枚目 --> 
@@ -77,16 +64,12 @@ Template Name: スペシャルページトップ
 	<div class="top4-main-container">
 		<div class="top4-left-container">
 			<div class="top4-left-inner">
-				<h3 class="top4-title">カムイルミナについて</h3>
+				<h3 class="top4-title"><?php echo $top_copy['top4'][0];?></h3>
 				<p class="top4-text1">ABOUT KAMUY LUMINA</p>
 			</div>
-			<p class="top4-text2"> 舞台は北海道、阿寒摩周国立公園の湖畔の森の<br> 1.2kmの自然遊歩道をたどります。<br> ルミナシリーズとしては世界初となる<br class="sp-only">国立公園での特別なイベント、<br> 阿寒湖の森ナイトウォーク カムイルミナです。 </p>
+			<p class="top4-text2"><?php echo $top_copy['top4'][1];?></p>
 		</div>
-		<div class="top4-right-container"> <img
-          class="top4-right-img"
-          src="/assets/sp/top/img/top4_img.jpg"
-          alt="top5"
-          /> </div>
+		<div class="top4-right-container"><img class="top4-right-img" src="/assets/sp/top/img/top4_img.jpg" alt="top5" /></div>
 	</div>
 	<!-- スライド4枚目 --> 
 	<!-- スライド4枚目 --> 
@@ -94,12 +77,8 @@ Template Name: スペシャルページトップ
 	<!-- スライド5枚目 --> 
 	<!-- スライド5枚目 -->
 	<div class="top5-main-container">
-		<div class="top5-main-inner"> <img
-          class="top5-left-img"
-          src="/assets/sp/top/img/top5_img.png"
-          alt="top_icon3"
-          />
-			<p class="top5-text"> 阿寒のアイヌ文化に根付いたユーカラ（叙事詩） <br> 「フクロウとカケスの物語」をベースに、 <br> 8つのゾーンでさまざまな物語が繰り広げられます。 <br> それぞれのゾーンで体験することができる <br> 驚きと感動にご期待ください。 </p>
+		<div class="top5-main-inner"><img class="top5-left-img" src="/assets/sp/top/img/top5_img.png" alt="top_icon3" />
+			<p class="top5-text"><?php echo $top_copy['top5'][0];?></p>
 		</div>
 	</div>
 	<!-- スライド5枚目 --> 
@@ -107,8 +86,8 @@ Template Name: スペシャルページトップ
 	
 	<!-- スライド6枚目 --> 
 	<!-- スライド6枚目 -->
-	<div class="top6-main-cotainer"> <img class="top6-img" src="/assets/sp/top/img/top6_img.jpg" alt="top6" />
-		<p class="top6-text"> 特に注目すべきは、キーアイテムである <br> リズムスティックです。これを手にすると、 <br> 不思議なことが起こるかもしれません。 <br> </p>
+	<div class="top6-main-cotainer"><img class="top6-img" src="/assets/sp/top/img/top6_img.jpg" alt="top6" />
+		<p class="top6-text"><?php echo $top_copy['top6'][0];?></p>
 	</div>
 	<!-- スライド6枚目 --> 
 	<!-- スライド6枚目 --> 
@@ -117,9 +96,9 @@ Template Name: スペシャルページトップ
 	<!-- スライド7枚目 -->
 	<div class="top7-main-container">
 		<div class="top7-container">
-			<p class="top7-upper-text"> 大自然と融合した光と音の<br class="sp-only"> デジタルアートが織りなす幻想的な世界で<br> およそ50分にわたる壮大な旅に身を委ね、<br class="sp-only"> 心躍る時間をお楽しみください。 </p>
+			<p class="top7-upper-text"><?php echo $top_copy['top7'][0];?></p>
 		</div>
-		<p class="top7-under-text"> 阿寒湖の森ナイトウォーク カムイルミナは、<br class="sp-only"> 言葉にできない魅力が広がる特別な体験です。 <br> ぜひこの機会に訪れて、<br class="sp-only">心に残る感動を味わってください。 </p>
+		<p class="top7-under-text"><?php echo $top_copy['top7'][1];?></p>
 	</div>
 	<!-- スライド7枚目 --> 
 	<!-- スライド7枚目 --> 
@@ -130,23 +109,20 @@ Template Name: スペシャルページトップ
 		<div class="top8-upper-container">
 			<div class="top8-left-container"> <img class="top8-left-img" src="/assets/sp/top/img/top8_img.jpg" />
 				<div class="top8-text-container">
-					<p class="top8-text1"> 今回は地元に住む4人がアトラクションを体験! </p>
+					<p class="top8-text1"><?php echo $top_copy['top8'][0];?></p>
 				</div>
-				<div class="top8-sp-text1"> 今回は地元に住む4人がアトラクションを体験! </div>
+				<div class="top8-sp-text1"><?php echo $top_copy['top8'][0];?></div>
 			</div>
 			<div class="top8-right-container">
 				<div class="top8-right-inner">
-					<h3 class="top8-title">阿寒を楽しむ</h3>
+					<h3 class="top8-title"><?php echo $top_copy['top8'][1];?></h3>
 					<p class="top8-text2">ENJOY AKAN</p>
 				</div>
-				<p class="top8-text3"> 阿寒湖温泉やアイヌ文化について等、 <br> 阿寒の情報をお届けしています。 </p>
+				<p class="top8-text3"><?php echo $top_copy['top8'][2];?></p>
 				<a class="top2-a" href="#">
 				<div class="top8-more-btn" id="moreButton">
 					<p class="top8-text-btn">VIEW MORE</p>
-					<img
-                  class="top8-arrow-icon"
-                  src="/assets/sp/common/img/icons/arrow_right.png"
-                /> </div>
+					<img class="top8-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /> </div>
 				</a> </div>
 		</div>
 		<div class="top8-under-container">
@@ -180,10 +156,10 @@ Template Name: スペシャルページトップ
 		<div class="top9-container">
 			<div class="overlay"></div>
 			<div class="top9-content">
-				<h3 class="top9-title">カムイルミナ レビュー</h3>
+				<h3 class="top9-title"><?php echo $top_copy['top9'][0];?></h3>
 				<p class="top9-text1">KAMUY LUMINA REVIEWS</p>
 				<div class="top9-left-inner">
-					<p class="top9-text2">カムイルミナの<br>世界を体験した<br>来場者からの声</p>
+					<p class="top9-text2"><?php echo $top_copy['top9'][1];?></p>
 				</div>
 			</div>
 			<ul class="top9-card-container">
@@ -217,25 +193,18 @@ Template Name: スペシャルページトップ
 	<div class="top11-main-container">
 		<div class="top11-left-container">
 			<div class="top11-left-inner">
-				<h3 class="top11-title">アクセス</h3>
+				<h3 class="top11-title"><?php echo $top_copy['top11'][0];?></h3>
 				<p class="top11-text1">ACCESS</p>
 			</div>
-			<p class="top11-left-text"> たんちょう釧路空港からお越しの場合<br> 車またはバスで約60～75分 </p>
+			<p class="top11-left-text"><?php echo $top_copy['top11'][1];?></p>
 			<div class="top11-line"></div>
-			<p class="top11-left-text"> 新千歳空港からお越しの場合<br> 車で約3時間30分 </p>
+			<p class="top11-left-text"><?php echo $top_copy['top11'][2];?></p>
 		</div>
 		<div class="top11-right-container">
-			<div> <img
-              class="top11-img"
-              src="/assets/sp/top/img/top11_img.jpg"
-            /> </div>
+			<div><img class="top11-img" src="/assets/sp/top/img/top11_img.jpg" /></div>
 			<div>
-				<iframe
-              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1619.8314586029835!2d139.8096272718674!3d35.709911798369525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x60188ed7294c99e9%3A0x6bf1a5d958b8f0f!2z5p2x5Lqs6YO95aKo55Sw5Yy65oq85LiK77yR5LiB55uu77yRIOOBqOOBhuOBjeOCh-OBhuOCueOCq-OCpOODhOODquODvOmnhQ!3m2!1d35.7104225!2d139.8091541!4m5!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z44CSMTMxLTAwNDUg5p2x5Lqs6YO95aKo55Sw5Yy65oq85LiK77yR5LiB55uu77yR4oiS77ySIOadseS6rOOCueOCq-OCpOODhOODquODvA!3m2!1d35.7100627!2d139.8107004!5e0!3m2!1sja!2sjp!4v1630742236273!5m2!1sja!2sjp"
-              style="border-radius: 8px"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+				<iframe  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1619.8314586029835!2d139.8096272718674!3d35.709911798369525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x60188ed7294c99e9%3A0x6bf1a5d958b8f0f!2z5p2x5Lqs6YO95aKo55Sw5Yy65oq85LiK77yR5LiB55uu77yRIOOBqOOBhuOBjeOCh-OBhuOCueOCq-OCpOODhOODquODvOmnhQ!3m2!1d35.7104225!2d139.8091541!4m5!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z44CSMTMxLTAwNDUg5p2x5Lqs6YO95aKo55Sw5Yy65oq85LiK77yR5LiB55uu77yR4oiS77ySIOadseS6rOOCueOCq-OCpOODhOODquODvA!3m2!1d35.7100627!2d139.8107004!5e0!3m2!1sja!2sjp!4v1630742236273!5m2!1sja!2sjp"
+              style="border-radius: 8px" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</div>
 	</div>
@@ -265,29 +234,23 @@ Template Name: スペシャルページトップ
 			<a href="http://akanat.co.jp/atdepartment/en/">
 			<p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p>
 			</a>
-			<p class="top13-text"> 阿寒では自然のアクティビティが沢山ありますので是非体験してください。 <br> その他阿寒での楽しみ方のヒントが詰まっていますので <br> 是非ご確認ください。 </p>
+			<p class="top13-text"><?php echo $top_copy['top13'][0];?></p>
 			<a href="#">
 			<div class="top13-more-btn" id="moreButton">
 				<p class="top13-text-btn">VIEW MORE</p>
-				<img
-                class="top13-arrow-icon"
-                src="/assets/sp/common/img/icons/arrow_right.png"
-              /> </div>
-			</a> </div>
+				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
+			</a></div>
 		<div class="top13-right-container"> <img class="top13-right-img" src="/assets/sp/top/img/top5_img.png" />
-			<p class="top13-title">カムイルミナへの旅 オフィシャルサイト</p>
+			<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
 			<a href="https://www.kamuylumina.jp/">
 			<p class="top13-sub-title">https://www.kamuylumina.jp/</p>
 			</a>
-			<p class="top13-text"> カムイルミナの魅力的なストーリーや動画など、ぜひ公式サイトをご覧ください。 <br> 公式サイトでは、神秘の冒険に向けてカムイルミナの世界を探索することができます。 <br> カムイルミナを存分に楽しむためにも公式サイトをぜひご訪問ください。 </p>
+			<p class="top13-text"><?php echo $top_copy['top13'][2];?></p>
 			<a href="#">
 			<div class="top13-more-btn" id="moreButton">
 				<p class="top13-text-btn">VIEW MORE</p>
-				<img
-                class="top13-arrow-icon"
-                src="/assets/sp/common/img/icons/arrow_right.png"
-              /> </div>
-			</a> </div>
+				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
+			</a></div>
 	</div>
 	
 	<!-- スライド13枚目 --> 
@@ -297,21 +260,13 @@ Template Name: スペシャルページトップ
 	<!-- スライド14枚目 -->
 	<div class="top14-main-container">
 		<div class="top14-left-container">
-			<p class="top14-title"> 各種SNSで最新情報や <br> イベントなどを発信しています。 </p>
-			<p class="top14-text"> 阿寒やカムイルミナの最新情報などを<br class="sp-only">発信しています。 <br> 現地情報のチェックはTwitterがおすすめです。 <br> 是非フォローとチェックお願いいたします！ </p>
+			<p class="top14-title"><?php echo $top_copy['top14'][0];?></p>
+			<p class="top14-text"><?php echo $top_copy['top14'][1];?></p>
 			<div class="top14-sns-container"> <a href="#">
-				<div class="top14-facebook-btn"> <img
-                  class="top14-facebook-icon"
-                  src="/assets/sp/top/img/facebook_icon.png"
-                  alt="facebook_icon"
-                />FACEBOOK </div>
+				<div class="top14-facebook-btn"> <img class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="facebook_icon" />FACEBOOK</div>
 				</a> <a href="#">
-				<div class="top14-instagram-btn"> <img
-                  class="top14-instagram-icon"
-                  src="/assets/sp/top/img/instagram_icon.png"
-                  alt="instagram_icon"
-                /> INSTAGRAM </div>
-				</a> </div>
+				<div class="top14-instagram-btn"> <img class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="instagram_icon" />INSTAGRAM</div>
+				</a></div>
 		</div>
 		<div class="top14-right-container"> 
 			
@@ -382,44 +337,44 @@ Template Name: スペシャルページトップ
       };
     </script> 
 <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const details = document.querySelectorAll(".detail");
-        details[0].classList.add("selected");
-        details.forEach((detail) => {
-          detail.addEventListener("click", function () {
-            details.forEach((d) => d.classList.remove("selected"));
+	window.addEventListener("scroll", function () {
+		var header = document.querySelector("header");
+		var scrollTop =
+			window.pageYOffset || document.documentElement.scrollTop;
 
-            this.classList.add("selected");
-          });
-        });
-      });
-    </script> 
+		if (scrollTop > 0) {
+			header.classList.add("fixed-header");
+		} else {
+			header.classList.remove("fixed-header");
+		}
+	});
+</script> 
 <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const langButtons = document.querySelectorAll(
-          ".lang-btns-container button"
-        );
-        langButtons[0].classList.add("selected");
-        langButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            langButtons.forEach((btn) => btn.classList.remove("selected"));
+	document.addEventListener("DOMContentLoaded", function () {
+		const details = document.querySelectorAll(".detail");
+		details[0].classList.add("selected");
+		details.forEach((detail) => {
+			detail.addEventListener("click", function () {
+				details.forEach((d) => d.classList.remove("selected"));
 
-            this.classList.add("selected");
-          });
-        });
-      });
-    </script> 
+				this.classList.add("selected");
+			});
+		});
+	});
+</script> 
 <script>
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        var scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+	document.addEventListener("DOMContentLoaded", function () {
+		const langButtons = document.querySelectorAll(
+			".lang-btns-container button"
+		);
+		langButtons[0].classList.add("selected");
+		langButtons.forEach((button) => {
+			button.addEventListener("click", function () {
+				langButtons.forEach((btn) => btn.classList.remove("selected"));
 
-        if (scrollTop > 0) {
-          header.classList.add("fixed-header");
-        } else {
-          header.classList.remove("fixed-header");
-        }
-      });
-    </script>
+				this.classList.add("selected");
+			});
+		});
+	});
+</script>
 </body></html>

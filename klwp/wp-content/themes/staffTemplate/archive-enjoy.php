@@ -1,6 +1,12 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/header.php');?>
 <main class="article-main">
 	<article>
+		<nav class="breadcrumb">
+			<ol class="breadcrumb_list">
+				<li><a href="<?php echo lang_link( '/sp/' , $sp_lang ,$sp_lang);?>">トップ</a></li>
+				<li>記事一覧</li>
+			</ol>
+		</nav>
 		<h1 class="article-title article_main_container">記事一覧<span class="SubText">ARTICLE LIST</span></h1>
 		<div class="middle-main-container">
 			<div class="Container">

@@ -1,10 +1,16 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/header.php');?>
-<main class="main-container" style="background-image:url(<?php the_field('head_img_main');?>);"> 
-	<!-- <p class="upper-container"><img class="upper-image" src="/assets/sp/article_detail/img/detail-img-0.jpg" /></p> -->
+<main class="main-container" style="background-image:url(<?php the_field('head_img_main');?>);">
 	<article class="middle-main-container">
 		<div class="middle-main-container_mobile">
+			<nav class="breadcrumb">
+				<ol class="breadcrumb_list">
+					<li><a href="<?php echo lang_link( '/sp/' , $sp_lang ,$sp_lang);?>">トップ</a></li>
+					<li><a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>">記事一覧</a></li>
+					<li><?php echo the_field("head_title_$sp_lang");?></li>
+				</ol>
+			</nav>
 			<section class="middle-container">
-				<h1 class="middle-title"> <?php echo the_field("head_title_h_$sp_lang");?> </h1>
+				<h1 class="middle-title"><?php echo the_field("head_title_h_$sp_lang");?></h1>
 				<div class="tag-lang-container">
 					<div class="date-tag-container">
 						<p class="date">
