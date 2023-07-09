@@ -8,8 +8,12 @@
   height: 88px;
   width: 100%;
   padding: 8px;
+  padding-inline: 16px;
   background: rgba(0, 0, 0, 0.1);
   z-index: 200;
+}
+#header a{
+  transition: .3s ease;
 }
 
 #header.HeightMin {
@@ -33,6 +37,7 @@
 
 .header-title {
   font-size: 14px;
+  letter-spacing: .5rem;
   font-family: "Poppins", sans-serif;
   color: white;
   cursor: pointer;
@@ -49,6 +54,13 @@
 }
 
 @media screen and (max-width: 1100px) {
+  #header {
+    padding-inline: 16px;
+  }
+  .header-title {
+    font-size: 12px;
+    letter-spacing: .4rem;
+  }
   .detail-container {
     z-index: 100;
     display: flex;
@@ -64,6 +76,12 @@
   cursor: pointer;
   margin-right: 20px;
   color: white;
+  letter-spacing: .3rem;
+  transition: .3s ease;
+  padding: 12px 0;
+}
+.detail a:hover{
+  opacity: .5;
 }
 @media screen and (max-width: 1100px) {
   .detail {
@@ -117,32 +135,37 @@
 .lang-btn1 {
   font-family: "Noto Sans CJK JP", sans-serif;
   border: 1px solid white;
-  border-radius: 8px 0 0 8px;
-  padding: 5px;
+  border-radius: 4px 0 0 4px;
+  padding: 5px 10px;
   background: transparent;
   color: #ffffff;
   cursor: pointer;
+  letter-spacing: .1rem;
+
 }
 
 .lang-btn2 {
   font-family: "Noto Sans CJK JP", sans-serif;
   background: transparent;
   border: 1px solid white;
-  padding: 5px;
+  padding: 5px 10px;
   border-right: none;
   border-left: none;
   color: #ffffff;
   cursor: pointer;
+  letter-spacing: .2rem;
+
 }
 
 .lang-btn3 {
   font-family: "Noto Sans CJK JP", sans-serif;
   background: transparent;
   border: 1px solid white;
-  border-radius: 0 8px 8px 0;
-  padding: 5px;
+  border-radius: 0 4px 4px 0;
+  padding: 5px 10px;
   color: #ffffff;
   cursor: pointer;
+  letter-spacing: .1rem;
 }
 
 .lang-btn1.selected,
@@ -160,13 +183,13 @@
 .ticket-btn {
   display: flex;
   align-items: center;
-  font-family: "Noto Sans CJK JP", sans-serif;
+  font-family: 'Noto Serif CJK JP', serif;
   cursor: pointer;
   font-size: 10px;
   padding: 10px 15px;
-  border-bottom: 2px solid #ffffff;
   margin: 20px 0;
   z-index: 100;
+  transition: .3s ease;
 }
 
 .official-btn {
@@ -228,12 +251,12 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .hamburger {
     position: relative;
     display: block;
-    width: 40px;
-    height: 25px;
+    width: 30px;
+    height: 20px;
   }
 }
 .hamburger span {
@@ -258,7 +281,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .header-pc {
     display: none;
   }
@@ -267,7 +290,7 @@
 .slide-menu {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .slide-menu {
     position: fixed;
     display: flex;

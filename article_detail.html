@@ -30,67 +30,13 @@
   </head>
 
   <body>
-    <header class="fixed-header">
-      <div class="header-container">
-        <p class="header-title" onclick="window.location.href = 'index.html';">
+    <header id="header">
+      <h1>
+        <a class="header-title" href="index.html">
           KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE
-        </p>
-        <div class="right-side-btn">
-          <div class="lang-btns-container">
-            <button
-              class="lang-btn1"
-              data-btn="langBtn1"
-              onclick="selectButton(this)"
-            >
-              日本語
-            </button>
-            <button
-              class="lang-btn2"
-              data-btn="langBtn2"
-              onclick="selectButton(this)"
-            >
-              ENGLISH
-            </button>
-            <button
-              class="lang-btn3"
-              data-btn="langBtn3"
-              onclick="selectButton(this)"
-            >
-              繁体字
-            </button>
-          </div>
-          <a href="#">
-            <div class="official-btn">
-              オフィシャルサイト
-              <img
-                loading="lazy"
-                src="assets/sp/common/img/icons/arrow_right_wihte.png"
-                alt="arrow right white"
-                class="arrow-image"
-              />
-            </div>
-          </a>
-          <a href="#">
-            <div class="ticket-btn">
-              チケット購入はコチラ
-              <img
-                loading="lazy"
-                src="assets/sp/common/img/icons/arrow_right.png"
-                alt="arrow right"
-                class="arrow-image"
-              />
-            </div>
-          </a>
-        </div>
-        <div class="hamburger">
-          <!-- ハンバーガーメニューの線 -->
-          <span></span>
-          <span></span>
-          <span></span>
-          <!-- /ハンバーガーメニューの線 -->
-        </div>
-      </div>
-      <div class="slide-menu">
+        </a>
+      </h1>
+      <div class="right-side-btn">
         <div class="lang-btns-container">
           <button class="lang-btn1" data-btn="langBtn1">日本語</button>
           <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
@@ -102,7 +48,6 @@
             <img
               loading="lazy"
               src="assets/sp/common/img/icons/arrow_right_wihte.png"
-              alt="arrow right white"
               class="arrow-image"
             />
           </div>
@@ -119,7 +64,43 @@
           </div>
         </a>
       </div>
+      <div class="hamburger">
+        <!-- ハンバーガーメニューの線 -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- /ハンバーガーメニューの線 -->
+      </div>
     </header>
+    <div class="slide-menu">
+
+      <div class="lang-btns-container">
+        <button class="lang-btn1" data-btn="langBtn1">日本語</button>
+        <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
+        <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+      </div>
+      <a href="#">
+        <div class="official-btn">
+          オフィシャルサイト
+          <img
+            src="assets/sp/common/img/icons/arrow_right_wihte.png"
+            class="arrow-image"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            src="assets/sp/common/img/icons/arrow_right.png"
+            alt="arrow right"
+            class="arrow-image"
+          />
+        </div>
+      </a>
+    </div>
+
+    <script src="assets/sp/common/js/hamburger_header.js"></script>
 
     <main class="main-container">
       <article class="middle-main-container">
@@ -250,7 +231,7 @@
       <img
         loading="lazy"
         class="title-image"
-        src="assets/sp/common/img/icons/site_name.png"
+        src="assets/sp/common/img/logo.svg"
         alt="Site Name"
       />
       <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
@@ -296,6 +277,21 @@
           behavior: "smooth",
         });
       };
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const langButtons = document.querySelectorAll(
+          '.lang-btns-container button'
+        );
+        langButtons[0].classList.add('selected');
+        langButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            langButtons.forEach((btn) => btn.classList.remove('selected'));
+
+            this.classList.add('selected');
+          });
+        });
+      });
     </script>
     <script>
       window.addEventListener("scroll", function () {

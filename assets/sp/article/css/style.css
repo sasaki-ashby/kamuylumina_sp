@@ -5,6 +5,7 @@ li {
 
 .article-main {
   max-width: 900px;
+  padding-top: 88px;
   margin: auto;
 }
 
@@ -41,9 +42,6 @@ li {
     margin-top: 40px;
   }
 }
-
-
-
 
 .middle-main-container {
   margin-bottom:30px;
@@ -190,7 +188,7 @@ li {
   .spot-list >li{
     margin: 0 16px 30px;
     width: auto;
-    max-width: 100%;
+    max-width: 440px;
   }
 }
 
@@ -201,15 +199,11 @@ li {
 }
 
 .category-tag >li{
-  font-size: 1.1rem;
-  margin: 0 5px 5px;
-}
-
-.category-tag a{
-  font-family: 'Noto Serif CJK JP', serif;
   background-color: #f5f8fc;
   border-radius: 8px;
-  display: block;
+  font-family: 'Noto Serif CJK JP', serif;
+  font-size: 1.1rem;
+  margin: 0 5px 5px;
   padding: 5px 10px;
 }
 
@@ -287,10 +281,12 @@ li {
 .hover-area:hover .spot-text {
   opacity: 0.5;
 }
-
+#moreButton{
+  text-align: center;
+}
 .more_btn {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  letter-spacing: .2rem;
   margin-top: 10px;
   margin-bottom: 50px;
   cursor: pointer;
