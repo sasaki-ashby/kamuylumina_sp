@@ -8,3 +8,34 @@ a {
   text-decoration: none;
   color: #002c4b;
 }
+
+.breadcrumb {
+  font-size: 1.2rem;
+  padding: 1em;
+  padding-left: .5em;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+.breadcrumb_list {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.breadcrumb_list a:hover{
+  text-decoration: underline;
+}
+
+.breadcrumb_list > * + * {
+  margin-left: 0.5em;
+}
+
+.breadcrumb_list > * + *::before {
+  content: ">";
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}

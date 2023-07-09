@@ -285,9 +285,6 @@ main部分
   width : calc(100% / 3) ;
 }
 
-
-
-
 .related-container figure {
   margin-bottom: 15px;
 }
@@ -318,8 +315,6 @@ main部分
   .related-container figure {
     margin: 0 18px 0 0;
   }
-
-
 }
 
 .related-title {
