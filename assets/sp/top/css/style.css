@@ -116,9 +116,6 @@
     padding: 10px;
   }
 }
-.top1-under-container:hover {
-  opacity: 0.8;
-}
 
 @media screen and (max-width: 768px) {
   .top1-under-left-img {
