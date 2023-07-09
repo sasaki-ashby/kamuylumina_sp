@@ -721,7 +721,15 @@
     padding: 160px 0;
   }
 }
-
+.top6-main-contents{
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .top6-main-contents{
+    flex-direction: column;
+  }
+}
 .top6-img {
   width: 66.421%;
   max-width: 880px;
