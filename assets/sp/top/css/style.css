@@ -1404,6 +1404,25 @@
   }
 }
 
+.top12-right-text-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.top12-right-title {
+  font-size: 2.2rem;
+  margin-right: 10px;
+  color: #ffffff;
+  writing-mode: vertical-rl;
+}
+
+.top12-right-sub {
+  font-size: 1rem;
+
+  color: #ffffff;
+  writing-mode: vertical-rl;
+}
+
 .top12-left-img {
   flex: 8;
   width: 76.646%;
