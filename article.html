@@ -45,7 +45,8 @@
             <div class="official-btn">
               オフィシャルサイト
               <img
-                src="/assets/sp/common/img/icons/arrow_right_wihte.png"
+                loading="lazy"
+                src="assets/sp/common/img/icons/arrow_right_wihte.png"
                 alt="arrow right white"
                 class="arrow-image"
               />
@@ -55,7 +56,8 @@
             <div class="ticket-btn">
               チケット購入はコチラ
               <img
-                src="/assets/sp/common/img/icons/arrow_right.png"
+                loading="lazy"
+                src="assets/sp/common/img/icons/arrow_right.png"
                 alt="arrow right"
                 class="arrow-image"
               />
@@ -80,7 +82,8 @@
           <div class="official-btn">
             オフィシャルサイト
             <img
-              src="/assets/sp/common/img/icons/arrow_right_wihte.png"
+              loading="lazy"
+              src="assets/sp/common/img/icons/arrow_right_wihte.png"
               alt="arrow right white"
               class="arrow-image"
             />
@@ -90,7 +93,8 @@
           <div class="ticket-btn">
             チケット購入はコチラ
             <img
-              src="/assets/sp/common/img/icons/arrow_right.png"
+              loading="lazy"
+              src="assets/sp/common/img/icons/arrow_right.png"
               alt="arrow right"
               class="arrow-image"
             />
@@ -137,8 +141,9 @@
               <div class="hover-area">
                 <p class="hover-area_img">
                   <img
+                    loading="lazy"
                     class="spot-image"
-                    src="/assets/sp/article/img/spot_1.jpg"
+                    src="assets/sp/article/img/spot_1.jpg"
                     alt=""
                   />
                 </p>
@@ -157,8 +162,9 @@
               <div class="hover-area">
                 <p class="hover-area_img">
                   <img
+                    loading="lazy"
                     class="spot-image"
-                    src="/assets/sp/article/img/spot_1.jpg"
+                    src="assets/sp/article/img/spot_1.jpg"
                     alt=""
                   />
                 </p>
@@ -183,8 +189,9 @@
               <div class="hover-area">
                 <p class="hover-area_img">
                   <img
+                    loading="lazy"
                     class="spot-image"
-                    src="/assets/sp/article/img/spot_1.jpg"
+                    src="assets/sp/article/img/spot_1.jpg"
                     alt=""
                   />
                 </p>
@@ -205,8 +212,9 @@
               <div class="hover-area">
                 <p class="hover-area_img">
                   <img
+                    loading="lazy"
                     class="spot-image"
-                    src="/assets/sp/article/img/spot_1.jpg"
+                    src="assets/sp/article/img/spot_1.jpg"
                     alt=""
                   />
                 </p>
@@ -228,8 +236,9 @@
               <div class="hover-area">
                 <p class="hover-area_img">
                   <img
+                    loading="lazy"
                     class="spot-image"
-                    src="/assets/sp/article/img/spot_1.jpg"
+                    src="assets/sp/article/img/spot_1.jpg"
                     alt=""
                   />
                 </p>
@@ -247,6 +256,7 @@
     </main>
     <footer class="footer-container">
       <img
+        loading="lazy"
         class="title-image"
         src="/assets/sp/common/img/icons/site_name.png"
         alt="Site Name"
@@ -257,6 +267,7 @@
           <div class="official-btn">
             オフィシャルサイト
             <img
+              loading="lazy"
               class="arrow-image"
               src="/assets/sp/common/img/icons/arrow_right_wihte.png"
               alt="Arrow Right White"
@@ -267,6 +278,7 @@
           <div class="ticket-btn">
             チケット購入はコチラ
             <img
+              loading="lazy"
               class="arrow-image"
               src="/assets/sp/common/img/icons/arrow_right.png"
               alt="Arrow Right"
@@ -277,6 +289,7 @@
       <p class="under-text">COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT</p>
       <div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()">
         <img
+          loading="lazy"
           class="arrow-top-icon"
           src="/assets/sp/common/img/icons/arrow_top.png"
           alt="Arrow Top"
@@ -288,29 +301,29 @@
       const scrollToTop = () => {
         window.scrollTo({
           top: 0,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       };
     </script>
 
     <script>
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
         var scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 0) {
-          header.classList.add("fixed-header");
+          header.classList.add('fixed-header');
         } else {
-          header.classList.remove("fixed-header");
+          header.classList.remove('fixed-header');
         }
       });
     </script>
 
     <script>
       document
-        .querySelector(".hover-area")
-        .addEventListener("mouseover", function (event) {
+        .querySelector('.hover-area')
+        .addEventListener('mouseover', function (event) {
           event.stopPropagation();
         });
     </script>
