@@ -7,6 +7,7 @@
     <title>Top</title>
     <link rel="stylesheet" href="assets/sp/common/css/reset.css" />
     <link rel="stylesheet" href="assets/sp/common/css/style.css" />
+    <link rel="stylesheet" href="assets/sp/top/css/slider.css" />
     <link rel="stylesheet" href="assets/sp/top/css/top_header.css" />
     <link rel="stylesheet" href="assets/sp/top/css/style.css" />
     <link rel="stylesheet" href="assets/sp/common/css/footer.css" />
@@ -35,54 +36,25 @@
   </head>
 
   <body>
-    <header class="fixed-header">
-      <div class="header-container">
-        <p class="header-title" onclick="window.location.href = 'index.html';">
-          KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE
-        </p>
-        <div class="detail-container">
-          <p class="detail" data-detail="REVIEW">REVIEW</p>
-          <p class="detail" data-detail="ACCESS">ACCESS</p>
-          <p class="detail" data-detail="GALLERY">GALLERY</p>
-        </div>
-        <div class="right-side-btn">
-          <div class="lang-btns-container">
-            <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-            <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-            <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-          </div>
-          <a href="#">
-            <div class="official-btn">
-              オフィシャルサイト
-              <img
-                loading="lazy"
-                src="assets/sp/common/img/icons/arrow_right_wihte.png"
-                alt="arrow right white"
-                class="arrow-image"
-              />
-            </div>
-          </a>
-          <a href="#">
-            <div class="ticket-btn">
-              チケット購入はコチラ
-              <img
-                loading="lazy"
-                src="assets/sp/common/img/icons/arrow_right.png"
-                alt="arrow right"
-                class="arrow-image"
-              />
-            </div>
-          </a>
-        </div>
-        <div class="hamburger">
-          <!-- ハンバーガーメニューの線 -->
-          <span></span>
-          <span></span>
-          <span></span>
-          <!-- /ハンバーガーメニューの線 -->
-        </div>
+    <header id="header">
+      <p class="header-title" onclick="window.location.href = 'index.html';">
+        KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE
+      </p>
+      <div class="header-pc">
+        <ul class="detail-container" id="g-navi">
+          <li class="detail" data-detail="REVIEW">
+            <a href="#review">REVIEW</a>
+          </li>
+
+          <li class="detail" data-detail="ACCESS">
+            <a href="#access">ACCESS</a>
+          </li>
+          <li class="detail" data-detail="GALLERY">
+            <a href="#gallery">GALLERY</a>
+          </li>
+        </ul>
       </div>
-      <div class="slide-menu">
+      <div class="right-side-btn">
         <div class="lang-btns-container">
           <button class="lang-btn1" data-btn="langBtn1">日本語</button>
           <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
@@ -110,8 +82,57 @@
           </div>
         </a>
       </div>
-      <script src="assets/sp/common/js/hamburger_header.js"></script>
+      <div class="hamburger">
+        <!-- ハンバーガーメニューの線 -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- /ハンバーガーメニューの線 -->
+      </div>
     </header>
+    <div class="slide-menu">
+      <div>
+        <ul class="detail-container" id="g-navi">
+          <li class="detail" data-detail="REVIEW">
+            <a href="#review">REVIEW</a>
+          </li>
+
+          <li class="detail" data-detail="ACCESS">
+            <a href="#access">ACCESS</a>
+          </li>
+          <li class="detail" data-detail="GALLERY">
+            <a href="#gallery">GALLERY</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lang-btns-container">
+        <button class="lang-btn1" data-btn="langBtn1">日本語</button>
+        <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
+        <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+      </div>
+      <a href="#">
+        <div class="official-btn">
+          オフィシャルサイト
+          <img
+            src="/assets/sp/common/img/icons/arrow_right_wihte.png"
+            class="arrow-image"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            src="/assets/sp/common/img/icons/arrow_right.png"
+            alt="arrow right"
+            class="arrow-image"
+          />
+        </div>
+      </a>
+    </div>
+
+    <script src="/assets/sp/common/js/hamburger_header.js"></script>
+
     <div class="top">
       <!-- スライド1枚目 -->
       <!-- スライド1枚目 -->
@@ -245,9 +266,8 @@
         </div>
         <div class="top4-right-container">
           <img
-            loading="lazy"
             class="top4-right-img"
-            src="assets/sp/top/img/top4_img.jpg"
+            src="/assets/sp/top/img/top4_img.jpg"
             alt="top5"
           />
         </div>
@@ -260,9 +280,8 @@
       <div class="top5-main-container">
         <div class="top5-main-inner">
           <img
-            loading="lazy"
             class="top5-left-img"
-            src="assets/sp/top/img/top5_img.png"
+            src="/assets/sp/top/img/top5_img.png"
             alt="top_icon3"
           />
           <p class="top5-text">
@@ -285,9 +304,8 @@
       <!-- スライド6枚目 -->
       <div class="top6-main-cotainer">
         <img
-          loading="lazy"
           class="top6-img"
-          src="assets/sp/top/img/top6_img.jpg"
+          src="/assets/sp/top/img/top6_img.jpg"
           alt="top6"
         />
         <p class="top6-text">
@@ -435,7 +453,7 @@
 
       <!-- スライド9枚目 -->
       <!-- スライド9枚目 -->
-      <div class="top9-main-container">
+      <div class="top9-main-container" id="review">
         <div class="top9-container">
           <div class="overlay"></div>
           <div class="top9-content">
@@ -477,7 +495,7 @@
 
       <!-- スライド11枚目 -->
       <!-- スライド11枚目 -->
-      <div class="top11-main-container">
+      <div class="top11-main-container" id="access">
         <div class="top11-left-container">
           <div class="top11-left-inner">
             <h3 class="top11-title">アクセス</h3>
@@ -495,11 +513,7 @@
         </div>
         <div class="top11-right-container">
           <div>
-            <img
-              loading="lazy"
-              class="top11-img"
-              src="assets/sp/top/img/top11_img.jpg"
-            />
+            <img class="top11-img" src="/assets/sp/top/img/top11_img.jpg" />
           </div>
           <div>
             <iframe
@@ -516,16 +530,11 @@
 
       <!-- スライド12枚目 -->
       <!-- スライド12枚目 -->
-      <div class="top12-main-container">
+      <div class="top12-main-container" id="gallery">
+        <img class="top12-left-img" src="/assets/sp/top/img/top12_img.jpg" />
         <img
-          loading="lazy"
-          class="top12-left-img"
-          src="assets/sp/top/img/top12_img.jpg"
-        />
-        <img
-          loading="lazy"
           class="top12-left-img2"
-          src="assets/sp/top/img/top11_img_sp.jpg"
+          src="/assets/sp/top/img/top11_img_sp.jpg"
         />
         <div class="top12-right-container">
           <img loading="lazy" src="assets/sp/top/img/top12_text.png" />
@@ -779,5 +788,30 @@
         }
       });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <script>
+      // $(function () {
+      //   $.scrollify({
+      //     section: ".section",
+      //   });
+
+      //   $(".js-scrollify-move").each(function () {
+      //     $(this).click(function () {
+      //       let href = $(this).attr("href");
+      //       $.scrollify.move(href);
+      //     });
+      //   });
+      // });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-8/js/5-1-8.js"></script>
+    <!-- CDN読み込み -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- JSファイル読み込み -->
+    <script src="/assets/sp/top/js/scroll.js"></script>
   </body>
 </html>
