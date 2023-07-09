@@ -13,21 +13,39 @@ hamburger.addEventListener('click', function () {
   }
 });
 
-const review = document.querySelector('.review');
-const access = document.querySelector('.access');
-const gallery = document.querySelector('.gallery');
+// document.querySelectorAll('.sp-link').forEach((link) => {
+//   link.addEventListener('click', function () {
+//     e.preventDefault();
+//     slideMenu.classList.toggle('active');
 
-const closeSideMenu = function () {
-  slideMenu.classList.toggle('active');
+//     // ハンバーガーメニューが展開されている場合はスクロールを無効化
+//     if (this.classList.contains('active')) {
+//       document.body.style.overflow = 'hidden';
+//     } else {
+//       document.body.style.overflow = 'auto';
+//     }
 
-  // ハンバーガーメニューが展開されている場合はスクロールを無効化
-  if (this.classList.contains('active')) {
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = 'auto';
-  }
-};
+//     const targetId = this.getAttribute('href');
+//     const targetElement = document.querySelector(targetId);
 
-review.addEventListener('click', closeSideMenu);
-access.addEventListener('click', closeSideMenu);
-gallery.addEventListener('click', closeSideMenu);
+//     window.scrollTo({
+//       top: targetElement.offsetTop,
+//       behavior: 'smooth',
+//     });
+//   });
+// });
+
+// document.querySelectorAll('.pc-link').forEach((link) => {
+//   link.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const targetId = this.getAttribute('href');
+//     console.log(targetId);
+//     const targetElement = document.querySelector(`#${targetId}`);
+//     console.log(targetElement);
+
+//     window.scrollTo({
+//       top: targetElement.offsetTop,
+//       behavior: 'smooth',
+//     });
+//   });
+// });
