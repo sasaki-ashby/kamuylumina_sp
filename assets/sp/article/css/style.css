@@ -288,10 +288,12 @@ li {
 .hover-area:hover .spot-text {
   opacity: 0.5;
 }
-
+#moreButton{
+  text-align: center;
+}
 .more_btn {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  letter-spacing: .2rem;
   margin-top: 10px;
   margin-bottom: 50px;
   cursor: pointer;
