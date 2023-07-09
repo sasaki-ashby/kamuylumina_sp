@@ -1,0 +1,77 @@
+.top2-under-text1 ,
+.top-upper-text {
+	font-family: 'poppins';
+	font-size: 1.2rem;
+	line-height: 2.3;
+	letter-spacing: normal;
+}
+
+.top3-title {
+	font-family: 'poppins';
+	font-size: 6rem;
+	line-height: 1.3;
+	letter-spacing: normal;
+}
+
+.top3-sub-title {
+}
+
+.top4-left-container {
+	margin-top: 220px;
+}
+
+.top4-title ,
+.top8-title ,
+.top11-title ,
+.top12-right-title {
+	font-family: 'poppins';
+	font-size: 2.6rem;
+	letter-spacing: normal;
+	margin: 0;
+	writing-mode: initial;
+}
+
+.top4-text1 ,
+.top8-text2 ,
+.top9-text1 ,
+.top11-text1 ,
+.top12-right-sub {
+	display: none;
+}
+
+.top4-text2 ,
+.top5-text ,
+.top6-text ,
+.top7-upper-text ,
+.top7-under-text ,
+.top8-text1 ,
+.top8-text3 ,
+.top9-text2 ,
+.top11-left-text {
+	font-family: 'poppins';
+	font-size: 1.4rem;
+	letter-spacing: normal;
+	line-height: 2.1;
+	margin-top: 15px;
+	text-align: left;
+}
+
+.top9-text2 ,
+.top11-title {
+	text-align: center;
+	writing-mode: initial;
+}
+
+.top9-title {
+	font-family: 'poppins';
+	font-size: 3rem;
+	letter-spacing: normal;
+	line-height: 1.5;
+}
+
+.top13-text {
+	font-family: 'poppins';
+	font-size: 1.2rem;
+	letter-spacing: normal;
+	line-height: 2.3;
+}
