@@ -43,9 +43,6 @@ li {
   }
 }
 
-
-
-
 .middle-main-container {
   margin-bottom:30px;
 }
@@ -202,15 +199,11 @@ li {
 }
 
 .category-tag >li{
-  font-size: 1.1rem;
-  margin: 0 5px 5px;
-}
-
-.category-tag a{
-  font-family: 'Noto Serif CJK JP', serif;
   background-color: #f5f8fc;
   border-radius: 8px;
-  display: block;
+  font-family: 'Noto Serif CJK JP', serif;
+  font-size: 1.1rem;
+  margin: 0 5px 5px;
   padding: 5px 10px;
 }
 
