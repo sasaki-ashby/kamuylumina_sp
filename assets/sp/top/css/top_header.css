@@ -78,6 +78,7 @@
   color: white;
   letter-spacing: .3rem;
   transition: .3s ease;
+  padding: 12px 0;
 }
 .detail a:hover{
   opacity: .5;
