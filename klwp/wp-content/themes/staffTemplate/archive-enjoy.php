@@ -4,10 +4,10 @@
 		<nav class="breadcrumb">
 			<ol class="breadcrumb_list">
 				<li><a href="<?php echo lang_link( '/sp/' , $sp_lang ,$sp_lang);?>">トップ</a></li>
-				<li>記事一覧</li>
+				<li><?php echo $common_lang_text["記事一覧"];?></li>
 			</ol>
 		</nav>
-		<h1 class="article-title article_main_container">記事一覧<span class="SubText">ARTICLE LIST</span></h1>
+		<h1 class="article-title article_main_container"><?php echo $common_lang_text["記事一覧"];?><span class="SubText">ARTICLE LIST</span></h1>
 		<div class="middle-main-container">
 			<div class="Container">
 				<nav class="top-middle-container">
@@ -62,6 +62,6 @@
 			?>
 		</ul>
 	</article>
-	<p id="moreButton" class="btn-text more_btn">VIEW MORE<span class="plus-icon">+</span></p>
+	<p id="moreButton" class="btn-text more_btn"><?php echo $common_lang_text["VIEW MORE"];?><span class="plus-icon">+</span></p>
 </main>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/footer.php');?>

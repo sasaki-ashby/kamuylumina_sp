@@ -77,10 +77,15 @@
 		}
 		?>
 	</article>
+	<a href="<?php echo lang_link("/sp/enjoy/",$sp_lang,$sp_lang);?>">
+	<nav class="prevbtn">
+		<p class="prevbtn_text"><?php echo $common_lang_text["記事一覧"];?></p>
+		<img class="prevbtn_icon" src="assets/sp/common/img/icons/arrow_right.png"></nav>
+	</a>
 </main>
 <!-- 関連記事------------------------------- -->
 <section class="related-main-container">
-	<h3 class="related-title">関連記事</h3>
+	<h3 class="related-title"><?php echo $common_lang_text["関連記事"];?></h3>
 	<p class="related-sub-title">RELATED ARTICLES</p>
 	<ul class="related-container">
 		<?php

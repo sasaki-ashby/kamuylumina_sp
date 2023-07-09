@@ -1,3 +1,4 @@
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/common_lang_$sp_lang.php");?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -20,19 +21,17 @@
 				<a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2" data-btn="langBtn2">ENGLISH</a>
 				<a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3" data-btn="langBtn3">繁体字</a>
 			</div>
-			<a href="<?php echo lang_link( '/' , "ni" ,$sp_lang);?>">
-			<div class="official-btn"> オフィシャルサイト <img
-                src="/assets/sp/common/img/icons/arrow_right_wihte.png"
-                alt="arrow right white"
-                class="arrow-image"
-              /> </div>
-			</a> <a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
-			<div class="ticket-btn"> チケット購入はコチラ <img
-                src="/assets/sp/common/img/icons/arrow_right.png"
-                alt="arrow right"
-                class="arrow-image"
-              /> </div>
-			</a> </div>
+			<a href="<?php echo lang_link( '/' , "ni" ,$sp_lang);?>" target="_blank">
+				<div class="official-btn"><?php echo $common_lang_text["オフィシャルサイト"];?>
+					<img src="/assets/sp/common/img/icons/arrow_right_wihte.png" alt="arrow right white" class="arrow-image" />
+				</div>
+			</a>
+			<a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
+				<div class="ticket-btn"><?php echo $common_lang_text["チケット購入はコチラ"];?>
+					<img src="/assets/sp/common/img/icons/arrow_right.png" alt="arrow right" class="arrow-image" />
+				</div>
+			</a>
+		</div>
 		<div class="hamburger"> 
 			<!-- ハンバーガーメニューの線 --> 
 			<span></span> <span></span> <span></span> 
@@ -45,17 +44,16 @@
 			<button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
 			<button class="lang-btn3" data-btn="langBtn3">繁体字</button>
 		</div>
-		<a href="/">
-		<div class="official-btn"> オフィシャルサイト <img
-              src="/assets/sp/common/img/icons/arrow_right_wihte.png"
-              alt="arrow right white"
-              class="arrow-image"
-            /> </div>
-		</a> <a href="#">
-		<div class="ticket-btn"> チケット購入はコチラ <img
-              src="/assets/sp/common/img/icons/arrow_right.png"
-              alt="arrow right"
-              class="arrow-image"
-            /> </div>
-		</a> </div>
+		<a href="/" target="_blank">
+			<div class="official-btn"><?php echo $common_lang_text["オフィシャルサイト"];?>
+			<img src="/assets/sp/common/img/icons/arrow_right_wihte.png" alt="arrow right white" class="arrow-image" />
+			</div>
+		</a>
+		<a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
+			<div class="ticket-btn">
+			<?php echo $common_lang_text["チケット購入はコチラ"];?>
+			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="arrow right" class="arrow-image" />
+			</div>
+		</a>
+	</div>
 </header>
