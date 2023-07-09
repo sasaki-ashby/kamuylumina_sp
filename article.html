@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>article</title>
-    <link rel="stylesheet" href="/assets/sp/common/css/reset.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/style.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/header.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/footer.css" />
-    <link rel="stylesheet" href="/assets/sp/article/css/style.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/reset.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/style.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/header.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/footer.css" />
+    <link rel="stylesheet" href="assets/sp/article/css/style.css" />
     <!-- googlewebfont読み込み ここから-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnlect" href="https://fonts.gstatic.com" crossorigin />
@@ -258,7 +258,7 @@
       <img
         loading="lazy"
         class="title-image"
-        src="/assets/sp/common/img/icons/site_name.png"
+        src="assets/sp/common/img/icons/site_name.png"
         alt="Site Name"
       />
       <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
@@ -269,7 +269,7 @@
             <img
               loading="lazy"
               class="arrow-image"
-              src="/assets/sp/common/img/icons/arrow_right_wihte.png"
+              src="assets/sp/common/img/icons/arrow_right_wihte.png"
               alt="Arrow Right White"
             />
           </div>
@@ -280,7 +280,7 @@
             <img
               loading="lazy"
               class="arrow-image"
-              src="/assets/sp/common/img/icons/arrow_right.png"
+              src="assets/sp/common/img/icons/arrow_right.png"
               alt="Arrow Right"
             />
           </div>
@@ -291,7 +291,7 @@
         <img
           loading="lazy"
           class="arrow-top-icon"
-          src="/assets/sp/common/img/icons/arrow_top.png"
+          src="assets/sp/common/img/icons/arrow_top.png"
           alt="Arrow Top"
         />
         PAGE<br />TOP
@@ -301,33 +301,33 @@
       const scrollToTop = () => {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       };
     </script>
 
     <script>
-      window.addEventListener('scroll', function () {
-        var header = document.querySelector('header');
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
         var scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 0) {
-          header.classList.add('fixed-header');
+          header.classList.add("fixed-header");
         } else {
-          header.classList.remove('fixed-header');
+          header.classList.remove("fixed-header");
         }
       });
     </script>
 
     <script>
       document
-        .querySelector('.hover-area')
-        .addEventListener('mouseover', function (event) {
+        .querySelector(".hover-area")
+        .addEventListener("mouseover", function (event) {
           event.stopPropagation();
         });
     </script>
-    <script src="/assets/sp/common/js/hamburger_header.js"></script>
-    <!-- <script src="/assets/sp/article/js/spot_more.js"></script> -->
+    <script src="assets/sp/common/js/hamburger_header.js"></script>
+    <!-- <script src="assets/sp/article/js/spot_more.js"></script> -->
   </body>
 </html>
