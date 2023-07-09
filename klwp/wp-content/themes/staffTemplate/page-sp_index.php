@@ -3,72 +3,7 @@
 Template Name: スペシャルページトップ
 */
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<title>Top</title>
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/head_link.php'); ?>
-<?php wp_head(); ?>
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/include/head_tag.php'); ?>
-</head>
-<body>
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/include/body_tag.php'); ?>
-<header class="fixed-header">
-	<div class="header-container">
-		<p class="header-title" onclick="window.location.href = 'index.html';"> KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE </p>
-		<div class="detail-container">
-			<p class="detail" data-detail="REVIEW">REVIEW</p>
-			<p class="detail" data-detail="ACCESS">ACCESS</p>
-			<p class="detail" data-detail="GALLERY">GALLERY</p>
-		</div>
-		<div class="right-side-btn">
-			<div class="lang-btns-container">
-				<button class="lang-btn1" data-btn="langBtn1">日本語</button>
-				<button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-				<button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-			</div>
-			<a href="#">
-			<div class="official-btn"> オフィシャルサイト <img
-                src="/assets/sp/common/img/icons/arrow_right_wihte.png"
-                alt="arrow right white"
-                class="arrow-image"
-              /> </div>
-			</a> <a href="#">
-			<div class="ticket-btn"> チケット購入はコチラ <img
-                src="/assets/sp/common/img/icons/arrow_right.png"
-                alt="arrow right"
-                class="arrow-image"
-              /> </div>
-			</a> </div>
-		<div class="hamburger"> 
-			<!-- ハンバーガーメニューの線 --> 
-			<span></span> <span></span> <span></span> 
-			<!-- /ハンバーガーメニューの線 --> 
-		</div>
-	</div>
-	<div class="slide-menu">
-		<div class="lang-btns-container">
-			<button class="lang-btn1" data-btn="langBtn1">日本語</button>
-			<button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-			<button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-		</div>
-		<a href="#">
-		<div class="official-btn"> オフィシャルサイト <img
-              src="/assets/sp/common/img/icons/arrow_right_wihte.png"
-              class="arrow-image"
-            /> </div>
-		</a> <a href="#">
-		<div class="ticket-btn"> チケット購入はコチラ <img
-              src="/assets/sp/common/img/icons/arrow_right.png"
-              alt="arrow right"
-              class="arrow-image"
-            /> </div>
-		</a> </div>
-	<script src="/assets/sp/common/js/hamburger_header.js"></script> 
-</header>
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/header.php');?>
 <div class="top"> 
 	<!-- スライド1枚目 --> 
 	<!-- スライド1枚目 -->
@@ -216,27 +151,23 @@ Template Name: スペシャルページトップ
 		</div>
 		<div class="top8-under-container">
 			<ul class="top8-img-list">
-				<a href="/article_detail.html">
-				<li> <img class="top8-img" src="/assets/sp/article/img/spot_6.jpg" /> <span class="image-caption"
-                  >今回は地元に住む4人がアトラクションを体験!</span
-                > </li>
-				</a> <a href="">
-				<li> <img class="top8-img" src="/assets/sp/article/img/spot_6.jpg" /> <span class="image-caption"
-                  >今回は地元に住む4人がアトラクションを体験!</span
-                > </li>
-				</a> <a href="">
-				<li> <img class="top8-img" src="/assets/sp/article/img/spot_6.jpg" /> <span class="image-caption"
-                  >今回は地元に住む4人がアトラクションを体験!</span
-                > </li>
-				</a> <a href="">
-				<li> <img class="top8-img" src="/assets/sp/article/img/spot_6.jpg" /> <span class="image-caption"
-                  >今回は地元に住む4人がアトラクションを体験!</span
-                > </li>
-				</a> <a href="">
-				<li> <img class="top8-img" src="/assets/sp/article/img/spot_6.jpg" /> <span class="image-caption"
-                  >今回は地元に住む4人がアトラクションを体験!</span
-                > </li>
-				</a>
+				<?php
+				$args = array(
+					'post_type' => 'enjoy',
+					'posts_per_page' => 5,
+				);
+				$the_query = new WP_Query( $args );
+				if ( $the_query->have_posts() ) {
+					while ( $the_query->have_posts() ) {
+						$the_query->the_post();
+						?>
+				<!-- 記事1件:start/ -->
+				<li> <a href="<?php echo lang_link( get_permalink() , $sp_lang , $sp_lang);?>"> <img class="top8-img" src="<?php the_field('head_img_thum');?>" /><span class="image-caption"><?php echo the_field("head_title_$sp_lang");?></span> </a> </li>
+				<?php
+				}
+				}
+				wp_reset_postdata();
+				?>
 			</ul>
 		</div>
 	</div>
@@ -491,5 +422,4 @@ Template Name: スペシャルページトップ
         }
       });
     </script>
-</body>
-</html>
+</body></html>

@@ -13,32 +13,20 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/include/body_tag.php'); ?>
 <header class="fixed-header">
 	<div class="header-container">
-		<p class="header-title" onclick="window.location.href = 'index.html';"> KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE </p>
+		<a href="<?php echo lang_link( '/sp/' ,$sp_lang ,$sp_lang);?>" class="header-title">KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE</a>
 		<div class="right-side-btn">
 			<div class="lang-btns-container">
-				<button
-              class="lang-btn1"
-              data-btn="langBtn1"
-              onclick="selectButton(this)"
-            > 日本語 </button>
-				<button
-              class="lang-btn2"
-              data-btn="langBtn2"
-              onclick="selectButton(this)"
-            > ENGLISH </button>
-				<button
-              class="lang-btn3"
-              data-btn="langBtn3"
-              onclick="selectButton(this)"
-            > 繁体字 </button>
+				<a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1" data-btn="langBtn1">日本語</a>
+				<a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2" data-btn="langBtn2">ENGLISH</a>
+				<a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3" data-btn="langBtn3">繁体字</a>
 			</div>
-			<a href="#">
+			<a href="<?php echo lang_link( '/' , "ni" ,$sp_lang);?>">
 			<div class="official-btn"> オフィシャルサイト <img
                 src="/assets/sp/common/img/icons/arrow_right_wihte.png"
                 alt="arrow right white"
                 class="arrow-image"
               /> </div>
-			</a> <a href="#">
+			</a> <a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
 			<div class="ticket-btn"> チケット購入はコチラ <img
                 src="/assets/sp/common/img/icons/arrow_right.png"
                 alt="arrow right"

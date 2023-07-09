@@ -161,11 +161,22 @@ function add_header_cssjs() {
 		}*/
 }
 add_action( 'wp_enqueue_scripts', 'add_header_cssjs' );
+function lang_link($url, $lang, $current_lang) {
+    $parsed_url = $url;  // 直接パースされたURLを使用
 
-function lang_link( $target_lang, $current_lang ) {
-	// 現在の URL を取得
-	$current_url = $_SERVER[ 'REQUEST_URI' ];
+    if ($lang !== 'ni') {
+        // 日本語以外の言語の場合、現在の言語コードを削除する
+        $parsed_url = preg_replace("#^/{$current_lang}(?=/|$)#", '', $parsed_url);
+    }
 
+    // 新しい言語のリンクを生成する
+    $new_url = ($lang !== 'ni' ? "/$lang" : '') . $parsed_url;
+
+    return $new_url;
+}
+
+
+function lang_link2( $current_url, $target_lang, $current_lang ) {
 	if ( $current_lang === 'ni' ) {
 		// 現在の言語が日本語の場合、新しい言語パスを最初に追加する
 		$new_url = ( $target_lang !== 'ni' ) ? '/' . $target_lang . $current_url : $current_url;
@@ -173,7 +184,6 @@ function lang_link( $target_lang, $current_lang ) {
 		// 現在の言語が日本語以外の場合、言語パスを新しいものに置き換える
 		$new_url = ( $target_lang !== 'ni' ) ? preg_replace( '#^/[a-z]+#', '/' . $target_lang, $current_url ) : preg_replace( '#^/[a-z]+#', '', $current_url );
 	}
-
 	return $new_url;
 }
 ?>

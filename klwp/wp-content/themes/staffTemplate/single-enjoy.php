@@ -20,9 +20,9 @@
 						</ul>
 					</div>
 					<ul class="lang-container">
-						<li class="lang-text-1 __current"><a href="<?php echo lang_link("ni",$sp_lang);?>">日本語</a></li>
-						<li class="lang-text-2"><a href="<?php echo lang_link("en",$sp_lang);?>">ENGLISH</a></li>
-						<li class="lang-text-3"><a href="<?php echo lang_link("tc",$sp_lang);?>">繁体字</a></li>
+						<li class="lang-text-1 __current"><a href="<?php echo lang_link($_SERVER['REQUEST_URI'],"ni",$sp_lang);?>">日本語</a></li>
+						<li class="lang-text-2"><a href="<?php echo lang_link($_SERVER['REQUEST_URI'],"en",$sp_lang);?>">ENGLISH</a></li>
+						<li class="lang-text-3"><a href="<?php echo lang_link($_SERVER['REQUEST_URI'],"tc",$sp_lang);?>">繁体字</a></li>
 					</ul>
 				</div>
 				<section class="middle-container">
@@ -52,12 +52,16 @@
 		</div>
 		<?php
 		$object = get_field( 'reference' );
-		if( $object){
-		?>
+		if ( $object ) {
+			?>
 		<div class="detail-img-container">
 			<section class="reference">
-				<h3 class="detail-title"><?php the_field("name_$sp_lang",$object->taxonomy."_".$object->term_id);?></h3>
-				<p class="detail-text"><?php the_field("address_$sp_lang",$object->taxonomy."_".$object->term_id);?></p>
+				<h3 class="detail-title">
+					<?php the_field("name_$sp_lang",$object->taxonomy."_".$object->term_id);?>
+				</h3>
+				<p class="detail-text">
+					<?php the_field("address_$sp_lang",$object->taxonomy."_".$object->term_id);?>
+				</p>
 				<figure class="googlemap">
 					<iframe src="<?php the_field("googlemap",$object->taxonomy."_".$object->term_id);?>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</figure>
