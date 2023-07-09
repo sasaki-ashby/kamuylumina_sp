@@ -95,7 +95,7 @@ function my_custom_post_type_permalinks_rule() {
 	add_rewrite_rule( '^sp/enjoy/([^/]*)/?$', 'index.php?post_type=enjoy&name=$matches[1]', 'top' );
 	add_rewrite_rule( '^([^/]*)/sp/enjoy/([^/]*)/?$', 'index.php?post_type=enjoy&name=$matches[2]', 'top' );
 	add_rewrite_rule( '^([^/]*)/sp/enjoy/?$', 'index.php?post_type=enjoy', 'top' );
-	
+
 	add_rewrite_rule( '^([^/]*)/sp/?$', 'index.php?pagename=sp', 'top' );
 }
 add_action( 'init', 'my_custom_post_type_permalinks_rule' );
@@ -164,20 +164,22 @@ function add_header_cssjs() {
 		}*/
 }
 add_action( 'wp_enqueue_scripts', 'add_header_cssjs' );
-function lang_link($url, $lang, $current_lang) {
-    $parsed_url = $url;  // 直接パースされたURLを使用
 
-    if ($lang !== 'ni') {
-        // 日本語以外の言語の場合、現在の言語コードを削除する
-        $parsed_url = preg_replace("#^/{$current_lang}(?=/|$)#", '', $parsed_url);
-    }
-
-    // 新しい言語のリンクを生成する
-    $new_url = ($lang !== 'ni' ? "/$lang" : '') . $parsed_url;
-
-    return $new_url;
+function url_domain_del( $url ) {
+	$home_url = home_url(); //ホームのURLを取得する
+	$data = str_replace( $home_url, "", $url ); //いらないホームのURLを削除する
+	return $data; //出力する
 }
-
+function lang_link( $url, $lang, $current_lang ) {
+	$parsed_url = $url; // 直接パースされたURLを使用
+	if ( $lang !== 'ni' ) {
+		// 日本語以外の言語の場合、現在の言語コードを削除する
+		$parsed_url = preg_replace( "#^/{$current_lang}(?=/|$)#", '', $parsed_url );
+	}
+	// 新しい言語のリンクを生成する
+	$new_url = ( $lang !== 'ni' ? "/$lang" : '' ) . $parsed_url;
+	return $new_url;
+}
 
 function lang_link2( $current_url, $target_lang, $current_lang ) {
 	if ( $current_lang === 'ni' ) {

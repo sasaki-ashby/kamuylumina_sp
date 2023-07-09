@@ -1,4 +1,4 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/common_lang_$sp_lang.php");?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/lang_$sp_lang"."_common.php");?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -40,9 +40,9 @@
 	</div>
 	<div class="slide-menu">
 		<div class="lang-btns-container">
-			<button class="lang-btn1" data-btn="langBtn1">日本語</button>
-			<button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-			<button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+			<a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1" data-btn="langBtn1">日本語</a>
+			<a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2" data-btn="langBtn2">ENGLISH</a>
+			<a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3" data-btn="langBtn3">繁体字</a>
 		</div>
 		<a href="/" target="_blank">
 			<div class="official-btn"><?php echo $common_lang_text["オフィシャルサイト"];?>

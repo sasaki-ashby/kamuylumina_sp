@@ -56,6 +56,9 @@ function remove_image_sizes( $sizes ) {
 	unset( $sizes[ '2048x2048' ] );
 	return $sizes;
 }
+add_filter( 'intermediate_image_sizes_advanced', 'remove_image_sizes' );
+update_option( 'medium_large_size_w', 0 );
+
 // SVGのアップロード
 function add_file_types_to_uploads( $file_types ) {
 	$new_filetypes = array();

@@ -11,14 +11,14 @@
 		<div class="middle-main-container">
 			<div class="Container">
 				<nav class="top-middle-container">
-					<p class="TextAll TextContainer __current"><a href="">すべて</a></p>
+					<p class="TextAll TextContainer __current"><a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>">すべて</a></p>
 					<ul class="articleNav-list">
 						<?php
 						$taxonomy_name = 'tax_enjoy'; //取得したいタクソノミー名
 						$parent_terms = get_terms( $taxonomy_name, array( 'hide_empty' => false, 'parent' => 0 ) ); //第一階層のタームだけ取得
 						foreach ( $parent_terms as $taxonomy ) {
 							?>
-						<li><a href="<?php echo $taxonomy->slug;?>"><?php echo $taxonomy->name;?></a></li>
+						<li><a href="<?php echo $taxonomy->slug;?>"><?php echo get_field("tax_enjoy-lang_name_$sp_lang","tax_enjoy_".$taxonomy->term_id);?></a></li>
 						<?php
 						}
 						?>
@@ -48,7 +48,7 @@
 				<li><a href="<?php echo get_term_link( $tax );?>"><?php echo $tax->name;?></a></li>
 				<?php } ?>
 			</ul>
-			<a class="spot-a" href="<?php echo get_permalink();?>">
+			<a class="spot-a" href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">
 			<div class="hover-area">
 				<p class="hover-area_img"><img class="spot-image" src="<?php the_field('head_img_thum');?>" alt=""/></p>
 				<p class="spot-text"><?php echo the_title();?></p>

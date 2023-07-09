@@ -4,7 +4,7 @@ Template Name: スペシャルページトップ
 */
 ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/header.php');?>
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/top_lang_$sp_lang.php");?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/lang_".$sp_lang."_top.php");?>
 <div class="top"> 
 	<!-- スライド1枚目 --> 
 	<!-- スライド1枚目 -->
@@ -119,7 +119,7 @@ Template Name: スペシャルページトップ
 					<p class="top8-text2">ENJOY AKAN</p>
 				</div>
 				<p class="top8-text3"><?php echo $top_copy['top8'][2];?></p>
-				<a class="top2-a" href="#">
+				<a class="top2-a" href="<?php echo lang_link("/sp/enjoy/" , $sp_lang , $sp_lang);?>">
 				<div class="top8-more-btn" id="moreButton">
 					<p class="top8-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
 					<img class="top8-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /> </div>
@@ -138,7 +138,7 @@ Template Name: スペシャルページトップ
 						$the_query->the_post();
 						?>
 				<!-- 記事1件:start/ -->
-				<li> <a href="<?php echo lang_link( get_permalink() , $sp_lang , $sp_lang);?>"> <img class="top8-img" src="<?php the_field('head_img_thum');?>" /><span class="image-caption"><?php echo the_field("head_title_$sp_lang");?></span> </a> </li>
+				<li> <a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>"> <img class="top8-img" src="<?php the_field('head_img_thum');?>" /><span class="image-caption"><?php echo the_field("head_title_$sp_lang");?></span> </a> </li>
 				<?php
 				}
 				}
