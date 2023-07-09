@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 1;
   margin: 0;
 }
@@ -54,7 +54,7 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 65px;
+  font-size: 6.5rem;
   letter-spacing: 10px;
   font-weight: 300;
   margin: 20px 0 0 0;
@@ -87,7 +87,7 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -138,7 +138,7 @@
 .under-p-1 {
   font-family: "Noto Serif CJK JP", serif;
   color: #002c4b;
-  font-size: 17px;
+  font-size: 1.7rem;
   margin: 1px;
   letter-spacing: 2px;
 }
@@ -146,7 +146,7 @@
 @media screen and (max-width: 768px) {
   .under-p-1 {
     margin: 0;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0;
   }
@@ -156,13 +156,13 @@
   font-family: "Noto Serif JP", serif;
   color: #002c4b;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.7rem;
   margin: 1px;
 }
 
 @media screen and (max-width: 768px) {
   .under-p-2 {
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0;
     margin: 0;
@@ -619,14 +619,14 @@
 }
 
 .top4-text2 {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 35px;
   text-align: center;
   margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
   .top4-text2 {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
   }
 }
@@ -692,14 +692,14 @@
 
 .top5-text {
   display: flex;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 46px;
   color: #ffffff;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .top5-text {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
   }
 }
@@ -738,7 +738,7 @@
 
 .top6-text {
   display: flex;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 40px;
   color: #002c4b;
   text-align: center;
@@ -747,7 +747,7 @@
 
 @media screen and (max-width: 768px) {
   .top6-text {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
     margin-top: 50px;
     margin-left: 0;
@@ -775,7 +775,7 @@
 
 .top7-upper-text {
   position: absolute;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 46px;
   top: 50px;
   left: 100px;
@@ -789,7 +789,7 @@
     left: 0;
     width: 100%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
     text-align: center;
     padding: 10px;
@@ -797,7 +797,7 @@
 }
 
 .top7-under-text {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 46px;
   letter-spacing: 0.03em;
   color: #002c4b;
@@ -807,7 +807,7 @@
 @media screen and (max-width: 768px) {
   .top7-under-text {
     margin-top: 50px;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
     padding: 10px;
   }
@@ -901,7 +901,7 @@
 }
 
 .top8-text1 {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #002c4b;
 }
 @media screen and (max-width: 768px) {
@@ -916,7 +916,7 @@
 @media screen and (max-width: 768px) {
   .top8-sp-text1 {
     display: block;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #002c4b;
     margin-top: 20px;
   }
@@ -958,7 +958,7 @@
 }
 
 .top8-text3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 35px;
   color: #002c4b;
   text-align: center;
@@ -966,7 +966,7 @@
 }
 @media screen and (max-width: 768px) {
   .top8-text3 {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
   }
 }
@@ -1007,7 +1007,7 @@
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1.4rem;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s;
@@ -1076,7 +1076,7 @@
 }
 
 .top8-text-btn {
-  font-size: 11px;
+  font-size: 1.1rem;
   padding: 5px;
   margin-right: 10px;
   color: #002c4b;
@@ -1173,7 +1173,7 @@
 }
 @media screen and (max-width: 768px) {
   .top9-title {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
@@ -1345,14 +1345,14 @@
 
 .top11-left-text {
   color: #002c4b;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 25px;
   text-align: left;
 }
 @media screen and (max-width: 768px) {
   .top11-left-text {
     width: 100%;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 25px;
     text-align: center;
   }
@@ -1461,7 +1461,7 @@
 }
 
 .top12-text-btn {
-  font-size: 11px;
+  font-size: 1.1rem;
   padding: 5px;
   margin-right: 10px;
   color: #ffffff;
@@ -1563,7 +1563,7 @@
 .top13-sub-title {
   display: flex;
   justify-content: center;
-  font-size: 10px;
+  font-size: 1rem;
   object-fit: cover;
   color: #002c4b;
 }
@@ -1573,7 +1573,7 @@
 }
 
 .top13-text {
-  font-size: 13px;
+  font-size: 1.3rem;
   object-fit: cover;
   color: #002c4b;
   line-height: 35px;
@@ -1603,7 +1603,7 @@
 }
 
 .top13-text-btn {
-  font-size: 11px;
+  font-size: 1.1rem;
   padding: 5px;
   margin-right: 10px;
   color: #002c4b;
@@ -1665,7 +1665,7 @@
 
 .top14-title {
   font-family: "Noto Serif CJK JP", serif;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   color: #002c4b;
   font-weight: 600;
   line-height: 40px;
@@ -1679,7 +1679,7 @@
 }
 
 .top14-text {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #002c4b;
   line-height: 35px;
   text-align: left;
@@ -1705,7 +1705,7 @@
   cursor: pointer;
   border: 1px solid #a4b1ba;
   padding: 30px 80px;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #002c4b;
   display: flex;
   align-items: center;
@@ -1720,7 +1720,7 @@
   cursor: pointer;
   border: 1px solid #a4b1ba;
   padding: 30px 80px;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #002c4b;
   display: flex;
   align-items: center;

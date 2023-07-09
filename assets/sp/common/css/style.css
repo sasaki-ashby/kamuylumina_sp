@@ -1,6 +1,6 @@
 html {
   color: #002c4b;
-  font-family: "Noto Sans CJK JP" , sans-serif;
+  font-family: "Noto Sans CJK JP", sans-serif;
   font-size: 10px;
 }
 
@@ -12,7 +12,7 @@ a {
 .breadcrumb {
   font-size: 1.2rem;
   padding: 1em;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 @media screen and (max-width: 768px) {
@@ -23,10 +23,10 @@ a {
 
 .breadcrumb_list {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
-.breadcrumb_list a:hover{
+.breadcrumb_list a:hover {
   text-decoration: underline;
 }
 

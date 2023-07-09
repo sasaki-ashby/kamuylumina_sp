@@ -21,7 +21,7 @@
 }
 
 .header-title {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
   color: white;
   cursor: pointer;
@@ -139,7 +139,7 @@
   align-items: center;
   font-family: "Noto Sans CJK JP", sans-serif;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 1rem;
   padding: 10px 15px;
   border-bottom: 2px solid #ffffff;
   margin: 20px 0;
