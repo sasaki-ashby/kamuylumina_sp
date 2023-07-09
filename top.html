@@ -5,70 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <title>Top</title>
-    <link rel="stylesheet" href="/assets/sp/common/css/reset.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/style.css" />
-    <link rel="stylesheet" href="/assets/sp/top/css/top_header.css" />
-    <link rel="stylesheet" href="/assets/sp/top/css/style.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/footer.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/reset.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/style.css" />
+    <link rel="stylesheet" href="assets/sp/top/css/slider.css" />
+    <link rel="stylesheet" href="assets/sp/top/css/top_header.css" />
+    <link rel="stylesheet" href="assets/sp/top/css/style.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/footer.css" />
     <!-- googlewebfont読み込み ここから-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnlect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnlect" href="https://fonts.gstatic.com" crossorigin />
     <!-- 日本語フォント読み込み -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- 英字 繁体字 簡体字 ハングル読み込み -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- googlewebfont読み込み ここまで-->
   </head>
 
   <body>
-    <header class="fixed-header">
-      <div class="header-container">
-        <p class="header-title" onclick="window.location.href = 'index.html';">
-          KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE
-        </p>
-        <div class="detail-container">
-          <p class="detail" data-detail="REVIEW">REVIEW</p>
-          <p class="detail" data-detail="ACCESS">ACCESS</p>
-          <p class="detail" data-detail="GALLERY">GALLERY</p>
-        </div>
-        <div class="right-side-btn">
-          <div class="lang-btns-container">
-            <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-            <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-            <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-          </div>
-          <a href="#">
-            <div class="official-btn">
-              オフィシャルサイト
-              <img
-                src="/assets/sp/common/img/icons/arrow_right_wihte.png"
-                alt="arrow right white"
-                class="arrow-image"
-              />
-            </div>
-          </a>
-          <a href="#">
-            <div class="ticket-btn">
-              チケット購入はコチラ
-              <img
-                src="/assets/sp/common/img/icons/arrow_right.png"
-                alt="arrow right"
-                class="arrow-image"
-              />
-            </div>
-          </a>
-        </div>
-        <div class="hamburger">
-          <!-- ハンバーガーメニューの線 -->
-          <span></span>
-          <span></span>
-          <span></span>
-          <!-- /ハンバーガーメニューの線 -->
-        </div>
+    <header id="header">
+      <p class="header-title" onclick="window.location.href = 'index.html';">
+        KAMUY&nbsp;LUMINA&nbsp;SPECIAL&nbsp;SITE
+      </p>
+      <div class="header-pc">
+        <ul class="detail-container" id="g-navi">
+          <li class="detail" data-detail="REVIEW">
+            <a href="#review">REVIEW</a>
+          </li>
+
+          <li class="detail" data-detail="ACCESS">
+            <a href="#access">ACCESS</a>
+          </li>
+          <li class="detail" data-detail="GALLERY">
+            <a href="#gallery">GALLERY</a>
+          </li>
+        </ul>
       </div>
-      <div class="slide-menu">
+      <div class="right-side-btn">
         <div class="lang-btns-container">
           <button class="lang-btn1" data-btn="langBtn1">日本語</button>
           <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
@@ -78,7 +64,8 @@
           <div class="official-btn">
             オフィシャルサイト
             <img
-              src="/assets/sp/common/img/icons/arrow_right_wihte.png"
+              src="assets/sp/common/img/icons/arrow_right_wihte.png"
+              alt="arrow right white"
               class="arrow-image"
             />
           </div>
@@ -87,15 +74,64 @@
           <div class="ticket-btn">
             チケット購入はコチラ
             <img
-              src="/assets/sp/common/img/icons/arrow_right.png"
+              src="assets/sp/common/img/icons/arrow_right.png"
               alt="arrow right"
               class="arrow-image"
             />
           </div>
         </a>
       </div>
-      <script src="/assets/sp/common/js/hamburger_header.js"></script>
+      <div class="hamburger">
+        <!-- ハンバーガーメニューの線 -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- /ハンバーガーメニューの線 -->
+      </div>
     </header>
+    <div class="slide-menu">
+      <div>
+        <ul class="detail-container" id="g-navi">
+          <li class="detail" data-detail="REVIEW">
+            <a href="#review">REVIEW</a>
+          </li>
+
+          <li class="detail" data-detail="ACCESS">
+            <a href="#access">ACCESS</a>
+          </li>
+          <li class="detail" data-detail="GALLERY">
+            <a href="#gallery">GALLERY</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lang-btns-container">
+        <button class="lang-btn1" data-btn="langBtn1">日本語</button>
+        <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
+        <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+      </div>
+      <a href="#">
+        <div class="official-btn">
+          オフィシャルサイト
+          <img
+            src="assets/sp/common/img/icons/arrow_right_wihte.png"
+            class="arrow-image"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div class="ticket-btn">
+          チケット購入はコチラ
+          <img
+            src="assets/sp/common/img/icons/arrow_right.png"
+            alt="arrow right"
+            class="arrow-image"
+          />
+        </div>
+      </a>
+    </div>
+
+    <script src="assets/sp/common/js/hamburger_header.js"></script>
+
     <div class="top">
       <!-- スライド1枚目 -->
       <!-- スライド1枚目 -->
@@ -140,11 +176,11 @@
             </p>
             <p class="top2-upper-text">
               冒険への入り口となるウェルカムエリアでは
-              <br class="pc-br">
+              <br class="pc-br" />
               日本語、英語、中国語の3言語で
-              <br class="pc-br">
+              <br class="pc-br" />
               カムイルミナの世界への案内動画をご用意しております。
-              <br class="pc-br">
+              <br class="pc-br" />
               カムイの世界へ旅立つ前に是非しっかりとご覧ください。
             </p>
           </div>
@@ -159,9 +195,9 @@
             <div class="top2-under-btn">MOBILE　APPS</div>
             <p class="top2-under-text1">
               各ゾーンでどのように物語が展開しているのかをより楽しんでいただくために、
-              <br>
+              <br />
               英語、中国語に対応したモバイルアプリをご用意しております。
-              <br>
+              <br />
               是非、入口でアプリをダウンロードしてからカムイルミナの世界へ進んでください。
               <span class="top2-under-text2">
                 ※スマホケースのレンタルをご用意しています。
@@ -177,7 +213,7 @@
       <!-- スライド3枚目 -->
       <div class="top3-main-container">
         <div class="top3-left-container">
-          <p class="top3-title">阿寒湖の森 <br>ナイトウォーク</p>
+          <p class="top3-title">阿寒湖の森 <br />ナイトウォーク</p>
           <span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span>
         </div>
 
@@ -202,21 +238,23 @@
       <div class="top4-main-container">
         <div class="top4-left-container">
           <div class="top4-left-inner">
-           <h3 class="top4-title">カムイルミナについて</h3>
-           <p class="top4-text1">ABOUT KAMUY LUMINA</p>
+            <h3 class="top4-title">カムイルミナについて</h3>
+            <p class="top4-text1">ABOUT KAMUY LUMINA</p>
           </div>
           <p class="top4-text2">
-            舞台は北海道、阿寒摩周国立公園の湖畔の森の<br>
-            1.2kmの自然遊歩道をたどります。<br>
-            ルミナシリーズとしては世界初となる<br class="sp-only">国立公園での特別なイベント、<br>
+            舞台は北海道、阿寒摩周国立公園の湖畔の森の<br />
+            1.2kmの自然遊歩道をたどります。<br />
+            ルミナシリーズとしては世界初となる<br
+              class="sp-only"
+            />国立公園での特別なイベント、<br />
             阿寒湖の森ナイトウォーク カムイルミナです。
           </p>
         </div>
         <div class="top4-right-container">
           <img
-          class="top4-right-img"
-          src="/assets/sp/top/img/top4_img.jpg"
-          alt="top5"
+            class="top4-right-img"
+            src="/assets/sp/top/img/top4_img.jpg"
+            alt="top5"
           />
         </div>
       </div>
@@ -228,19 +266,19 @@
       <div class="top5-main-container">
         <div class="top5-main-inner">
           <img
-          class="top5-left-img"
-          src="/assets/sp/top/img/top5_img.png"
-          alt="top_icon3"
+            class="top5-left-img"
+            src="/assets/sp/top/img/top5_img.png"
+            alt="top_icon3"
           />
           <p class="top5-text">
             阿寒のアイヌ文化に根付いたユーカラ（叙事詩）
-            <br>
+            <br />
             「フクロウとカケスの物語」をベースに、
-            <br>
+            <br />
             8つのゾーンでさまざまな物語が繰り広げられます。
-            <br>
+            <br />
             それぞれのゾーンで体験することができる
-            <br>
+            <br />
             驚きと感動にご期待ください。
           </p>
         </div>
@@ -251,14 +289,18 @@
       <!-- スライド6枚目 -->
       <!-- スライド6枚目 -->
       <div class="top6-main-cotainer">
-        <img class="top6-img" src="/assets/sp/top/img/top6_img.jpg" alt="top6" />
+        <img
+          class="top6-img"
+          src="/assets/sp/top/img/top6_img.jpg"
+          alt="top6"
+        />
         <p class="top6-text">
           特に注目すべきは、キーアイテムである
-          <br>
+          <br />
           リズムスティックです。これを手にすると、
-          <br>
+          <br />
           不思議なことが起こるかもしれません。
-          <br>
+          <br />
         </p>
       </div>
       <!-- スライド6枚目 -->
@@ -269,16 +311,18 @@
       <div class="top7-main-container">
         <div class="top7-container">
           <p class="top7-upper-text">
-            大自然と融合した光と音の<br class="sp-only">
-            デジタルアートが織りなす幻想的な世界で<br>
-            およそ50分にわたる壮大な旅に身を委ね、<br class="sp-only">
+            大自然と融合した光と音の<br class="sp-only" />
+            デジタルアートが織りなす幻想的な世界で<br />
+            およそ50分にわたる壮大な旅に身を委ね、<br class="sp-only" />
             心躍る時間をお楽しみください。
           </p>
         </div>
         <p class="top7-under-text">
-          阿寒湖の森ナイトウォーク カムイルミナは、<br class="sp-only">
-          言葉にできない魅力が広がる特別な体験です。 <br>
-          ぜひこの機会に訪れて、<br class="sp-only">心に残る感動を味わってください。
+          阿寒湖の森ナイトウォーク カムイルミナは、<br class="sp-only" />
+          言葉にできない魅力が広がる特別な体験です。 <br />
+          ぜひこの機会に訪れて、<br
+            class="sp-only"
+          />心に残る感動を味わってください。
         </p>
       </div>
       <!-- スライド7枚目 -->
@@ -303,10 +347,10 @@
             <div class="top8-right-inner">
               <h3 class="top8-title">阿寒を楽しむ</h3>
               <p class="top8-text2">ENJOY AKAN</p>
-          </div>
+            </div>
             <p class="top8-text3">
               阿寒湖温泉やアイヌ文化について等、
-              <br>
+              <br />
               阿寒の情報をお届けしています。
             </p>
             <a class="top2-a" href="#">
@@ -370,14 +414,16 @@
 
       <!-- スライド9枚目 -->
       <!-- スライド9枚目 -->
-      <div class="top9-main-container">
+      <div class="top9-main-container" id="review">
         <div class="top9-container">
           <div class="overlay"></div>
           <div class="top9-content">
             <h3 class="top9-title">カムイルミナ レビュー</h3>
             <p class="top9-text1">KAMUY LUMINA REVIEWS</p>
             <div class="top9-left-inner">
-              <p class="top9-text2">カムイルミナの<br>世界を体験した<br>来場者からの声</p>
+              <p class="top9-text2">
+                カムイルミナの<br />世界を体験した<br />来場者からの声
+              </p>
             </div>
           </div>
           <ul class="top9-card-container">
@@ -410,28 +456,25 @@
 
       <!-- スライド11枚目 -->
       <!-- スライド11枚目 -->
-      <div class="top11-main-container">
+      <div class="top11-main-container" id="access">
         <div class="top11-left-container">
           <div class="top11-left-inner">
             <h3 class="top11-title">アクセス</h3>
             <p class="top11-text1">ACCESS</p>
           </div>
           <p class="top11-left-text">
-            たんちょう釧路空港からお越しの場合<br>
+            たんちょう釧路空港からお越しの場合<br />
             車またはバスで約60～75分
           </p>
           <div class="top11-line"></div>
           <p class="top11-left-text">
-            新千歳空港からお越しの場合<br>
+            新千歳空港からお越しの場合<br />
             車で約3時間30分
           </p>
         </div>
         <div class="top11-right-container">
           <div>
-            <img
-              class="top11-img"
-              src="/assets/sp/top/img/top11_img.jpg"
-            />
+            <img class="top11-img" src="/assets/sp/top/img/top11_img.jpg" />
           </div>
           <div>
             <iframe
@@ -448,9 +491,12 @@
 
       <!-- スライド12枚目 -->
       <!-- スライド12枚目 -->
-      <div class="top12-main-container">
+      <div class="top12-main-container" id="gallery">
         <img class="top12-left-img" src="/assets/sp/top/img/top12_img.jpg" />
-        <img class="top12-left-img2" src="/assets/sp/top/img/top11_img_sp.jpg" />
+        <img
+          class="top12-left-img2"
+          src="/assets/sp/top/img/top11_img_sp.jpg"
+        />
         <div class="top12-right-container">
           <img src="/assets/sp/top/img/top12_text.png" />
           <a href="#">
@@ -478,9 +524,9 @@
           </a>
           <p class="top13-text">
             阿寒では自然のアクティビティが沢山ありますので是非体験してください。
-            <br>
+            <br />
             その他阿寒での楽しみ方のヒントが詰まっていますので
-            <br>
+            <br />
             是非ご確認ください。
           </p>
           <a href="#">
@@ -501,9 +547,9 @@
           </a>
           <p class="top13-text">
             カムイルミナの魅力的なストーリーや動画など、ぜひ公式サイトをご覧ください。
-            <br>
+            <br />
             公式サイトでは、神秘の冒険に向けてカムイルミナの世界を探索することができます。
-            <br>
+            <br />
             カムイルミナを存分に楽しむためにも公式サイトをぜひご訪問ください。
           </p>
           <a href="#">
@@ -526,15 +572,17 @@
       <div class="top14-main-container">
         <div class="top14-left-container">
           <p class="top14-title">
-            各種SNSで最新情報や <br>
+            各種SNSで最新情報や <br />
             イベントなどを発信しています。
           </p>
 
           <p class="top14-text">
-            阿寒やカムイルミナの最新情報などを<br class="sp-only">発信しています。
-            <br>
+            阿寒やカムイルミナの最新情報などを<br
+              class="sp-only"
+            />発信しています。
+            <br />
             現地情報のチェックはTwitterがおすすめです。
-            <br>
+            <br />
             是非フォローとチェックお願いいたします！
           </p>
           <div class="top14-sns-container">
@@ -560,7 +608,6 @@
           </div>
         </div>
         <div class="top14-right-container">
-
           <!-- <blockquote class="twitter-tweet">
             <p lang="en" dir="ltr">
               Sunsets don&#39;t get much better than this one over
@@ -630,7 +677,7 @@
           src="/assets/sp/common/img/icons/arrow_top.png"
           alt="Arrow Top"
         />
-        PAGE<br>TOP
+        PAGE<br />TOP
       </div>
     </footer>
     <script>
@@ -685,5 +732,31 @@
         }
       });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <script>
+      // $(function () {
+      //   $.scrollify({
+      //     section: ".section",
+      //   });
+
+      //   $(".js-scrollify-move").each(function () {
+      //     $(this).click(function () {
+      //       let href = $(this).attr("href");
+      //       $.scrollify.move(href);
+      //     });
+      //   });
+      // });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-8/js/5-1-8.js"></script>
+    <!-- CDN読み込み -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- JSファイル読み込み -->
+    <script src="assets/sp/top/js/scroll.js"></script>
   </body>
 </html>
