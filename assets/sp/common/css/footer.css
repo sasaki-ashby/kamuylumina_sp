@@ -29,7 +29,9 @@
 
 .footer_text {
   font-size: 14px;
+  letter-spacing: .5rem;
   color: #ffffff;
+  margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
   .footer_text {
