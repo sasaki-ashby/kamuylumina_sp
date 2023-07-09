@@ -1754,6 +1754,7 @@
 .scrollify {
   width: 100%;
   height: 768px;
+  padding-top: 53px;
 }
 
 .page_wrap {
