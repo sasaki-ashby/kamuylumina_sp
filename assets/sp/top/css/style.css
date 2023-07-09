@@ -27,7 +27,7 @@
   justify-content: flex-end;
   color: #ffffff;
   /* background-image: url("../../top/img/top1.jpg"); */
-  background-image: url('assets/sp/top/img/top1.jpg');
+  background-image: url('../img/top1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -411,7 +411,7 @@
 .top3-main-container {
   display: flex;
   align-items: center;
-  background-image: url('assets/sp/top/img/top3_1.jpg');
+  background-image: url('../img/top3_1.jpg');
   background-size: cover;
   background-position: center;
   height: 768px;
@@ -773,7 +773,7 @@
   background-position: center;
   height: 600px;
   /* background-image: url("../../top/img/top7_img.jpg"); */
-  background-image: url('assets/sp/top/img/top7_img.jpg');
+  background-image: url('../img/top7_img.jpg');
 }
 
 .top7-upper-text {
@@ -1262,7 +1262,7 @@
   background-size: cover;
   background-position: center;
   /* background-image: url("../../top/img/top10_img.jpg"); */
-  background-image: url('assets/sp/top/img/top10_img.jpg');
+  background-image: url('../img/top10_img.jpg');
 }
 @media screen and (max-width: 768px) {
   .top10-main-container {
