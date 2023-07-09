@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>article detail</title>
-    <link rel="stylesheet" href="/assets/sp/common/css/reset.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/style.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/header.css" />
-    <link rel="stylesheet" href="/assets/sp/article_detail/css/style.css" />
-    <link rel="stylesheet" href="/assets/sp/common/css/footer.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/reset.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/style.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/header.css" />
+    <link rel="stylesheet" href="assets/sp/article_detail/css/style.css" />
+    <link rel="stylesheet" href="assets/sp/common/css/footer.css" />
     <!-- googlewebfont読み込み ここから-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnlect" href="https://fonts.gstatic.com" crossorigin />
@@ -122,10 +122,15 @@
     </header>
 
     <main class="main-container">
-      <!-- <p class="upper-container"><img
-        loading="lazy" class="upper-image" src="assets/sp/article_detail/img/detail-img-0.jpg" /></p> -->
       <article class="middle-main-container">
         <div class="middle-main-container_mobile">
+          <nav class="breadcrumb">
+            <ol class="breadcrumb_list">
+                <li><a href="/">トップ</a></li>
+                <li><a href="">記事一覧</a></li>
+                <li>カムイルミナへ行く前に！アトラクションを100倍楽しくする直前情報</li>
+            </ol>
+          </nav>
           <section class="middle-container">
             <h1 class="middle-title">
               カムイルミナへ行く前に！
@@ -197,6 +202,9 @@
           </section>
         </div>
       </article>
+      <a href="">
+        <nav class="prevbtn"><p class="prevbtn_text">記事一覧</p><img class="prevbtn_icon" src="assets/sp/common/img/icons/arrow_right.png"></nav>
+      </a>
     </main>
 
     <!-- 関連記事------------------------------- -->
@@ -242,7 +250,7 @@
       <img
         loading="lazy"
         class="title-image"
-        src="/assets/sp/common/img/icons/site_name.png"
+        src="assets/sp/common/img/icons/site_name.png"
         alt="Site Name"
       />
       <p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
@@ -253,7 +261,7 @@
             <img
               loading="lazy"
               class="arrow-image"
-              src="/assets/sp/common/img/icons/arrow_right_wihte.png"
+              src="assets/sp/common/img/icons/arrow_right_wihte.png"
               alt="Arrow Right White"
             />
           </div>
@@ -264,7 +272,7 @@
             <img
               loading="lazy"
               class="arrow-image"
-              src="/assets/sp/common/img/icons/arrow_right.png"
+              src="assets/sp/common/img/icons/arrow_right.png"
               alt="Arrow Right"
             />
           </div>
@@ -275,7 +283,7 @@
         <img
           loading="lazy"
           class="arrow-top-icon"
-          src="/assets/sp/common/img/icons/arrow_top.png"
+          src="assets/sp/common/img/icons/arrow_top.png"
           alt="Arrow Top"
         />
         PAGE<br />TOP
@@ -285,22 +293,22 @@
       const scrollToTop = () => {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       };
     </script>
     <script>
-      window.addEventListener('scroll', function () {
-        var header = document.querySelector('header');
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
         var scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > 0) {
-          header.classList.add('fixed-header');
+          header.classList.add("fixed-header");
         } else {
-          header.classList.remove('fixed-header');
+          header.classList.remove("fixed-header");
         }
       });
     </script>
-    <script src="/assets/sp/common/js/hamburger_header.js"></script>
+    <script src="assets/sp/common/js/hamburger_header.js"></script>
   </body>
 </html>
