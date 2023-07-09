@@ -28,6 +28,7 @@ main部分
 }
 
 .middle-title {
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.4;
@@ -100,6 +101,7 @@ main部分
 }
 
 .tag-container >li a{
+  font-family: 'Noto Serif CJK JP', serif;
   background-color: #f5f8fc;
   border-radius: 8px;
   display: inline-block;
@@ -113,6 +115,7 @@ main部分
 }
 
 .detail-title {
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
@@ -142,7 +145,7 @@ main部分
   background-color:#f5f8fc;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   padding: 50px 0;
   width: 100%;
 }
@@ -169,12 +172,12 @@ main部分
     background-color: #fff;
     border-radius: 8px;
     margin: -50px 18px 0;
-    padding-top: 25px;
+    padding-top: 14px;
   }
   .middle-title {
     font-size: 1.8rem;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
   .date {
     margin-bottom: 15px;
@@ -216,7 +219,7 @@ main部分
   }
   .detail-text {
     font-size: 1.4rem;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 10px;
   }
   .detail-img {
@@ -284,10 +287,23 @@ main部分
   margin: 0 20px;
   width : calc(100% / 3) ;
 }
+.related-container a figure{
+  overflow: hidden;
+  border-radius: 8px;
 
-
-
-
+}
+.related-container a img{
+  transition: transform 0.3s ease;
+}
+.related-container a:hover img{
+  transform: scale(1.1);
+}
+.reated-text{
+  transition: .3s ease;
+}
+.related-container a:hover .reated-text{
+  opacity: .5;
+}
 .related-container figure {
   margin-bottom: 15px;
 }
@@ -318,18 +334,19 @@ main部分
   .related-container figure {
     margin: 0 18px 0 0;
   }
-
-
 }
 
 .related-title {
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 3rem;
   margin-bottom: 15px;
+  letter-spacing: .5rem;
 }
 
 .related-sub-title {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
+  letter-spacing: .1rem;
 }
 
 /*.related-image {
@@ -365,4 +382,38 @@ main部分
   width: 100%;
   aspect-ratio: 16/9;
 
+}
+
+.prevbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity .3s ease;
+  border-bottom: 1px solid #a4b1ba;
+  width: 135px;
+  margin: 0 auto 30px;
+}
+
+.prevbtn:hover {
+  opacity: .4;
+}
+
+.prevbtn_text {
+  color: #002c4b;
+  font-size: 1.6rem;
+  margin-right: 0.5em;
+  padding: 0.3em;
+}
+
+.prevbtn_icon {
+  color: #a4b1ba;
+  height: 3px;
+  width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .prevbtn{
+    margin: 30px auto;
+  }
 }
