@@ -5,6 +5,7 @@ li {
 
 .article-main {
   max-width: 900px;
+  padding-top: 88px;
   margin: auto;
 }
 
@@ -190,7 +191,7 @@ li {
   .spot-list >li{
     margin: 0 16px 30px;
     width: auto;
-    max-width: 100%;
+    max-width: 440px;
   }
 }
 
@@ -287,10 +288,12 @@ li {
 .hover-area:hover .spot-text {
   opacity: 0.5;
 }
-
+#moreButton{
+  text-align: center;
+}
 .more_btn {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  letter-spacing: .2rem;
   margin-top: 10px;
   margin-bottom: 50px;
   cursor: pointer;

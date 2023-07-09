@@ -1,27 +1,43 @@
-.fixed-header {
+#header {
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-.header-container {
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  height: 88px;
+  width: 100%;
+  padding: 8px;
+  padding-inline: 16px;
+  background: #002c4b;
+  z-index: 200;
+}
+#header a{
+  transition: .3s ease;
+}
+
+#header.HeightMin {
+  position: fixed;
+  z-index: 100; /*最前面へ*/
+  height: 53px;
+  animation: DownAnime 0.5s forwards;
   background-color: #002c4b;
 }
 
-@media screen and (max-width: 768px) {
-  .header-container {
-    justify-content: space-between;
-    padding: 10px;
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-170px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .header-title {
   font-size: 14px;
+  letter-spacing: .5rem;
   font-family: "Poppins", sans-serif;
   color: white;
   cursor: pointer;
@@ -34,23 +50,49 @@
 .detail-container {
   display: flex;
   justify-content: space-evenly;
+  z-index: 100;
 }
 
 @media screen and (max-width: 1100px) {
+  #header {
+    padding-inline: 16px;
+  }
+  .header-title {
+    font-size: 12px;
+    letter-spacing: .4rem;
+  }
   .detail-container {
-    display: none;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
   }
 }
 
-.detail {
+.detail a {
   position: relative;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  color: white;
   margin-right: 20px;
+  color: white;
+  letter-spacing: .3rem;
+  transition: .3s ease;
+}
+.detail a:hover{
+  opacity: .5;
+}
+@media screen and (max-width: 1100px) {
+  .detail {
+    z-index: 100;
+    font-size: 2rem;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.detail::before {
+.detail ::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -81,6 +123,7 @@
   border: none;
   height: 40px;
   margin-right: 30px;
+  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .lang-btns-container {
@@ -90,36 +133,38 @@
 
 .lang-btn1 {
   font-family: "Noto Sans CJK JP", sans-serif;
-  background: transparent;
   border: 1px solid white;
-  padding: 10px;
-  border-radius: 8px 0 0 8px;
-  background: #002c4b;
+  border-radius: 4px 0 0 4px;
+  padding: 5px 10px;
+  background: transparent;
   color: #ffffff;
   cursor: pointer;
+  letter-spacing: .1rem;
+
 }
 
 .lang-btn2 {
-  padding: 10px;
   font-family: "Noto Sans CJK JP", sans-serif;
   background: transparent;
   border: 1px solid white;
+  padding: 5px 10px;
   border-right: none;
   border-left: none;
-  background: #002c4b;
   color: #ffffff;
   cursor: pointer;
+  letter-spacing: .2rem;
+
 }
 
 .lang-btn3 {
-  padding: 10px;
   font-family: "Noto Sans CJK JP", sans-serif;
   background: transparent;
   border: 1px solid white;
-  border-radius: 0 8px 8px 0;
-  background: #002c4b;
+  border-radius: 0 4px 4px 0;
+  padding: 5px 10px;
   color: #ffffff;
   cursor: pointer;
+  letter-spacing: .1rem;
 }
 
 .lang-btn1.selected,
@@ -137,12 +182,13 @@
 .ticket-btn {
   display: flex;
   align-items: center;
-  font-family: "Noto Sans CJK JP", sans-serif;
+  font-family: 'Noto Serif CJK JP', serif;
   cursor: pointer;
   font-size: 10px;
   padding: 10px 15px;
-  border-bottom: 2px solid #ffffff;
   margin: 20px 0;
+  z-index: 100;
+  transition: .3s ease;
 }
 
 .official-btn {
@@ -204,12 +250,12 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .hamburger {
     position: relative;
     display: block;
-    width: 40px;
-    height: 25px;
+    width: 30px;
+    height: 20px;
   }
 }
 .hamburger span {
@@ -229,20 +275,35 @@
   top: 100%;
 }
 
-.slide-menu {
+.header-pc {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  background-color: #002c4b;
-  position: fixed;
-  top: 65px;
-  padding-top: 40px;
-  width: 100%;
-  left: 0;
-  transform: translateX(100%);
-  transition: 0.5s;
-  height: 100vh;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1100px) {
+  .header-pc {
+    display: none;
+  }
+}
+
+.slide-menu {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .slide-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: 0.5s;
+    height: 100vh;
+    background-color: #002c4b;
+    z-index: 99;
+    overflow: hidden;
+  }
 }
 
 .hamburger.active span:first-of-type {
