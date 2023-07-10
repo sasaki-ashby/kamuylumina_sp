@@ -305,7 +305,11 @@
       <!-- スライド6枚目 -->
       <div class="top6-main-container scrollify">
         <div class="top6-main-contents">
-          <img class="top6-img" src="assets/sp/top/img/top6_img.jpg" alt="top6" />
+          <img
+            class="top6-img"
+            src="assets/sp/top/img/top6_img.jpg"
+            alt="top6"
+          />
           <p class="top6-text">
             特に注目すべきは、キーアイテムである
             <br />
@@ -351,7 +355,7 @@
               class="top8-left-img"
               src="assets/sp/top/img/top8_img.jpg"
             />
-<!--             仕様変更のためコメントアウト
+            <!--             仕様変更のためコメントアウト
             <div class="top8-text-container">
               <p class="top8-text1">
                 今回は地元に住む4人がアトラクションを体験!
@@ -669,8 +673,8 @@
             </a>
           </div>
         </div>
-        <div class="top14-right-container">
-          <!-- <blockquote class="twitter-tweet">
+        <!-- <div class="top14-right-container">
+          <blockquote class="twitter-tweet">
             <p lang="en" dir="ltr">
               Sunsets don&#39;t get much better than this one over
               <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw"
@@ -696,8 +700,8 @@
             async
             src="https://platform.twitter.com/widgets.js"
             charset="utf-8"
-          ></script> -->
-        </div>
+          ></script>
+        </div> -->
       </div>
       <!-- スライド14枚目 -->
       <!-- スライド14枚目 -->
@@ -751,51 +755,51 @@
       const scrollToTop = () => {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       };
     </script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const details = document.querySelectorAll('.detail');
-        details[0].classList.add('selected');
+      document.addEventListener("DOMContentLoaded", function () {
+        const details = document.querySelectorAll(".detail");
+        details[0].classList.add("selected");
         details.forEach((detail) => {
-          detail.addEventListener('click', function () {
-            details.forEach((d) => d.classList.remove('selected'));
+          detail.addEventListener("click", function () {
+            details.forEach((d) => d.classList.remove("selected"));
 
-            this.classList.add('selected');
+            this.classList.add("selected");
           });
         });
       });
     </script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
+      document.addEventListener("DOMContentLoaded", function () {
         const langButtons = document.querySelectorAll(
-          '.lang-btns-container button'
+          ".lang-btns-container button"
         );
-        langButtons[0].classList.add('selected');
+        langButtons[0].classList.add("selected");
         langButtons.forEach((button) => {
-          button.addEventListener('click', function () {
-            langButtons.forEach((btn) => btn.classList.remove('selected'));
+          button.addEventListener("click", function () {
+            langButtons.forEach((btn) => btn.classList.remove("selected"));
 
-            this.classList.add('selected');
+            this.classList.add("selected");
           });
         });
       });
     </script>
 
     <script>
-      window.addEventListener('scroll', function () {
-        var header = document.querySelector('header');
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
         var scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 0) {
-          header.classList.add('fixed-header');
+          header.classList.add("fixed-header");
         } else {
-          header.classList.remove('fixed-header');
+          header.classList.remove("fixed-header");
         }
       });
     </script>
