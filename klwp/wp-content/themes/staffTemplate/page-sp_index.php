@@ -10,18 +10,15 @@ Template Name: スペシャルページトップ
 	<!-- スライド1枚目 -->
 	<div class="top1-main-container">
 		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="" /></div>
-		<p class="top1-sub-title">SPECIAL SITE</p>
-		<p class="top1-date-text">2023.07.15　UPGRADE</p>
-		<?php
-		require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
-		?>
-		<p class="top1-text"><?php echo $top_copy['top1'][0]?></p>
-		<a href="https://www.kamuylumina.jp">
+		<p class="top1-sub-title">SPECIAL SITE<?php echo $top_copy['top1'][0]?></p>
+		<p class="top1-date-text">2023.07.15　UPGRADE<?php echo $top_copy['top1'][1]?></p>
+		<p class="top1-text"><?php echo $top_copy['top1'][2]?></p>
+		<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
 		<div class="top1-under-container"><img class="top1-under-left-img" src="/assets/sp/top/img/top1_2.jpg" alt="" />
 			<div class="top1-text-container">
 				<p class="under-p-1">KAMUY LUMINA</p>
 				<p class="under-p-2">
-					<?php  echo $top_copy['top1'][1]?>
+					<?php echo $top_copy['top1'][3]?>
 				</p>
 			</div>
 			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="" /></div>
@@ -40,7 +37,7 @@ Template Name: スペシャルページトップ
 		</div>
 		<div class="top2-under-container"><img class="top2-under-img" src="/assets/sp/top/img/top2_smartfon.png" alt="" />
 			<div class="top2-under-left">
-				<div class="top2-under-btn">MOBILE　APPS</div>
+				<div class="top2-under-btn">MOBILE APPS</div>
 				<p class="top2-under-text1"><?php echo $top_copy['top2'][2];?></p>
 			</div>
 		</div>
@@ -53,12 +50,8 @@ Template Name: スペシャルページトップ
 	<div class="top3-main-container scrollify">
 		<div class="top3-left-container">
 			<p class="top3-title"><?php echo $top_copy['top3'][0];?></p>
-			<span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span>
-		</div>
-		<div class="top3-right-container">
-			<img class="top3-right-img" src="/assets/sp/top/img/top3-icon1.png" alt="" />
-			<img class="top3-right-icon" src="/assets/sp/top/img/top3-icon2.png" alt="" />
-		</div>
+			<span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span> </div>
+		<div class="top3-right-container"> <img class="top3-right-img" src="/assets/sp/top/img/top3-icon1.png" alt="" /> <img class="top3-right-icon" src="/assets/sp/top/img/top3-icon2.png" alt="" /> </div>
 	</div>
 	<!-- スライド3枚目 --> 
 	<!-- スライド3枚目 --> 
@@ -113,14 +106,13 @@ Template Name: スペシャルページトップ
 	<!-- スライド8枚目 -->
 	<div class="top8-main-container">
 		<div class="top8-upper-container">
-			<div class="top8-left-container">
-				<img class="top8-left-img" src="/assets/sp/top/img/top8_img.jpg" />
+			<div class="top8-left-container"> <img class="top8-left-img" src="/assets/sp/top/img/top8_img.jpg" /> 
 				<!--             仕様変更のためコメントアウト
 				<div class="top8-text-container">
 					<p class="top8-text1"><?php echo $top_copy['top8'][0];?></p>
 				</div>
 				<div class="top8-sp-text1"><?php echo $top_copy['top8'][0];?></div>
-				-->
+				--> 
 			</div>
 			<div class="top8-right-container">
 				<div class="top8-right-inner">
@@ -174,15 +166,15 @@ Template Name: スペシャルページトップ
 			<ul class="top9-card-container">
 				<a href="">
 				<li class="top9-card">
-				<p>Coming soon</p>
+				<p><?php echo $common_lang_text["Coming soon"];?></p>
 				</li>
 				</a> <a href="">
 				<li class="top9-card top9-card-sp-display-none">
-				<p>Coming soon</p>
+				<p><?php echo $common_lang_text["Coming soon"];?></p>
 				</li>
 				</a> <a href="">
 				<li class="top9-card top9-card-sp-display-none">
-				<p>Coming soon</p>
+				<p><?php echo $common_lang_text["Coming soon"];?></p>
 				</li>
 				</a>
 			</ul>
@@ -240,22 +232,29 @@ Template Name: スペシャルページトップ
 	<div class="top13-main-container">
 		<div class="top13-left-container"> <img class="top13-left-img" src="/assets/sp/top/img/top13_img1.png" />
 			<p class="top13-title">Akan Adventure Tourism</p>
-			<a href="http://akanat.co.jp/atdepartment/en/">
-			<p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p>
-			</a>
+			<?php if($sp_lang == "ni"){?>
+			<a href="http://akanat.co.jp/atdepartment/" target="_blank"><p class="top13-sub-title">http://akanat.co.jp/atdepartment/</p></a>
+			<?php }else{?>
+			<a href="http://akanat.co.jp/atdepartment/en/" target="_blank"><p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p></a>
+			<?php }?>
 			<p class="top13-text"><?php echo $top_copy['top13'][0];?></p>
-			<a href="#">
+			<?php if($sp_lang == "ni"){?>
+			<a href="http://akanat.co.jp/atdepartment/" target="_blank">
+			<?php }else{?>
+			<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
+			<?php }?>
 			<div class="top13-more-btn" id="moreButton">
 				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
 				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
-			</a></div>
+			</a>
+		</div>
 		<div class="top13-right-container"> <img class="top13-right-img" src="/assets/sp/top/img/top5_img.png" />
 			<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
-			<a href="https://www.kamuylumina.jp/">
-			<p class="top13-sub-title">https://www.kamuylumina.jp/</p>
+			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
+			<p class="top13-sub-title"><?php echo home_url().lang_link( '/' , $sp_lang ,$sp_lang);?></p>
 			</a>
 			<p class="top13-text"><?php echo $top_copy['top13'][2];?></p>
-			<a href="#">
+			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
 			<div class="top13-more-btn" id="moreButton">
 				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
 				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>

@@ -5,5 +5,9 @@ $common_lang_text = [
 	'VIEW MORE' => 'READ MORE',
 	'オフィシャルサイト' => 'OFFICIAL WEBSITE',
 	'チケット購入はコチラ' => 'GET TICKETS NOW',
+	'REVIEW' => 'REVIEW',
+	'ACCESS' => 'ACCESS',
+	'GALLERY' => 'GALLERY',
+	'Coming soon' => 'Coming soon',
 ];
 ?>

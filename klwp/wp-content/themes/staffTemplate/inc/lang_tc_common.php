@@ -5,5 +5,9 @@ $common_lang_text = [
 	'VIEW MORE' => '查閱更多',
 	'オフィシャルサイト' => '官方網站',
 	'チケット購入はコチラ' => '購票請點選此處',
+	'REVIEW' => '評論',
+	'ACCESS' => '交通訊息',
+	'GALLERY' => '精彩圖片',
+	'Coming soon' => 'Coming Soon（準備中）',
 ];
 ?>
