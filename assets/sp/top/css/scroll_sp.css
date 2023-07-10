@@ -1,0 +1,9 @@
+.scrollWrap {
+  scroll-snap-type: y proximity;
+  overflow: auto;
+  height: 100vh;
+}
+.scrollWrap .cont {
+  scroll-snap-align: start;
+  height: 100vh;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/sp/common/css/reset.css" />
     <link rel="stylesheet" href="assets/sp/common/css/style.css" />
     <link rel="stylesheet" href="assets/sp/top/css/slider.css" />
+    <link rel="stylesheet" href="assets/sp/top/css/scroll_sp.css" />
     <link rel="stylesheet" href="assets/sp/top/css/top_header.css" />
     <link rel="stylesheet" href="assets/sp/top/css/style.css" />
     <link rel="stylesheet" href="assets/sp/common/css/footer.css" />
@@ -45,14 +46,14 @@
       <div class="header-pc">
         <ul class="detail-container" id="g-navi">
           <li class="detail" data-detail="REVIEW">
-            <a href="#review">REVIEW</a>
+            <a href="#top9">REVIEW</a>
           </li>
 
           <li class="detail" data-detail="ACCESS">
-            <a href="#access">ACCESS</a>
+            <a href="#top11">ACCESS</a>
           </li>
           <li class="detail" data-detail="GALLERY">
-            <a href="#gallery">GALLERY</a>
+            <a href="#top12">GALLERY</a>
           </li>
         </ul>
       </div>
@@ -95,14 +96,14 @@
     <div class="slide-menu">
       <ul class="detail-container" id="g-navi">
         <li class="detail" data-detail="REVIEW">
-          <a class="review" href="#review">REVIEW</a>
+          <a class="review" href="#top9">REVIEW</a>
         </li>
 
         <li class="detail" data-detail="ACCESS">
-          <a class="access" href="#access">ACCESS</a>
+          <a class="access" href="#top11">ACCESS</a>
         </li>
         <li class="detail" data-detail="GALLERY">
-          <a class="gallery" href="#gallery">GALLERY</a>
+          <a class="gallery" href="#top12">GALLERY</a>
         </li>
       </ul>
 
@@ -134,10 +135,18 @@
 
     <script src="assets/sp/common/js/hamburger_header.js"></script>
 
-    <div class="top container">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <div class="top container scrollWrap">
       <!-- スライド1枚目 -->
       <!-- スライド1枚目 -->
-      <div class="top1-main-container scrollify">
+      <div class="top1-main-container scrollify cont" id="top1">
         <div class="top1-title-img">
           <img
             loading="lazy"
@@ -175,7 +184,7 @@
 
       <!-- スライド2枚目 -->
       <!-- スライド2枚目 -->
-      <div class="top2-main-container scrollify">
+      <div class="top2-main-container scrollify cont" id="top2">
         <div class="top2-upper-container">
           <img
             loading="lazy"
@@ -224,7 +233,7 @@
 
       <!-- スライド3枚目 -->
       <!-- スライド3枚目 -->
-      <div class="top3-main-container scrollify">
+      <div class="top3-main-container scrollify cont" id="top3">
         <div class="top3-left-container">
           <p class="top3-title">阿寒湖の森 <br />ナイトウォーク</p>
           <span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span>
@@ -250,7 +259,7 @@
 
       <!-- スライド4枚目 -->
       <!-- スライド4枚目 -->
-      <div class="top4-main-container scrollify">
+      <div class="top4-main-container scrollify cont" id="top4">
         <div class="top4-left-container">
           <div class="top4-left-inner">
             <h3 class="top4-title">カムイルミナについて</h3>
@@ -278,7 +287,7 @@
 
       <!-- スライド5枚目 -->
       <!-- スライド5枚目 -->
-      <div class="top5-main-container scrollify">
+      <div class="top5-main-container scrollify cont" id="top5">
         <div class="top5-main-inner">
           <img
             class="top5-left-img"
@@ -303,9 +312,13 @@
 
       <!-- スライド6枚目 -->
       <!-- スライド6枚目 -->
-      <div class="top6-main-container scrollify">
+      <div class="top6-main-container scrollify cont" id="top6">
         <div class="top6-main-contents">
-          <img class="top6-img" src="assets/sp/top/img/top6_img.jpg" alt="top6" />
+          <img
+            class="top6-img"
+            src="assets/sp/top/img/top6_img.jpg"
+            alt="top6"
+          />
           <p class="top6-text">
             特に注目すべきは、キーアイテムである
             <br />
@@ -321,7 +334,7 @@
 
       <!-- スライド7枚目 -->
       <!-- スライド7枚目 -->
-      <div class="top7-main-container scrollify">
+      <div class="top7-main-container scrollify cont" id="top7">
         <div class="top7-container">
           <p class="top7-upper-text">
             大自然と融合した光と音の<br class="sp-only" />
@@ -343,7 +356,7 @@
 
       <!-- スライド8枚目 -->
       <!-- スライド8枚目 -->
-      <div class="top8-main-container scrollify">
+      <div class="top8-main-container scrollify cont" id="top8">
         <div class="top8-upper-container">
           <div class="top8-left-container">
             <img
@@ -351,7 +364,7 @@
               class="top8-left-img"
               src="assets/sp/top/img/top8_img.jpg"
             />
-<!--             仕様変更のためコメントアウト
+            <!--             仕様変更のためコメントアウト
             <div class="top8-text-container">
               <p class="top8-text1">
                 今回は地元に住む4人がアトラクションを体験!
@@ -453,7 +466,7 @@
 
       <!-- スライド9枚目 -->
       <!-- スライド9枚目 -->
-      <div id="review" class="top9-main-container scrollify">
+      <div class="top9-main-container scrollify cont" id="top9">
         <div class="top9-container">
           <div class="overlay"></div>
           <div class="top9-content">
@@ -489,7 +502,7 @@
 
       <!-- スライド10枚目 -->
       <!-- スライド10枚目 -->
-      <div class="top10-main-container scrollify">
+      <div class="top10-main-container scrollify cont" id="top10">
         fjdklsfjdslfjsdklfjdsklfj fjdklsfjdslfjsdklfjdsklfj
         fjdklsfjdslfjsdklfjdsklfj fjdklsfjdslfjsdklfjdsklfj
         fjdklsfjdslfjsdklfjdsklfj fjdklsfjdslfjsdklfjdsklfj
@@ -508,7 +521,7 @@
 
       <!-- スライド11枚目 -->
       <!-- スライド11枚目 -->
-      <div id="access" class="top11-main-container scrollify">
+      <div class="top11-main-container scrollify cont" id="top11">
         <div class="top11-left-container">
           <div class="top11-left-inner">
             <h3 class="top11-title">アクセス</h3>
@@ -543,7 +556,7 @@
 
       <!-- スライド12枚目 -->
       <!-- スライド12枚目 -->
-      <div id="gallery" class="top12-main-container scrollify">
+      <div class="top12-main-container scrollify cont" id="top12">
         <img class="top12-left-img" src="assets/sp/top/img/top12_img.jpg" />
         <img class="top12-left-img2" src="assets/sp/top/img/top11_img_sp.jpg" />
         <div class="top12-right-container">
@@ -565,7 +578,7 @@
 
       <!-- スライド13枚目 -->
       <!-- スライド13枚目 -->
-      <div class="top13-main-container scrollify">
+      <div class="top13-main-container scrollify cont" id="top13">
         <div class="top13-left-container">
           <img
             loading="lazy"
@@ -629,7 +642,7 @@
 
       <!-- スライド14枚目 -->
       <!-- スライド14枚目 -->
-      <div class="top14-main-container scrollify">
+      <div class="top14-main-container scrollify cont" id="top14">
         <div class="top14-left-container">
           <p class="top14-title">
             各種SNSで最新情報や <br />
@@ -669,8 +682,8 @@
             </a>
           </div>
         </div>
-        <div class="top14-right-container">
-          <!-- <blockquote class="twitter-tweet">
+        <!-- <div class="top14-right-container"> -->
+        <!-- <blockquote class="twitter-tweet">
             <p lang="en" dir="ltr">
               Sunsets don&#39;t get much better than this one over
               <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw"
@@ -697,12 +710,12 @@
             src="https://platform.twitter.com/widgets.js"
             charset="utf-8"
           ></script> -->
-        </div>
+        <!-- </div> -->
       </div>
       <!-- スライド14枚目 -->
       <!-- スライド14枚目 -->
 
-      <footer class="footer-container scrollify">
+      <footer class="footer-container scrollify cont" id="top15">
         <img
           loading="lazy"
           class="title-image"
@@ -751,56 +764,56 @@
       const scrollToTop = () => {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       };
     </script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const details = document.querySelectorAll('.detail');
-        details[0].classList.add('selected');
+      document.addEventListener("DOMContentLoaded", function () {
+        const details = document.querySelectorAll(".detail");
+        details[0].classList.add("selected");
         details.forEach((detail) => {
-          detail.addEventListener('click', function () {
-            details.forEach((d) => d.classList.remove('selected'));
+          detail.addEventListener("click", function () {
+            details.forEach((d) => d.classList.remove("selected"));
 
-            this.classList.add('selected');
+            this.classList.add("selected");
           });
         });
       });
     </script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
+      document.addEventListener("DOMContentLoaded", function () {
         const langButtons = document.querySelectorAll(
-          '.lang-btns-container button'
+          ".lang-btns-container button"
         );
-        langButtons[0].classList.add('selected');
+        langButtons[0].classList.add("selected");
         langButtons.forEach((button) => {
-          button.addEventListener('click', function () {
-            langButtons.forEach((btn) => btn.classList.remove('selected'));
+          button.addEventListener("click", function () {
+            langButtons.forEach((btn) => btn.classList.remove("selected"));
 
-            this.classList.add('selected');
+            this.classList.add("selected");
           });
         });
       });
     </script>
 
     <script>
-      window.addEventListener('scroll', function () {
-        var header = document.querySelector('header');
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
         var scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 0) {
-          header.classList.add('fixed-header');
+          header.classList.add("fixed-header");
         } else {
-          header.classList.remove('fixed-header');
+          header.classList.remove("fixed-header");
         }
       });
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script> -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -819,5 +832,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- JSファイル読み込み -->
     <script src="assets/sp/top/js/scroll.js"></script>
+    <script src="assets/sp/top/js/scroll_sp.js"></script>
   </body>
 </html>
