@@ -1,6 +1,11 @@
 <link rel="stylesheet" href="/assets/sp/common/css/reset.css" />
 <link rel="stylesheet" href="/assets/sp/common/css/style.css" />
+<?php if($sp_lang == "en"){?>
+<link rel="stylesheet" href="/assets/sp/common/css/en_addstyle.css" />
+<?php }?>
+<?php if( !is_page_template( 'page-sp_index.php' )){?>
 <link rel="stylesheet" href="/assets/sp/common/css/header.css" />
+<?php }?>
 <link rel="stylesheet" href="/assets/sp/common/css/footer.css" />
 <!-- googlewebfont読み込み ここから-->
 <link rel="preconnect" href="https://fonts.googleapis.com">

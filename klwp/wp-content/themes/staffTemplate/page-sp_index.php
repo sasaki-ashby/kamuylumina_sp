@@ -9,7 +9,7 @@ Template Name: スペシャルページトップ
 	<!-- スライド1枚目 --> 
 	<!-- スライド1枚目 -->
 	<div class="top1-main-container">
-		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="site name" /></div>
+		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="" /></div>
 		<p class="top1-sub-title">SPECIAL SITE</p>
 		<p class="top1-date-text">2023.07.15　UPGRADE</p>
 		<?php
@@ -17,14 +17,14 @@ Template Name: スペシャルページトップ
 		?>
 		<p class="top1-text"><?php echo $top_copy['top1'][0]?></p>
 		<a href="https://www.kamuylumina.jp">
-		<div class="top1-under-container"><img class="top1-under-left-img" src="/assets/sp/top/img/top1_2.jpg" alt="top3" />
+		<div class="top1-under-container"><img class="top1-under-left-img" src="/assets/sp/top/img/top1_2.jpg" alt="" />
 			<div class="top1-text-container">
 				<p class="under-p-1">KAMUY LUMINA</p>
 				<p class="under-p-2">
 					<?php  echo $top_copy['top1'][1]?>
 				</p>
 			</div>
-			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="arrow right" /></div>
+			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="" /></div>
 		</a></div>
 	<!-- スライド1枚目 --> 
 	<!-- スライド1枚目 --> 
@@ -38,7 +38,7 @@ Template Name: スペシャルページトップ
 				<p class="top2-upper-text"><?php echo $top_copy['top2'][1];?></p>
 			</div>
 		</div>
-		<div class="top2-under-container"><img class="top2-under-img" src="/assets/sp/top/img/top2_smartfon.png" alt="smartfons" />
+		<div class="top2-under-container"><img class="top2-under-img" src="/assets/sp/top/img/top2_smartfon.png" alt="" />
 			<div class="top2-under-left">
 				<div class="top2-under-btn">MOBILE　APPS</div>
 				<p class="top2-under-text1"><?php echo $top_copy['top2'][2];?></p>
@@ -50,11 +50,15 @@ Template Name: スペシャルページトップ
 	
 	<!-- スライド3枚目 --> 
 	<!-- スライド3枚目 -->
-	<div class="top3-main-container">
+	<div class="top3-main-container scrollify">
 		<div class="top3-left-container">
 			<p class="top3-title"><?php echo $top_copy['top3'][0];?></p>
-			<span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span></div>
-		<div class="top3-right-container"><img class="top3-right-img" src="/assets/sp/top/img/top3-icon1.png" alt="top3 image" /><img class="top3-right-icon" src="/assets/sp/top/img/top3-icon2.png" alt="top3 image" /> </div>
+			<span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span>
+		</div>
+		<div class="top3-right-container">
+			<img class="top3-right-img" src="/assets/sp/top/img/top3-icon1.png" alt="" />
+			<img class="top3-right-icon" src="/assets/sp/top/img/top3-icon2.png" alt="" />
+		</div>
 	</div>
 	<!-- スライド3枚目 --> 
 	<!-- スライド3枚目 --> 
@@ -69,7 +73,7 @@ Template Name: スペシャルページトップ
 			</div>
 			<p class="top4-text2"><?php echo $top_copy['top4'][1];?></p>
 		</div>
-		<div class="top4-right-container"><img class="top4-right-img" src="/assets/sp/top/img/top4_img.jpg" alt="top5" /></div>
+		<div class="top4-right-container"><img class="top4-right-img" src="/assets/sp/top/img/top4_img.jpg" alt="" /></div>
 	</div>
 	<!-- スライド4枚目 --> 
 	<!-- スライド4枚目 --> 
@@ -77,7 +81,7 @@ Template Name: スペシャルページトップ
 	<!-- スライド5枚目 --> 
 	<!-- スライド5枚目 -->
 	<div class="top5-main-container">
-		<div class="top5-main-inner"><img class="top5-left-img" src="/assets/sp/top/img/top5_img.png" alt="top_icon3" />
+		<div class="top5-main-inner"><img class="top5-left-img" src="/assets/sp/top/img/top5_img.png" alt="" />
 			<p class="top5-text"><?php echo $top_copy['top5'][0];?></p>
 		</div>
 	</div>
@@ -86,8 +90,10 @@ Template Name: スペシャルページトップ
 	
 	<!-- スライド6枚目 --> 
 	<!-- スライド6枚目 -->
-	<div class="top6-main-cotainer"><img class="top6-img" src="/assets/sp/top/img/top6_img.jpg" alt="top6" />
-		<p class="top6-text"><?php echo $top_copy['top6'][0];?></p>
+	<div class="top6-main-container scrollify">
+		<div class="top6-main-contents"><img class="top6-img" src="/assets/sp/top/img/top6_img.jpg" alt="" />
+			<p class="top6-text"><?php echo $top_copy['top6'][0];?></p>
+		</div>
 	</div>
 	<!-- スライド6枚目 --> 
 	<!-- スライド6枚目 --> 
@@ -107,11 +113,14 @@ Template Name: スペシャルページトップ
 	<!-- スライド8枚目 -->
 	<div class="top8-main-container">
 		<div class="top8-upper-container">
-			<div class="top8-left-container"> <img class="top8-left-img" src="/assets/sp/top/img/top8_img.jpg" />
+			<div class="top8-left-container">
+				<img class="top8-left-img" src="/assets/sp/top/img/top8_img.jpg" />
+				<!--             仕様変更のためコメントアウト
 				<div class="top8-text-container">
 					<p class="top8-text1"><?php echo $top_copy['top8'][0];?></p>
 				</div>
 				<div class="top8-sp-text1"><?php echo $top_copy['top8'][0];?></div>
+				-->
 			</div>
 			<div class="top8-right-container">
 				<div class="top8-right-inner">
@@ -263,9 +272,9 @@ Template Name: スペシャルページトップ
 			<p class="top14-title"><?php echo $top_copy['top14'][0];?></p>
 			<p class="top14-text"><?php echo $top_copy['top14'][1];?></p>
 			<div class="top14-sns-container"> <a href="#">
-				<div class="top14-facebook-btn"> <img class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="facebook_icon" />FACEBOOK</div>
+				<div class="top14-facebook-btn"> <img class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="" />FACEBOOK</div>
 				</a> <a href="#">
-				<div class="top14-instagram-btn"> <img class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="instagram_icon" />INSTAGRAM</div>
+				<div class="top14-instagram-btn"> <img class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="" />INSTAGRAM</div>
 				</a></div>
 		</div>
 		<div class="top14-right-container"> 

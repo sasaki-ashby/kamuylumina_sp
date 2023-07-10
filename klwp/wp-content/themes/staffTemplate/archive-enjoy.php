@@ -18,7 +18,7 @@
 						$parent_terms = get_terms( $taxonomy_name, array( 'hide_empty' => false, 'parent' => 0 ) ); //第一階層のタームだけ取得
 						foreach ( $parent_terms as $taxonomy ) {
 							?>
-						<li><a href="<?php echo $taxonomy->slug;?>"><?php echo get_field("tax_enjoy-lang_name_$sp_lang","tax_enjoy_".$taxonomy->term_id);?></a></li>
+						<li><spna class="<?php echo $taxonomy->slug;?>"><?php echo get_field("tax_enjoy-lang_name_$sp_lang","tax_enjoy_".$taxonomy->term_id);?></spna></li>
 						<?php
 						}
 						?>
@@ -45,7 +45,7 @@
 				$tax_list = get_field( 'tax_enjoy' );
 				foreach ( $tax_list as $tax ) {
 					?>
-				<li><a href="<?php echo get_term_link( $tax );?>"><?php echo $tax->name;?></a></li>
+				<li><?php echo $tax->name;?></li>
 				<?php } ?>
 			</ul>
 			<a class="spot-a" href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">

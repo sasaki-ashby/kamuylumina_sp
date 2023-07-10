@@ -80,7 +80,7 @@
 	<a href="<?php echo lang_link("/sp/enjoy/",$sp_lang,$sp_lang);?>">
 	<nav class="prevbtn">
 		<p class="prevbtn_text"><?php echo $common_lang_text["記事一覧"];?></p>
-		<img class="prevbtn_icon" src="assets/sp/common/img/icons/arrow_right.png"></nav>
+		<img class="prevbtn_icon" src="/assets/sp/common/img/icons/arrow_right.png"></nav>
 	</a>
 </main>
 <!-- 関連記事------------------------------- -->
