@@ -74,7 +74,7 @@
   position: relative;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 10px;
   color: white;
   letter-spacing: 0.3rem;
   transition: 0.3s ease;
@@ -122,7 +122,7 @@
 .lang-btns-container {
   display: flex;
   border: none;
-  margin-right: 30px;
+  margin-right: 10px;
   z-index: 100;
 }
 @media screen and (max-width: 768px) {
@@ -135,15 +135,21 @@
   font-family: 'Noto Sans CJK JP', sans-serif;
   border: 1px solid white;
   border-radius: 4px 0 0 4px;
-  padding: 8px 13px;
   background: transparent;
   color: #ffffff;
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
+  padding: 5px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1150px) {
+  .lang-btn1 {
+    font-size: 5px;
+  }
+}
+
 
 .lang-btn2 {
   display: flex;
@@ -152,12 +158,17 @@
   font-family: 'Noto Sans CJK JP', sans-serif;
   background: transparent;
   border: 1px solid white;
-  padding: 8px 13px;
+  padding: 5px 10px;
   border-right: none;
   border-left: none;
   color: #ffffff;
   cursor: pointer;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
+}
+@media screen and (max-width: 1150px) {
+  .lang-btn2 {
+    font-size: 5px;
+  }
 }
 
 .lang-btn3 {
@@ -168,10 +179,15 @@
   background: transparent;
   border: 1px solid white;
   border-radius: 0 4px 4px 0;
-  padding: 8px 13px;
+  padding: 5px 10px;
   color: #ffffff;
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
+}
+@media screen and (max-width: 1150px) {
+  .lang-btn3 {
+    font-size: 5px;
+  }
 }
 
 .lang-btn1.selected,
