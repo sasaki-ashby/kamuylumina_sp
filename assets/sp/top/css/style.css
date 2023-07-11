@@ -412,6 +412,7 @@
   display: flex;
   align-items: center;
   background-image: url('../img/top3_1.jpg');
+  aspect-ratio: 1366 / 768;
   background-size: cover;
   background-position: center;
   height: 768px;
@@ -421,6 +422,7 @@
 @media screen and (min-width: 769px) {
   .top3-main-container {
     justify-content: space-evenly;
+    aspect-ratio: 375/812;
   }
 }
 
