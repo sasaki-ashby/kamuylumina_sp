@@ -140,6 +140,7 @@
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
+  display: block;
   letter-spacing: .1rem;
   line-height: 35px;
   padding: 0 10px;
