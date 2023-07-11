@@ -36,7 +36,7 @@
 }
 
 .header-title {
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: .5rem;
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -44,7 +44,7 @@
 }
 
 .header-title:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .detail-container {
@@ -58,8 +58,8 @@
     padding-inline: 16px;
   }
   .header-title {
-    font-size: 12px;
-    letter-spacing: 0.4rem;
+    font-size: 1.2rem;
+    letter-spacing: .4rem;
   }
   .detail-container {
     z-index: 100;
@@ -201,7 +201,7 @@
   align-items: center;
   font-family: 'Noto Serif CJK JP', serif;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 1rem;
   padding: 10px 15px;
   margin: 20px 0;
   z-index: 100;
@@ -214,7 +214,7 @@
 }
 
 .official-btn:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 @media screen and (max-width: 768px) {
@@ -229,7 +229,7 @@
 }
 
 .ticket-btn:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .arrow-image {
