@@ -212,9 +212,7 @@ Template Name: スペシャルページトップ
 	
 	<!-- スライド12枚目 --> 
 	<!-- スライド12枚目 -->
-	<div id="gallery" class="top12-main-container scrollify">
-		<img class="top12-left-img" src="/assets/sp/top/img/top12_img.jpg" />
-		<img class="top12-left-img2" src="/assets/sp/top/img/top11_img_sp.jpg" />
+	<div id="gallery" class="top12-main-container scrollify"> <img class="top12-left-img" src="/assets/sp/top/img/top12_img.jpg" /> <img class="top12-left-img2" src="/assets/sp/top/img/top11_img_sp.jpg" />
 		<div class="top12-right-container">
 			<div class="top12-right-text-container">
 				<p class="top12-right-title"><?php echo $common_lang_text["ギャラリー"];?></p>
@@ -223,10 +221,8 @@ Template Name: スペシャルページトップ
 			<a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
 			<div class="top12-more-btn" id="moreButton">
 				<p class="top12-text-btn">INSTAGRAM</p>
-				<img loading="lazy" class="top12-arrow-icon" src="/assets/sp/common/img/icons/arrow_right_wihte.png" />
-			</div>
-			</a>
-		</div>
+				<img loading="lazy" class="top12-arrow-icon" src="/assets/sp/common/img/icons/arrow_right_wihte.png" /> </div>
+			</a> </div>
 	</div>
 	<!-- スライド12枚目 --> 
 	<!-- スライド12枚目 --> 
@@ -273,50 +269,20 @@ Template Name: スペシャルページトップ
 	
 	<!-- スライド14枚目 --> 
 	<!-- スライド14枚目 -->
-	<div class="top14-main-container">
+	<div class="top14-main-container scrollify">
 		<div class="top14-left-container">
 			<p class="top14-title"><?php echo $top_copy['top14'][0];?></p>
 			<p class="top14-text"><?php echo $top_copy['top14'][1];?></p>
 			<div class="top14-sns-container">
 				<a href="https://www.facebook.com/akan.adventure" target="_blank">
-				<div class="top14-facebook-btn">
-					<img class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="" />FACEBOOK</div>
+					<div class="top14-facebook-btn"><img loading="lazy" class="top14-facebook-icon" src="assets/sp/top/img/facebook_icon.png" alt="facebook_icon" />FACEBOOK</div>
 				</a>
 				<a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
-				<div class="top14-instagram-btn">
-					<img class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="" />INSTAGRAM</div>
-				</a></div>
+					<div class="top14-instagram-btn"><img loading="lazy" class="top14-instagram-icon" src="assets/sp/top/img/instagram_icon.png" alt="instagram_icon" />INSTAGRAM</div>
+				</a>
+			</div>
 		</div>
-		<div class="top14-right-container"> 
-			
-			<!-- <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              Sunsets don&#39;t get much better than this one over
-              <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw"
-                >@GrandTetonNPS</a
-              >.
-              <a
-                href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#nature</a
-              >
-              <a
-                href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#sunset</a
-              >
-              <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
-            </p>
-            &mdash; US Department of the Interior (@Interior)
-            <a
-              href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
-              >May 5, 2014</a
-            >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script> --> 
-		</div>
+		<div class="top14-right-container"> </div>
 	</div>
 	<!-- スライド14枚目 --> 
 	<!-- スライド14枚目 --> 
