@@ -1598,6 +1598,8 @@
 }
 
 .top13-title {
+  display: flex;
+  justify-content: center;
   font-size: 1.6rem;
   object-fit: cover;
   color: #002c4b;
@@ -1612,6 +1614,8 @@
 }
 
 .top13-sub-title {
+  display: flex;
+  justify-content: center;
   font-size: 1rem;
   object-fit: cover;
   color: #002c4b;
