@@ -307,7 +307,7 @@
           </div>
         </a>
       </div>
-      <p class="under-text">COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT</p>
+      <p class="under-text">&copy;KAMUY&nbsp;LUMINA</p>
       <div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()">
         <img
           loading="lazy"
@@ -326,7 +326,6 @@
         });
       };
     </script>
-
     <script>
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
@@ -340,7 +339,6 @@
         }
       });
     </script>
-
     <script>
       document
         .querySelector(".hover-area")
@@ -348,24 +346,6 @@
           event.stopPropagation();
         });
     </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const langButtons = document.querySelectorAll(
-          '.lang-btns-container a'
-        );
-        langButtons[0].classList.add('selected');
-        langButtons.forEach((a) => {
-          a.addEventListener('click', function () {
-            langButtons.forEach((btn) => btn.classList.remove('selected'));
-
-            this.classList.add('selected');
-          });
-        });
-      });
-    </script>
-
     <script src="assets/sp/common/js/hamburger_header.js"></script>
-    <!-- <script src="assets/sp/article/js/spot_more.js"></script> -->
   </body>
 </html>
