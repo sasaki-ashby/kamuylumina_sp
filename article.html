@@ -37,11 +37,23 @@
         </a>
       </h1>
       <div class="right-side-btn">
-        <div class="lang-btns-container">
-          <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-          <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-          <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-        </div>
+        <ul class="lang-btns-container">
+          <li>
+            <a href="#" class="lang-btn1" data-btn="langBtn1">
+              日本語
+            </a>
+          </li>
+          <li>
+            <a href="#" class="lang-btn2" data-btn="langBtn2">
+             ENGLISH
+            </a>
+          </li>
+          <li>
+            <a href="#" class="lang-btn3" data-btn="langBtn3">
+              繁体字
+            </a>
+          </li>
+        </ul>
         <a href="#">
           <div class="official-btn">
             オフィシャルサイト
@@ -73,12 +85,23 @@
       </div>
     </header>
     <div class="slide-menu">
-
-      <div class="lang-btns-container">
-        <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-        <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-        <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-      </div>
+      <ul class="lang-btns-container">
+        <li>
+          <a href="#" class="lang-btn1" data-btn="langBtn1">
+            日本語
+          </a>
+        </li>
+        <li>
+          <a href="#" class="lang-btn2" data-btn="langBtn2">
+           ENGLISH
+          </a>
+        </li>
+        <li>
+          <a href="#" class="lang-btn3" data-btn="langBtn3">
+            繁体字
+          </a>
+        </li>
+      </ul>
       <a href="#">
         <div class="official-btn">
           オフィシャルサイト
@@ -329,11 +352,11 @@
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const langButtons = document.querySelectorAll(
-          '.lang-btns-container button'
+          '.lang-btns-container a'
         );
         langButtons[0].classList.add('selected');
-        langButtons.forEach((button) => {
-          button.addEventListener('click', function () {
+        langButtons.forEach((a) => {
+          a.addEventListener('click', function () {
             langButtons.forEach((btn) => btn.classList.remove('selected'));
 
             this.classList.add('selected');
