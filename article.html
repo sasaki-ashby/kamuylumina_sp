@@ -38,15 +38,21 @@
       </h1>
       <div class="right-side-btn">
         <ul class="lang-btns-container">
-          <a href="#">
-            <li class="lang-btn1" data-btn="langBtn1">日本語</li>
-          </a>
-          <a href="#">
-            <li class="lang-btn2" data-btn="langBtn2">ENGLISH</li>
-          </a>
-          <a href="#">
-            <li class="lang-btn3" data-btn="langBtn3">繁体字</li>
-          </a>
+          <li>
+            <a href="#" class="lang-btn1" data-btn="langBtn1">
+              日本語
+            </a>
+          </li>
+          <li>
+            <a href="#" class="lang-btn2" data-btn="langBtn2">
+             ENGLISH
+            </a>
+          </li>
+          <li>
+            <a href="#" class="lang-btn3" data-btn="langBtn3">
+              繁体字
+            </a>
+          </li>
         </ul>
         <a href="#">
           <div class="official-btn">
@@ -79,17 +85,22 @@
       </div>
     </header>
     <div class="slide-menu">
-
       <ul class="lang-btns-container">
-        <a href="#">
-          <li class="lang-btn1" data-btn="langBtn1">日本語</li>
-        </a>
-        <a href="#">
-          <li class="lang-btn2" data-btn="langBtn2">ENGLISH</li>
-        </a>
-        <a href="#">
-          <li class="lang-btn3" data-btn="langBtn3">繁体字</li>
-        </a>
+        <li>
+          <a href="#" class="lang-btn1" data-btn="langBtn1">
+            日本語
+          </a>
+        </li>
+        <li>
+          <a href="#" class="lang-btn2" data-btn="langBtn2">
+           ENGLISH
+          </a>
+        </li>
+        <li>
+          <a href="#" class="lang-btn3" data-btn="langBtn3">
+            繁体字
+          </a>
+        </li>
       </ul>
       <a href="#">
         <div class="official-btn">
@@ -341,11 +352,11 @@
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const langButtons = document.querySelectorAll(
-          '.lang-btns-container button'
+          '.lang-btns-container a'
         );
         langButtons[0].classList.add('selected');
-        langButtons.forEach((button) => {
-          button.addEventListener('click', function () {
+        langButtons.forEach((a) => {
+          a.addEventListener('click', function () {
             langButtons.forEach((btn) => btn.classList.remove('selected'));
 
             this.classList.add('selected');
