@@ -59,7 +59,7 @@
       <div class="right-side-btn">
         <ul class="lang-btns-container">
           <li>
-            <a href="#" class="lang-btn1" data-btn="langBtn1">
+            <a href="#" class="lang-btn1 selected" data-btn="langBtn1">
               日本語
             </a>
           </li>
@@ -121,7 +121,7 @@
       <div class="lang-btns-container">
         <ul class="lang-btns-container">
           <li>
-            <a href="#" class="lang-btn1" data-btn="langBtn1">
+            <a href="#" class="lang-btn1 selected" data-btn="langBtn1">
               日本語
             </a>
           </li>
@@ -805,22 +805,6 @@
         details.forEach((detail) => {
           detail.addEventListener('click', function () {
             details.forEach((d) => d.classList.remove('selected'));
-
-            this.classList.add('selected');
-          });
-        });
-      });
-    </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const langButtons = document.querySelectorAll(
-          '.lang-btns-container a'
-        );
-        langButtons[0].classList.add('selected');
-        langButtons.forEach((a) => {
-          a.addEventListener('click', function () {
-            langButtons.forEach((btn) => btn.classList.remove('selected'));
 
             this.classList.add('selected');
           });

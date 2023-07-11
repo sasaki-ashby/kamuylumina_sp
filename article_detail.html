@@ -303,21 +303,6 @@
       };
     </script>
     <script>
-  document.addEventListener('DOMContentLoaded', function () {
-        const langButtons = document.querySelectorAll(
-          '.lang-btns-container a'
-        );
-        langButtons[0].classList.add('selected');
-        langButtons.forEach((a) => {
-          a.addEventListener('click', function () {
-            langButtons.forEach((btn) => btn.classList.remove('selected'));
-
-            this.classList.add('selected');
-          });
-        });
-      });
-    </script>
-    <script>
       window.addEventListener('scroll', function () {
         var header = document.querySelector('header');
         var scrollTop =
