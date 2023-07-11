@@ -23,7 +23,7 @@
   justify-content: flex-end;
   color: #ffffff;
   /* background-image: url("../../top/img/top1.jpg"); */
-  background-image: url('../img/top1.jpg');
+  background-image: url("../img/top1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 
 .top1-sub-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -63,7 +63,7 @@
 }
 
 .top1-date-text {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -79,7 +79,7 @@
 }
 
 .top1-text {
-  font-family: 'Noto Serif CJK JP', serif;
+  font-family: "Noto Serif CJK JP", serif;
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -112,8 +112,10 @@
     padding: 10px;
   }
 }
+
 .top1-under-container:hover {
-  opacity: 0.8;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 768px) {
@@ -135,7 +137,7 @@
 }
 
 .under-p-1 {
-  font-family: 'Noto Serif CJK JP', serif;
+  font-family: "Noto Serif CJK JP", serif;
   color: #002c4b;
   font-size: 17px;
   margin: 1px;
@@ -152,7 +154,7 @@
 }
 
 .under-p-2 {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   color: #002c4b;
   font-weight: 500;
   font-size: 17px;
@@ -356,7 +358,7 @@
   color: #002c4b;
   line-height: 36px;
   margin: 0;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   max-width: 600px;
 }
 
@@ -389,7 +391,7 @@
     position: unset;
     bottom: unset;
     right: unset;
-/*    width: 100%; アスペクト比が崩れるためコメントアウト*/
+    /*    width: 100%; アスペクト比が崩れるためコメントアウト*/
     max-height: 403px;
     height: auto;
   }
@@ -593,7 +595,7 @@
 }
 
 .top4-title {
-  font-family: 'Noto Serif CJK JP', serif;
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -723,12 +725,12 @@
     padding: 160px 0;
   }
 }
-.top6-main-contents{
+.top6-main-contents {
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .top6-main-contents{
+  .top6-main-contents {
     flex-direction: column;
   }
 }
@@ -779,7 +781,7 @@
   background-position: center;
   height: 600px;
   /* background-image: url("../../top/img/top7_img.jpg"); */
-  background-image: url('../img/top7_img.jpg');
+  background-image: url("../img/top7_img.jpg");
 }
 
 .top7-upper-text {
@@ -956,7 +958,7 @@
 }
 
 .top8-title {
-  font-family: 'Noto Serif CJK JP', serif;
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -1117,7 +1119,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../../top/img/top9_img.jpg') center / cover no-repeat;
+  background: url("../../top/img/top9_img.jpg") center / cover no-repeat;
   /* background-image: url("/asets/top/img/top9_img.jpg"); */
   height: 588px;
 }
@@ -1157,7 +1159,7 @@
 }
 
 .top9-title {
-  font-family: 'Noto Serif CJK JP', serif;
+  font-family: "Noto Serif CJK JP", serif;
   text-align: center;
   font-size: 2.6rem;
   font-weight: bold;
@@ -1195,13 +1197,12 @@
   display: flex;
   justify-content: space-evenly;
   bottom: -100px;
-/*  overflow-x: scroll;
+  /*  overflow-x: scroll;
   overflow-y: visible;*/
   width: 100%;
   z-index: 10;
   padding-top: 10px;
   padding-bottom: 40px;
-
 }
 
 .top9-card {
@@ -1273,7 +1274,7 @@
   background-size: cover;
   background-position: center;
   /* background-image: url("../../top/img/top10_img.jpg"); */
-  background-image: url('../img/top10_img.jpg');
+  background-image: url("../img/top10_img.jpg");
 }
 @media screen and (max-width: 768px) {
   .top10-main-container {
@@ -1333,7 +1334,7 @@
 }
 
 .top11-title {
-  font-family: 'Noto Serif CJK JP', serif;
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -1460,6 +1461,25 @@
     width: 100%;
     padding: 35px;
   }
+}
+
+.top12-right-text-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.top12-right-title {
+  font-size: 2.2rem;
+  margin-right: 10px;
+  color: #ffffff;
+  writing-mode: vertical-rl;
+}
+
+.top12-right-sub {
+  font-size: 1rem;
+
+  color: #ffffff;
+  writing-mode: vertical-rl;
 }
 
 .top12-more-btn {
@@ -1669,7 +1689,7 @@
 }
 
 .top14-title {
-  font-family: 'Noto Serif CJK JP', serif;
+  font-family: "Noto Serif CJK JP", serif;
   font-size: 1.8rem;
   color: #002c4b;
   font-weight: 600;
