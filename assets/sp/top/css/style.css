@@ -1834,13 +1834,13 @@
 }
 
 .page_wrap a {
-  border: 1px solid #A4B1BA;
+  border: 1px solid #a4b1ba;
+  background-color: #a4b1ba;
   border-radius: 50%;
   display: block;
   width: 10px;
   height: 10px;
 }
 .page_wrap a.active {
-  background: #FED100;
+  background-color: #fed100;
 }
-
