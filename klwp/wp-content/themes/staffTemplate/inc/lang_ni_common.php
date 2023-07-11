@@ -9,5 +9,6 @@ $common_lang_text = [
 	'ACCESS' => 'ACCESS',
 	'GALLERY' => 'GALLERY',
 	'Coming soon' => 'Coming soon',
+	'ギャラリー' => 'ギャラリー',
 ];
 ?>

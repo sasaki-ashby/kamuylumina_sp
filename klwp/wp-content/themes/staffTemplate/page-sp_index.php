@@ -17,9 +17,7 @@ Template Name: スペシャルページトップ
 		<div class="top1-under-container"><img class="top1-under-left-img" src="/assets/sp/top/img/top1_2.jpg" alt="" />
 			<div class="top1-text-container">
 				<p class="under-p-1">KAMUY LUMINA</p>
-				<p class="under-p-2">
-					<?php echo $top_copy['top1'][3]?>
-				</p>
+				<p class="under-p-2"> <?php echo $top_copy['top1'][3]?> </p>
 			</div>
 			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="" /></div>
 		</a></div>
@@ -184,8 +182,8 @@ Template Name: スペシャルページトップ
 	<!-- スライド9枚目 --> 
 	
 	<!-- スライド10枚目 --> 
-	<!-- スライド10枚目 -->
-	<div class="top10-main-container"></div>
+	<!-- スライド10枚目 --> 
+	<!--<div class="top10-main-container"></div>--> 
 	<!-- スライド10枚目 --> 
 	<!-- スライド10枚目 --> 
 	
@@ -214,15 +212,21 @@ Template Name: スペシャルページトップ
 	
 	<!-- スライド12枚目 --> 
 	<!-- スライド12枚目 -->
-	<div class="top12-main-container"> <img class="top12-left-img" src="/assets/sp/top/img/top12_img.jpg" /> <img class="top12-left-img2" src="/assets/sp/top/img/top11_img_sp.jpg" />
-		<div class="top12-right-container"> <img src="/assets/sp/top/img/top12_text.png" /> <a href="#">
+	<div id="gallery" class="top12-main-container scrollify">
+		<img class="top12-left-img" src="/assets/sp/top/img/top12_img.jpg" />
+		<img class="top12-left-img2" src="/assets/sp/top/img/top11_img_sp.jpg" />
+		<div class="top12-right-container">
+			<div class="top12-right-text-container">
+				<p class="top12-right-title"><?php echo $common_lang_text["ギャラリー"];?></p>
+				<p class="top12-right-sub"><?php echo $common_lang_text["GALLERY"];?></p>
+			</div>
+			<a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
 			<div class="top12-more-btn" id="moreButton">
 				<p class="top12-text-btn">INSTAGRAM</p>
-				<img
-                class="top12-arrow-icon"
-                src="/assets/sp/common/img/icons/arrow_right_wihte.png"
-              /> </div>
-			</a> </div>
+				<img loading="lazy" class="top12-arrow-icon" src="/assets/sp/common/img/icons/arrow_right_wihte.png" />
+			</div>
+			</a>
+		</div>
 	</div>
 	<!-- スライド12枚目 --> 
 	<!-- スライド12枚目 --> 
@@ -233,9 +237,13 @@ Template Name: スペシャルページトップ
 		<div class="top13-left-container"> <img class="top13-left-img" src="/assets/sp/top/img/top13_img1.png" />
 			<p class="top13-title">Akan Adventure Tourism</p>
 			<?php if($sp_lang == "ni"){?>
-			<a href="http://akanat.co.jp/atdepartment/" target="_blank"><p class="top13-sub-title">http://akanat.co.jp/atdepartment/</p></a>
+			<a href="http://akanat.co.jp/atdepartment/" target="_blank">
+			<p class="top13-sub-title">http://akanat.co.jp/atdepartment/</p>
+			</a>
 			<?php }else{?>
-			<a href="http://akanat.co.jp/atdepartment/en/" target="_blank"><p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p></a>
+			<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
+			<p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p>
+			</a>
 			<?php }?>
 			<p class="top13-text"><?php echo $top_copy['top13'][0];?></p>
 			<?php if($sp_lang == "ni"){?>
@@ -246,8 +254,7 @@ Template Name: スペシャルページトップ
 			<div class="top13-more-btn" id="moreButton">
 				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
 				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
-			</a>
-		</div>
+			</a> </div>
 		<div class="top13-right-container"> <img class="top13-right-img" src="/assets/sp/top/img/top5_img.png" />
 			<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
 			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
@@ -270,10 +277,14 @@ Template Name: スペシャルページトップ
 		<div class="top14-left-container">
 			<p class="top14-title"><?php echo $top_copy['top14'][0];?></p>
 			<p class="top14-text"><?php echo $top_copy['top14'][1];?></p>
-			<div class="top14-sns-container"> <a href="#">
-				<div class="top14-facebook-btn"> <img class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="" />FACEBOOK</div>
-				</a> <a href="#">
-				<div class="top14-instagram-btn"> <img class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="" />INSTAGRAM</div>
+			<div class="top14-sns-container">
+				<a href="https://www.facebook.com/akan.adventure" target="_blank">
+				<div class="top14-facebook-btn">
+					<img class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="" />FACEBOOK</div>
+				</a>
+				<a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
+				<div class="top14-instagram-btn">
+					<img class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="" />INSTAGRAM</div>
 				</a></div>
 		</div>
 		<div class="top14-right-container"> 

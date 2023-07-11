@@ -9,5 +9,6 @@ $common_lang_text = [
 	'ACCESS' => '交通訊息',
 	'GALLERY' => '精彩圖片',
 	'Coming soon' => 'Coming Soon（準備中）',
+	'ギャラリー' => '精彩圖片',
 ];
 ?>
