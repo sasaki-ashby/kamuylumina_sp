@@ -32,7 +32,6 @@
 					</ul>
 				</div>
 				<section class="middle-container">
-					<?php if ( have_rows( 'section' ) ) { while ( have_rows( 'section' ) ): the_row(); ?>
 					<section>
 						<?php if ( have_rows( 'body' ) ) { while ( have_rows( 'body' ) ): the_row(); ?>
 						<?php if( get_row_layout() == 'h2' ){/*見出し1*/?>
@@ -52,7 +51,6 @@
 						<?php }?>
 						<?php endwhile;}?>
 					</section>
-					<?php endwhile;}?>
 				</section>
 			</section>
 		</div>
