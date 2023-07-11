@@ -37,11 +37,17 @@
         </a>
       </h1>
       <div class="right-side-btn">
-        <div class="lang-btns-container">
-          <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-          <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-          <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-        </div>
+        <ul class="lang-btns-container">
+          <a href="#">
+            <li class="lang-btn1" data-btn="langBtn1">日本語</li>
+          </a>
+          <a href="#">
+            <li class="lang-btn2" data-btn="langBtn2">ENGLISH</li>
+          </a>
+          <a href="#">
+            <li class="lang-btn3" data-btn="langBtn3">繁体字</li>
+          </a>
+        </ul>
         <a href="#">
           <div class="official-btn">
             オフィシャルサイト
@@ -74,11 +80,17 @@
     </header>
     <div class="slide-menu">
 
-      <div class="lang-btns-container">
-        <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-        <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-        <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
-      </div>
+      <ul class="lang-btns-container">
+        <a href="#">
+          <li class="lang-btn1" data-btn="langBtn1">日本語</li>
+        </a>
+        <a href="#">
+          <li class="lang-btn2" data-btn="langBtn2">ENGLISH</li>
+        </a>
+        <a href="#">
+          <li class="lang-btn3" data-btn="langBtn3">繁体字</li>
+        </a>
+      </ul>
       <a href="#">
         <div class="official-btn">
           オフィシャルサイト
@@ -279,13 +291,13 @@
       };
     </script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
         const langButtons = document.querySelectorAll(
-          '.lang-btns-container button'
+          '.lang-btns-container li'
         );
         langButtons[0].classList.add('selected');
-        langButtons.forEach((button) => {
-          button.addEventListener('click', function () {
+        langButtons.forEach((li) => {
+          li.addEventListener('click', function () {
             langButtons.forEach((btn) => btn.classList.remove('selected'));
 
             this.classList.add('selected');
@@ -294,14 +306,14 @@
       });
     </script>
     <script>
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
         var scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > 0) {
-          header.classList.add("fixed-header");
+          header.classList.add('fixed-header');
         } else {
-          header.classList.remove("fixed-header");
+          header.classList.remove('fixed-header');
         }
       });
     </script>
