@@ -22,8 +22,8 @@
   align-items: center;
   justify-content: flex-end;
   color: #ffffff;
-  /* background-image: url("../../top/img/top1.jpg"); */
-  background-image: url("../img/top1.jpg");
+  /* background-image: url('../../top/img/top1.jpg'); */
+  background-image: url('../img/top1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 
 .top1-sub-title {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -63,7 +63,7 @@
 }
 
 .top1-date-text {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -79,7 +79,7 @@
 }
 
 .top1-text {
-  font-family: "Noto Serif CJK JP", serif;
+  font-family: 'Noto Serif CJK JP', serif;
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -137,7 +137,7 @@
 }
 
 .under-p-1 {
-  font-family: "Noto Serif CJK JP", serif;
+  font-family: 'Noto Serif CJK JP', serif;
   color: #002c4b;
   font-size: 17px;
   margin: 1px;
@@ -154,7 +154,7 @@
 }
 
 .under-p-2 {
-  font-family: "Noto Serif JP", serif;
+  font-family: 'Noto Serif JP', serif;
   color: #002c4b;
   font-weight: 500;
   font-size: 17px;
@@ -595,7 +595,7 @@
 }
 
 .top4-title {
-  font-family: "Noto Serif CJK JP", serif;
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -780,8 +780,8 @@
   background-size: cover;
   background-position: center;
   height: 600px;
-  /* background-image: url("../../top/img/top7_img.jpg"); */
-  background-image: url("../img/top7_img.jpg");
+  /* background-image: url('../../top/img/top7_img.jpg'); */
+  background-image: url('../img/top7_img.jpg');
 }
 
 .top7-upper-text {
@@ -958,7 +958,7 @@
 }
 
 .top8-title {
-  font-family: "Noto Serif CJK JP", serif;
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -1119,8 +1119,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../top/img/top9_img.jpg") center / cover no-repeat;
-  /* background-image: url("/asets/top/img/top9_img.jpg"); */
+  background: url('../../top/img/top9_img.jpg') center / cover no-repeat;
+  /* background-image: url('/asets/top/img/top9_img.jpg'); */
   height: 588px;
 }
 @media screen and (max-width: 768px) {
@@ -1159,7 +1159,7 @@
 }
 
 .top9-title {
-  font-family: "Noto Serif CJK JP", serif;
+  font-family: 'Noto Serif CJK JP', serif;
   text-align: center;
   font-size: 2.6rem;
   font-weight: bold;
@@ -1273,8 +1273,8 @@
   height: 768px;
   background-size: cover;
   background-position: center;
-  /* background-image: url("../../top/img/top10_img.jpg"); */
-  background-image: url("../img/top10_img.jpg");
+  /* background-image: url('../../top/img/top10_img.jpg'); */
+  background-image: url('../img/top10_img.jpg');
 }
 @media screen and (max-width: 768px) {
   .top10-main-container {
@@ -1334,7 +1334,7 @@
 }
 
 .top11-title {
-  font-family: "Noto Serif CJK JP", serif;
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.15em;
@@ -1553,13 +1553,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 768px;
 }
 @media screen and (max-width: 768px) {
   .top13-right-container {
     padding: 10px;
   }
 }
+
+.top13-left-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* @media screen and (max-width: 768px) {
+  .top13-left-text-container{
+    padding: 10px;
+  }
+} */
+.top13-right-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* @media screen and (max-width: 768px) {
+  .top13-right-text-container{
+    padding: 10px;
+  }
+} */
 
 .top13-right-img {
   width: 570px;
@@ -1574,6 +1596,8 @@
 }
 
 .top13-title {
+  display: flex;
+  justify-content: center;
   font-size: 1.6rem;
   object-fit: cover;
   color: #002c4b;
@@ -1588,6 +1612,8 @@
 }
 
 .top13-sub-title {
+  display: flex;
+  justify-content: center;
   font-size: 10px;
   object-fit: cover;
   color: #002c4b;
@@ -1689,7 +1715,7 @@
 }
 
 .top14-title {
-  font-family: "Noto Serif CJK JP", serif;
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 1.8rem;
   color: #002c4b;
   font-weight: 600;
