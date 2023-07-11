@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 1;
   margin: 0;
 }
@@ -50,14 +50,14 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 65px;
+  font-size: 6.5rem;
   letter-spacing: 10px;
   font-weight: 300;
   margin: 20px 0 0 0;
 }
 @media screen and (max-width: 768px) {
   .top1-sub-title {
-    font-size: 32px;
+    font-size: 3.2rem;
     width: 311px;
   }
 }
@@ -83,7 +83,7 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -139,7 +139,7 @@
 .under-p-1 {
   font-family: 'Noto Serif CJK JP', serif;
   color: #002c4b;
-  font-size: 17px;
+  font-size: 1.7rem;
   margin: 1px;
   letter-spacing: 2px;
 }
@@ -147,7 +147,7 @@
 @media screen and (max-width: 768px) {
   .under-p-1 {
     margin: 0;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0;
   }
@@ -157,13 +157,13 @@
   font-family: 'Noto Serif JP', serif;
   color: #002c4b;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.7rem;
   margin: 1px;
 }
 
 @media screen and (max-width: 768px) {
   .under-p-2 {
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0;
     margin: 0;
@@ -265,7 +265,7 @@
   font-size: 1.4rem;
   line-height: 36px;
   margin-top: 20px;
-  letter-spacing: 0.03em;
+  letter-spacing: .03em;
 }
 
 @media screen and (max-width: 768px) {
@@ -345,7 +345,7 @@
 @media screen and (max-width: 768px) {
   .top2-under-btn {
     padding: 12px 13px;
-    letter-spacing: 0.25em;
+    letter-spacing: .25em;
     height: 132px;
   }
 }
@@ -358,7 +358,7 @@
   color: #002c4b;
   line-height: 36px;
   margin: 0;
-  letter-spacing: 0.03em;
+  letter-spacing: .03em;
   max-width: 600px;
 }
 
@@ -471,7 +471,7 @@
   margin-bottom: 35px;
   font-weight: bold;
   color: #ffffff;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
   line-height: 84px;
 }
 
@@ -607,14 +607,14 @@
 .top4-text1 {
   writing-mode: vertical-rl;
   text-align: left;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
 }
 
 .top4-title {
   font-family: 'Noto Serif CJK JP', serif;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
   margin-right: 15px;
 }
 
@@ -638,14 +638,14 @@
 }
 
 .top4-text2 {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 35px;
   text-align: center;
   margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
   .top4-text2 {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
   }
 }
@@ -711,14 +711,14 @@
 
 .top5-text {
   display: flex;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 46px;
   color: #ffffff;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .top5-text {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
   }
 }
@@ -765,7 +765,7 @@
 
 .top6-text {
   display: flex;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 40px;
   color: #002c4b;
   text-align: center;
@@ -774,7 +774,7 @@
 
 @media screen and (max-width: 768px) {
   .top6-text {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
     margin-top: 50px;
     margin-left: 0;
@@ -802,11 +802,11 @@
 
 .top7-upper-text {
   position: absolute;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 46px;
   top: 50px;
   left: 100px;
-  letter-spacing: 0.03em;
+  letter-spacing: .03em;
   color: #ffffff;
   text-align: left;
 }
@@ -816,7 +816,7 @@
     left: 0;
     width: 100%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
     text-align: center;
     padding: 10px;
@@ -824,9 +824,9 @@
 }
 
 .top7-under-text {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 46px;
-  letter-spacing: 0.03em;
+  letter-spacing: .03em;
   color: #002c4b;
   text-align: center;
   margin-top: 40px;
@@ -834,7 +834,7 @@
 @media screen and (max-width: 768px) {
   .top7-under-text {
     margin-top: 50px;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
     padding: 10px;
   }
@@ -947,7 +947,7 @@
 @media screen and (max-width: 768px) {
   .top8-sp-text1 {
     display: block;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #002c4b;
     margin-top: 20px;
   }
@@ -977,7 +977,7 @@
   font-family: 'Noto Serif CJK JP', serif;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
   margin-right: 15px;
 }
 
@@ -985,11 +985,11 @@
   font-size: 1rem;
   font-family: Poppins;
   text-align: left;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
 }
 
 .top8-text3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 35px;
   color: #002c4b;
   text-align: center;
@@ -997,7 +997,7 @@
 }
 @media screen and (max-width: 768px) {
   .top8-text3 {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 28px;
   }
 }
@@ -1038,7 +1038,7 @@
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1.4rem;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s;
@@ -1048,7 +1048,7 @@
 
 .top8-img-list li:hover .image-caption {
   visibility: visible;
-  opacity: 0.5;
+  opacity: .5;
   cursor: pointer;
 }
 
@@ -1103,11 +1103,11 @@
 }
 
 .top8-more-btn:hover {
-  opacity: 0.4;
+  opacity: .4;
 }
 
 .top8-text-btn {
-  font-size: 11px;
+  font-size: 1.1rem;
   padding: 5px;
   margin-right: 10px;
   color: #002c4b;
@@ -1179,7 +1179,7 @@
   text-align: center;
   font-size: 2.6rem;
   font-weight: bold;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
   color: #ffffff;
 }
 
@@ -1187,7 +1187,7 @@
   text-align: center;
   margin-top: 10px;
   font-size: 1.1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
   font-family: Poppins;
   color: #ffffff;
 }
@@ -1199,7 +1199,7 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
   line-height: 48px;
-  letter-spacing: 0.5rem;
+  letter-spacing: .5rem;
   margin-top: 24px;
 }
 @media screen and (max-width: 768px) {
@@ -1232,7 +1232,7 @@
   margin: 0 20px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .top9-card:hover {
@@ -1251,7 +1251,7 @@
   margin: 0 20px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .top9-card-container {
@@ -1346,14 +1346,14 @@
 .top11-title,
 .top11-text1 {
   writing-mode: vertical-rl;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
 }
 
 .top11-title {
   font-family: 'Noto Serif CJK JP', serif;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
   margin-right: 15px;
 }
 
@@ -1507,7 +1507,7 @@
 }
 
 .top12-more-btn:hover {
-  opacity: 0.4;
+  opacity: .4;
 }
 
 .top12-text-btn {
@@ -1612,17 +1612,17 @@
 }
 
 .top13-sub-title {
-  font-size: 10px;
+  font-size: 1rem;
   object-fit: cover;
   color: #002c4b;
 }
 
 .top13-sub-title:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .top13-text {
-  font-size: 13px;
+  font-size: 1.3rem;
   object-fit: cover;
   color: #002c4b;
   line-height: 35px;
@@ -1648,11 +1648,11 @@
 }
 
 .top13-more-btn:hover {
-  opacity: 0.4;
+  opacity: .4;
 }
 
 .top13-text-btn {
-  font-size: 11px;
+  font-size: 1.1rem;
   padding: 5px;
   margin-right: 10px;
   color: #002c4b;
@@ -1718,7 +1718,7 @@
   color: #002c4b;
   font-weight: 600;
   line-height: 40px;
-  letter-spacing: 0.3em;
+  letter-spacing: .3em;
 }
 @media screen and (max-width: 768px) {
   .top14-title {
@@ -1728,12 +1728,12 @@
 }
 
 .top14-text {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #002c4b;
   line-height: 35px;
   text-align: left;
   line-height: 32px;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -1754,7 +1754,7 @@
   cursor: pointer;
   border: 1px solid #a4b1ba;
   padding: 30px 80px;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #002c4b;
   display: flex;
   align-items: center;
@@ -1763,13 +1763,13 @@
   border-radius: 2px;
 }
 .top14-facebook-btn:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 .top14-instagram-btn {
   cursor: pointer;
   border: 1px solid #a4b1ba;
   padding: 30px 80px;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #002c4b;
   display: flex;
   align-items: center;
@@ -1778,7 +1778,7 @@
   border-radius: 2px;
 }
 .top14-instagram-btn:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 @media screen and (max-width: 768px) {
   .top14-facebook-btn {
