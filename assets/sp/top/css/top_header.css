@@ -1,27 +1,28 @@
 #header {
+  align-items: center;
+  background: rgba(0, 0, 0, .1);
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+  padding: 8px;
+  padding-inline: 16px;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 88px;
   width: 100%;
-  padding: 8px;
-  padding-inline: 16px;
-  background: rgba(0, 0, 0, 0.1);
   z-index: 200;
 }
+
 #header a {
-  transition: 0.3s ease;
+  transition: .3s ease;
 }
 
 #header.HeightMin {
+  animation: DownAnime .5s forwards;
+  background-color: #002c4b;
+  height: 53px;
   position: fixed;
   z-index: 100; /*最前面へ*/
-  height: 53px;
-  animation: DownAnime 0.5s forwards;
-  background-color: #002c4b;
 }
 
 @keyframes DownAnime {
@@ -36,11 +37,11 @@
 }
 
 .header-title {
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   letter-spacing: .5rem;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  cursor: pointer;
 }
 
 .header-title:hover {
@@ -62,46 +63,48 @@
     letter-spacing: .4rem;
   }
   .detail-container {
-    z-index: 100;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 30px;
+    z-index: 100;
   }
 }
 
 .detail a {
+  color: #fff;
+  cursor: pointer;
   position: relative;
   font-family: 'Poppins', sans-serif;
-  cursor: pointer;
+  letter-spacing: .3rem;
   margin-right: 10px;
-  color: white;
-  letter-spacing: 0.3rem;
-  transition: 0.3s ease;
   padding: 12px 0;
+  transition: .3s ease;
 }
+
 .detail a:hover {
-  opacity: 0.5;
+  opacity: .6;
 }
+
 @media screen and (max-width: 1100px) {
   .detail {
-    z-index: 100;
+    align-items: center;
+    flex-direction: column;
     font-size: 2rem;
     margin: 20px;
-    flex-direction: column;
-    align-items: center;
+    z-index: 100;
   }
 }
 
 .detail ::before {
+  background-color: #fff;
   content: '';
+  height: 2px;
   position: absolute;
   bottom: -10px;
   left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: white;
   visibility: hidden;
+  width: 100%;
 }
 
 .detail.selected::before {
@@ -109,10 +112,11 @@
 }
 
 .right-side-btn {
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
+
 @media screen and (max-width: 1100px) {
   .right-side-btn {
     display: none;
@@ -120,11 +124,12 @@
 }
 
 .lang-btns-container {
-  display: flex;
   border: none;
+  display: flex;
   margin-right: 10px;
   z-index: 100;
 }
+
 @media screen and (max-width: 768px) {
   .lang-btns-container {
     margin-right: 0;
@@ -158,18 +163,18 @@
 .lang-btn1.selected,
 .lang-btn2.selected,
 .lang-btn3.selected {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #002c4b;
 }
 
 .lang-btn.selected {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #002c4b;
 }
 
 .lang-btn:not(.selected) {
   background: transparent;
-  color: #ffffff;
+  color: #fff;
 }
 
 .lang-btn:not(:last-child) {
@@ -178,24 +183,24 @@
 
 .official-btn,
 .ticket-btn {
-  display: flex;
   align-items: center;
-  font-family: 'Noto Serif CJK JP', serif;
+  display: flex;
   cursor: pointer;
+  font-family: 'Noto Serif CJK JP', serif;
   font-size: 1rem;
-  padding: 10px 15px;
   margin: 20px 0;
+  padding: 10px 15px;
+  transition: .3s ease;
   z-index: 100;
-  transition: 0.3s ease;
 }
 
 .official-btn {
-  color: white;
+  color: #fff;
   margin-right: 20px;
 }
 
 .official-btn:hover {
-  opacity: .5;
+  opacity: .6;
 }
 
 @media screen and (max-width: 768px) {
@@ -205,18 +210,18 @@
 }
 
 .ticket-btn {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #002c4b;
 }
 
 .ticket-btn:hover {
-  opacity: .5;
+  opacity: .6;
 }
 
 .arrow-image {
-  width: 25px;
   height: 5.87px;
   margin-left: 5px;
+  width: 25px;
 }
 
 .navbar {
@@ -230,17 +235,17 @@
 }
 
 .hamburger-icon {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   padding: 10px;
 }
 
 .line {
-  width: 30px;
+  background-color: #fff;
   height: 1px;
-  background-color: #ffffff;
   margin: 4px 0;
+  width: 30px;
 }
 
 /* -----ハンバーガーアイコン---- */
@@ -250,34 +255,39 @@
 
 @media screen and (max-width: 1100px) {
   .hamburger {
-    position: relative;
     display: block;
-    width: 30px;
     height: 20px;
+    position: relative;
+    width: 30px;
   }
 }
+
 .hamburger span {
+  background-color: #fff;
   position: absolute;
-  width: 100%;
   height: 1px;
-  background-color: #ffffff;
-  transition: 0.5s;
+  transition: .5s;
+  width: 100%;
 }
+
 .hamburger span:first-of-type {
   top: 0;
 }
+
 .hamburger span:nth-of-type(2) {
   top: 50%;
 }
+
 .hamburger span:last-of-type {
   top: 100%;
 }
 
 .header-pc {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-evenly;
 }
+
 @media screen and (max-width: 1100px) {
   .header-pc {
     display: none;
@@ -287,20 +297,21 @@
 .slide-menu {
   display: none;
 }
+
 @media screen and (max-width: 1100px) {
   .slide-menu {
-    position: fixed;
+    align-items: center;
+    background-color: #002c4b;
     display: flex;
+    height: 100vh;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: 0.5s;
-    height: 100vh;
-    background-color: #002c4b;
-    z-index: 99;
     overflow: hidden;
+    transform: translateX(100%);
+    transition: .5s;
+    width: 100%;
+    z-index: 99;
   }
 }
 

@@ -18,7 +18,7 @@
 }
 
 #header.HeightMin {
-  animation: DownAnime 0.5s forwards;
+  animation: DownAnime .5s forwards;
   background-color: #002c4b;
   height: 53px;
   position: fixed;
@@ -39,7 +39,7 @@
 .header-title {
   font-size: 1.4rem;
   letter-spacing: .5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   cursor: pointer;
 }
@@ -74,7 +74,7 @@
 .detail a {
   color: white;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: .3rem;
   margin-right: 20px;
   position: relative;
@@ -125,7 +125,7 @@
 .lang-btns-container {
   border: none;
   display: flex;
-  font-family: "Noto Sans CJK JP", sans-serif;
+  font-family: 'Noto Sans CJK JP', sans-serif;
   margin-right: 30px;
   z-index: 100;
 }
@@ -199,7 +199,7 @@
 }
 
 .ticket-btn {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #002c4b;
 }
 
@@ -231,7 +231,7 @@
 }
 
 .line {
-  background-color: #ff;
+  background-color: #fff;
   height: 1px;
   margin: 4px 0;
   width: 30px;
