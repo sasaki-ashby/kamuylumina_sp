@@ -11,7 +11,6 @@ $top_copy = [
 	],
 	'top3' => [ 'AN ENCHANTED NIGHT WALK AT LAKE AKAN' ],
 	'top4' => [ 'About KAMUY LUMINA',
-		'冒険への入り口となるウェルカムエリアでは<br class="pc-br">日本語、英語、中国語の3言語で<br class="pc-br">カムイルミナの世界への案内動画をご用意しております。<br class="pc-br">カムイの世界へ旅立つ前に是非しっかりとご覧ください。',
 		'Beginning at nightfall, you are invited to pursue an immersive experience along a 1.2 km walking path into the land of the Ainu gods, through the forest of Lake Akan, in Akan Mashu National Park, Hokkaido.'
 	],
 	'top5' => [ 'Based on the Yukar (epic) “Owl & Jaybird” which is rooted in the Ainu culture of Lake Akan, various stories unfold in eight different zones.<br><br>Don\’t miss the surprises and emotions that you will have in each zone.' ],
