@@ -144,11 +144,6 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1150px) {
-  .lang-btn1 {
-    font-size: 5px;
-  }
-}
 
 
 .lang-btn2 {
@@ -165,11 +160,7 @@
   cursor: pointer;
   letter-spacing: .2rem;
 }
-@media screen and (max-width: 1150px) {
-  .lang-btn2 {
-    font-size: 5px;
-  }
-}
+
 
 .lang-btn3 {
   display: flex;
@@ -184,11 +175,7 @@
   cursor: pointer;
   letter-spacing: .1rem;
 }
-@media screen and (max-width: 1150px) {
-  .lang-btn3 {
-    font-size: 5px;
-  }
-}
+
 
 .lang-btn1.selected,
 .lang-btn2.selected,
