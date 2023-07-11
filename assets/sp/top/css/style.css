@@ -1798,7 +1798,9 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+.page_wrap_hide {
+    display: none;
+}
 .page_wrap li {
   margin-bottom: 20px;
 }
@@ -1813,3 +1815,4 @@
 .page_wrap a.active {
   background: #000;
 }
+
