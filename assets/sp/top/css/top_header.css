@@ -37,7 +37,7 @@
 
 .header-title {
   font-size: 14px;
-  letter-spacing: 0.5rem;
+  letter-spacing: .5rem;
   font-family: 'Poppins', sans-serif;
   color: white;
   cursor: pointer;
@@ -136,7 +136,7 @@
   font-family: 'Noto Sans CJK JP', sans-serif;
   border: 1px solid white;
   border-radius: 4px 0 0 4px;
-  padding: 5px 10px;
+  padding: 8px 13px;
   background: transparent;
   color: #ffffff;
   cursor: pointer;
@@ -153,7 +153,7 @@
   font-family: 'Noto Sans CJK JP', sans-serif;
   background: transparent;
   border: 1px solid white;
-  padding: 5px 10px;
+  padding: 8px 13px;
   border-right: none;
   border-left: none;
   color: #ffffff;
@@ -169,7 +169,7 @@
   background: transparent;
   border: 1px solid white;
   border-radius: 0 4px 4px 0;
-  padding: 5px 10px;
+  padding: 8px 13px;
   color: #ffffff;
   cursor: pointer;
   letter-spacing: 0.1rem;
@@ -180,6 +180,16 @@
 .lang-btn3.selected {
   background-color: #ffffff;
   color: #002c4b;
+}
+
+.lang-btn.selected {
+  background-color: #ffffff;
+  color: #002c4b;
+}
+
+.lang-btn:not(.selected) {
+  background: transparent;
+  color: #ffffff;
 }
 
 .lang-btn:not(:last-child) {

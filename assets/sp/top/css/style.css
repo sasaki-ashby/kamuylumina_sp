@@ -265,7 +265,7 @@
   font-size: 1.4rem;
   line-height: 36px;
   margin-top: 20px;
-  letter-spacing: 0.03em;
+  letter-spacing: .03em;
 }
 
 @media screen and (max-width: 768px) {
@@ -345,7 +345,7 @@
 @media screen and (max-width: 768px) {
   .top2-under-btn {
     padding: 12px 13px;
-    letter-spacing: 0.25em;
+    letter-spacing: .25em;
     height: 132px;
   }
 }
@@ -358,7 +358,7 @@
   color: #002c4b;
   line-height: 36px;
   margin: 0;
-  letter-spacing: 0.03em;
+  letter-spacing: .03em;
   max-width: 600px;
 }
 
@@ -455,7 +455,7 @@
   margin-bottom: 35px;
   font-weight: bold;
   color: #ffffff;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
   line-height: 84px;
 }
 
@@ -591,7 +591,7 @@
 .top4-text1 {
   writing-mode: vertical-rl;
   text-align: left;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
 }
 
 .top4-title {
@@ -1709,7 +1709,7 @@
   line-height: 35px;
   text-align: left;
   line-height: 32px;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   margin-top: 30px;
 }
 @media screen and (max-width: 768px) {
