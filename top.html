@@ -58,9 +58,9 @@
       </div>
       <div class="right-side-btn">
         <div class="lang-btns-container">
-          <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-          <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-          <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+          <a href="#" class="lang-btn1" data-btn="langBtn1">日本語</a>
+          <a href="#" class="lang-btn2" data-btn="langBtn2">ENGLISH</a>
+          <a href="#" class="lang-btn3" data-btn="langBtn3">繁体字</a>
         </div>
         <a href="#">
           <div class="official-btn">
@@ -107,9 +107,9 @@
       </ul>
 
       <div class="lang-btns-container">
-        <button class="lang-btn1" data-btn="langBtn1">日本語</button>
-        <button class="lang-btn2" data-btn="langBtn2">ENGLISH</button>
-        <button class="lang-btn3" data-btn="langBtn3">繁体字</button>
+        <a href="#" class="lang-btn1" data-btn="langBtn1">日本語</a>
+        <a href="#" class="lang-btn2" data-btn="langBtn2">ENGLISH</a>
+        <a href="#" class="lang-btn3" data-btn="langBtn3">繁体字</a>
       </div>
       <a href="#">
         <div class="official-btn">
@@ -758,51 +758,49 @@
       const scrollToTop = () => {
         window.scrollTo({
           top: 0,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       };
     </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const details = document.querySelectorAll(".detail");
-        details[0].classList.add("selected");
+      document.addEventListener('DOMContentLoaded', function () {
+        const details = document.querySelectorAll('.detail');
+        details[0].classList.add('selected');
         details.forEach((detail) => {
-          detail.addEventListener("click", function () {
-            details.forEach((d) => d.classList.remove("selected"));
+          detail.addEventListener('click', function () {
+            details.forEach((d) => d.classList.remove('selected'));
 
-            this.classList.add("selected");
+            this.classList.add('selected');
           });
         });
       });
     </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const langButtons = document.querySelectorAll(
-          ".lang-btns-container button"
-        );
-        langButtons[0].classList.add("selected");
-        langButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            langButtons.forEach((btn) => btn.classList.remove("selected"));
+      document.addEventListener('DOMContentLoaded', function () {
+        const langButtons = document.querySelectorAll('.lang-btns-container a');
+        langButtons[0].classList.add('selected');
+        langButtons.forEach((a) => {
+          a.addEventListener('click', function () {
+            langButtons.forEach((btn) => btn.classList.remove('selected'));
 
-            this.classList.add("selected");
+            this.classList.add('selected');
           });
         });
       });
     </script>
 
     <script>
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
         var scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 0) {
-          header.classList.add("fixed-header");
+          header.classList.add('fixed-header');
         } else {
-          header.classList.remove("fixed-header");
+          header.classList.remove('fixed-header');
         }
       });
     </script>
