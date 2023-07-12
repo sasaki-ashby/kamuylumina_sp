@@ -240,39 +240,52 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 	
 	<!-- スライド13枚目 --> 
 	<!-- スライド13枚目 -->
-	<div class="top13-main-container">
-		<div class="top13-left-container"> <img class="top13-left-img" src="/assets/sp/top/img/top13_img1.jpg" />
-			<p class="top13-title">Akan Adventure Tourism</p>
+	<div class="top13-main-container scrollify">
+		<div class="top13-left-container">
+			<div class="top13-left-text-container">
+				<?php if($sp_lang == "ni"){?>
+				<a href="http://akanat.co.jp/atdepartment/" target="_blank">
+					<img loading="lazy" class="top13-left-img" src="/assets/sp/top/img/top13_img1.jpg" />
+					<p class="top13-title">Akan Adventure Tourism</p>
+					<p class="top13-sub-title"> http://akanat.co.jp/atdepartment/</p>
+				</a>
+				<?php }else{?>
+				<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
+					<img loading="lazy" class="top13-left-img" src="/assets/sp/top/img/top13_img1.jpg" />
+					<p class="top13-title">Akan Adventure Tourism</p>
+					<p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p>
+				</a>
+				<?php }?>
+				<p class="top13-text"><?php echo $top_copy['top13'][0];?></p>
+			</div>
+			
 			<?php if($sp_lang == "ni"){?>
 			<a href="http://akanat.co.jp/atdepartment/" target="_blank">
-			<p class="top13-sub-title">http://akanat.co.jp/atdepartment/</p>
-			</a>
-			<?php }else{?>
-			<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
-			<p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p>
-			</a>
-			<?php }?>
-			<p class="top13-text"><?php echo $top_copy['top13'][0];?></p>
-			<?php if($sp_lang == "ni"){?>
-			<a href="http://akanat.co.jp/atdepartment/" target="_blank">
 			<?php }else{?>
 			<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
 			<?php }?>
-			<div class="top13-more-btn" id="moreButton">
-				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
-				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
-			</a> </div>
-		<div class="top13-right-container"> <img class="top13-right-img" src="/assets/sp/top/img/top5_img.png" />
-			<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
-			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
-			<p class="top13-sub-title"><?php echo home_url().lang_link( '/' , $sp_lang ,$sp_lang);?></p>
+				<div class="top13-more-btn" id="moreButton">
+				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?>E</p>
+				<img loading="lazy" class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" />
+				</div>
 			</a>
-			<p class="top13-text"><?php echo $top_copy['top13'][2];?></p>
+		</div>
+		<div class="top13-right-container">
+			<div class="top13-right-text-container">
+				<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
+					<img loading="lazy" class="top13-right-img" src="/assets/sp/top/img/top13_img2.jpg" />
+					<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
+					<p class="top13-sub-title"><?php echo home_url().lang_link( '/' , $sp_lang ,$sp_lang);?></p>
+				</a>
+				<p class="top13-text"><?php echo $top_copy['top13'][2];?></p>
+			</div>
 			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
-			<div class="top13-more-btn" id="moreButton">
-				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
-				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
-			</a></div>
+				<div class="top13-more-btn" id="moreButton">
+					<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
+					<img loading="lazy" class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" />
+				</div>
+			</a>
+		</div>
 	</div>
 	<!-- スライド13枚目 --> 
 	<!-- スライド13枚目 --> 
