@@ -72,7 +72,7 @@ Template Name: スペシャルページトップ
 	<!-- スライド5枚目 --> 
 	<!-- スライド5枚目 -->
 	<div class="top5-main-container">
-		<div class="top5-main-inner"><img class="top5-left-img" src="/assets/sp/top/img/top5_img.png" alt="" />
+		<div class="top5-main-inner"><img class="top5-left-img" src="/assets/sp/top/img/top5_img.jpg" alt="" />
 			<p class="top5-text"><?php echo $top_copy['top5'][0];?></p>
 		</div>
 	</div>
@@ -202,8 +202,7 @@ Template Name: スペシャルページトップ
 		<div class="top11-right-container">
 			<div><img class="top11-img" src="/assets/sp/top/img/top11_img.jpg" /></div>
 			<div>
-				<iframe  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1619.8314586029835!2d139.8096272718674!3d35.709911798369525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x60188ed7294c99e9%3A0x6bf1a5d958b8f0f!2z5p2x5Lqs6YO95aKo55Sw5Yy65oq85LiK77yR5LiB55uu77yRIOOBqOOBhuOBjeOCh-OBhuOCueOCq-OCpOODhOODquODvOmnhQ!3m2!1d35.7104225!2d139.8091541!4m5!1s0x60188ed0d12f9adf%3A0x7d1d4fb31f43f72a!2z44CSMTMxLTAwNDUg5p2x5Lqs6YO95aKo55Sw5Yy65oq85LiK77yR5LiB55uu77yR4oiS77ySIOadseS6rOOCueOCq-OCpOODhOODquODvA!3m2!1d35.7100627!2d139.8107004!5e0!3m2!1sja!2sjp!4v1630742236273!5m2!1sja!2sjp"
-              style="border-radius: 8px" allowfullscreen="" loading="lazy"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.2536838325714!2d144.0963334117007!3d43.43441747099282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7285d6b066493d%3A0x7d10c46e6a020db!2z6Zi_5a-S6Kaz5YWJ5rG96Ii544ix!5e0!3m2!1sja!2sjp!4v1689073474958!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</div>
 	</div>
@@ -230,7 +229,7 @@ Template Name: スペシャルページトップ
 	<!-- スライド13枚目 --> 
 	<!-- スライド13枚目 -->
 	<div class="top13-main-container">
-		<div class="top13-left-container"> <img class="top13-left-img" src="/assets/sp/top/img/top13_img1.png" />
+		<div class="top13-left-container"> <img class="top13-left-img" src="/assets/sp/top/img/top13_img1.jpg" />
 			<p class="top13-title">Akan Adventure Tourism</p>
 			<?php if($sp_lang == "ni"){?>
 			<a href="http://akanat.co.jp/atdepartment/" target="_blank">
@@ -250,7 +249,8 @@ Template Name: スペシャルページトップ
 			<div class="top13-more-btn" id="moreButton">
 				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
 				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
-			</a> </div>
+			</a>
+		</div>
 		<div class="top13-right-container"> <img class="top13-right-img" src="/assets/sp/top/img/top5_img.png" />
 			<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
 			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
@@ -263,7 +263,6 @@ Template Name: スペシャルページトップ
 				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
 			</a></div>
 	</div>
-	
 	<!-- スライド13枚目 --> 
 	<!-- スライド13枚目 --> 
 	

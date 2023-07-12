@@ -33,11 +33,11 @@
 	</div>
 	<?php }?>
 	<div class="right-side-btn">
-		<div class="lang-btns-container">
-			<a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1" data-btn="langBtn1">日本語</a>
-			<a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2" data-btn="langBtn2">ENGLISH</a>
-			<a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3" data-btn="langBtn3">繁体字</a>
-		</div>
+		<ul class="lang-btns-container">
+			<li><a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1 <?php if($sp_lang=='ni'){echo 'selected';}?>" data-btn="langBtn1">日本語</a></li>
+			<li><a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2 <?php if($sp_lang=='en'){echo 'selected';}?>" data-btn="langBtn2">ENGLISH</a></li>
+			<li><a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3 <?php if($sp_lang=='tc'){echo 'selected';}?>" data-btn="langBtn3">繁体字</a></li>
+		</ul>
 		<a href="<?php echo lang_link( '/' , "ni" ,$sp_lang);?>" target="_blank">
 		<div class="official-btn"> <?php echo $common_lang_text["オフィシャルサイト"];?>
 			<img src="/assets/sp/common/img/icons/arrow_right_wihte.png" alt="" class="arrow-image" />
@@ -60,12 +60,14 @@
 		<li class="detail" data-detail="REVIEW"><a class="review" href="#review"><?php echo $common_lang_text["REVIEW"];?></a></li>
 		<li class="detail" data-detail="ACCESS"><a class="access" href="#access"><?php echo $common_lang_text["ACCESS"];?></a></li>
 		<li class="detail" data-detail="GALLERY"><a class="gallery" href="#gallery"><?php echo $common_lang_text["GALLERY"];?></a></li>
-	</ul>>
+	</ul>
 	<?php }?>
 	<div class="lang-btns-container">
-		<a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1" data-btn="langBtn1">日本語</a>
-		<a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2" data-btn="langBtn2">ENGLISH</a>
-		<a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3" data-btn="langBtn3">繁体字</a>
+	<ul class="lang-btns-container">
+		<li><a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1 <?php if($sp_lang=='ni'){echo 'selected';}?>" data-btn="langBtn1">日本語</a></li>
+		<li><a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2 <?php if($sp_lang=='en'){echo 'selected';}?>" data-btn="langBtn2">ENGLISH</a></li>
+		<li><a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3 <?php if($sp_lang=='tc'){echo 'selected';}?>" data-btn="langBtn3">繁体字</a></li>
+	</ul>
 	</div>
 	<a href="/" target="_blank">
 		<div class="official-btn">

@@ -9,12 +9,10 @@
 		<div class="ticket-btn"><?php echo $common_lang_text["チケット購入はコチラ"];?><img class="arrow-image" src="/assets/sp/common/img/icons/arrow_right.png" alt="" /> </div>
 		</a>
 	</div>
-	<p class="under-text">COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT</p>
+	<p class="under-text">&copy;KAMUY&nbsp;LUMINA</p>
 	<div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()"><img class="arrow-top-icon" src="/assets/sp/common/img/icons/arrow_top.png" alt="" />PAGE<br/>TOP</div>
 </footer>
 <?php wp_footer(); ?>
-<script src="/assets/sp/common/js/hamburger_header.js"></script> 
-<!-- <script src="/assets/sp/article/js/spot_more.js"></script> --> 
 <script>
 const scrollToTop = () => {
 	window.scrollTo({
@@ -26,14 +24,15 @@ const scrollToTop = () => {
 window.addEventListener("scroll", function () {
 	var header = document.querySelector("header");
 	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
 	if (scrollTop > 0) {
 		header.classList.add("fixed-header");
 	} else {
 		header.classList.remove("fixed-header");
 	}
 });
-	
+</script>
+
+<script>	
 document.querySelector(".hover-area").addEventListener("mouseover", function (event) {
 	event.stopPropagation();
 });
@@ -65,4 +64,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 </script>
+<script src="/assets/sp/common/js/hamburger_header.js"></script>
 </body></html>
