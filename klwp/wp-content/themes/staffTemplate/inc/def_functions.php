@@ -1,4 +1,5 @@
 <?php
+
 function get_src( $filename, $relative = false ) {
 	$src = get_template_directory_uri() . $filename;
 	if ( $relative ) {
@@ -21,7 +22,7 @@ add_action( 'admin_enqueue_scripts', 'add_header_cssjs_def' );
 function add_header_cssjs_add() {
 	global $g_posttype_slug;
 
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'add_header_cssjs_add' );
 
@@ -71,5 +72,18 @@ function my_setup_wp() {
 	}
 }
 add_action( 'wp', 'my_setup_wp' );
+
+function basic_auth( $auth_list, $realm = "Restricted Area", $failed_text = "認証に失敗しました" ) {
+	if ( isset( $_SERVER[ 'PHP_AUTH_USER' ] )and isset( $auth_list[ $_SERVER[ 'PHP_AUTH_USER' ] ] ) ) {
+		if ( $auth_list[ $_SERVER[ 'PHP_AUTH_USER' ] ] == $_SERVER[ 'PHP_AUTH_PW' ] ) {
+			return $_SERVER[ 'PHP_AUTH_USER' ];
+		}
+	}
+	header( 'WWW-Authenticate: Basic realm="' . $realm . '"' );
+	header( 'HTTP/1.0 401 Unauthorized' );
+	header( 'Content-type: text/html; charset=' . mb_internal_encoding() );
+
+	die( $failed_text );
+}
 
 ?>

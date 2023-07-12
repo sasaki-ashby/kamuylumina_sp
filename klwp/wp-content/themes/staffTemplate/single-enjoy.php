@@ -100,3 +100,4 @@
 </section>
 <!-- 関連記事------------------------------- -->
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/footer.php');?>
+</body></html>

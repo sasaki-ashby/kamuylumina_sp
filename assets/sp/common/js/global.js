@@ -1,3 +1,23 @@
+const scrollToTop = () => {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+};
+window.addEventListener("scroll", function () {
+	var header = document.querySelector("header");
+	var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	if (scrollTop > 0) {
+		header.classList.add("fixed-header");
+	} else {
+		header.classList.remove("fixed-header");
+	}
+});
+document.querySelector(".hover-area").addEventListener("mouseover", function (event) {
+	event.stopPropagation();
+});
+
+/*ハンバーガーメニュー*/
 var hamburger = document.querySelector('.hamburger');
 var slideMenu = document.querySelector('.slide-menu');
 
@@ -27,7 +47,6 @@ const closeSideMenu = function () {
     document.body.style.overflow = 'auto';
   }
 };
-
 review.addEventListener('click', closeSideMenu);
 access.addEventListener('click', closeSideMenu);
 gallery.addEventListener('click', closeSideMenu);

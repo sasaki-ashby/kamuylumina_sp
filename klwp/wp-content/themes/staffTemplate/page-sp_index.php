@@ -3,14 +3,26 @@
 Template Name: スペシャルページトップ
 */
 ?>
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/header.php');?>
+<?php
+$user = 'kamuylumina';
+$pass = 'eizoutest';
+if ( isset( $_SERVER[ 'PHP_AUTH_USER' ] ) && ( $_SERVER[ "PHP_AUTH_USER" ] == $user && $_SERVER[ "PHP_AUTH_PW" ] == $pass ) ) {
+
+} else {
+	header( "WWW-Authenticate: Basic realm=\"nter username and password.\"" );
+	header( "HTTP/1.0 401 Unauthorized - basic" );
+	die( 'このページを見るにはログインが必要です' );
+}
+
+require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
+?>
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/lang_".$sp_lang."_top.php");?>
 <div class="top"> 
 	<!-- スライド1枚目 --> 
 	<!-- スライド1枚目 -->
 	<div class="top1-main-container">
 		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="" /></div>
-		<p class="top1-sub-title">SPECIAL SITE<?php echo $top_copy['top1'][0]?></p>
+		<p class="top1-sub-title"><?php echo $top_copy['top1'][0]?></p>
 		<p class="top1-date-text">2023.07.15　UPGRADE<?php echo $top_copy['top1'][1]?></p>
 		<p class="top1-text"><?php echo $top_copy['top1'][2]?></p>
 		<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
@@ -249,8 +261,7 @@ Template Name: スペシャルページトップ
 			<div class="top13-more-btn" id="moreButton">
 				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
 				<img class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /></div>
-			</a>
-		</div>
+			</a> </div>
 		<div class="top13-right-container"> <img class="top13-right-img" src="/assets/sp/top/img/top5_img.png" />
 			<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
 			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
@@ -272,14 +283,11 @@ Template Name: スペシャルページトップ
 		<div class="top14-left-container">
 			<p class="top14-title"><?php echo $top_copy['top14'][0];?></p>
 			<p class="top14-text"><?php echo $top_copy['top14'][1];?></p>
-			<div class="top14-sns-container">
-				<a href="https://www.facebook.com/akan.adventure" target="_blank">
-					<div class="top14-facebook-btn"><img loading="lazy" class="top14-facebook-icon" src="assets/sp/top/img/facebook_icon.png" alt="facebook_icon" />FACEBOOK</div>
-				</a>
-				<a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
-					<div class="top14-instagram-btn"><img loading="lazy" class="top14-instagram-icon" src="assets/sp/top/img/instagram_icon.png" alt="instagram_icon" />INSTAGRAM</div>
-				</a>
-			</div>
+			<div class="top14-sns-container"> <a href="https://www.facebook.com/akan.adventure" target="_blank">
+				<div class="top14-facebook-btn"><img loading="lazy" class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="facebook_icon" />FACEBOOK</div>
+				</a> <a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
+				<div class="top14-instagram-btn"><img loading="lazy" class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="instagram_icon" />INSTAGRAM</div>
+				</a> </div>
 		</div>
 		<div class="top14-right-container"> </div>
 	</div>
@@ -287,3 +295,35 @@ Template Name: スペシャルページトップ
 	<!-- スライド14枚目 --> 
 </div>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/footer.php');?>
+<script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const details = document.querySelectorAll('.detail');
+        details[0].classList.add('selected');
+        details.forEach((detail) => {
+          detail.addEventListener('click', function () {
+            details.forEach((d) => d.classList.remove('selected'));
+
+            this.classList.add('selected');
+          });
+        });
+      });
+    </script> 
+<script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script> 
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+      integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+      crossorigin="anonymous"
+    ></script> 
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-8/js/5-1-8.js"></script> 
+
+<!-- CDN読み込み --> 
+<!--
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    --> 
+<!-- JSファイル読み込み --> 
+</body></html>

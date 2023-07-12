@@ -154,23 +154,28 @@ function add_header_cssjs() {
 	} elseif ( is_post_type_archive( 'enjoy' ) ) {
 		wp_enqueue_style( 'css-sp-article_detail-related_article', get_src( '/assets/sp/article_detail/css/related_article.css', 'wwwroot' ), array(), null, 'all' );
 	} elseif ( is_page_template( 'page-sp_index.php' ) ) {
-		wp_enqueue_style( 'css-sp-top-slider', get_src( '/assets/sp/top/css/slider.css', 'wwwroot' ), array(), null, 'all' );
-		wp_enqueue_style( 'css-sp-top-top_header', get_src( '/assets/sp/top/css/top_header.css', 'wwwroot' ), array(), null, 'all' );
-		wp_enqueue_style( 'css-sp-top-style', get_src( '/assets/sp/top/css/style.css', 'wwwroot' ), array(), null, 'all' );
-	}
-	/*
-	if ( get_field( "code-head" ) ) {
-		echo get_field( "code-head" )[ 'add_css' ];
-		echo get_field( "code-head" )[ 'add_js' ];
-	}*/
+			wp_enqueue_style( 'css-sp-top-slider', get_src( '/assets/sp/top/css/slider.css', 'wwwroot' ), array(), null, 'all' );
+			wp_enqueue_style( 'css-sp-top-top_header', get_src( '/assets/sp/top/css/top_header.css', 'wwwroot' ), array(), null, 'all' );
+			wp_enqueue_style( 'css-sp-top-style', get_src( '/assets/sp/top/css/style.css', 'wwwroot' ), array(), null, 'all' );
+		}
+		/*
+		if ( get_field( "code-head" ) ) {
+			echo get_field( "code-head" )[ 'add_css' ];
+			echo get_field( "code-head" )[ 'add_js' ];
+		}*/
 }
 add_action( 'wp_enqueue_scripts', 'add_header_cssjs' );
 //wp_footerに追加
 function add_footer_cssjs() {
 	global $g_posttype_slug, $g_taxonomy_slug, $g_term_slug;
-	wp_enqueue_script( 'js_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true );
+	if ( get_post_type( "sp" ) || is_page_template( 'page-sp_index.php' ) ) {
+		wp_enqueue_script( 'js_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true );
+		wp_enqueue_script( 'js-sp-common-hamburger_header', get_src( '/assets/sp/common/js/global.js', 'wwwroot' ), array(), null, true );
+	}
+
 	if ( is_page_template( 'page-sp_index.php' ) ) {
 		wp_enqueue_script( 'js-sp-top-scroll', get_src( '/assets/sp/top/js/scroll.js', 'wwwroot' ), array(), null, true );
+		wp_enqueue_script( 'js-sp-top-top', get_src( '/assets/sp/top/js/top.js', 'wwwroot' ), array(), null, true );
 	}
 }
 add_action( 'wp_footer', 'add_footer_cssjs' );

@@ -1,3 +1,5 @@
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/assets/css/reset.css">
 <link rel="stylesheet" href="/assets/css/common.css?<?php echo date('YmdHis'); ?>">
 <link rel="stylesheet" href="/assets/css/global.css?<?php echo date('YmdHis'); ?>">

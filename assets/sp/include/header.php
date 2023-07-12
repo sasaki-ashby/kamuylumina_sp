@@ -7,10 +7,48 @@
 <?php }else{?>
 <html lang="en">
 <?php }?>
-<head>
 <meta charset="UTF-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon_sp.ico" />
+<link rel="icon" type="image/x-icon" href="/favicon_sp.ico" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.kamuylumina.jp/assets/sp/common/img/ogp.png" />
+<meta name="twitter:image:src" content="https://www.kamuylumina.jp/assets/sp/common/img/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<?php if($sp_lang == "ni"){?>
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="カムイルミナ スペシャルサイト" />
+<link rel="canonical" href="https://www.kamuylumina.jp/sp/" />
+<meta property="og:url" content="https://www.kamuylumina.jp/sp/" />
+<meta name="twitter:description" content="">
+<meta property="og:description" content="" />
 <meta name="description" content="" />
+<meta property="og:title" content="" />
+<meta name="twitter:title" content="">
+<?php }elseif($sp_lang == "tc"){?>
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:site_name" content="KAMUY LUMINA 特設網站" />
+<link rel="canonical" href="https://www.kamuylumina.jp/tc/sp/" />
+<meta property="og:url" content="https://www.kamuylumina.jp/tc/sp/" />
+<meta name="twitter:description" content="">
+<meta property="og:description" content="" />
+<meta name="description" content="" />
+<meta property="og:title" content="" />
+<meta name="twitter:title" content="">
+<?php }else{?>
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="KAMUY LUMINA SPECIAL SITE" />
+<link rel="canonical" href="https://www.kamuylumina.jp/en/sp/" />
+<meta property="og:url" content="https://www.kamuylumina.jp/en/sp/" />
+<meta name="twitter:description" content="">
+<meta property="og:description" content="" />
+<meta name="description" content="" />
+<meta property="og:title" content="" />
+<meta name="twitter:title" content="">
+<?php }?>
 <title>article</title>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/head_link.php'); ?>
 <?php wp_head(); ?>

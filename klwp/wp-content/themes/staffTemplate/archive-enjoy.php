@@ -65,3 +65,4 @@
 	<p id="moreButton" class="btn-text more_btn"><?php echo $common_lang_text["VIEW MORE"];?><span class="plus-icon">+</span></p>
 </main>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/footer.php');?>
+</body></html>
