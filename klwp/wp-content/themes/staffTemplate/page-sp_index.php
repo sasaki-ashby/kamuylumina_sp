@@ -23,7 +23,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 	<div class="top1-main-container">
 		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="" /></div>
 		<p class="top1-sub-title"><?php echo $top_copy['top1'][0]?></p>
-		<p class="top1-date-text">2023.07.15　UPGRADE<?php echo $top_copy['top1'][1]?></p>
+		<!--<p class="top1-date-text">2023.07.15　UPGRADE<?php echo $top_copy['top1'][1]?></p>-->
 		<p class="top1-text"><?php echo $top_copy['top1'][2]?></p>
 		<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
 		<div class="top1-under-container"><img class="top1-under-left-img" src="/assets/sp/top/img/top1_2.jpg" alt="" />
