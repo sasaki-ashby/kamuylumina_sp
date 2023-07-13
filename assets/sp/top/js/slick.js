@@ -679,7 +679,7 @@
         }
 
     };
-
+    //スライドを更新する
     Slick.prototype.changeSlide = function(event, dontAnimate) {
 
         var _ = this,
@@ -716,6 +716,9 @@
                 break;
 
             case 'index':
+                alert('index');
+
+                alert($target.index());
                 var index = event.data.index === 0 ? 0 :
                     event.data.index || $target.index() * _.options.slidesToScroll;
 
@@ -1245,11 +1248,11 @@
         }
 
     };
-
+    //gotoはliのいちでとってそうで危ない todo
     Slick.prototype.goTo = Slick.prototype.slickGoTo = function(slide, dontAnimate) {
 
         var _ = this;
-
+        alert(parseInt(slide));
         _.changeSlide({
             data: {
                 message: 'index',
@@ -1643,6 +1646,7 @@
     Slick.prototype.next = Slick.prototype.slickNext = function() {
 
         var _ = this;
+        alert("next");
 
         _.changeSlide({
             data: {
@@ -1718,6 +1722,7 @@
     Slick.prototype.prev = Slick.prototype.slickPrev = function() {
 
         var _ = this;
+        alert("previous");
 
         _.changeSlide({
             data: {
@@ -2950,7 +2955,7 @@
         }
 
     };
-
+    //ここ怪しそう todo
     Slick.prototype.updateDots = function() {
 
         var _ = this;
