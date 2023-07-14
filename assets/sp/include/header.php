@@ -118,4 +118,3 @@
 		</div>
 	</a>
 </div>
-<script src="/assets/sp/common/js/hamburger_header.js"></script> 

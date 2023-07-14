@@ -170,7 +170,7 @@ function add_footer_cssjs() {
 	global $g_posttype_slug, $g_taxonomy_slug, $g_term_slug;
 	if ( get_post_type( "sp" ) || is_page_template( 'page-sp_index.php' ) ) {
 		wp_enqueue_script( 'js_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true );
-		wp_enqueue_script( 'js-sp-common-hamburger_header', get_src( '/assets/sp/common/js/global.js', 'wwwroot' ), array(), null, true );
+		wp_enqueue_script( 'js-sp-common-global', get_src( '/assets/sp/common/js/global.js', 'wwwroot' ), array(), null, true );
 	}
 
 	if ( is_page_template( 'page-sp_index.php' ) ) {
