@@ -300,3 +300,4 @@ input[type="submit"]{
   width: 72px;
 }
 
+.ui-datepicker {z-index: 1000 !important;}
