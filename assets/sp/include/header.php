@@ -50,9 +50,25 @@
 <meta name="twitter:title" content="">
 <?php }?>
 <title>article</title>
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/head_link.php'); ?>
+<link rel="stylesheet" href="/assets/sp/common/css/reset.css" />
+<link rel="stylesheet" href="/assets/sp/common/css/style.css" />
+<link rel="stylesheet" href="/assets/sp/common/css/footer.css" />
+<?php if($sp_lang == "en"){?>
+<link rel="stylesheet" href="/assets/sp/common/css/en_addstyle.css" />
+<?php }?>
+<?php if( !is_page_template( 'page-sp_index.php' )){?>
+<link rel="stylesheet" href="/assets/sp/common/css/header.css" />
+<?php }?>
+<!-- googlewebfont読み込み ここから-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnlect" href="https://fonts.gstatic.com" crossorigin>
+<!-- 日本語フォント読み込み -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- 英字 繁体字 簡体字 ハングル読み込み -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- googlewebfont読み込み ここまで-->
 <?php wp_head(); ?>
-<link rel="stylesheet" href="/assets/sp/article/css/style.css" />
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/include/head_tag.php'); ?>
 </head>
 <body>

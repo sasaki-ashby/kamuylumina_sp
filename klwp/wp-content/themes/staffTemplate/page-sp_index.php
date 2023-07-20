@@ -17,326 +17,375 @@ if ( isset( $_SERVER[ 'PHP_AUTH_USER' ] ) && ( $_SERVER[ "PHP_AUTH_USER" ] == $u
 require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/lang_".$sp_lang."_top.php");?>
-<div class="top"> 
-	<!-- スライド1枚目 --> 
-	<!-- スライド1枚目 -->
-	<div class="top1-main-container">
-		<div class="top1-title-img"> <img src="/assets/sp/common/img/logo.svg" alt="" /></div>
-		<p class="top1-sub-title"><?php echo $top_copy['top1'][0]?></p>
-		<!--<p class="top1-date-text">2023.07.15　UPGRADE<?php echo $top_copy['top1'][1]?></p>-->
-		<p class="top1-text"><?php echo $top_copy['top1'][2]?></p>
-		<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
-		<div class="top1-under-container"><img class="top1-under-left-img" src="/assets/sp/top/img/top1_2.jpg" alt="" />
-			<div class="top1-text-container">
-				<p class="under-p-1">KAMUY LUMINA</p>
-				<p class="under-p-2"> <?php echo $top_copy['top1'][3]?> </p>
-			</div>
-			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="" /></div>
-		</a></div>
-	<!-- スライド1枚目 --> 
-	<!-- スライド1枚目 --> 
-	
-	<!-- スライド2枚目 --> 
-	<!-- スライド2枚目 -->
-	<div class="top2-main-container">
-		<div class="top2-upper-container"><img class="top2-upper-img" src="/assets/sp/top/img/top2.jpg" />
-			<div class="top2-upper-text-container">
-				<p class="top2-upper-title"><?php echo $top_copy['top2'][0];?></p>
-				<p class="top2-upper-text"><?php echo $top_copy['top2'][1];?></p>
-			</div>
-		</div>
-		<div class="top2-under-container"><img class="top2-under-img" src="/assets/sp/top/img/top2_smartfon.png" alt="" />
-			<div class="top2-under-left">
-				<div class="top2-under-btn">MOBILE APPS</div>
-				<p class="top2-under-text1"><?php echo $top_copy['top2'][2];?></p>
-			</div>
-		</div>
-	</div>
-	<!-- スライド2枚目 --> 
-	<!-- スライド2枚目 --> 
-	
-	<!-- スライド3枚目 --> 
-	<!-- スライド3枚目 -->
-	<div class="top3-main-container scrollify">
-		<div class="top3-left-container">
-			<p class="top3-title"><?php echo $top_copy['top3'][0];?></p>
-			<span class="top3-sub-title">2019-LAKE AKAN, JAPAN</span> </div>
-		<div class="top3-right-container"> <img class="top3-right-img" src="/assets/sp/top/img/top3-icon1.png" alt="" /> <img class="top3-right-icon" src="/assets/sp/top/img/top3-icon2.png" alt="" /> </div>
-	</div>
-	<!-- スライド3枚目 --> 
-	<!-- スライド3枚目 --> 
-	
-	<!-- スライド4枚目 --> 
-	<!-- スライド4枚目 -->
-	<div class="top4-main-container">
-		<div class="top4-left-container">
-			<div class="top4-left-inner">
-				<h3 class="top4-title"><?php echo $top_copy['top4'][0];?></h3>
-				<p class="top4-text1">ABOUT KAMUY LUMINA</p>
-			</div>
-			<p class="top4-text2"><?php echo $top_copy['top4'][1];?></p>
-		</div>
-		<div class="top4-right-container"><img class="top4-right-img" src="/assets/sp/top/img/top4_img.jpg" alt="" /></div>
-	</div>
-	<!-- スライド4枚目 --> 
-	<!-- スライド4枚目 --> 
-	
-	<!-- スライド5枚目 --> 
-	<!-- スライド5枚目 -->
-	<div class="top5-main-container">
-		<div class="top5-main-inner"><img class="top5-left-img" src="/assets/sp/top/img/top5_img.jpg" alt="" />
-			<p class="top5-text"><?php echo $top_copy['top5'][0];?></p>
-		</div>
-	</div>
-	<!-- スライド5枚目 --> 
-	<!-- スライド5枚目 --> 
-	
-	<!-- スライド6枚目 --> 
-	<!-- スライド6枚目 -->
-	<div class="top6-main-container scrollify">
-		<div class="top6-main-contents"><img class="top6-img" src="/assets/sp/top/img/top6_img.jpg" alt="" />
-			<p class="top6-text"><?php echo $top_copy['top6'][0];?></p>
-		</div>
-	</div>
-	<!-- スライド6枚目 --> 
-	<!-- スライド6枚目 --> 
-	
-	<!-- スライド7枚目 --> 
-	<!-- スライド7枚目 -->
-	<div class="top7-main-container">
-		<div class="top7-container">
-			<p class="top7-upper-text"><?php echo $top_copy['top7'][0];?></p>
-		</div>
-		<p class="top7-under-text"><?php echo $top_copy['top7'][1];?></p>
-	</div>
-	<!-- スライド7枚目 --> 
-	<!-- スライド7枚目 --> 
-	
-	<!-- スライド8枚目 --> 
-	<!-- スライド8枚目 -->
-	<div class="top8-main-container">
-		<div class="top8-upper-container">
-			<div class="top8-left-container"> <img class="top8-left-img" src="/assets/sp/top/img/top8_img.jpg" /> 
-				<!--             仕様変更のためコメントアウト
-				<div class="top8-text-container">
-					<p class="top8-text1"><?php echo $top_copy['top8'][0];?></p>
+
+<!-- ========== sp_top/ ========== -->
+<main class="sp_top">
+	<article class="sp_top_article">
+		<section class="sp_top1" id="sptop1">
+			<div class="section_detail">
+				<div class="sp_top1_detail">
+					<div class="top1_hgroup">
+						<h1><img src="/assets/sp/top/img/top1_logo.svg" width="166" height="129" alt="KAMUY LUMINA"></h1>
+						<h2><?php echo $top_copy['top1'][0]?></h2>
+					</div>
+					<div class="top1_information"> 
+						<!--<h3><?php echo $top_copy['top1'][1]?></h3>-->
+						<p><?php echo $top_copy['top1'][2]?></p>
+					</div>
+					<div class="top1_column"> <a href="https://www.kamuylumina.jp/" target="_blank">
+						<figure><img src="/assets/sp/top/img/top1_img01.jpg" width="180" height="100" alt=""></figure>
+						<div class="top1_column_read">
+							<h4>KAMUY LUMINA</h4>
+							<p><?php echo $top_copy['top1'][3]?></p>
+						</div>
+						</a> </div>
 				</div>
-				<div class="top8-sp-text1"><?php echo $top_copy['top8'][0];?></div>
-				--> 
+				<!-- /.sp_top1_detail --> 
 			</div>
-			<div class="top8-right-container">
-				<div class="top8-right-inner">
-					<h3 class="top8-title"><?php echo $top_copy['top8'][1];?></h3>
-					<p class="top8-text2">ENJOY AKAN</p>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top1 -->
+		
+		<section class="sp_top2 sp_comingup" id="sptop2">
+			<div class="section_detail">
+				<div class="sp_top2_detail1">
+					<figure><img src="/assets/sp/top/img/top2_img01.jpg" alt=""></figure>
+					<div class="sp_top2_read">
+						<h2><?php echo $top_copy['top2'][0];?></h2>
+						<p><?php echo $top_copy['top2'][1];?></p>
+					</div>
 				</div>
-				<p class="top8-text3"><?php echo $top_copy['top8'][2];?></p>
-				<a class="top2-a" href="<?php echo lang_link("/sp/enjoy/" , $sp_lang , $sp_lang);?>">
-				<div class="top8-more-btn" id="moreButton">
-					<p class="top8-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
-					<img class="top8-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" /> </div>
-				</a> </div>
-		</div>
-		<div class="top8-under-container">
-			<ul class="top8-img-list">
-				<?php
-				$args = array(
-					'post_type' => 'enjoy',
-					'posts_per_page' => 5,
-				);
-				$the_query = new WP_Query( $args );
-				if ( $the_query->have_posts() ) {
-					while ( $the_query->have_posts() ) {
-						$the_query->the_post();
+				<div class="sp_top2_detail2">
+					<figure><img src="/assets/sp/top/img/top2_img02.png" alt=""></figure>
+					<div class="sp_top2_read">
+						<h3><span>MOBILE APPS</span></h3>
+						<p><?php echo $top_copy['top2'][2];?></p>
+						<p class="sp_top2_caption"><?php echo $top_copy['top2'][3];?></em></p>
+					</div>
+				</div>
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top2 -->
+		
+		<section class="sp_top3" id="sptop3">
+			<div class="section_detail">
+				<div class="sp_top3_detail">
+					<div class="sp_top3_read animebox">
+						<h2><?php echo $top_copy['top3'][0];?></h2>
+						<p>2019-LAKE AKAN, JAPAN</p>
+					</div>
+					<figure><img src="/assets/sp/top/img/top3_img01.svg" width="544" height="507" alt=""></figure>
+				</div>
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top3 -->
+		
+		<section class="sp_top4" id="sptop4">
+			<div class="section_detail">
+				<div class="sp_top4_detail">
+					<div class="sp_top4_read">
+						<div class="sp_top4_hgroup section_hgroup">
+							<h2 class="section_title"><?php echo $top_copy['top4'][0];?><em class="section_ruby">ABOUT KAMUY LUMINA</em></h2>
+						</div>
+						<div class="sp_top4_column">
+							<p><?php echo $top_copy['top4'][1];?></p>
+						</div>
+					</div>
+					<figure class="animebox"><img src="/assets/sp/top/img/top4_img01.jpg" width="650" height="650" alt=""></figure>
+				</div>
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top4 -->
+		
+		<section class="sp_top5" id="sptop5">
+			<div class="section_detail">
+				<div class="sp_top5_detail">
+					<figure class="animebox"><img src="/assets/sp/top/img/top5_img01.jpg" width="768" height="768" alt=""></figure>
+					<div class="sp_top5_read">
+						<p><?php echo $top_copy['top5'][0];?></p>
+					</div>
+				</div>
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top5 -->
+		
+		<section class="sp_top6" id="sptop6">
+			<div class="section_detail">
+				<div class="sp_top6_detail">
+					<figure class="animebox">
+						<picture>
+							<source media="(min-width: 769px)" srcset="/assets/sp/top/img/top6_img01_pc.jpg">
+							<img src="/assets/sp/top/img/top6_img01_sp.jpg" alt=""> </picture>
+					</figure>
+					<div class="sp_top6_read">
+						<p><?php echo $top_copy['top6'][0];?></p>
+					</div>
+				</div>
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top6 -->
+		
+		<section class="sp_top7" id="sptop7">
+			<div class="section_detail">
+				<div class="sp_top7_detail">
+					<div class="sp_top7_read animebox">
+						<div class="sp_top7_read_catch animebox">
+							<p><?php echo $top_copy['top7'][0];?></p>
+						</div>
+					</div>
+				</div>
+				<div class="sp_top7_columm">
+					<p><?php echo $top_copy['top7'][1];?></p>
+				</div>
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top7 -->
+		
+		<section class="sp_top8" id="sptop8">
+			<div class="section_detail">
+				<div class="sp_top8_detail">
+					<figure> <a href="link"> <img src="/assets/sp/top/img/top8_img01.jpg" width="930" height="460" alt="">
+						<figcaption>
+							<p><?php echo $top_copy['top8'][0];?></p>
+						</figcaption>
+						</a> </figure>
+					<div class="sp_top8_read">
+						<div class="sp_top8_hgroup section_hgroup">
+							<h2 class="section_title"><?php echo $top_copy['top8'][1];?><em class="section_ruby">ENJOY AKAN</em></h2>
+						</div>
+						<p><?php echo $top_copy['top8'][2];?></p>
+						<div class="sp_top8_read_nav"> <a href="link" class="sp_top_btn_more" title="<?php echo $top_copy['top8'][1];?>"><span><?php echo $common_lang_text["VIEW MORE"];?></span></a> </div>
+					</div>
+				</div>
+				<div class="sp_top8_column">
+					<ul class="sp_top8_slide">
+						<?php
+						$args = array(
+							'post_type' => 'enjoy',
+							'posts_per_page' => 5,
+						);
+						$the_query = new WP_Query( $args );
+						if ( $the_query->have_posts() ) {
+							while ( $the_query->have_posts() ) {
+								$the_query->the_post();
+								?>
+						<!-- 記事1件:start/ -->
+						<li><a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>"><span><img class="top8-img" src="<?php the_field('head_img_thum');?>" /></span><em><?php echo the_field("head_title_$sp_lang");?></em> </a> </li>
+						<?php
+						}
+						}
+						wp_reset_postdata();
 						?>
-				<!-- 記事1件:start/ -->
-				<li> <a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>"> <img class="top8-img" src="<?php the_field('head_img_thum');?>" /><span class="image-caption"><?php echo the_field("head_title_$sp_lang");?></span> </a> </li>
-				<?php
-				}
-				}
-				wp_reset_postdata();
-				?>
-			</ul>
-		</div>
-	</div>
-	<!-- スライド8枚目 --> 
-	<!-- スライド8枚目 --> 
-	
-	<!-- スライド9枚目 --> 
-	<!-- スライド9枚目 -->
-	<div class="top9-main-container">
-		<div class="top9-container">
-			<div class="overlay"></div>
-			<div class="top9-content">
-				<h3 class="top9-title"><?php echo $top_copy['top9'][0];?></h3>
-				<p class="top9-text1">KAMUY LUMINA REVIEWS</p>
-				<div class="top9-left-inner">
-					<p class="top9-text2"><?php echo $top_copy['top9'][1];?></p>
+					</ul>
+				</div>
+				<!-- /.sp_top8_column --> 
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top8 -->
+		<section class="sp_top9" id="sptop9">
+			<div class="section_detail">
+				<div class="sp_top9_detail">
+					<div class="sp_top9_hgroup">
+						<h2><?php echo $top_copy['top9'][0];?></h2>
+						<p><em>KAMUY LUMINA REVIEWS</em></p>
+					</div>
+					<p class="sp_top9_read"><?php echo $top_copy['top9'][1];?></p>
+				</div>
+				<div class="sp_top9_column">
+					<div class="sp_top9_column_slide">
+						<div class="sp_top9_column_data">
+							<h3>Robyn W.</h3>
+							<ul class="sp_top9_column_score">
+								<li><img src="/assets/sp/top/img/icn_star.svg" width="20" height="20" alt=""></li>
+								<li><img src="/assets/sp/top/img/icn_star.svg" width="20" height="20" alt=""></li>
+								<li><img src="/assets/sp/top/img/icn_star.svg" width="20" height="20" alt=""></li>
+								<li><img src="/assets/sp/top/img/icn_star.svg" width="20" height="20" alt=""></li>
+								<li><img src="/assets/sp/top/img/icn_star.svg" width="20" height="20" alt=""></li>
+							</ul>
+							<div class="sp_top9_column_read">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qu</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qu</p>
+							</div>
+						</div>
+						<!-- /.sp_top9_column_data -->
+						
+						<div class="sp_top9_column_data">
+							<p><?php echo $common_lang_text["Coming soon"];?></p>
+						</div>
+						<!-- /.sp_top9_column_data -->
+						
+						<div class="sp_top9_column_data">
+							<p><?php echo $common_lang_text["Coming soon"];?></p>
+						</div>
+						<!-- /.sp_top9_column_data --> 
+						
+					</div>
+					<!-- /.sp_top9_column_slide --> 
+				</div>
+				<!-- /.sp_top9_column --> 
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top9 -->
+		
+		<section class="sp_top10" id="sptop10">
+			<div class="section_detail animebox">
+				<p><strong>KAMUY LUMINA</strong></p>
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top10 -->
+		
+		<section class="sp_top11" id="sptop11">
+			<div class="section_detail">
+				<div class="sp_top11_detail">
+					<div class="sp_top11_read">
+						<div class="sp_top11_hgroup section_hgroup">
+							<h2 class="section_title"><?php echo $top_copy['top11'][0];?><em class="section_ruby">ACCESS</em></h2>
+						</div>
+						<div class="sp_top11_column">
+							<h3><?php echo $top_copy['top11'][1];?></h3>
+							<p><?php echo $top_copy['top11'][2];?></p>
+							<h3><?php echo $top_copy['top11'][3];?></h3>
+							<p><?php echo $top_copy['top11'][4];?></p>
+						</div>
+					</div>
+					<div class="sp_top11_figure">
+						<figure><img src="/assets/sp/top/img/top11_map01.png" alt="KAMUY LUMINA <?php echo $top_copy['top11'][0];?>"></figure>
+						<div class="sp_top11_figure_map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.2536838325714!2d144.0963334117007!3d43.43441747099282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7285d6b066493d%3A0x7d10c46e6a020db!2z6Zi_5a-S6Kaz5YWJ5rG96Ii544ix!5e0!3m2!1sja!2sjp!4v1689073474958!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
 				</div>
 			</div>
-			<ul class="top9-card-container">
-				<a href="">
-				<li class="top9-card">
-				<p><?php echo $common_lang_text["Coming soon"];?></p>
-				</li>
-				</a> <a href="">
-				<li class="top9-card top9-card-sp-display-none">
-				<p><?php echo $common_lang_text["Coming soon"];?></p>
-				</li>
-				</a> <a href="">
-				<li class="top9-card top9-card-sp-display-none">
-				<p><?php echo $common_lang_text["Coming soon"];?></p>
-				</li>
-				</a>
-			</ul>
-		</div>
-	</div>
-	<!-- スライド9枚目 --> 
-	<!-- スライド9枚目 --> 
-	
-	<!-- スライド10枚目 --> 
-	<!-- スライド10枚目 --> 
-	<!--<div class="top10-main-container"></div>--> 
-	<!-- スライド10枚目 --> 
-	<!-- スライド10枚目 --> 
-	
-	<!-- スライド11枚目 --> 
-	<!-- スライド11枚目 -->
-	<div class="top11-main-container">
-		<div class="top11-left-container">
-			<div class="top11-left-inner">
-				<h3 class="top11-title"><?php echo $top_copy['top11'][0];?></h3>
-				<p class="top11-text1">ACCESS</p>
-			</div>
-			<p class="top11-left-text"><?php echo $top_copy['top11'][1];?></p>
-			<div class="top11-line"></div>
-			<p class="top11-left-text"><?php echo $top_copy['top11'][2];?></p>
-		</div>
-		<div class="top11-right-container">
-			<div><img class="top11-img" src="/assets/sp/top/img/top11_img.jpg" /></div>
-			<div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.2536838325714!2d144.0963334117007!3d43.43441747099282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7285d6b066493d%3A0x7d10c46e6a020db!2z6Zi_5a-S6Kaz5YWJ5rG96Ii544ix!5e0!3m2!1sja!2sjp!4v1689073474958!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-		</div>
-	</div>
-	<!-- スライド11枚目 --> 
-	<!-- スライド11枚目 --> 
-	
-	<!-- スライド12枚目 --> 
-	<!-- スライド12枚目 -->
-	<div id="gallery" class="top12-main-container scrollify"> <img class="top12-left-img" src="/assets/sp/top/img/top12_img.jpg" /> <img class="top12-left-img2" src="/assets/sp/top/img/top11_img_sp.jpg" />
-		<div class="top12-right-container">
-			<div class="top12-right-text-container">
-				<p class="top12-right-title"><?php echo $common_lang_text["ギャラリー"];?></p>
-				<p class="top12-right-sub"><?php echo $common_lang_text["GALLERY"];?></p>
-			</div>
-			<a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
-			<div class="top12-more-btn" id="moreButton">
-				<p class="top12-text-btn">INSTAGRAM</p>
-				<img loading="lazy" class="top12-arrow-icon" src="/assets/sp/common/img/icons/arrow_right_wihte.png" /> </div>
-			</a> </div>
-	</div>
-	<!-- スライド12枚目 --> 
-	<!-- スライド12枚目 --> 
-	
-	<!-- スライド13枚目 --> 
-	<!-- スライド13枚目 -->
-	<div class="top13-main-container scrollify">
-		<div class="top13-left-container">
-			<div class="top13-left-text-container">
-				<?php if($sp_lang == "ni"){?>
-				<a href="http://akanat.co.jp/atdepartment/" target="_blank">
-					<img loading="lazy" class="top13-left-img" src="/assets/sp/top/img/top13_img1.jpg" />
-					<p class="top13-title">Akan Adventure Tourism</p>
-					<p class="top13-sub-title"> http://akanat.co.jp/atdepartment/</p>
-				</a>
-				<?php }else{?>
-				<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
-					<img loading="lazy" class="top13-left-img" src="/assets/sp/top/img/top13_img1.jpg" />
-					<p class="top13-title">Akan Adventure Tourism</p>
-					<p class="top13-sub-title">http://akanat.co.jp/atdepartment/en/</p>
-				</a>
-				<?php }?>
-				<p class="top13-text"><?php echo $top_copy['top13'][0];?></p>
-			</div>
-			
-			<?php if($sp_lang == "ni"){?>
-			<a href="http://akanat.co.jp/atdepartment/" target="_blank">
-			<?php }else{?>
-			<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
-			<?php }?>
-				<div class="top13-more-btn" id="moreButton">
-				<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?>E</p>
-				<img loading="lazy" class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" />
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top11 -->
+		
+		<section class="sp_top12" id="sptop12">
+			<div class="section_detail">
+				<div class="sp_top12_detail">
+					<div class="sp_top12_read">
+						<div class="sp_top12_hgroup section_hgroup">
+							<h2 class="section_title"><?php echo $common_lang_text["ギャラリー"];?><em class="section_ruby"><?php echo $common_lang_text["GALLERY"];?></em></h2>
+						</div>
+						<div class="sp_top12_read_nav"><a href="link" class="sp_top_btn_more"><span>INSTAGRAM</span></a></div>
+					</div>
+					<div class="sp_top12_figure animebox">
+						<ul class="sp_gallery">
+						</ul>
+					</div>
 				</div>
-			</a>
-		</div>
-		<div class="top13-right-container">
-			<div class="top13-right-text-container">
-				<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
-					<img loading="lazy" class="top13-right-img" src="/assets/sp/top/img/top13_img2.jpg" />
-					<p class="top13-title"><?php echo $top_copy['top13'][1];?></p>
-					<p class="top13-sub-title"><?php echo home_url().lang_link( '/' , $sp_lang ,$sp_lang);?></p>
-				</a>
-				<p class="top13-text"><?php echo $top_copy['top13'][2];?></p>
 			</div>
-			<a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
-				<div class="top13-more-btn" id="moreButton">
-					<p class="top13-text-btn"><?php echo $common_lang_text["VIEW MORE"];?></p>
-					<img loading="lazy" class="top13-arrow-icon" src="/assets/sp/common/img/icons/arrow_right.png" />
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top12 -->
+		
+		<section class="sp_top13" id="sptop13">
+			<div class="section_detail">
+				<div class="sp_top13_detail">
+					<div class="sp_top13_column">
+						<?php if($sp_lang == "ni"){?>
+						<a href="http://akanat.co.jp/atdepartment/" target="_blank">
+						<figure> <img src="/assets/sp/top/img/top13_img01.jpg" width="570" height="290" alt="Akan Adventure Tourism"> </figure>
+						<div class="sp_top13_hgroup">
+							<h2>Akan Adventure Tourism</h2>
+							<p>http://akanat.co.jp/atdepartment/</p>
+						</div>
+						</a>
+						<?php }else{?>
+						<a href="http://akanat.co.jp/atdepartment/en/" target="_blank">
+						<figure> <img src="/assets/sp/top/img/top13_img01.jpg" width="570" height="290" alt="Akan Adventure Tourism"> </figure>
+						<div class="sp_top13_hgroup">
+							<h2>Akan Adventure Tourism</h2>
+							<p>http://akanat.co.jp/atdepartment/en/</p>
+						</div>
+						</a>
+						<?php }?>
+						<div class="sp_top13_read">
+							<p><?php echo $top_copy['top13'][0];?></p>
+						</div>
+						<div class="sp_top13_read_nav">
+							<?php if($sp_lang == "ni"){?>
+							<a href="http://akanat.co.jp/atdepartment/" class="sp_top_btn_more" target="_blank" title="Akan Adventure Tourism"><span><?php echo $common_lang_text["VIEW MORE"];?></span></a>
+							<?php }else{?>
+							<a href="http://akanat.co.jp/atdepartment/en/" class="sp_top_btn_more" target="_blank" title="Akan Adventure Tourism"><span><?php echo $common_lang_text["VIEW MORE"];?></span></a>
+							<?php }?>
+						</div>
+					</div>
+					<div class="sp_top13_column"> <a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>">
+						<figure> <img src="/assets/sp/top/img/top13_img02.jpg" width="570" height="290" alt="<?php echo $top_copy['top13'][1];?>"> </figure>
+						<div class="sp_top13_hgroup">
+							<h2><?php echo $top_copy['top13'][1];?></h2>
+							<p><?php echo home_url().lang_link( '/' , $sp_lang ,$sp_lang);?></p>
+						</div>
+						</a>
+						<div class="sp_top13_read">
+							<p><?php echo $top_copy['top13'][2];?></p>
+						</div>
+						<div class="sp_top13_read_nav"> <a href="<?php echo lang_link( '/' , $sp_lang ,$sp_lang);?>" class="sp_top_btn_more" target="_blank" title="<?php echo $top_copy['top13'][1];?>"> <span><?php echo $common_lang_text["VIEW MORE"];?></span> </a> </div>
+					</div>
 				</div>
-			</a>
-		</div>
-	</div>
-	<!-- スライド13枚目 --> 
-	<!-- スライド13枚目 --> 
-	
-	<!-- スライド14枚目 --> 
-	<!-- スライド14枚目 -->
-	<div class="top14-main-container scrollify">
-		<div class="top14-left-container">
-			<p class="top14-title"><?php echo $top_copy['top14'][0];?></p>
-			<p class="top14-text"><?php echo $top_copy['top14'][1];?></p>
-			<div class="top14-sns-container"> <a href="https://www.facebook.com/akan.adventure" target="_blank">
-				<div class="top14-facebook-btn"><img loading="lazy" class="top14-facebook-icon" src="/assets/sp/top/img/facebook_icon.png" alt="facebook_icon" />FACEBOOK</div>
-				</a> <a href="https://www.instagram.com/kamuy_lumina/" target="_blank">
-				<div class="top14-instagram-btn"><img loading="lazy" class="top14-instagram-icon" src="/assets/sp/top/img/instagram_icon.png" alt="instagram_icon" />INSTAGRAM</div>
-				</a> </div>
-		</div>
-		<div class="top14-right-container"> </div>
-	</div>
-	<!-- スライド14枚目 --> 
-	<!-- スライド14枚目 --> 
+				<!-- /.sp_top13_detail --> 
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top13 -->
+		
+		<section class="sp_top14" id="sptop14">
+			<div class="section_detail">
+				<div class="sp_top14_detail">
+					<div class="sp_top14_read">
+						<h2><?php echo $top_copy['top14'][0];?></h2>
+						<p><?php echo $top_copy['top14'][1];?></p>
+						<div class="sp_top14_read_nav">
+							<ul>
+								<li><a href="https://www.facebook.com/akan.adventure" target="_blank" class="sp_link_fb"><span>Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/kamuy_lumina/" target="_blank" class="sp_link_ig"><span>Instagram</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sp_top14_figure">
+						<ul class="sp_gallery">
+						</ul>
+					</div>
+				</div>
+				<!-- /.sp_top14_column --> 
+			</div>
+			<!-- /.section_detail --> 
+		</section>
+		<!-- /.sp_top14 --> 
+		
+	</article>
+	<!-- /.sp_top_article --> 
+</main>
+<!-- /.sp_top -->
+<div class="sp_pagenation">
+	<ul class="spscroll">
+		<li><a href="#sptop1"><span>1</span></a></li>
+		<li><a href="#sptop2"><span>2</span></a></li>
+		<li><a href="#sptop3"><span>3</span></a></li>
+		<li><a href="#sptop4"><span>4</span></a></li>
+		<li><a href="#sptop5"><span>5</span></a></li>
+		<li><a href="#sptop6"><span>6</span></a></li>
+		<li><a href="#sptop7"><span>7</span></a></li>
+		<li><a href="#sptop8"><span>8</span></a></li>
+		<li><a href="#sptop9"><span>9</span></a></li>
+		<li><a href="#sptop10"><span>10</span></a></li>
+		<li><a href="#sptop11"><span>11</span></a></li>
+		<li><a href="#sptop12"><span>12</span></a></li>
+		<li><a href="#sptop13"><span>13</span></a></li>
+		<li><a href="#sptop14"><span>14</span></a></li>
+		<li><a href="#sptop15"><span>15</span></a></li>
+	</ul>
 </div>
+<!-- ========== /.sp_top ========== --> 
+<!-- ========== /.sp_top ========== -->
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/footer.php');?>
-<script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const details = document.querySelectorAll('.detail');
-        details[0].classList.add('selected');
-        details.forEach((detail) => {
-          detail.addEventListener('click', function () {
-            details.forEach((d) => d.classList.remove('selected'));
-
-            this.classList.add('selected');
-          });
-        });
-      });
-    </script> 
-<script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script> 
-<script
-      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
-      integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
-      crossorigin="anonymous"
-    ></script> 
-<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-8/js/5-1-8.js"></script> 
-
-<!-- CDN読み込み --> 
-<!--
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    --> 
-<!-- JSファイル読み込み --> 
-</body></html>

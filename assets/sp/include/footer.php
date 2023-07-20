@@ -1,4 +1,4 @@
-<footer class="footer-container">
+<footer class="footer-container scrollify" id="sptop15">
 	<img class="title-image" src="/assets/sp/common/img/logo.svg" alt="" />
 	<p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
 	<div class="btn-container">
@@ -13,3 +13,6 @@
 	<div class="page-top-btn scroll-to-top-button" onclick="scrollToTop()"><img class="arrow-top-icon" src="/assets/sp/common/img/icons/arrow_top.png" alt="" />PAGE<br/>TOP</div>
 </footer>
 <?php wp_footer(); ?>
+
+  </body>
+</html>

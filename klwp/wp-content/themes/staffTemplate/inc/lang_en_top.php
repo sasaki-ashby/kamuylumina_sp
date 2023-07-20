@@ -7,7 +7,8 @@ $top_copy = [
 	],
 	'top2' => [ 'To entertain guests from all over the world',
 		'In the welcome area, which is the entrance to the adventure, we have prepared a video to guide you to the world of Kamuy Lumina in three languages: Japanese, English, and Chinese.<br>Please kindly take a look at it before you enter the forest.',
-		'The official mobile app is available in English and Chinese so that you can have more fun with the story unfolding in each zone.<br>Download our mobile app at the welcome area and enter the world of Kamuy Lumina.<span class="top2-under-text2">(We also have mobile phone cases for rent.)</span>'
+		'The official mobile app is available in English and Chinese so that you can have more fun with the story unfolding in each zone.<br>Download our mobile app at the welcome area and enter the world of Kamuy Lumina.',
+		'<em>(We also have mobile phone cases for rent.)</em>',
 	],
 	'top3' => [ 'AN ENCHANTED NIGHT WALK AT LAKE AKAN' ],
 	'top4' => [ 'About KAMUY LUMINA',
@@ -28,8 +29,10 @@ $top_copy = [
 		'See what visitors are saying after an experience<br>in the world of Kamuy Lumina'
 	],
 	'top11' => [ 'ACCESS',
-		'60-75 minutes by car or bus<br>from TANCHO KUSHIRO AIRPORT',
-		'3 hours and 30 minutes by car<br>from NEW CHITOSE AIRPORT'
+		'60-75 minutes by car or bus',
+		'from TANCHO KUSHIRO AIRPORT',
+		'3 hours and 30 minutes by car',
+		'from NEW CHITOSE AIRPORT'
 	],
 	'top13' => [ 'There are many outdoor activities in the Akan area that you should try.<br>Don\'t miss many other tips on how to enjoy your time in Akan.',
 		'Start your journey to Kamuy Lumina from our official website',
