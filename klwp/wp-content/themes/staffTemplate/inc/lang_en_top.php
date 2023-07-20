@@ -1,6 +1,6 @@
 <?php
 $top_copy = [
-	'top1' => [ 'EVENT WEBSITE',
+	'top1' => [ 'SPECIAL SITE',
 		'JULY 15, 2023 NEW UPDATE!!',
 		'You can enjoy the new updated version with a special production this year!',
 		'AN ENCHANTED NIGHT WALK AT LAKE AKAN<br>OFFICIAL WEBSITE'
