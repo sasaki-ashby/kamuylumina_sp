@@ -1,4 +1,5 @@
 <?php
+global $common_lang_text;
 $common_lang_text = [
 	'記事一覧' => '記事一覧',
 	'関連記事' => '関連記事',
@@ -10,6 +11,7 @@ $common_lang_text = [
 	'GALLERY' => 'GALLERY',
 	'Coming soon' => 'Coming soon',
 	'ギャラリー' => 'ギャラリー',
-	'カムイルミナ スペシャルサイト' => 'KAMUY LUMINA SPECIAL SITE',
+	'カムイルミナ スペシャルサイト' => 'カムイルミナ スペシャルサイト',
+	'阿寒を楽しむ' => '阿寒を楽しむ',
 ];
 ?>
