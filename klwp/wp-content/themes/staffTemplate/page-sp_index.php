@@ -150,19 +150,20 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		<section class="sp_top8" id="sptop8">
 			<div class="section_detail">
 				<div class="sp_top8_detail">
-					<figure> <a href="link"> <img src="/assets/sp/top/img/top8_img01.jpg" width="930" height="460" alt="">
-						<figcaption>
+					<figure> <a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>"> <img src="/assets/sp/top/img/top8_img01.jpg" width="930" height="460" alt="">
+						<!--<figcaption>
 							<p><?php echo $top_copy['top8'][0];?></p>
-						</figcaption>
+						</figcaption>-->
 						</a> </figure>
 					<div class="sp_top8_read">
 						<div class="sp_top8_hgroup section_hgroup">
 							<h2 class="section_title"><?php echo $top_copy['top8'][1];?><em class="section_ruby">ENJOY AKAN</em></h2>
 						</div>
 						<p><?php echo $top_copy['top8'][2];?></p>
-						<div class="sp_top8_read_nav"> <a href="link" class="sp_top_btn_more" title="<?php echo $top_copy['top8'][1];?>"><span><?php echo $common_lang_text["VIEW MORE"];?></span></a> </div>
+						<div class="sp_top8_read_nav"> <a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>" class="sp_top_btn_more" title="<?php echo $top_copy['top8'][1];?>"><span><?php echo $common_lang_text["VIEW MORE"];?></span></a> </div>
 					</div>
 				</div>
+				
 				<div class="sp_top8_column">
 					<ul class="sp_top8_slide">
 						<?php
@@ -176,7 +177,12 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 								$the_query->the_post();
 								?>
 						<!-- 記事1件:start/ -->
-						<li><a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>"><span><img class="top8-img" src="<?php the_field('head_img_thum');?>" /></span><em><?php echo the_field("head_title_$sp_lang");?></em> </a> </li>
+						<li>
+							<a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">
+							<span><img class="top8-img" src="<?php the_field('head_img_thum');?>" /></span>
+							<em><?php echo the_field("head_title_$sp_lang");?></em>
+							</a>
+						</li>
 						<?php
 						}
 						}
@@ -200,6 +206,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 				</div>
 				<div class="sp_top9_column">
 					<div class="sp_top9_column_slide">
+						<!--
 						<div class="sp_top9_column_data">
 							<h3>Robyn W.</h3>
 							<ul class="sp_top9_column_score">
@@ -215,6 +222,9 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 							</div>
 						</div>
 						<!-- /.sp_top9_column_data -->
+						<div class="sp_top9_column_data">
+							<p><?php echo $common_lang_text["Coming soon"];?></p>
+						</div>
 						
 						<div class="sp_top9_column_data">
 							<p><?php echo $common_lang_text["Coming soon"];?></p>
@@ -276,7 +286,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 						<div class="sp_top12_hgroup section_hgroup">
 							<h2 class="section_title"><?php echo $common_lang_text["ギャラリー"];?><em class="section_ruby"><?php echo $common_lang_text["GALLERY"];?></em></h2>
 						</div>
-						<div class="sp_top12_read_nav"><a href="link" class="sp_top_btn_more"><span>INSTAGRAM</span></a></div>
+						<div class="sp_top12_read_nav"><a href="https://www.instagram.com/kamuy_lumina/" class="sp_top_btn_more" target="_blank"><span>INSTAGRAM</span></a></div>
 					</div>
 					<div class="sp_top12_figure animebox">
 						<ul class="sp_gallery">
