@@ -18,7 +18,7 @@
 						$parent_terms = get_terms( $taxonomy_name, array( 'hide_empty' => false, 'parent' => 0 ) ); //第一階層のタームだけ取得
 						foreach ( $parent_terms as $taxonomy ) {
 							?>
-						<li><spna class="<?php echo $taxonomy->slug;?>"><?php echo get_field("tax_enjoy-lang_name_$sp_lang","tax_enjoy_".$taxonomy->term_id);?></spna></li>
+						<li><span data-spot="<?php echo $taxonomy->slug;?>"><?php echo get_field("tax_enjoy-lang_name_$sp_lang","tax_enjoy_".$taxonomy->term_id);?></span></li>
 						<?php
 						}
 						?>
@@ -37,12 +37,12 @@
 			if ( $the_query->have_posts() ) {
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
+					$tax_list = get_field( 'tax_enjoy' );
 					?>
 			<!-- 記事1件:start/ -->
-			<li class="spot-container">
+			<li class="spot-container<?php foreach ( $tax_list as $tax ) {echo ' '.$tax->slug;}?>">
 			<ul class="category-tag">
 				<?php
-				$tax_list = get_field( 'tax_enjoy' );
 				foreach ( $tax_list as $tax ) {
 					?>
 				<li><?php echo $tax->name;?></li>
@@ -62,7 +62,9 @@
 			?>
 		</ul>
 	</article>
+	<!--
 	<p id="moreButton" class="btn-text more_btn"><?php echo $common_lang_text["VIEW MORE"];?><span class="plus-icon">+</span></p>
+	-->
 </main>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/footer.php');?>
 </body></html>

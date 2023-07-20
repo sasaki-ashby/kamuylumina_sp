@@ -10,5 +10,6 @@ $common_lang_text = [
 	'GALLERY' => 'GALLERY',
 	'Coming soon' => 'Coming soon',
 	'ギャラリー' => 'GALLERY',
+	'カムイルミナ スペシャルサイト' => 'KAMUY LUMINA SPECIAL SITE',
 ];
 ?>

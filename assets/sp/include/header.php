@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <?php if($sp_lang == "ni"){?>
 <meta property="og:locale" content="ja_JP" />
-<meta property="og:site_name" content="カムイルミナ スペシャルサイト" />
+<meta property="og:site_name" content="<?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?>" />
 <link rel="canonical" href="https://www.kamuylumina.jp/sp/" />
 <meta property="og:url" content="https://www.kamuylumina.jp/sp/" />
 <meta name="twitter:description" content="">
@@ -28,9 +28,10 @@
 <meta name="description" content="" />
 <meta property="og:title" content="" />
 <meta name="twitter:title" content="">
+<title><?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?></title>
 <?php }elseif($sp_lang == "tc"){?>
 <meta property="og:locale" content="zh_TW" />
-<meta property="og:site_name" content="KAMUY LUMINA 特設網站" />
+<meta property="og:site_name" content="<?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?>" />
 <link rel="canonical" href="https://www.kamuylumina.jp/tc/sp/" />
 <meta property="og:url" content="https://www.kamuylumina.jp/tc/sp/" />
 <meta name="twitter:description" content="">
@@ -38,9 +39,10 @@
 <meta name="description" content="" />
 <meta property="og:title" content="" />
 <meta name="twitter:title" content="">
+<title><?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?></title>
 <?php }else{?>
 <meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="KAMUY LUMINA SPECIAL SITE" />
+<meta property="og:site_name" content="<?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?>" />
 <link rel="canonical" href="https://www.kamuylumina.jp/en/sp/" />
 <meta property="og:url" content="https://www.kamuylumina.jp/en/sp/" />
 <meta name="twitter:description" content="">
@@ -48,8 +50,8 @@
 <meta name="description" content="" />
 <meta property="og:title" content="" />
 <meta name="twitter:title" content="">
+<title><?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?></title>
 <?php }?>
-<title>article</title>
 <link rel="stylesheet" href="/assets/sp/common/css/reset.css" />
 <link rel="stylesheet" href="/assets/sp/common/css/style.css" />
 <link rel="stylesheet" href="/assets/sp/common/css/footer.css" />

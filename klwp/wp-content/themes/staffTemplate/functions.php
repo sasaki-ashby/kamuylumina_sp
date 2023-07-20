@@ -2,6 +2,7 @@
 require_once __DIR__ . '/inc/def_config.php';
 require_once __DIR__ . '/inc/def_functions.php';
 
+global $sp_lang;
 // 現在の URL を取得
 $current_url = $_SERVER[ 'REQUEST_URI' ];
 // 最初のパスセグメントを取得
@@ -146,6 +147,7 @@ add_filter( 'mwform_validation_mw-wp-form-186', 'my_mwform_validation_rule', 10,
 
 function add_header_cssjs() {
 	global $g_posttype_slug, $g_taxonomy_slug, $g_term_slug, $renewcssflg;
+	global $sp_lang;
 
 	if ( is_404() || is_page_template( 'page-sitemap.php' ) ) {} elseif ( is_home() ) {} elseif ( is_post_type_archive( 'enjoy' ) ) {
 		wp_enqueue_style( 'css-sp-archive-style', get_src( '/assets/sp/article/css/style.css', 'wwwroot' ), array(), null, 'all' );
@@ -154,12 +156,14 @@ function add_header_cssjs() {
 	} elseif ( is_post_type_archive( 'enjoy' ) ) {
 		wp_enqueue_style( 'css-sp-article_detail-related_article', get_src( '/assets/sp/article_detail/css/related_article.css', 'wwwroot' ), array(), null, 'all' );
 	} elseif ( is_page_template( 'page-sp_index.php' ) ) {
-			wp_enqueue_style( 'css-sp-top-style',      get_src( '/assets/sp/top/css/style.css', 'wwwroot' ), array(), null, 'all' );
-			wp_enqueue_style( 'css-sp-top-slider',     get_src( '/assets/sp/top/css/slider.css', 'wwwroot' ), array(), null, 'all' );
+			wp_enqueue_style( 'css-sp-top-style', get_src( '/assets/sp/top/css/style.css', 'wwwroot' ), array(), null, 'all' );
+			wp_enqueue_style( 'css-sp-top-slider', get_src( '/assets/sp/top/css/slider.css', 'wwwroot' ), array(), null, 'all' );
 			wp_enqueue_style( 'css-sp-top-top_header', get_src( '/assets/sp/top/css/top_header.css', 'wwwroot' ), array(), null, 'all' );
-			wp_enqueue_style( 'css-sp-top-slick',      get_src( '/assets/sp/top/slick/slick.css', 'wwwroot' ), array(), null, 'all' );
-			wp_enqueue_style( 'css-sp-top-sptop',      get_src( '/assets/sp/top/css/sptop.css', 'wwwroot' ), array(), null, 'all' );
-		
+			wp_enqueue_style( 'css-sp-top-slick', get_src( '/assets/sp/top/slick/slick.css', 'wwwroot' ), array(), null, 'all' );
+			wp_enqueue_style( 'css-sp-top-sptop', get_src( '/assets/sp/top/css/sptop.css', 'wwwroot' ), array(), null, 'all' );
+			if ( $sp_lang == "en" ) {
+				//wp_enqueue_style( 'css-sp-top-en_addstyle', get_src( '/assets/sp/top/css/en_addstyle2.css', 'wwwroot' ), array(), null, 'all' );
+			}
 		}
 		/*
 		if ( get_field( "code-head" ) ) {
@@ -171,18 +175,24 @@ add_action( 'wp_enqueue_scripts', 'add_header_cssjs' );
 //wp_footerに追加
 function add_footer_cssjs() {
 	global $g_posttype_slug, $g_taxonomy_slug, $g_term_slug;
-	if ( get_post_type( "sp" ) || is_page_template( 'page-sp_index.php' ) ) {
-		wp_enqueue_script( 'js_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true );
-		wp_enqueue_script( 'js-sp-common-hamburger_header', get_src( '/assets/sp/common/js/global.js', 'wwwroot' ), array(), null, true );
+	
+	wp_enqueue_script( 'js_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true );
+	if ( is_page_template( 'page-sp_index.php' )) {
+		wp_enqueue_script( 'js-sp-common-global', get_src( '/assets/sp/common/js/global.js', 'wwwroot' ), array(), null, true );
+	}
+	
+	if ( is_post_type_archive( 'enjoy' ) ) {
+		wp_enqueue_script( 'js-sp-enjoy-hamburger_header', get_src( '/assets/sp/common/js/hamburger_header.js', 'wwwroot' ), array(), null, 'all' );
+		wp_enqueue_script( 'js-sp-enjoy-article', get_src( '/assets/sp/article/js/article.js', 'wwwroot' ), array(), null, 'all' );
 	}
 
 	if ( is_page_template( 'page-sp_index.php' ) ) {
-		
+
 		wp_enqueue_script( 'js-sp-top-insta', get_src( '/assets/sp/top/js/insta.js', 'wwwroot' ), array(), null, true );
-		wp_enqueue_script( 'js-sp-top-scroll', get_src( '/assets/sp/top/js/scroll.js', 'wwwroot' ), array(), null, true );
-		wp_enqueue_script( 'js-sp-top-top', get_src( '/assets/sp/top/js/top.js', 'wwwroot' ), array(), null, true );
+		/*		wp_enqueue_script( 'js-sp-top-scroll', get_src( '/assets/sp/top/js/scroll.js', 'wwwroot' ), array(), null, true );
+				wp_enqueue_script( 'js-sp-top-top', get_src( '/assets/sp/top/js/top.js', 'wwwroot' ), array(), null, true );*/
 		wp_enqueue_script( 'js-sp-top-slick', get_src( '/assets/sp/top/slick/slick.js', 'wwwroot' ), array(), null, true );
-		wp_enqueue_script( 'js-sp-top-sptop',    get_src( '/assets/sp/top/js/sptop.js', 'wwwroot' ), array(), null, true );
+		wp_enqueue_script( 'js-sp-top-sptop', get_src( '/assets/sp/top/js/sptop.js', 'wwwroot' ), array(), null, true );
 	}
 }
 add_action( 'wp_footer', 'add_footer_cssjs' );

@@ -179,7 +179,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 						<!-- 記事1件:start/ -->
 						<li>
 							<a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">
-							<span><img class="top8-img" src="<?php the_field('head_img_thum');?>" /></span>
+							<span><img class="top8-img" src="<?php the_field('head_img_thum');?>" width="200" height="120" alt=""></span>
 							<em><?php echo the_field("head_title_$sp_lang");?></em>
 							</a>
 						</li>

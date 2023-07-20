@@ -26,9 +26,9 @@
 						</ul>
 					</div>
 					<ul class="lang-container">
-						<li class="lang-text-1 __current"><a href="<?php echo lang_link($_SERVER['REQUEST_URI'],"ni",$sp_lang);?>">日本語</a></li>
-						<li class="lang-text-2"><a href="<?php echo lang_link($_SERVER['REQUEST_URI'],"en",$sp_lang);?>">ENGLISH</a></li>
-						<li class="lang-text-3"><a href="<?php echo lang_link($_SERVER['REQUEST_URI'],"tc",$sp_lang);?>">繁体字</a></li>
+						<li class="lang-text-1 <?php if( $sp_lang == "ni"){echo " __current";}?>"><a href="<?php echo lang_link2($_SERVER['REQUEST_URI'],"ni",$sp_lang);?>">日本語</a></li>
+						<li class="lang-text-2 <?php if( $sp_lang == "en"){echo " __current";}?>"><a href="<?php echo lang_link2($_SERVER['REQUEST_URI'],"en",$sp_lang);?>">ENGLISH</a></li>
+						<li class="lang-text-3 <?php if( $sp_lang == "tc"){echo " __current";}?>"><a href="<?php echo lang_link2($_SERVER['REQUEST_URI'],"tc",$sp_lang);?>">繁体字</a></li>
 					</ul>
 				</div>
 				<section class="middle-container">
