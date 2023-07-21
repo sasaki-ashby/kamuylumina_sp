@@ -371,24 +371,23 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 </main>
 <!-- /.sp_top -->
 <div class="sp_pagenation">
-	<ul class="spscroll">
-		<li><a href="#sptop1"><span>1</span></a></li>
-		<li><a href="#sptop2"><span>2</span></a></li>
-		<li><a href="#sptop3"><span>3</span></a></li>
-		<li><a href="#sptop4"><span>4</span></a></li>
-		<li><a href="#sptop5"><span>5</span></a></li>
-		<li><a href="#sptop6"><span>6</span></a></li>
-		<li><a href="#sptop7"><span>7</span></a></li>
-		<li><a href="#sptop8"><span>8</span></a></li>
-		<li><a href="#sptop9"><span>9</span></a></li>
-		<li><a href="#sptop10"><span>10</span></a></li>
-		<li><a href="#sptop11"><span>11</span></a></li>
-		<li><a href="#sptop12"><span>12</span></a></li>
-		<li><a href="#sptop13"><span>13</span></a></li>
-		<li><a href="#sptop14"><span>14</span></a></li>
-		<li><a href="#sptop15"><span>15</span></a></li>
-	</ul>
+<ul class="spscroll">
+	<li><a href="#sptop1"><span>1</span></a></li>
+	<li><a href="#sptop2"><span>2</span></a></li>
+	<li><a href="#sptop3"><span>3</span></a></li>
+	<li><a href="#sptop4"><span>4</span></a></li>
+	<li><a href="#sptop5"><span>5</span></a></li>
+	<li><a href="#sptop6"><span>6</span></a></li>
+	<li><a href="#sptop7"><span>7</span></a></li>
+	<li><a href="#sptop8"><span>8</span></a></li>
+	<li><a href="#sptop9"><span>9</span></a></li>
+	<li><a href="#sptop10"><span>10</span></a></li>
+	<li><a href="#sptop11"><span>11</span></a></li>
+	<li><a href="#sptop12"><span>12</span></a></li>
+	<li><a href="#sptop13"><span>13</span></a></li>
+	<li><a href="#sptop14"><span>14</span></a></li>
+	<li><a href="#sptop15"><span>15</span></a></li>
+</ul>
 </div>
-<!-- ========== /.sp_top ========== --> 
 <!-- ========== /.sp_top ========== -->
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/sp/include/footer.php');?>

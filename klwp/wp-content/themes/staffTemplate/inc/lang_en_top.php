@@ -14,7 +14,7 @@ $top_copy = [
 	'top4' => [ 'About KAMUY LUMINA',
 		'Beginning at nightfall, you are invited to pursue an immersive experience along a 1.2 km walking path into the land of the Ainu gods, through the forest of Lake Akan, in Akan Mashu National Park, Hokkaido.'
 	],
-	'top5' => [ 'Based on the Yukar (epic) “Owl & Jaybird”<br>which is rooted in the Ainu culture of Lake Akan,<br>various stories unfold in eight different zones.<br><br>Don\’t miss the surprises and emotions<br>that you will have in each zone.' ],
+	'top5' => [ 'Based on the Yukar (epic) “Owl & Jaybird”<br>which is rooted in the Ainu culture of Lake Akan,<br>various stories unfold in eight different zones.<br><br>Don\'t miss the surprises and emotions<br>that you will have in each zone.' ],
 	'top6' => [ 'Of particular note is the special item, a rhythm staff. When getting it into your hands,mysterious things may happen.' ],
 
 	'top7' => [
