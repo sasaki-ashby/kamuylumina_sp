@@ -194,6 +194,8 @@ function add_footer_cssjs() {
 				wp_enqueue_script( 'js-sp-top-top', get_src( '/assets/sp/top/js/top.js', 'wwwroot' ), array(), null, true );*/
 		wp_enqueue_script( 'js-sp-top-slick', get_src( '/assets/sp/top/slick/slick.js', 'wwwroot' ), array(), null, true );
 		wp_enqueue_script( 'js-sp-top-sptop', get_src( '/assets/sp/top/js/sptop.js', 'wwwroot' ), array(), null, true );
+		
+		
 	}
 }
 add_action( 'wp_footer', 'add_footer_cssjs' );

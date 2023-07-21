@@ -1,4 +1,4 @@
-<footer class="footer-container scrollify" id="sptop15">
+<footer class="footer-container scrollify" id="footer">
 	<img class="title-image" src="/assets/sp/common/img/logo.svg" alt="" />
 	<p class="footer_text">KAMUY LUMINA SPECIAL SITE</p>
 	<div class="btn-container">

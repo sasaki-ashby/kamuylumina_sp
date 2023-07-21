@@ -21,7 +21,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 <!-- ========== sp_top/ ========== -->
 <main class="sp_top">
 	<article class="sp_top_article">
-		<section class="sp_top1" id="sptop1">
+		<section class="sp_top1" id="mainimage">
 			<div class="section_detail">
 				<div class="sp_top1_detail">
 					<div class="top1_hgroup">
@@ -46,7 +46,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top1 -->
 		
-		<section class="sp_top2 sp_comingup" id="sptop2">
+		<section class="sp_top2 sp_comingup" id="apps">
 			<div class="section_detail">
 				<div class="sp_top2_detail1">
 					<figure><img src="/assets/sp/top/img/top2_img01.jpg" alt=""></figure>
@@ -68,7 +68,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top2 -->
 		
-		<section class="sp_top3" id="sptop3">
+		<section class="sp_top3" id="nightwalk">
 			<div class="section_detail">
 				<div class="sp_top3_detail">
 					<div class="sp_top3_read animebox">
@@ -82,7 +82,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top3 -->
 		
-		<section class="sp_top4" id="sptop4">
+		<section class="sp_top4" id="about">
 			<div class="section_detail">
 				<div class="sp_top4_detail">
 					<div class="sp_top4_read">
@@ -100,7 +100,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top4 -->
 		
-		<section class="sp_top5" id="sptop5">
+		<section class="sp_top5" id="zone">
 			<div class="section_detail">
 				<div class="sp_top5_detail">
 					<figure class="animebox"><img src="/assets/sp/top/img/top5_img01.jpg" width="768" height="768" alt=""></figure>
@@ -113,7 +113,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top5 -->
 		
-		<section class="sp_top6" id="sptop6">
+		<section class="sp_top6" id="keyitem">
 			<div class="section_detail">
 				<div class="sp_top6_detail">
 					<figure class="animebox">
@@ -130,7 +130,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top6 -->
 		
-		<section class="sp_top7" id="sptop7">
+		<section class="sp_top7" id="arts">
 			<div class="section_detail">
 				<div class="sp_top7_detail">
 					<div class="sp_top7_read animebox">
@@ -147,13 +147,13 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top7 -->
 		
-		<section class="sp_top8" id="sptop8">
+		<section class="sp_top8" id="enjoy">
 			<div class="section_detail">
 				<div class="sp_top8_detail">
-					<figure> <a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>"> <img src="/assets/sp/top/img/top8_img01.jpg" width="930" height="460" alt="">
+					<figure> <a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>"> <img src="/assets/sp/top/img/top8_img01.jpg" width="930" height="460" alt=""> 
 						<!--<figcaption>
 							<p><?php echo $top_copy['top8'][0];?></p>
-						</figcaption>-->
+						</figcaption>--> 
 						</a> </figure>
 					<div class="sp_top8_read">
 						<div class="sp_top8_hgroup section_hgroup">
@@ -163,7 +163,6 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 						<div class="sp_top8_read_nav"> <a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>" class="sp_top_btn_more" title="<?php echo $top_copy['top8'][1];?>"><span><?php echo $common_lang_text["VIEW MORE"];?></span></a> </div>
 					</div>
 				</div>
-				
 				<div class="sp_top8_column">
 					<ul class="sp_top8_slide">
 						<?php
@@ -177,12 +176,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 								$the_query->the_post();
 								?>
 						<!-- 記事1件:start/ -->
-						<li>
-							<a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">
-							<span><img class="top8-img" src="<?php the_field('head_img_thum');?>" width="200" height="120" alt=""></span>
-							<em><?php echo the_field("head_title_$sp_lang");?></em>
-							</a>
-						</li>
+						<li> <a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>"> <span><img class="top8-img" src="<?php the_field('head_img_thum');?>" width="200" height="120" alt=""></span> <em><?php echo the_field("head_title_$sp_lang");?></em> </a> </li>
 						<?php
 						}
 						}
@@ -195,7 +189,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 			<!-- /.section_detail --> 
 		</section>
 		<!-- /.sp_top8 -->
-		<section class="sp_top9" id="sptop9">
+		<section class="sp_top9" id="review">
 			<div class="section_detail">
 				<div class="sp_top9_detail">
 					<div class="sp_top9_hgroup">
@@ -205,7 +199,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 					<p class="sp_top9_read"><?php echo $top_copy['top9'][1];?></p>
 				</div>
 				<div class="sp_top9_column">
-					<div class="sp_top9_column_slide">
+					<div class="sp_top9_column_slide"> 
 						<!--
 						<div class="sp_top9_column_data">
 							<h3>Robyn W.</h3>
@@ -225,7 +219,6 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 						<div class="sp_top9_column_data">
 							<p><?php echo $common_lang_text["Coming soon"];?></p>
 						</div>
-						
 						<div class="sp_top9_column_data">
 							<p><?php echo $common_lang_text["Coming soon"];?></p>
 						</div>
@@ -245,7 +238,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top9 -->
 		
-		<section class="sp_top10" id="sptop10">
+		<section class="sp_top10" id="visual">
 			<div class="section_detail animebox">
 				<p><strong>KAMUY LUMINA</strong></p>
 			</div>
@@ -253,7 +246,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top10 -->
 		
-		<section class="sp_top11" id="sptop11">
+		<section class="sp_top11" id="access">
 			<div class="section_detail">
 				<div class="sp_top11_detail">
 					<div class="sp_top11_read">
@@ -279,7 +272,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top11 -->
 		
-		<section class="sp_top12" id="sptop12">
+		<section class="sp_top12" id="gallery">
 			<div class="section_detail">
 				<div class="sp_top12_detail">
 					<div class="sp_top12_read">
@@ -298,7 +291,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top12 -->
 		
-		<section class="sp_top13" id="sptop13">
+		<section class="sp_top13" id="links">
 			<div class="section_detail">
 				<div class="sp_top13_detail">
 					<div class="sp_top13_column">
@@ -349,7 +342,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 		</section>
 		<!-- /.sp_top13 -->
 		
-		<section class="sp_top14" id="sptop14">
+		<section class="sp_top14" id="sns">
 			<div class="section_detail">
 				<div class="sp_top14_detail">
 					<div class="sp_top14_read">

@@ -19,6 +19,7 @@
 <meta name="twitter:image:src" content="https://www.kamuylumina.jp/assets/sp/common/img/ogp.png">
 <meta name="twitter:card" content="summary_large_image">
 <?php if($sp_lang == "ni"){?>
+<?php $title = tdk_title();?>
 <meta property="og:locale" content="ja_JP" />
 <meta property="og:site_name" content="<?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?>" />
 <link rel="canonical" href="https://www.kamuylumina.jp/sp/" />
@@ -26,10 +27,11 @@
 <meta name="twitter:description" content="">
 <meta property="og:description" content="" />
 <meta name="description" content="" />
-<meta property="og:title" content="" />
-<meta name="twitter:title" content="">
-<title><?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?></title>
+<meta property="og:title" content="<?php echo $title;?>" />
+<meta name="twitter:title" content="<?php echo $title;?>">
+<title><?php echo $title;?></title>
 <?php }elseif($sp_lang == "tc"){?>
+<?php $title = tdk_title();?>
 <meta property="og:locale" content="zh_TW" />
 <meta property="og:site_name" content="<?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?>" />
 <link rel="canonical" href="https://www.kamuylumina.jp/tc/sp/" />
@@ -37,10 +39,11 @@
 <meta name="twitter:description" content="">
 <meta property="og:description" content="" />
 <meta name="description" content="" />
-<meta property="og:title" content="" />
-<meta name="twitter:title" content="">
-<title><?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?></title>
+<meta property="og:title" content="<?php echo $title;?>" />
+<meta name="twitter:title" content="<?php echo $title;?>">
+<title><?php echo $title;?></title>
 <?php }else{?>
+<?php $title = tdk_title();?>
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="<?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?>" />
 <link rel="canonical" href="https://www.kamuylumina.jp/en/sp/" />
@@ -48,16 +51,13 @@
 <meta name="twitter:description" content="">
 <meta property="og:description" content="" />
 <meta name="description" content="" />
-<meta property="og:title" content="" />
-<meta name="twitter:title" content="">
-<title><?php echo $common_lang_text["カムイルミナ スペシャルサイト"];?></title>
+<meta property="og:title" content="<?php echo $title;?>" />
+<meta name="twitter:title" content="<?php echo $title;?>">
+<title><?php echo $title;?></title>
 <?php }?>
 <link rel="stylesheet" href="/assets/sp/common/css/reset.css" />
 <link rel="stylesheet" href="/assets/sp/common/css/style.css" />
 <link rel="stylesheet" href="/assets/sp/common/css/footer.css" />
-<?php if($sp_lang == "en"){?>
-<link rel="stylesheet" href="/assets/sp/common/css/en_addstyle.css" />
-<?php }?>
 <?php if( !is_page_template( 'page-sp_index.php' )){?>
 <link rel="stylesheet" href="/assets/sp/common/css/header.css" />
 <?php }?>
