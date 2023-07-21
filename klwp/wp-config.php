@@ -83,7 +83,7 @@ $table_prefix = 'wp_';
  *
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
-if($_SERVER["SERVER_NAME"] === 'test.kamuylumina.jp'){
+if($_SERVER["SERVER_NAME"] === 'dev.kamuylumina.jp'){
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_DISPLAY', true );
 define( 'WP_DEBUG_LOG', true );

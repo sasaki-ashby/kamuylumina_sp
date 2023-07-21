@@ -7,6 +7,7 @@
 <?php }else{?>
 <html lang="en">
 <?php }?>
+<head>
 <meta charset="UTF-8" />
 <meta http-equiv="content-script-type" content="text/javascript" />
 <meta http-equiv="content-style-type" content="text/css" />

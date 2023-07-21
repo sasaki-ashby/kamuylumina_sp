@@ -3,15 +3,17 @@
 	<article>
 		<nav class="breadcrumb">
 			<ol class="breadcrumb_list">
-				<li><a href="<?php echo lang_link( '/sp/' , $sp_lang ,$sp_lang);?>">トップ</a></li>
-				<li><?php echo $common_lang_text["記事一覧"];?></li>
+				<li><a href="<?php echo lang_link( '/sp/' , $sp_lang ,$sp_lang);?>"><?php echo $common_lang_text["トップ"];?></a></li>
+				<li><?php echo $common_lang_text["阿寒を楽しむ"];?></li>
 			</ol>
 		</nav>
-		<h1 class="article-title article_main_container"><?php echo $common_lang_text["記事一覧"];?><span class="SubText">ARTICLE LIST</span></h1>
+		<h1 class="article-title article_main_container"><?php echo $common_lang_text["阿寒を楽しむ"];?><span class="SubText">ARTICLE LIST</span></h1>
 		<div class="middle-main-container">
 			<div class="Container">
 				<nav class="top-middle-container">
-					<p class="TextAll TextContainer __current"><a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>">すべて</a></p>
+					<p class="TextAll TextContainer __current">
+						<a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>"><?php echo $common_lang_text["すべて"];?></a>
+					</p>
 					<ul class="articleNav-list">
 						<?php
 						$taxonomy_name = 'tax_enjoy'; //取得したいタクソノミー名
@@ -45,9 +47,10 @@
 				<?php
 				foreach ( $tax_list as $tax ) {
 					?>
-				<li><?php echo $tax->name;?></li>
+				<li><?php echo get_field("tax_enjoy-lang_name_$sp_lang","tax_enjoy_".$tax->term_id);?></li>
 				<?php } ?>
-			</ul>
+			</ul
+					
 			<a class="spot-a" href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">
 			<div class="hover-area">
 				<p class="hover-area_img"><img class="spot-image" src="<?php the_field('head_img_thum');?>" alt=""/></p>

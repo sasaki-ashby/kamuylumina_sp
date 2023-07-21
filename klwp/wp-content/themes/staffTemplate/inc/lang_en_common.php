@@ -13,5 +13,7 @@ $common_lang_text = [
 	'ギャラリー' => 'GALLERY',
 	'カムイルミナ スペシャルサイト' => 'KAMUY LUMINA SPECIAL SITE',
 	'阿寒を楽しむ' => 'ENJOY AKAN',
+	'すべて' => 'All',
+	'トップ' => 'Top',
 ];
 ?>

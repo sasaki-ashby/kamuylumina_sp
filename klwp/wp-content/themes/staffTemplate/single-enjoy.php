@@ -4,8 +4,8 @@
 		<div class="middle-main-container_mobile">
 			<nav class="breadcrumb">
 				<ol class="breadcrumb_list">
-					<li><a href="<?php echo lang_link( '/sp/' , $sp_lang ,$sp_lang);?>">トップ</a></li>
-					<li><a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>">記事一覧</a></li>
+					<li><a href="<?php echo lang_link( '/sp/' , $sp_lang ,$sp_lang);?>"><?php echo $common_lang_text["トップ"];?></a></li>
+					<li><a href="<?php echo lang_link( '/sp/enjoy/' , $sp_lang ,$sp_lang);?>"><?php echo $common_lang_text["阿寒を楽しむ"];?></a></li>
 					<li><?php echo the_field("head_title_$sp_lang");?></li>
 				</ol>
 			</nav>
