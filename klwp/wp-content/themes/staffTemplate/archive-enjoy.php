@@ -54,7 +54,7 @@
 			<a class="spot-a" href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">
 			<div class="hover-area">
 				<p class="hover-area_img"><img class="spot-image" src="<?php the_field('head_img_thum');?>" alt=""/></p>
-				<p class="spot-text"><?php echo the_title();?></p>
+				<p class="spot-text"><?php echo the_field("head_title_h_$sp_lang");?></p>
 			</div>
 			</a></li>
 			<!-- /記事1件:end -->
