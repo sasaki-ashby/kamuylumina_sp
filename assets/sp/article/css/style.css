@@ -111,8 +111,12 @@ li {
   width : calc(100% / 3) ;
 }
 
+.articleNav-list >li span{
+  cursor: pointer;
+}
+
 .articleNav-list >li.__current,
-.articleNav-list >li a:hover{
+.articleNav-list >li span:hover{
   border-bottom: 1px solid #a4b1ba;
   padding-bottom: 10px;
 }
