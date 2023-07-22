@@ -96,18 +96,15 @@
 			<li><a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3 <?php if($sp_lang=='tc'){echo 'selected';}?>" data-btn="langBtn3">繁体字</a></li>
 		</ul>
 		<a href="<?php echo lang_link( '/' , "ni" ,$sp_lang);?>" target="_blank">
-		<div class="official-btn"> <?php echo $common_lang_text["オフィシャルサイト"];?>
-			<img src="/assets/sp/common/img/icons/arrow_right_wihte.png" alt="" class="arrow-image" />
-			</div>
-		</a> <a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
-		<div class="ticket-btn"><?php echo $common_lang_text["チケット購入はコチラ"];?>
-			<img src="/assets/sp/common/img/icons/arrow_right.png" alt="" class="arrow-image" />
-		</div>
+		<div class="official-btn"><?php echo $common_lang_text["オフィシャルサイト"];?><img loading="lazy" src="/assets/sp/common/img/icons/arrow_right_wihte.png" class="arrow-image" /></div>
+		</a>
+		<a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
+		<div class="ticket-btn"><?php echo $common_lang_text["チケット購入はコチラ"];?><img  loading="lazy" src="/assets/sp/common/img/icons/arrow_right.png" alt="arrow right" class="arrow-image" /></div>
 		</a>
 	</div>
 	<div class="hamburger"> 
 		<!-- ハンバーガーメニューの線 --> 
-		<span></span> <span></span> <span></span> 
+		<span></span><span></span><span></span> 
 		<!-- /ハンバーガーメニューの線 --> 
 	</div>
 </header>
@@ -120,20 +117,14 @@
 	</ul>
 	<?php }?>
 	<div class="lang-btns-container">
-	<ul class="lang-btns-container">
-		<li><a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1 <?php if($sp_lang=='ni'){echo 'selected';}?>" data-btn="langBtn1">日本語</a></li>
-		<li><a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2 <?php if($sp_lang=='en'){echo 'selected';}?>" data-btn="langBtn2">ENGLISH</a></li>
-		<li><a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3 <?php if($sp_lang=='tc'){echo 'selected';}?>" data-btn="langBtn3">繁体字</a></li>
-	</ul>
+		<ul class="lang-btns-container">
+			<li><a href="<?php echo lang_link( '/sp/' , "ni" ,$sp_lang);?>" class="lang-btn1 <?php if($sp_lang=='ni'){echo 'selected';}?>" data-btn="langBtn1">日本語</a></li>
+			<li><a href="<?php echo lang_link( '/sp/' , "en" ,$sp_lang);?>" class="lang-btn2 <?php if($sp_lang=='en'){echo 'selected';}?>" data-btn="langBtn2">ENGLISH</a></li>
+			<li><a href="<?php echo lang_link( '/sp/' , "tc" ,$sp_lang);?>" class="lang-btn3 <?php if($sp_lang=='tc'){echo 'selected';}?>" data-btn="langBtn3">繁体字</a></li>
+		</ul>
 	</div>
 	<a href="/" target="_blank">
-		<div class="official-btn">
-		<?php echo $common_lang_text["オフィシャルサイト"];?> <img src="/assets/sp/common/img/icons/arrow_right_wihte.png" alt="arrow right white" class="" />
-		</div>
-	</a>
-	<a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
-		<div class="ticket-btn">
-			<?php echo $common_lang_text["チケット購入はコチラ"];?><img src="/assets/sp/common/img/icons/arrow_right.png" alt="" class="" />
-		</div>
-	</a>
-</div>
+	<div class="official-btn"> <?php echo $common_lang_text["オフィシャルサイト"];?> <img src="/assets/sp/common/img/icons/arrow_right_wihte.png" alt="arrow right white" class="" /> </div>
+	</a> <a href="https://webket.jp/pc/ticket/index?fc=52386&ac=9000" target="_blank">
+	<div class="ticket-btn"> <?php echo $common_lang_text["チケット購入はコチラ"];?><img src="/assets/sp/common/img/icons/arrow_right.png" alt="" class="" /> </div>
+	</a> </div>
