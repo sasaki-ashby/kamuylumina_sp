@@ -33,10 +33,17 @@
 				</div>
 				<section class="middle-container">
 					<section>
-						<?php if ( have_rows( 'body' ) ) { while ( have_rows( 'body' ) ): the_row(); ?>
-						<?php if( get_row_layout() == 'h2' ){/*見出し1*/?>
+						<?php
+						$secflg = 0;
+						if ( have_rows( 'body' ) ) {while ( have_rows( 'body' ) ): the_row();
+						?>
+						<?php
+							if( get_row_layout() == 'h2' ){/*見出し1*/
+							if($secflg == 1){echo '</section>';}
+						?>
+						<section>
 						<h2 class="detail-title">
-							<?php the_sub_field( $sp_lang );?>
+							<?php the_sub_field( $sp_lang );$secflg=1;?>
 						</h2>
 						<?php }elseif( get_row_layout() == 'h3' ){ /*テキスト(横幅いっぱい)*/?>
 						<h3 class="detail-title">

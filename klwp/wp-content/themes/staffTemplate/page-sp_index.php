@@ -258,12 +258,14 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 							<p><?php echo $top_copy['top11'][2];?></p>
 							<h3><?php echo $top_copy['top11'][3];?></h3>
 							<p><?php echo $top_copy['top11'][4];?></p>
+							<h3><?php echo $top_copy['top11'][5];?></h3>
+							<p><?php echo $top_copy['top11'][6];?></p>
 						</div>
 					</div>
 					<div class="sp_top11_figure">
 						<figure><img src="/assets/sp/top/img/top11_map01.png" alt="KAMUY LUMINA <?php echo $top_copy['top11'][0];?>"></figure>
 						<div class="sp_top11_figure_map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.2536838325714!2d144.0963334117007!3d43.43441747099282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f7285d6b066493d%3A0x7d10c46e6a020db!2z6Zi_5a-S6Kaz5YWJ5rG96Ii544ix!5e0!3m2!1sja!2sjp!4v1689073474958!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<iframe src="<?php echo $top_copy['top11'][7];?>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
