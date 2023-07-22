@@ -286,6 +286,35 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 					</div>
 					<div class="sp_top12_figure animebox">
 						<ul class="sp_gallery">
+							<?php
+							$url1 = "https://graph.facebook.com";
+							$url2 = "/v13.0/17841448526622087?";
+							$key[ 0 ] = "EAAJS8Qiy5jUBAJzNs2ZCJ4tO6lHUdDwTK90dMejTrhDMgzvt8ijZAcU0s1hg";
+							$key[ 1 ] = "VYwkO18L1mbJwFlUr1OQno57ulhi8JMMCRTPv1uRQmZABWJnjg6PlPdDvl19Y";
+							$key[ 2 ] = "iUmw7jjCxRalmNqZAcCxpGB5j4hdWu3AuWgCpy7PS6vYCZCD4t94PcFSGsVE";
+							$url = $url1 . $url2 . 'access_token=' . $key[ 0 ] . $key[ 1 ] . $key[ 2 ] . '&fields=name,media{caption,media_url,thumbnail_url,permalink}';
+							$options[ 'ssl' ][ 'verify_peer' ] = false;
+							$options[ 'ssl' ][ 'verify_peer_name' ] = false;
+							$json = file_get_contents( $url, false, stream_context_create( $options ) );
+							$json = mb_convert_encoding( $json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN' );
+							$data = json_decode( $json, TRUE ); // 第2引数を true にすると、連想配列を返す。
+							$loopMax = 0;
+							$insta_tag = '';
+							foreach ( $data[ 'media' ][ 'data' ] as $item ) {
+								$insta_tag .= '<li><a href="' . $item[ 'permalink' ] . '" target="qoo_insta">';
+								if ( strpos( $item[ 'media_url' ], '.mp4' ) !== false ) { // 動画の場合
+									$insta_tag .= '<img src="' . $item[ 'thumbnail_url' ] . '" alt="' . $item[ 'caption' ] . '">';
+								} else {
+									$insta_tag .= '<img src="' . $item[ 'media_url' ] . '" alt="' . $item[ 'caption' ] . '">';
+								}
+								$insta_tag .= '</a></li>';
+								$loopMax++;
+								if ( $loopMax == 12 ) {
+									break;
+								}
+							}
+							echo $insta_tag;
+							?>
 						</ul>
 					</div>
 				</div>
@@ -360,6 +389,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 					</div>
 					<div class="sp_top14_figure">
 						<ul class="sp_gallery">
+							<?php echo $insta_tag;?>
 						</ul>
 					</div>
 				</div>

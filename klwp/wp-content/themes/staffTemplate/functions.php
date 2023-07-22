@@ -187,13 +187,8 @@ function add_footer_cssjs() {
 	}
 
 	if ( is_page_template( 'page-sp_index.php' ) ) {
-		wp_enqueue_script( 'js-sp-top-insta', get_src( '/assets/sp/top/js/insta.js', 'wwwroot' ), array(), null, true );
-		/*		wp_enqueue_script( 'js-sp-top-scroll', get_src( '/assets/sp/top/js/scroll.js', 'wwwroot' ), array(), null, true );
-				wp_enqueue_script( 'js-sp-top-top', get_src( '/assets/sp/top/js/top.js', 'wwwroot' ), array(), null, true );*/
 		wp_enqueue_script( 'js-sp-top-slick', get_src( '/assets/sp/top/slick/slick.js', 'wwwroot' ), array(), null, true );
 		wp_enqueue_script( 'js-sp-top-sptop', get_src( '/assets/sp/top/js/sptop.js', 'wwwroot' ), array(), null, true );
-
-
 	}
 }
 add_action( 'wp_footer', 'add_footer_cssjs' );
