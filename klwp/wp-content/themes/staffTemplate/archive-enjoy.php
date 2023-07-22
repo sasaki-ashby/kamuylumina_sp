@@ -49,7 +49,7 @@
 					?>
 				<li><?php echo get_field("tax_enjoy-lang_name_$sp_lang","tax_enjoy_".$tax->term_id);?></li>
 				<?php } ?>
-			</ul
+			</ul>
 					
 			<a class="spot-a" href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>">
 			<div class="hover-area">

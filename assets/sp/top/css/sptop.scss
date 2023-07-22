@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@mixin egfont {
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 0.2em;
+}
+@mixin jgfont {
+	font-family: "Noto Sans CJK JP", serif;
+}
+@mixin jmfont {
+	font-family: "Noto Serif CJK JP", serif;
+}
+@mixin trans($times: 0.2s) {
+	transition: all $times;
+}
+@mixin hover {
+	@include trans(0.2s);
+	text-decoration: none;
+	opacity: 0.7;
+	cursor: pointer;
+	img {
+		opacity: 1;
+	}
+}
+
+
+@media screen and (min-width: 769px) {
+	@import "_sptop_pc";
+}
+@media screen and (max-width: 768px) {
+	@import "_sptop_sp";
+}
+
+/* debug */
+#header {
+	// display: none !important;
+}
