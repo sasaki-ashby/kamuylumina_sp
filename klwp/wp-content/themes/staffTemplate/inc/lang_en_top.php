@@ -8,7 +8,7 @@ $top_copy = [
 	'top2' => [ 'To entertain guests from all over the world',
 		'In the welcome area, which is the entrance to the adventure, we have prepared a video to guide you to the world of Kamuy Lumina in three languages: Japanese, English, and Chinese.<br>Please kindly take a look at it before you enter the forest.',
 		'The official mobile app is available in English and Chinese so that you can have more fun with the story unfolding in each zone.<br>Download our mobile app at the welcome area and enter the world of Kamuy Lumina.',
-		'<em>(We also have mobile phone cases for rent.)</em>',
+		'(We also have mobile phone cases for rent.)',
 	],
 	'top3' => [ 'AN ENCHANTED<br>NIGHT WALK AT<br>LAKE AKAN' ],
 	'top4' => [ 'About KAMUY LUMINA',

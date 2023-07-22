@@ -4,16 +4,17 @@ Template Name: スペシャルページトップ
 */
 ?>
 <?php
-$user = 'kamuylumina';
-$pass = 'eizoutest';
-if ( isset( $_SERVER[ 'PHP_AUTH_USER' ] ) && ( $_SERVER[ "PHP_AUTH_USER" ] == $user && $_SERVER[ "PHP_AUTH_PW" ] == $pass ) ) {
+if ( $_SERVER[ "REMOTE_ADDR" ] !== "183.77.251.15" ) {
+	$user = 'kamuylumina';
+	$pass = 'eizoutest';
+	if ( isset( $_SERVER[ 'PHP_AUTH_USER' ] ) && ( $_SERVER[ "PHP_AUTH_USER" ] == $user && $_SERVER[ "PHP_AUTH_PW" ] == $pass ) ) {
 
-} else {
-	header( "WWW-Authenticate: Basic realm=\"nter username and password.\"" );
-	header( "HTTP/1.0 401 Unauthorized - basic" );
-	die( 'このページを見るにはログインが必要です' );
+	} else {
+		header( "WWW-Authenticate: Basic realm=\"nter username and password.\"" );
+		header( "HTTP/1.0 401 Unauthorized - basic" );
+		die( 'このページを見るにはログインが必要です' );
+	}
 }
-
 require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/lang_".$sp_lang."_top.php");?>
@@ -60,7 +61,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 					<div class="sp_top2_read">
 						<h3><span>MOBILE APPS</span></h3>
 						<p><?php echo $top_copy['top2'][2];?></p>
-						<p class="sp_top2_caption"><?php echo $top_copy['top2'][3];?></em></p>
+						<p class="sp_top2_caption"><em><?php echo $top_copy['top2'][3];?></em></p>
 					</div>
 				</div>
 			</div>
