@@ -2,7 +2,7 @@
 $(function () {
 	$.ajax({ // jQueryのajaxでjsonデータを取得しますね
 		type: 'GET',
-		url: 'https://graph.facebook.com/v13.0/17841448526622087?access_token=EAAJS8Qiy5jUBADmaNIHVJrmamaDnOCyOZANo9wF8S10yGoo6L4Ea1dvhukSm7ITCRYas5DosvTL3u07ZAe597wGc5Esrz4NCxIFzl8gtRcJ2vkDroZAeE5xC4UptTPMPSLxc62XTbZBQL9uKnsyR1ueyIAYHrkpPXZAw7WR4hfsB6SSNxb0g8&fields=name,media{caption,media_url,thumbnail_url,permalink}',
+		url: 'https://graph.facebook.com/v13.0/17841448526622087?access_token=EAAJS8Qiy5jUBAKnGZCpxRL6Fq7nteAQlbRe7S0gHwKcq3GZCbi4GYHKO9uHUDxHt0ZAoUZAhw33w93sIOrnKCybngtOkTiKQhrEcn8R8SnaOrGrIu12wHBVAvE1cCFMJjSOm21VdIiHyHh9dM6FvqixL6p8XwmlgGe8VUwpy6ochYhliyOBP&fields=name,media{caption,media_url,thumbnail_url,permalink}',
 		dataType: 'json',
 		success: function (json) {
 			var insta = json.media.data;
@@ -28,7 +28,6 @@ $('.sp_gallery').append(`
   </a>
 </li>
 `);
-					
 				}
 			}
 		}
