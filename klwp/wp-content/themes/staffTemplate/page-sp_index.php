@@ -177,7 +177,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 								$the_query->the_post();
 								?>
 						<!-- 記事1件:start/ -->
-						<li> <a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>"> <span><img class="top8-img" src="<?php the_field('head_img_thum');?>" width="200" height="120" alt=""></span> <em><?php echo the_field("head_title_$sp_lang");?></em> </a> </li>
+						<li><a href="<?php echo lang_link( url_domain_del( get_permalink() ) , $sp_lang , $sp_lang);?>"><span><img class="top8-img" src="<?php the_field('head_img_thum');?>" width="200" height="120" alt=""></span> <em><?php echo the_field("head_title_$sp_lang");?></em> </a> </li>
 						<?php
 						}
 						}
@@ -264,7 +264,7 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 						</div>
 					</div>
 					<div class="sp_top11_figure">
-						<figure><img src="/assets/sp/top/img/top11_map01.png" alt="KAMUY LUMINA <?php echo $top_copy['top11'][0];?>"></figure>
+						<figure><img src="/assets/sp/top/img/top11_map01_<?php echo $sp_lang;?>.png" alt="KAMUY LUMINA <?php echo $top_copy['top11'][0];?>"></figure>
 						<div class="sp_top11_figure_map">
 							<iframe src="<?php echo $top_copy['top11'][7];?>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>

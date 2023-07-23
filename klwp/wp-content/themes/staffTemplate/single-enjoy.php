@@ -97,9 +97,9 @@
 		$feed_post = get_field( 'relation_enjoy' );
 		foreach ( $feed_post as $object ) {
 			?>
-		<li><a href="<?php echo get_the_permalink($object->ID ); ?>">
+		<li><a href="<?php echo lang_link( url_domain_del( get_the_permalink($object->ID ) ) , $sp_lang , $sp_lang);?>">
 		<figure><img src="<?php the_field('head_img_thum', $object->ID );?>" /></figure>
-		<p class="reated-text"><?php echo $object->post_title; ?></p>
+		<p class="reated-text"><?php echo the_field("head_title_$sp_lang", $object->ID);?></p>
 		</a> </li>
 		<li>
 		<?php } ?>
