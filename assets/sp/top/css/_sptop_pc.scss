@@ -597,9 +597,6 @@ section.sp_top7 {
 }
 .sp_top7_detail {
 	background-color: #000;
-	p {
-		color: #fff;
-	}
 }
 .sp_top7_read {
 	height: 70vh;
@@ -614,6 +611,17 @@ section.sp_top7 {
 	padding: 130px 50px 70px;
 	&.animeon {
 		@include fadein(1s);
+	}
+	p {
+		display: inline-block;
+		font-size: 1.6rem;
+		line-height: 2.8;
+		// background-color: rgba(0,0,0,0.8);
+		background-color: rgba(255,255,255,0.5);
+		padding: 10px 20px;
+		border-radius: 4px;
+		// text-shadow: 0px 0px 4px rgba(0,0,0,1);
+		// color: #fff;
 	}
 }
 .sp_top7_columm {
