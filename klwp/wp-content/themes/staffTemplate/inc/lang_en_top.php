@@ -33,8 +33,8 @@ $top_copy = [
 		'from TANCHO KUSHIRO AIRPORT',
 		'3 hours and 30 minutes by car',
 		'from NEW CHITOSE AIRPORT',
-		'女満別空港からお越しの場合',
-		'車で約1時間15分',
+		'1 hours and 15 minutes by car',
+		'from MEMANBETSU AIRPORT',
 		'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2897.254237805863!2d144.0993558!3d43.4344059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f728543e5cc1413%3A0x6763c36f1db391a0!2z6Zi_5a-S5rmW44Gu5qOu44OK44Kk44OI44Km44Kp44O844KvIEtBTVVZIExVTUlOQe-8iOOCq-ODoOOCpCDjg6vjg5_jg4rvvIk!5e0!3m2!1sja!2sjp!4v1689946258587!5m2!1sen!2sjp',
 	],
 	'top13' => [ 'There are many outdoor activities in the Akan area that you should try.<br>Don\'t miss many other tips on how to enjoy your time in Akan.',
@@ -45,6 +45,4 @@ $top_copy = [
 		'We are constantly posting latest information<br>about Akan and KAMUY LUMINA, especially on Twitter.<br>Let’s connect on social media!'
 	],
 ];
-
-
 ?>
