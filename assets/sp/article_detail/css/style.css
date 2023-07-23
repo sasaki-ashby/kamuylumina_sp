@@ -291,7 +291,7 @@ main部分
 .related-container a figure{
   overflow: hidden;
   border-radius: 8px;
-
+  width: 270px;
 }
 .related-container a img{
   transition: transform 0.3s ease;
@@ -340,7 +340,7 @@ main部分
 .related-title {
   font-family: 'Noto Serif CJK JP', serif;
   font-size: 3rem;
-  margin-bottom: 15px;
+  margin: 0 18px 15px;
   letter-spacing: .5rem;
 }
 
