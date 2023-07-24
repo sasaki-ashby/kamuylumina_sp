@@ -4,6 +4,7 @@ Template Name: スペシャルページトップ
 */
 ?>
 <?php
+/*
 if ( $_SERVER[ "REMOTE_ADDR" ] !== "183.77.251.15" ) {
 	$user = 'kamuylumina';
 	$pass = 'eizoutest';
@@ -15,6 +16,7 @@ if ( $_SERVER[ "REMOTE_ADDR" ] !== "183.77.251.15" ) {
 		die( 'このページを見るにはログインが必要です' );
 	}
 }
+*/
 require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . '/assets/sp/include/header.php' );
 ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/klwp/wp-content/themes/staffTemplate/inc/lang_".$sp_lang."_top.php");?>
