@@ -38,14 +38,30 @@ main部分
 
 .tag-lang-container {
   border-bottom: 2px solid #e1e5e8;
-  display: flex;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  justify-content: space-between;
 }
 
 .date-tag-container {
   display: flex;
+  margin-bottom: 20px;
+}
+
+.sns-container_txt {
+  font-size: 1.4rem;
+  letter-spacing: .2em;
+  line-height: 20px;
+  margin-right: 16px;
+}
+
+.sns-container_txt::after {
+  content: '：';
+  margin-left: 16px;
+}
+
+.tag-lang-container_btm {
+  display: flex;
+  justify-content: space-between;
 }
 
 .date {
@@ -53,6 +69,44 @@ main部分
   font-size: 1.3rem;
   line-height: 1.5;
   margin:2px 15px 0 0;
+}
+
+.sns-container {
+  display: flex;
+}
+
+.sns-container.__btm {
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sns-container_txt.__btm{
+  margin:0 0 20px;
+}
+
+.sns-container_txt.__btm::after {
+  content: none;
+}
+
+.sns-container_list {
+  display: flex;
+}
+
+.sns-container_list.__btm {
+  margin-bottom: 36px;
+}
+
+.sns-container_list >li{
+  margin-right: 16px;
+}
+
+.sns-container_list.__btm >li{
+  margin: 0 16px;
+}
+
+.sns-container_list >li:hover{
+  opacity: .6;
 }
 
 .lang-container {
@@ -156,6 +210,22 @@ main部分
   max-width: 700px;
 }
 
+.success-msg {
+    display: none;
+    position: fixed;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #002c4b;
+    color: #fff;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 768px) {
   .main-container {
     background-size: auto 150px;
@@ -166,7 +236,7 @@ main部分
   }
   .middle-main-container {
     border-radius: 0;
-    margin: 0;
+    margin: 0 0 24px;
     padding: 0;
   }
   .middle-main-container_mobile{
@@ -175,16 +245,25 @@ main部分
     margin: -50px 18px 0;
     padding-top: 14px;
   }
+  .sns-container_list.__btm {
+    margin-bottom: 0;
+  }
+  .sns-container_txt::after {
+    margin-left: 8px;
+  }
+  .sns-container_txt {
+    margin-right: 8px;
+  }
   .middle-title {
     font-size: 1.8rem;
     line-height: 1.7;
     margin-bottom: 8px;
   }
   .date {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
   .tag-container {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
   }
   .tag-container >li a {
     font-size: 1.3rem;
@@ -193,10 +272,11 @@ main部分
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 32px;
   }
   .date-tag-container {
     flex-direction: column;
+    margin-bottom: 0;
   }
   .left-title-container {
     display: flex;
@@ -213,15 +293,21 @@ main部分
   .tag-detail {
     margin: 0;
   }
+  .tag-lang-container_btm {
+    flex-direction: column;
+  }
+  .sns-container {
+    margin-bottom: 24px;
+  }
   .detail-title {
     font-size: 1.6rem;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
   .detail-text {
     font-size: 1.4rem;
     line-height: 1.8;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .detail-img {
     margin-bottom: 30px;
