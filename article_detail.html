@@ -149,11 +149,22 @@
                   <li><a href="">まちの自然</a></li>
                 </ul>
               </div>
-              <ul class="lang-container">
-                <li class="lang-text-1 __current"><a href="">日本語</a></li>
-                <li class="lang-text-2"><a href="">ENGLISH</a></li>
-                <li class="lang-text-3"><a href="">繁体字</a></li>
-              </ul>
+              <div class="tag-lang-container_btm">
+                <div class="sns-container">
+                  <p class="sns-container_txt">SHARE</p>
+                  <ul class="sns-container_list">
+                    <li><button class="copy-url" data-url="https://www.kamuylumina.jp/sp/"><img src="assets/sp/article_detail/img/icon_link.svg" alt="シェアする"></button></li>
+                    <li><a href="https://twitter.com/share?url=https://www.kamuylumina.jp/sp/&text=Twitterのシェアをするときの文章" rel="nofollow noopener" target="_blank"><img src="assets/sp/article_detail/img/icon_x.svg" alt="xでポスト"></a></li>
+                    <li><a href="https://www.facebook.com/share.php?u=https://www.kamuylumina.jp/sp/" target="_blank" rel="nofollow noopener noreferrer"><img src="assets/sp/article_detail/img/icon_fb.svg" alt="facebookでシェア"></a></li>
+                    <li><a href="https://social-plugins.line.me/lineit/share?url=https://www.kamuylumina.jp/sp" target="_blank" rel="nofollow noopener noreferrer"><img src="assets/sp/article_detail/img/icon_line.svg" alt="lineでシェア"></a></li>
+                  </ul>
+                </div>
+                <ul class="lang-container">
+                  <li class="lang-text-1 __current"><a href="">日本語</a></li>
+                  <li class="lang-text-2"><a href="">ENGLISH</a></li>
+                  <li class="lang-text-3"><a href="">繁体字</a></li>
+                </ul>
+              </div>
             </div>
             <section>
               <h2 class="detail-title">阿寒湖の森ナイトウォーク</h2>
@@ -206,9 +217,19 @@
           </section>
         </div>
       </article>
+      <div class="sns-container __btm">
+        <p class="sns-container_txt __btm">SHARE</p>
+        <ul class="sns-container_list">
+          <li><button class="copy-url" data-url="https://www.kamuylumina.jp/sp/"><img src="assets/sp/article_detail/img/icon_link.svg" alt="シェアする"></button></li>
+          <li><a href="https://twitter.com/share?url=https://www.kamuylumina.jp/sp/&text=Twitterのシェアをするときの文章" rel="nofollow noopener" target="_blank"><img src="assets/sp/article_detail/img/icon_x.svg" alt="xでポスト"></a></li>
+          <li><a href="https://www.facebook.com/share.php?u=https://www.kamuylumina.jp/sp/" target="_blank" rel="nofollow noopener noreferrer"><img src="assets/sp/article_detail/img/icon_fb.svg" alt="facebookでシェア"></a></li>
+          <li><a href="https://social-plugins.line.me/lineit/share?url=https://www.kamuylumina.jp/sp" target="_blank" rel="nofollow noopener noreferrer"><img src="assets/sp/article_detail/img/icon_line.svg" alt="lineでシェア"></a></li>
+        </ul>
+      </div>
       <a href="">
         <nav class="prevbtn"><p class="prevbtn_text">記事一覧</p><img class="prevbtn_icon" src="/assets/sp/common/img/icons/arrow_right.png"></nav>
       </a>
+      <div class="success-msg">クリップボードにコピーしました</div>
     </main>
 
     <!-- 関連記事------------------------------- -->
@@ -313,6 +334,27 @@
         }
       });
     </script>
+<<<<<<< HEAD
     <script src="/assets/sp/common/js/hamburger_header.js"></script>
+=======
+    <script src="assets/sp/common/js/hamburger_header.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>    
+    <script>
+      $(function () {
+        $('.copy-url').click(function () {
+          // data-urlの値を取得
+          const url = $(this).data('url');
+
+          // クリップボードにコピー
+          navigator.clipboard.writeText(url);
+
+          // フラッシュメッセージ表示
+          $('.success-msg').fadeIn("slow", function () {
+              $(this).delay(2000).fadeOut("slow");
+          });
+        });
+      });
+    </script>
+>>>>>>> origin/feature/sns_sasaki_230927
   </body>
 </html>
